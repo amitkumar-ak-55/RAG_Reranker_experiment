@@ -1,0 +1,52 @@
+{
+  "arms": [
+    "A_hybrid_baseline",
+    "B_hybrid_jina_mock",
+    "C_hybrid_jev_mock"
+  ],
+  "created_at_utc": "2026-11-17T14:28:38.182540+00:00",
+  "dataset": {
+    "difficulty_counts": {
+      "easy": 139,
+      "hard": 59,
+      "medium": 102
+    },
+    "duplicate_groups": {},
+    "filename": "C:\\Users\\bhagy\\Desktop\\CysekRAG\\data\\eval\\final\\eval_hard_300.jsonl",
+    "record_count": 300,
+    "sha256": "0dad81945e4c0e27783923a4d5bd50f8f5a764587a05391b9c80ee9e378afa69",
+    "unique_question_ids": 300,
+    "unique_question_texts": 300,
+    "valid_300_record_dataset": true
+  },
+  "embedding_model": "BAAI/bge-base-en-v1.5",
+  "embedding_revision": "a5beb1e3e68b9ab74eb54cfd186867f64f240e1a",
+  "evidence_limit": 5,
+  "external_calls": false,
+  "index_version": "68e2ecad34e25474fcf5d50c0b14fdcc7b8bf92ea8d4ec5d2347a08e7361a3ea",
+  "mode": "mock_provider_development",
+  "providers": {
+    "answer": "mock-answer-provider",
+    "jev": "jev-mock",
+    "jina": "jina-mock"
+  },
+  "retrieval": {
+    "candidate_limit": 10,
+    "implementation": "rag_verify_lab.rag.retrieve.retrieve",
+    "reranker": false,
+    "sparse": true
+  },
+  "snapshot": {
+    "corpus_sha256": "8c4daa39da534a7f4871f4e4f4d72af03bf8fd3ce5b34e5dac586e11e585f6fc",
+    "embedding_dimension": 768,
+    "index_version": "68e2ecad34e25474fcf5d50c0b14fdcc7b8bf92ea8d4ec5d2347a08e7361a3ea"
+  },
+  "snapshot_fingerprints": {
+    "dataset_sha256": "0dad81945e4c0e27783923a4d5bd50f8f5a764587a05391b9c80ee9e378afa69",
+    "experiment_config_sha256": "98468e4774b74910059f3c7b3d7cc0967a7a0556569843e2092bfe20602cc67a",
+    "index_manifest_sha256": "da987d419211a0d70a1b3734f90136a5d14d39b37a63acfeb329b2d365de9d16",
+    "kb_database_sha256": "98c1360a92f994276a2c200734b3adb1a8e7f9d2f8d0e1deb292b0be7ec20d75",
+    "kb_manifest_sha256": "fb571e438e5afc8e4febed656325972fd5b1c39b8552ccd1fbd0e1575f583f6f",
+    "retrieval_config_sha256": "f5b94291bc9d3971714ceede878d2586be6c5663578d59da0af0c7fe3e1bf128"
+  }
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///C:/Program Files (x86)/Nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.98 scan initiated Sat Nov  7 02:11:16 2026 as: nmap -sT -sV -T2 -p 1-1000 -oX C:\\Users\\bhagy\\Desktop\\CysekRAG\\data\\scans\\tmpjc4t0t6x.xml 45.33.32.156 -->
+<nmaprun scanner="nmap" args="nmap -sT -sV -T2 -p 1-1000 -oX C:\\Users\\bhagy\\Desktop\\CysekRAG\\data\\scans\\tmpjc4t0t6x.xml 45.33.32.156" start="1793997676" startstr="Sat Nov  7 02:11:16 2026" version="7.98" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="1000" services="1-1000"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="45.33.32.156" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1793997680" endtime="1793998209"><status state="up" reason="echo-reply" reason_ttl="46"/>
+<address addr="45.33.32.156" addrtype="ipv4"/>
+<hostnames>
+<hostname name="scanme.nmap.org" type="PTR"/>
+</hostnames>
+<ports><extraports state="closed" count="990">
+<extrareasons reason="conn-refused" count="990" proto="tcp" ports="1-21,23-24,26-79,81-134,140-245,247-444,446-1000"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="6.6.1p1 Ubuntu 2ubuntu2.13" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:6.6.1p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service></port>
+<port protocol="tcp" portid="25"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="smtp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.7" extrainfo="(Ubuntu)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.7</cpe></service></port>
+<port protocol="tcp" portid="135"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="msrpc" method="table" conf="3"/></port>
+<port protocol="tcp" portid="136"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="profile" method="table" conf="3"/></port>
+<port protocol="tcp" portid="137"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="netbios-ns" method="table" conf="3"/></port>
+<port protocol="tcp" portid="138"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="netbios-dgm" method="table" conf="3"/></port>
+<port protocol="tcp" portid="139"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="246"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="dsp3270" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+</ports>
+<times srtt="310562" rttvar="67477" to="580470"/>
+</host>
+<runstats><finished time="1793998209" timestr="Sat Nov  7 02:20:09 2026" summary="Nmap done at Sat Nov  7 02:20:09 2026; 1 IP address (1 host up) scanned in 532.68 seconds" elapsed="532.68" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

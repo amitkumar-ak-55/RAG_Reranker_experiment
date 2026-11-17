@@ -1,0 +1,304 @@
+{
+  "run_id": "diagnostic_pilot_20261111T202359Z",
+  "created_at_utc": "2026-11-11T20:24:41.880852+00:00",
+  "source": {
+    "source": "data\\eval\\final\\eval_hard_300.jsonl",
+    "record_count": 3,
+    "question_ids": [
+      "Q-0091",
+      "Q-0092",
+      "Q-0102"
+    ],
+    "arms": [
+      "llm_only",
+      "vector_rag",
+      "hybrid_rag",
+      "hybrid_jev",
+      "jev_retrieval"
+    ],
+    "index_version": "68e2ecad34e25474fcf5d50c0b14fdcc7b8bf92ea8d4ec5d2347a08e7361a3ea"
+  },
+  "results": [
+    {
+      "question_id": "Q-0091",
+      "question": "Which CVE affects Apache ActiveMQ 5.x before version 5.13.0, where the broker does not restrict classes serialized in a crafted JMS ObjectMessage, potentially allowing arbitrary code execution?",
+      "gold_cve": "CVE-2015-5254",
+      "arms": {
+        "llm_only": {
+          "raw_answer": "CVE-2015-5254",
+          "parsed_answer": "CVE-2015-5254",
+          "correct": true,
+          "latency_ms": 2218.633,
+          "input_tokens": 139,
+          "output_tokens": 53,
+          "jev_calls": 0,
+          "candidate_cve_ids": [],
+          "error": ""
+        },
+        "vector_rag": {
+          "raw_answer": "CVE-2015-5254",
+          "parsed_answer": "CVE-2015-5254",
+          "correct": true,
+          "latency_ms": 19946.477,
+          "input_tokens": 1064,
+          "output_tokens": 36,
+          "jev_calls": 0,
+          "candidate_cve_ids": [
+            "CVE-2015-5254",
+            "CVE-2026-34197"
+          ],
+          "error": ""
+        },
+        "hybrid_rag": {
+          "raw_answer": "CVE-2015-5254",
+          "parsed_answer": "CVE-2015-5254",
+          "correct": true,
+          "latency_ms": 2558.914,
+          "input_tokens": 1083,
+          "output_tokens": 37,
+          "jev_calls": 0,
+          "candidate_cve_ids": [
+            "CVE-2015-5254",
+            "CVE-2026-34197",
+            "CVE-2017-7504"
+          ],
+          "error": ""
+        },
+        "hybrid_jev": {
+          "raw_answer": "CVE-2015-5254",
+          "parsed_answer": "CVE-2015-5254",
+          "correct": true,
+          "latency_ms": 689.821,
+          "input_tokens": "unknown",
+          "output_tokens": "unknown",
+          "jev_calls": 1,
+          "candidate_cve_ids": [
+            "CVE-2015-5254",
+            "CVE-2026-34197",
+            "CVE-2017-7504"
+          ],
+          "error": ""
+        },
+        "jev_retrieval": {
+          "raw_answer": "CVE-2015-5254",
+          "parsed_answer": "CVE-2015-5254",
+          "correct": true,
+          "latency_ms": 910.322,
+          "input_tokens": "unknown",
+          "output_tokens": "unknown",
+          "jev_calls": 1,
+          "candidate_cve_ids": [
+            "CVE-2015-5254",
+            "CVE-2017-7504",
+            "CVE-2017-12149",
+            "CVE-2026-34197",
+            "CVE-2023-46604",
+            "CVE-2016-3088",
+            "CVE-2024-32113",
+            "CVE-2024-43441",
+            "CVE-2022-41678",
+            "CVE-2026-60137",
+            "CVE-2017-9805",
+            "CVE-2016-5388",
+            "CVE-2021-22991"
+          ],
+          "error": ""
+        }
+      }
+    },
+    {
+      "question_id": "Q-0092",
+      "question": "Which CVE affects Microsoft Silverlight 5 before version 5.1.41212.0, where mishandling negative offsets during decoding can cause arbitrary code execution or denial of service via a crafted website?",
+      "gold_cve": "CVE-2016-0034",
+      "arms": {
+        "llm_only": {
+          "raw_answer": "CVE-2015-0096",
+          "parsed_answer": "CVE-2015-0096",
+          "correct": false,
+          "latency_ms": 960.274,
+          "input_tokens": 142,
+          "output_tokens": 84,
+          "jev_calls": 0,
+          "candidate_cve_ids": [],
+          "error": ""
+        },
+        "vector_rag": {
+          "raw_answer": "CVE-2016-0034",
+          "parsed_answer": "CVE-2016-0034",
+          "correct": true,
+          "latency_ms": 2576.596,
+          "input_tokens": 523,
+          "output_tokens": 30,
+          "jev_calls": 0,
+          "candidate_cve_ids": [
+            "CVE-2016-0034",
+            "CVE-2024-38094",
+            "CVE-2023-24955",
+            "CVE-2025-53770",
+            "CVE-2024-38189"
+          ],
+          "error": ""
+        },
+        "hybrid_rag": {
+          "raw_answer": "CVE-2016-0034",
+          "parsed_answer": "CVE-2016-0034",
+          "correct": true,
+          "latency_ms": 2435.56,
+          "input_tokens": 711,
+          "output_tokens": 30,
+          "jev_calls": 0,
+          "candidate_cve_ids": [
+            "CVE-2016-0034",
+            "CVE-2016-0189",
+            "CVE-2017-0149",
+            "CVE-2016-1019",
+            "CVE-2016-4657"
+          ],
+          "error": ""
+        },
+        "hybrid_jev": {
+          "raw_answer": "CVE-2016-0034",
+          "parsed_answer": "CVE-2016-0034",
+          "correct": true,
+          "latency_ms": 916.376,
+          "input_tokens": "unknown",
+          "output_tokens": "unknown",
+          "jev_calls": 1,
+          "candidate_cve_ids": [
+            "CVE-2016-0034",
+            "CVE-2016-0189",
+            "CVE-2017-0149",
+            "CVE-2016-1019",
+            "CVE-2016-4657"
+          ],
+          "error": ""
+        },
+        "jev_retrieval": {
+          "raw_answer": "CVE-2016-0034",
+          "parsed_answer": "CVE-2016-0034",
+          "correct": true,
+          "latency_ms": 1136.029,
+          "input_tokens": "unknown",
+          "output_tokens": "unknown",
+          "jev_calls": 1,
+          "candidate_cve_ids": [
+            "CVE-2016-0034",
+            "CVE-2016-4657",
+            "CVE-2016-0189",
+            "CVE-2017-0149",
+            "CVE-2016-7200",
+            "CVE-2015-5254",
+            "CVE-2016-1646",
+            "CVE-2019-5418",
+            "CVE-2026-111497",
+            "CVE-2016-1019",
+            "CVE-2017-5638",
+            "CVE-2024-43441",
+            "CVE-2017-7494",
+            "CVE-2018-0159"
+          ],
+          "error": ""
+        }
+      }
+    },
+    {
+      "question_id": "Q-0102",
+      "question": "Which CVE affects Yaws before version 2.0.4 when untrusted HTTP_PROXY environment data makes CGI requests route through an attacker-controlled proxy?",
+      "gold_cve": "CVE-2016-1000108",
+      "arms": {
+        "llm_only": {
+          "raw_answer": "CVE-2020-25714",
+          "parsed_answer": "CVE-2020-25714",
+          "correct": false,
+          "latency_ms": 967.129,
+          "input_tokens": 130,
+          "output_tokens": 84,
+          "jev_calls": 0,
+          "candidate_cve_ids": [],
+          "error": ""
+        },
+        "vector_rag": {
+          "raw_answer": "CVE-2016-1000108",
+          "parsed_answer": "CVE-2016-1000108",
+          "correct": true,
+          "latency_ms": 2693.634,
+          "input_tokens": 1023,
+          "output_tokens": 50,
+          "jev_calls": 0,
+          "candidate_cve_ids": [
+            "CVE-2016-1000108",
+            "CVE-2021-42013",
+            "CVE-2016-5388",
+            "CVE-2021-41773",
+            "CVE-2016-5387"
+          ],
+          "error": ""
+        },
+        "hybrid_rag": {
+          "raw_answer": "CVE-2016-1000108",
+          "parsed_answer": "CVE-2016-1000108",
+          "correct": true,
+          "latency_ms": 2233.743,
+          "input_tokens": 913,
+          "output_tokens": 32,
+          "jev_calls": 0,
+          "candidate_cve_ids": [
+            "CVE-2016-1000108",
+            "CVE-2016-5388",
+            "CVE-2016-6287",
+            "CVE-2016-6286",
+            "CVE-2016-5387"
+          ],
+          "error": ""
+        },
+        "hybrid_jev": {
+          "raw_answer": "CVE-2016-1000108",
+          "parsed_answer": "CVE-2016-1000108",
+          "correct": true,
+          "latency_ms": 631.465,
+          "input_tokens": "unknown",
+          "output_tokens": "unknown",
+          "jev_calls": 1,
+          "candidate_cve_ids": [
+            "CVE-2016-1000108",
+            "CVE-2016-5388",
+            "CVE-2016-6287",
+            "CVE-2016-6286",
+            "CVE-2016-5387"
+          ],
+          "error": ""
+        },
+        "jev_retrieval": {
+          "raw_answer": "CVE-2016-1000108",
+          "parsed_answer": "CVE-2016-1000108",
+          "correct": true,
+          "latency_ms": 779.238,
+          "input_tokens": "unknown",
+          "output_tokens": "unknown",
+          "jev_calls": 1,
+          "candidate_cve_ids": [
+            "CVE-2016-1000108",
+            "CVE-2016-5385",
+            "CVE-2016-6287",
+            "CVE-2016-6286",
+            "CVE-2016-5386",
+            "CVE-2016-1000111",
+            "CVE-2016-5388",
+            "CVE-2016-1000109",
+            "CVE-2016-5387",
+            "CVE-2016-1000107",
+            "CVE-2016-1000110",
+            "CVE-2026-42208",
+            "CVE-2021-40438",
+            "CVE-2021-42342",
+            "CVE-2017-17562",
+            "CVE-2021-40822",
+            "CVE-2023-4966",
+            "CVE-2025-24472"
+          ],
+          "error": ""
+        }
+      }
+    }
+  ]
+}

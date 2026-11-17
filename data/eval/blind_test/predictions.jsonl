@@ -1,0 +1,25 @@
+{"question_id": "H-001", "prediction": "CVE-2021-44228", "reason": "Log4j attacker-controlled log data invoking JNDI remote lookup is the Log4Shell flaw.", "timestamp": "2026-11-06T15:44:12Z"}
+{"question_id": "H-002", "prediction": "CVE-2024-39907", "reason": "The 1Panel SQL injection leading to file write and code execution matches this reported vulnerability.", "timestamp": "2026-11-06T15:44:12Z"}
+{"question_id": "H-003", "prediction": "CVE-2015-5254", "reason": "This is the ActiveMQ unsafe deserialization flaw caused by unrestricted serialized classes.", "timestamp": "2026-11-06T15:44:12Z"}
+{"question_id": "H-004", "prediction": "CVE-2026-34197", "reason": "The Spring XML context loaded by the ActiveMQ management bridge matches the described code injection issue.", "timestamp": "2026-11-06T15:44:12Z"}
+{"question_id": "H-005", "prediction": "CVE-2016-1897", "reason": "FFmpeg HLS handling of a crafted playlist can expose local file data through a remote request.", "timestamp": "2026-11-06T15:44:12Z"}
+{"question_id": "H-006", "prediction": "CVE-2016-3081", "reason": "The Dynamic Method Invocation and chained expression path identifies the Struts vulnerability.", "timestamp": "2026-11-06T15:44:12Z"}
+{"question_id": "H-007", "prediction": "CVE-2016-3088", "reason": "The ActiveMQ Fileserver upload and move sequence can create an executable file.", "timestamp": "2026-11-06T15:44:12Z"}
+{"question_id": "H-008", "prediction": "CVE-2016-3714", "reason": "ImageMagick command injection through crafted image formats is ImageTragick.", "timestamp": "2026-11-06T15:44:12Z"}
+{"question_id": "H-009", "prediction": "CVE-2016-4437", "reason": "An unset Shiro remember-me cipher key is the known deserialization vulnerability.", "timestamp": "2026-11-06T15:44:12Z"}
+{"question_id": "H-010", "prediction": "CVE-2016-4977", "reason": "Spring Security OAuth evaluates a crafted response_type as an expression in this vulnerability.", "timestamp": "2026-11-06T15:44:12Z"}
+{"question_id": "H-011", "prediction": "CVE-2016-10033", "reason": "PHPMailer Sender input reaching the mail command is the command-injection issue.", "timestamp": "2026-11-06T15:44:12Z"}
+{"question_id": "H-012", "prediction": "CVE-2016-10134", "reason": "Zabbix SQL injection via the toggle_ids parameter matches this CVE.", "timestamp": "2026-11-06T15:44:12Z"}
+{"question_id": "H-013", "prediction": "CVE-2017-2824", "reason": "The Zabbix active-proxy trapper command injection corresponds to this vulnerability.", "timestamp": "2026-11-06T15:44:12Z"}
+{"question_id": "H-014", "prediction": "CVE-2017-3066", "reason": "ColdFusion BlazeDS Java deserialization is the flaw described here.", "timestamp": "2026-11-06T15:44:12Z"}
+{"question_id": "H-015", "prediction": "CVE-2017-6920", "reason": "Drupal unsafe object handling in the PECL YAML parser maps to this code-execution CVE.", "timestamp": "2026-11-06T15:44:12Z"}
+{"question_id": "H-016", "prediction": "CVE-2017-7494", "reason": "Samba library loading from a writable share is the SambaCry vulnerability.", "timestamp": "2026-11-06T15:44:12Z"}
+{"question_id": "H-017", "prediction": "CVE-2017-7504", "reason": "JBossMQ JMS over HTTP deserialization allows attacker-selected classes to be instantiated.", "timestamp": "2026-11-06T15:44:12Z"}
+{"question_id": "H-018", "prediction": "CVE-2017-7525", "reason": "The version cutoffs and ObjectMapper.readValue() details identify this jackson-databind vulnerability.", "timestamp": "2026-11-06T15:44:12Z"}
+{"question_id": "H-019", "prediction": "CVE-2017-8917", "reason": "The Joomla request-handling SQL injection is the vulnerability identified by this CVE.", "timestamp": "2026-11-06T15:44:12Z"}
+{"question_id": "H-020", "prediction": "CVE-2017-9791", "reason": "The Struts 1 plugin and malicious ActionMessage field identify this RCE.", "timestamp": "2026-11-06T15:44:12Z"}
+{"question_id": "H-021", "prediction": "CVE-2017-12629", "reason": "The Solr XML query parser and external entity behavior through FTP points to this CVE.", "timestamp": "2026-11-06T15:44:12Z"}
+{"question_id": "H-022", "prediction": "CVE-2017-12635", "reason": "CouchDB duplicate roles exploit parser differences to grant administrator privileges.", "timestamp": "2026-11-06T15:44:12Z"}
+{"question_id": "H-023", "prediction": "CVE-2017-12794", "reason": "Django?s technical 500 page without HTML autoescaping is this XSS vulnerability.", "timestamp": "2026-11-06T15:44:12Z"}
+{"question_id": "H-024", "prediction": "CVE-2017-16082", "reason": "The pg module vulnerability allows code execution from a malicious column name.", "timestamp": "2026-11-06T15:44:12Z"}
+{"question_id": "H-025", "prediction": "CVE-2017-17405", "reason": "Ruby Net::FTP pipe-prefixed localfile command injection is this CVE.", "timestamp": "2026-11-06T15:44:12Z"}

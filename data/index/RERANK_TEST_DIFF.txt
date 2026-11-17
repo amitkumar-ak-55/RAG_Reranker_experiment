@@ -1,0 +1,29 @@
+﻿diff --git a/data/index/RERANK_TEST_BEFORE.py b/data/index/RERANK_TEST_AFTER.py
+index 18c5f70..853f965 100644
+--- a/data/index/RERANK_TEST_BEFORE.py
++++ b/data/index/RERANK_TEST_AFTER.py
+@@ -29,6 +29,7 @@
+     assert manifest["reranker_model_used"] == "fallback"
+     assert manifest["reranker_revision_used"] == "fallback-revision"
+     assert manifest["fallback_used"] is True
++    assert manifest["fallback_reason"] == "broken"
+ 
+ 
+ def test_reranker_fails_without_scores_when_primary_and_fallback_fail(monkeypatch):
+@@ -55,3 +56,16 @@ def test_reranker_fails_without_scores_when_primary_and_fallback_fail(monkeypatc
+     ]
+ 
+ 
++def test_real_configured_primary_reranker() -> None:
++    snapshot = Path(HF_HUB_CACHE) / "models--BAAI--bge-reranker-v2-m3" / "snapshots" / settings.rerank_revision
++    if not snapshot.is_dir():
++        pytest.skip(f"configured primary model files are not local: {snapshot}")
++    scores = models.rerank("security issue", ["security issue", "unrelated text"])
++    assert len(scores) == 2
++    assert np.isfinite(scores).all()
++    manifest = models.reranker_manifest()
++    assert manifest["reranker_model_used"] == settings.rerank_model
++    assert manifest["reranker_revision_used"] == settings.rerank_revision
++    assert manifest["fallback_used"] is False
++
++

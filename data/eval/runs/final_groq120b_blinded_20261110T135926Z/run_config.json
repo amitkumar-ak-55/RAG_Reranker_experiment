@@ -1,0 +1,219 @@
+{
+  "run_id": "final_groq120b_blinded_20261110T135926Z",
+  "timestamp_utc": "2026-11-10T14:03:21.855123+00:00",
+  "models": {
+    "answer": "openai/gpt-oss-120b",
+    "answer_provider_base_url": "https://api.groq.com/openai/v1",
+    "embedding": "BAAI/bge-base-en-v1.5",
+    "reranker": "BAAI/bge-reranker-v2-m3",
+    "jev": "jev-latest"
+  },
+  "arms": [
+    "llm_only",
+    "vector_rag",
+    "hybrid_rag",
+    "hybrid_jev",
+    "jev_retrieval"
+  ],
+  "thresholds": {
+    "top_k": 5,
+    "jev_bm25_candidate_limit": 20,
+    "answer_max_tokens_from_env": 32,
+    "answer_effective_completion_tokens": 256,
+    "gpt_oss_reasoning_effort": "low",
+    "answer_retries_on_429": 3,
+    "jev_retries_per_check": 1,
+    "answer_requests_per_minute_cap": 24,
+    "shared_limit_pacing_seconds": 2.5,
+    "answer_api_key_count": 3,
+    "answer_key_fallback_policy": "rotate across configured accounts after 401/403/429; keep a per-key Retry-After cooldown"
+  },
+  "timings": {
+    "latency_ms": "per question-arm from start through provider response",
+    "retry_after": "provider Retry-After header, then provider response retry-delay text, then exponential fallback"
+  },
+  "usage": {
+    "llm_only": {
+      "calls": 300,
+      "answer_calls": 300,
+      "jev_calls": 0,
+      "tokens": "unknown",
+      "cost": "unknown",
+      "cost_per_question": "unknown"
+    },
+    "vector_rag": {
+      "calls": 300,
+      "answer_calls": 300,
+      "jev_calls": 0,
+      "tokens": "unknown",
+      "cost": "unknown",
+      "cost_per_question": "unknown"
+    },
+    "hybrid_rag": {
+      "calls": 300,
+      "answer_calls": 300,
+      "jev_calls": 0,
+      "tokens": "unknown",
+      "cost": "unknown",
+      "cost_per_question": "unknown"
+    },
+    "hybrid_jev": {
+      "calls": 300,
+      "answer_calls": 0,
+      "jev_calls": 252,
+      "tokens": 0,
+      "cost": "unknown",
+      "cost_per_question": "unknown"
+    },
+    "jev_retrieval": {
+      "calls": 300,
+      "answer_calls": 300,
+      "jev_calls": 5239,
+      "tokens": "unknown",
+      "cost": "unknown",
+      "cost_per_question": "unknown"
+    }
+  },
+  "cost": {
+    "answer": "unknown",
+    "jev": "unknown"
+  },
+  "input_validation": {
+    "gates": {
+      "row_count": true,
+      "unique_question_ids": true,
+      "unique_gold_cve": true,
+      "questions_do_not_contain_gold": true,
+      "handcheck_30_pass": true,
+      "handcheck_no_fail": true,
+      "corpus_hash_matches_manifest": true,
+      "item_corpus_hash_matches": true,
+      "item_index_matches": true
+    },
+    "corpus_sha256": "8c4daa39da534a7f4871f4e4f4d72af03bf8fd3ce5b34e5dac586e11e585f6fc",
+    "index_version": "68e2ecad34e25474fcf5d50c0b14fdcc7b8bf92ea8d4ec5d2347a08e7361a3ea"
+  },
+  "questions_completed_per_arm": {
+    "llm_only": 300,
+    "vector_rag": 300,
+    "hybrid_rag": 300,
+    "hybrid_jev": 300,
+    "jev_retrieval": 300
+  },
+  "quota_stops": [
+    {
+      "stopped_at_utc": "unknown",
+      "reason": "quota_or_rate_limit: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m715j7e2egrrqy6txvnrv8xr` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199591, Requested 918. Please try again in 3m39.888s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+      "questions_completed_per_arm": {
+        "llm_only": 53,
+        "vector_rag": 53,
+        "hybrid_rag": 53,
+        "hybrid_jev": 53,
+        "jev_retrieval": 53
+      }
+    },
+    {
+      "stopped_at_utc": "2026-11-10T14:37:31.334697+00:00",
+      "reason": "quota_or_rate_limit: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m715j7e2egrrqy6txvnrv8xr` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199130, Requested 1126. Please try again in 1m50.592s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+      "questions_completed_per_arm": {
+        "llm_only": 54,
+        "vector_rag": 54,
+        "hybrid_rag": 53,
+        "hybrid_jev": 53,
+        "jev_retrieval": 53
+      }
+    },
+    {
+      "stopped_at_utc": "2026-11-10T14:44:16.996931+00:00",
+      "reason": "quota_or_rate_limit: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m715j7e2egrrqy6txvnrv8xr` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199743, Requested 368. Please try again in 47.952s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+      "questions_completed_per_arm": {
+        "llm_only": 55,
+        "vector_rag": 54,
+        "hybrid_rag": 54,
+        "hybrid_jev": 54,
+        "jev_retrieval": 54
+      }
+    },
+    {
+      "stopped_at_utc": "2026-11-10T14:45:16.045092+00:00",
+      "reason": "quota_or_rate_limit: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m715j7e2egrrqy6txvnrv8xr` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199606, Requested 706. Please try again in 2m14.783999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+      "questions_completed_per_arm": {
+        "llm_only": 55,
+        "vector_rag": 55,
+        "hybrid_rag": 54,
+        "hybrid_jev": 54,
+        "jev_retrieval": 54
+      }
+    },
+    {
+      "stopped_at_utc": "2026-11-10T14:49:08.602145+00:00",
+      "reason": "quota_or_rate_limit: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m715j7e2egrrqy6txvnrv8xr` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199709, Requested 707. Please try again in 2m59.712s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+      "questions_completed_per_arm": {
+        "llm_only": 55,
+        "vector_rag": 55,
+        "hybrid_rag": 55,
+        "hybrid_jev": 55,
+        "jev_retrieval": 55
+      }
+    },
+    {
+      "stopped_at_utc": "2026-11-10T14:53:43.738769+00:00",
+      "reason": "quota_or_rate_limit: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m715j7e2egrrqy6txvnrv8xr` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199396, Requested 888. Please try again in 2m2.688s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+      "questions_completed_per_arm": {
+        "llm_only": 56,
+        "vector_rag": 56,
+        "hybrid_rag": 55,
+        "hybrid_jev": 55,
+        "jev_retrieval": 55
+      }
+    },
+    {
+      "stopped_at_utc": "2026-11-10T14:57:15.327451+00:00",
+      "reason": "quota_or_rate_limit: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m715j7e2egrrqy6txvnrv8xr` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199756, Requested 846. Please try again in 4m20.064s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+      "questions_completed_per_arm": {
+        "llm_only": 56,
+        "vector_rag": 56,
+        "hybrid_rag": 56,
+        "hybrid_jev": 56,
+        "jev_retrieval": 56
+      }
+    },
+    {
+      "stopped_at_utc": "2026-11-10T15:03:12.221862+00:00",
+      "reason": "quota_or_rate_limit: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m715j7e2egrrqy6txvnrv8xr` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199998, Requested 1323. Please try again in 9m30.672s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+      "questions_completed_per_arm": {
+        "llm_only": 57,
+        "vector_rag": 57,
+        "hybrid_rag": 57,
+        "hybrid_jev": 56,
+        "jev_retrieval": 56
+      }
+    },
+    {
+      "stopped_at_utc": "2026-11-10T15:15:49.160511+00:00",
+      "reason": "quota_or_rate_limit: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m715j7e2egrrqy6txvnrv8xr` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199621, Requested 1128. Please try again in 5m23.568s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+      "questions_completed_per_arm": {
+        "llm_only": 58,
+        "vector_rag": 58,
+        "hybrid_rag": 57,
+        "hybrid_jev": 57,
+        "jev_retrieval": 57
+      }
+    },
+    {
+      "stopped_at_utc": "2026-11-10T17:05:55.062556+00:00",
+      "reason": "quota_or_rate_limit: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m72hk23wexzvf4amp8aw2zxg` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199759, Requested 243. Please try again in 864ms. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+      "questions_completed_per_arm": {
+        "llm_only": 224,
+        "vector_rag": 223,
+        "hybrid_rag": 223,
+        "hybrid_jev": 223,
+        "jev_retrieval": 223
+      }
+    }
+  ],
+  "resume_count": 10,
+  "last_resumed_at_utc": "2026-11-10T17:25:09.460535+00:00",
+  "quota_failed_answer_rows_requeued": 7,
+  "failed_answer_rows_requeued": 59
+}

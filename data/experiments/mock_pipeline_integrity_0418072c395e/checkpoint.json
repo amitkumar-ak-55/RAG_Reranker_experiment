@@ -1,0 +1,27 @@
+{
+  "completed_question_arm_keys": [
+    "Q-0091:A_hybrid_baseline",
+    "Q-0091:B_hybrid_jina_mock",
+    "Q-0091:C_hybrid_jev_mock",
+    "Q-0092:A_hybrid_baseline",
+    "Q-0092:B_hybrid_jina_mock",
+    "Q-0092:C_hybrid_jev_mock",
+    "Q-0102:A_hybrid_baseline",
+    "Q-0102:B_hybrid_jina_mock",
+    "Q-0102:C_hybrid_jev_mock"
+  ],
+  "completed_question_ids": [
+    "Q-0091",
+    "Q-0092",
+    "Q-0102"
+  ],
+  "fingerprints": {
+    "dataset_sha256": "0dad81945e4c0e27783923a4d5bd50f8f5a764587a05391b9c80ee9e378afa69",
+    "experiment_config_sha256": "98468e4774b74910059f3c7b3d7cc0967a7a0556569843e2092bfe20602cc67a",
+    "index_manifest_sha256": "da987d419211a0d70a1b3734f90136a5d14d39b37a63acfeb329b2d365de9d16",
+    "kb_database_sha256": "98c1360a92f994276a2c200734b3adb1a8e7f9d2f8d0e1deb292b0be7ec20d75",
+    "kb_manifest_sha256": "fb571e438e5afc8e4febed656325972fd5b1c39b8552ccd1fbd0e1575f583f6f",
+    "retrieval_config_sha256": "f5b94291bc9d3971714ceede878d2586be6c5663578d59da0af0c7fe3e1bf128"
+  },
+  "retrieval_calls": 3
+}

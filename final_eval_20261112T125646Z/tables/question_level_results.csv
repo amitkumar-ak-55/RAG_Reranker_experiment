@@ -1,0 +1,1501 @@
+question ID,gold CVE,difficulty,product,arm,answer,valid,correct,error,latency,input tokens,output tokens,JEV calls,provenance
+Q-0091,CVE-2015-5254,hard,apache activemq,llm_only,CVE-2015-5254,True,True,,2373.953,139,53,0,fresh_clean_rerun
+Q-0091,CVE-2015-5254,hard,apache activemq,vector_rag,CVE-2015-5254,True,True,,16023.271,1064,72,0,fresh_clean_rerun
+Q-0091,CVE-2015-5254,hard,apache activemq,hybrid_rag,CVE-2015-5254,True,True,,3209.811,1083,35,0,fresh_clean_rerun
+Q-0091,CVE-2015-5254,hard,apache activemq,hybrid_jev,CVE-2015-5254,True,True,,1789.969,unknown,unknown,1,fresh_clean_rerun
+Q-0091,CVE-2015-5254,hard,apache activemq,jev_retrieval,CVE-2015-5254,True,True,,2075.212,unknown,unknown,1,fresh_clean_rerun
+Q-0092,CVE-2016-0034,easy,microsoft silverlight,llm_only,CVE-2015-0096,True,False,,1893.801,142,99,0,fresh_clean_rerun
+Q-0092,CVE-2016-0034,easy,microsoft silverlight,vector_rag,CVE-2016-0034,True,True,,3706.778,523,35,0,fresh_clean_rerun
+Q-0092,CVE-2016-0034,easy,microsoft silverlight,hybrid_rag,CVE-2016-0034,True,True,,1250.557,711,36,0,fresh_clean_rerun
+Q-0092,CVE-2016-0034,easy,microsoft silverlight,hybrid_jev,CVE-2016-0034,True,True,,1526.141,unknown,unknown,1,fresh_clean_rerun
+Q-0092,CVE-2016-0034,easy,microsoft silverlight,jev_retrieval,CVE-2016-0034,True,True,,2730.157,unknown,unknown,1,fresh_clean_rerun
+Q-0102,CVE-2016-1000108,easy,yaws yaws,llm_only,CVE-2022-31186,True,False,,1709.867,130,83,0,fresh_clean_rerun
+Q-0102,CVE-2016-1000108,easy,yaws yaws,vector_rag,CVE-2016-1000108,True,True,,2019.385,1023,32,0,fresh_clean_rerun
+Q-0102,CVE-2016-1000108,easy,yaws yaws,hybrid_rag,CVE-2016-1000108,True,True,,2907.947,913,50,0,fresh_clean_rerun
+Q-0102,CVE-2016-1000108,easy,yaws yaws,hybrid_jev,CVE-2016-1000108,True,True,,1022.416,unknown,unknown,1,fresh_clean_rerun
+Q-0102,CVE-2016-1000108,easy,yaws yaws,jev_retrieval,CVE-2016-1000108,True,True,,961.828,unknown,unknown,1,fresh_clean_rerun
+Q-0103,CVE-2016-1000109,easy,facebook hhvm,llm_only,CVE-2015-3271,True,False,,1644.609,118,86,0,fresh_clean_rerun
+Q-0103,CVE-2016-1000109,easy,facebook hhvm,vector_rag,CVE-2016-1000109,True,True,,1617.146,853,32,0,fresh_clean_rerun
+Q-0103,CVE-2016-1000109,easy,facebook hhvm,hybrid_rag,CVE-2016-1000109,True,True,,2725.545,833,66,0,fresh_clean_rerun
+Q-0103,CVE-2016-1000109,easy,facebook hhvm,hybrid_jev,CVE-2016-1000109,True,True,,795.311,unknown,unknown,1,fresh_clean_rerun
+Q-0103,CVE-2016-1000109,easy,facebook hhvm,jev_retrieval,CVE-2016-1000109,True,True,,797.710,unknown,unknown,1,fresh_clean_rerun
+Q-0104,CVE-2016-1000110,easy,python python,llm_only,CVE-2001-0144,True,False,,1134.034,118,113,0,fresh_clean_rerun
+Q-0104,CVE-2016-1000110,easy,python python,vector_rag,CVE-2016-1000110,True,True,,2384.462,853,66,0,fresh_clean_rerun
+Q-0104,CVE-2016-1000110,easy,python python,hybrid_rag,CVE-2016-1000110,True,True,,2398.545,787,50,0,fresh_clean_rerun
+Q-0104,CVE-2016-1000110,easy,python python,hybrid_jev,CVE-2016-1000110,True,True,,806.545,unknown,unknown,1,fresh_clean_rerun
+Q-0104,CVE-2016-1000110,easy,python python,jev_retrieval,CVE-2016-1000110,True,True,,741.079,unknown,unknown,1,fresh_clean_rerun
+Q-0106,CVE-2016-10033,easy,phpmailer project phpmailer,llm_only,CVE-2016-10033,True,True,,850.945,124,44,0,fresh_clean_rerun
+Q-0106,CVE-2016-10033,easy,phpmailer project phpmailer,vector_rag,CVE-2016-10033,True,True,,2404.864,648,46,0,fresh_clean_rerun
+Q-0106,CVE-2016-10033,easy,phpmailer project phpmailer,hybrid_rag,CVE-2016-10033,True,True,,2713.990,789,80,0,fresh_clean_rerun
+Q-0106,CVE-2016-10033,easy,phpmailer project phpmailer,hybrid_jev,CVE-2016-10033,True,True,,668.492,unknown,unknown,1,fresh_clean_rerun
+Q-0106,CVE-2016-10033,easy,phpmailer project phpmailer,jev_retrieval,CVE-2016-10033,True,True,,770.080,unknown,unknown,1,fresh_clean_rerun
+Q-0107,CVE-2016-10134,easy,zabbix zabbix,llm_only,CVE-2022-31152,True,False,,1120.470,121,120,0,fresh_clean_rerun
+Q-0107,CVE-2016-10134,easy,zabbix zabbix,vector_rag,CVE-2016-10134,True,True,,2242.584,626,43,0,fresh_clean_rerun
+Q-0107,CVE-2016-10134,easy,zabbix zabbix,hybrid_rag,CVE-2016-10134,True,True,,2584.794,631,45,0,fresh_clean_rerun
+Q-0107,CVE-2016-10134,easy,zabbix zabbix,hybrid_jev,CVE-2016-10134,True,True,,619.366,unknown,unknown,1,fresh_clean_rerun
+Q-0107,CVE-2016-10134,easy,zabbix zabbix,jev_retrieval,CVE-2016-10134,True,True,,1800.145,unknown,unknown,1,fresh_clean_rerun
+Q-0109,CVE-2016-1019,medium,adobe flash player,llm_only,CVE-2015-0316,True,False,,913.919,115,47,0,fresh_clean_rerun
+Q-0109,CVE-2016-1019,medium,adobe flash player,vector_rag,CVE-2016-1019,True,True,,2395.706,712,85,0,fresh_clean_rerun
+Q-0109,CVE-2016-1019,medium,adobe flash player,hybrid_rag,CVE-2016-1019,True,True,,2722.446,712,53,0,fresh_clean_rerun
+Q-0109,CVE-2016-1019,medium,adobe flash player,hybrid_jev,CVE-2016-1019,True,True,,751.266,unknown,unknown,1,fresh_clean_rerun
+Q-0109,CVE-2016-1019,medium,adobe flash player,jev_retrieval,CVE-2016-4171,True,False,,843.194,unknown,unknown,1,fresh_clean_rerun
+Q-0110,CVE-2016-1646,easy,google chrome,llm_only,CVE-2023-4863,True,False,,1123.621,118,84,0,fresh_clean_rerun
+Q-0110,CVE-2016-1646,easy,google chrome,vector_rag,CVE-2016-1646,True,True,,2394.739,614,35,0,fresh_clean_rerun
+Q-0110,CVE-2016-1646,easy,google chrome,hybrid_rag,CVE-2016-1646,True,True,,3518.871,612,46,0,fresh_clean_rerun
+Q-0110,CVE-2016-1646,easy,google chrome,hybrid_jev,CVE-2016-1646,True,True,,856.144,unknown,unknown,1,fresh_clean_rerun
+Q-0110,CVE-2016-1646,easy,google chrome,jev_retrieval,CVE-2016-1646,True,True,,901.300,unknown,unknown,1,fresh_clean_rerun
+Q-0111,CVE-2016-1897,hard,ffmpeg ffmpeg,llm_only,CVE-2022-38148,True,False,,1244.771,123,85,0,fresh_clean_rerun
+Q-0111,CVE-2016-1897,hard,ffmpeg ffmpeg,vector_rag,CVE-2016-1898,True,False,,2277.782,750,52,0,fresh_clean_rerun
+Q-0111,CVE-2016-1897,hard,ffmpeg ffmpeg,hybrid_rag,CVE-2016-1897,True,True,,3130.912,706,50,0,fresh_clean_rerun
+Q-0111,CVE-2016-1897,hard,ffmpeg ffmpeg,hybrid_jev,CVE-2016-1897,True,True,,1080.144,unknown,unknown,1,fresh_clean_rerun
+Q-0111,CVE-2016-1897,hard,ffmpeg ffmpeg,jev_retrieval,CVE-2016-1897,True,True,,945.413,unknown,unknown,1,fresh_clean_rerun
+Q-0112,CVE-2016-1898,medium,ffmpeg ffmpeg,llm_only,CVE-2016-1892,True,False,,1088.643,119,70,0,fresh_clean_rerun
+Q-0112,CVE-2016-1898,medium,ffmpeg ffmpeg,vector_rag,CVE-2016-1898,True,True,,4229.996,743,48,0,fresh_clean_rerun
+Q-0112,CVE-2016-1898,medium,ffmpeg ffmpeg,hybrid_rag,CVE-2016-1897,True,False,,4407.393,809,48,0,fresh_clean_rerun
+Q-0112,CVE-2016-1898,medium,ffmpeg ffmpeg,hybrid_jev,CVE-2016-1897,True,False,,608.990,unknown,unknown,1,fresh_clean_rerun
+Q-0112,CVE-2016-1898,medium,ffmpeg ffmpeg,jev_retrieval,CVE-2016-1897,True,False,,1805.909,unknown,unknown,1,fresh_clean_rerun
+Q-0115,CVE-2016-3081,easy,apache struts,llm_only,CVE-2017-5638,True,False,,1145.205,121,82,0,fresh_clean_rerun
+Q-0115,CVE-2016-3081,easy,apache struts,vector_rag,CVE-2016-3081,True,True,,2612.910,734,42,0,fresh_clean_rerun
+Q-0115,CVE-2016-3081,easy,apache struts,hybrid_rag,CVE-2016-3081,True,True,,2364.679,758,42,0,fresh_clean_rerun
+Q-0115,CVE-2016-3081,easy,apache struts,hybrid_jev,CVE-2016-3081,True,True,,2276.641,unknown,unknown,1,fresh_clean_rerun
+Q-0115,CVE-2016-3081,easy,apache struts,jev_retrieval,CVE-2016-3081,True,True,,1501.007,unknown,unknown,1,fresh_clean_rerun
+Q-0116,CVE-2016-3088,easy,apache activemq,llm_only,CVE-2020-11979,True,False,,1268.917,120,106,0,fresh_clean_rerun
+Q-0116,CVE-2016-3088,easy,apache activemq,vector_rag,CVE-2016-3088,True,True,,2260.108,852,43,0,fresh_clean_rerun
+Q-0116,CVE-2016-3088,easy,apache activemq,hybrid_rag,CVE-2016-3088,True,True,,2589.402,988,50,0,fresh_clean_rerun
+Q-0116,CVE-2016-3088,easy,apache activemq,hybrid_jev,CVE-2016-3088,True,True,,907.801,unknown,unknown,1,fresh_clean_rerun
+Q-0116,CVE-2016-3088,easy,apache activemq,jev_retrieval,CVE-2016-3088,True,True,,2727.715,unknown,unknown,1,fresh_clean_rerun
+Q-0118,CVE-2016-3298,medium,microsoft internet explorer,llm_only,CVE-2010-2883,True,False,,2276.766,119,58,0,fresh_clean_rerun
+Q-0118,CVE-2016-3298,medium,microsoft internet explorer,vector_rag,CVE-2016-3351,True,False,,2543.297,749,54,0,fresh_clean_rerun
+Q-0118,CVE-2016-3298,medium,microsoft internet explorer,hybrid_rag,CVE-2017-0149,True,False,,1101.083,749,39,0,fresh_clean_rerun
+Q-0118,CVE-2016-3298,medium,microsoft internet explorer,hybrid_jev,CVE-2017-0149,True,False,,2092.528,unknown,unknown,1,fresh_clean_rerun
+Q-0118,CVE-2016-3298,medium,microsoft internet explorer,jev_retrieval,CVE-2017-0149,True,False,,2040.959,unknown,unknown,1,fresh_clean_rerun
+Q-0120,CVE-2016-3427,easy,oracle jrockit,llm_only,CVE-2012-4681,True,False,,2010.033,118,56,0,fresh_clean_rerun
+Q-0120,CVE-2016-3427,easy,oracle jrockit,vector_rag,CVE-2016-3427,True,True,,1293.834,666,38,0,fresh_clean_rerun
+Q-0120,CVE-2016-3427,easy,oracle jrockit,hybrid_rag,CVE-2016-3427,True,True,,3177.651,846,39,0,fresh_clean_rerun
+Q-0120,CVE-2016-3427,easy,oracle jrockit,hybrid_jev,CVE-2016-3427,True,True,,695.017,unknown,unknown,1,fresh_clean_rerun
+Q-0120,CVE-2016-3427,easy,oracle jrockit,jev_retrieval,CVE-2016-3427,True,True,,2869.930,unknown,unknown,1,fresh_clean_rerun
+Q-0121,CVE-2016-3714,medium,imagemagick imagemagick,llm_only,CVE-2022-44268,True,False,,1109.464,126,141,0,fresh_clean_rerun
+Q-0121,CVE-2016-3714,medium,imagemagick imagemagick,vector_rag,CVE-2016-3714,True,True,,2994.208,700,40,0,fresh_clean_rerun
+Q-0121,CVE-2016-3714,medium,imagemagick imagemagick,hybrid_rag,CVE-2016-3714,True,True,,1866.508,917,53,0,fresh_clean_rerun
+Q-0121,CVE-2016-3714,medium,imagemagick imagemagick,hybrid_jev,CVE-2016-3714,True,True,,1000.981,unknown,unknown,1,fresh_clean_rerun
+Q-0121,CVE-2016-3714,medium,imagemagick imagemagick,jev_retrieval,CVE-2016-3714,True,True,,2049.563,unknown,unknown,1,fresh_clean_rerun
+Q-0122,CVE-2016-3715,easy,imagemagick imagemagick,llm_only,CVE-2016-3714,True,False,,1206.148,124,94,0,fresh_clean_rerun
+Q-0122,CVE-2016-3715,easy,imagemagick imagemagick,vector_rag,CVE-2016-3715,True,True,,3139.734,794,88,0,fresh_clean_rerun
+Q-0122,CVE-2016-3715,easy,imagemagick imagemagick,hybrid_rag,CVE-2016-3715,True,True,,1886.220,725,46,0,fresh_clean_rerun
+Q-0122,CVE-2016-3715,easy,imagemagick imagemagick,hybrid_jev,CVE-2016-3715,True,True,,1118.721,unknown,unknown,1,fresh_clean_rerun
+Q-0122,CVE-2016-3715,easy,imagemagick imagemagick,jev_retrieval,CVE-2016-3715,True,True,,1512.541,unknown,unknown,1,fresh_clean_rerun
+Q-0124,CVE-2016-4171,medium,adobe flash player,llm_only,CVE-2020-12445,True,False,,1721.861,119,119,0,fresh_clean_rerun
+Q-0124,CVE-2016-4171,medium,adobe flash player,vector_rag,CVE-2016-4171,True,True,,2374.572,716,45,0,fresh_clean_rerun
+Q-0124,CVE-2016-4171,medium,adobe flash player,hybrid_rag,CVE-2016-4171,True,True,,3086.915,716,48,0,fresh_clean_rerun
+Q-0124,CVE-2016-4171,medium,adobe flash player,hybrid_jev,CVE-2016-4171,True,True,,2017.904,unknown,unknown,1,fresh_clean_rerun
+Q-0124,CVE-2016-4171,medium,adobe flash player,jev_retrieval,CVE-2016-4171,True,True,,1328.765,unknown,unknown,1,fresh_clean_rerun
+Q-0125,CVE-2016-4437,easy,apache shiro,llm_only,CVE-2016-4437,True,True,,1214.797,120,178,0,fresh_clean_rerun
+Q-0125,CVE-2016-4437,easy,apache shiro,vector_rag,CVE-2016-4437,True,True,,3403.924,1149,49,0,fresh_clean_rerun
+Q-0125,CVE-2016-4437,easy,apache shiro,hybrid_rag,CVE-2016-4437,True,True,,1559.803,756,58,0,fresh_clean_rerun
+Q-0125,CVE-2016-4437,easy,apache shiro,hybrid_jev,CVE-2016-4437,True,True,,1436.203,unknown,unknown,1,fresh_clean_rerun
+Q-0125,CVE-2016-4437,easy,apache shiro,jev_retrieval,CVE-2016-4437,True,True,,1826.360,unknown,unknown,1,fresh_clean_rerun
+Q-0126,CVE-2016-4523,easy,trihedral vtscada,llm_only,CVE-2020-11545,True,False,,1586.116,120,104,0,fresh_clean_rerun
+Q-0126,CVE-2016-4523,easy,trihedral vtscada,vector_rag,CVE-2016-4523,True,True,,2136.992,1270,30,0,fresh_clean_rerun
+Q-0126,CVE-2016-4523,easy,trihedral vtscada,hybrid_rag,CVE-2016-4523,True,True,,2818.726,1096,46,0,fresh_clean_rerun
+Q-0126,CVE-2016-4523,easy,trihedral vtscada,hybrid_jev,CVE-2016-4523,True,True,,754.077,unknown,unknown,1,fresh_clean_rerun
+Q-0126,CVE-2016-4523,easy,trihedral vtscada,jev_retrieval,CVE-2016-4523,True,True,,1083.661,unknown,unknown,1,fresh_clean_rerun
+Q-0129,CVE-2016-4977,hard,pivotal spring security oauth,llm_only,CVE-2022-22968,True,False,,2089.124,121,123,0,fresh_clean_rerun
+Q-0129,CVE-2016-4977,hard,pivotal spring security oauth,vector_rag,CVE-2016-4977,True,True,,6109.330,878,30,0,fresh_clean_rerun
+Q-0129,CVE-2016-4977,hard,pivotal spring security oauth,hybrid_rag,CVE-2016-4977,True,True,,1838.431,850,35,0,fresh_clean_rerun
+Q-0129,CVE-2016-4977,hard,pivotal spring security oauth,hybrid_jev,CVE-2016-4977,True,True,,935.340,unknown,unknown,1,fresh_clean_rerun
+Q-0129,CVE-2016-4977,hard,pivotal spring security oauth,jev_retrieval,CVE-2016-4977,True,True,,1215.292,unknown,unknown,1,fresh_clean_rerun
+Q-0131,CVE-2016-5385,medium,php php,llm_only,CVE-2016-5766,True,False,,1123.296,119,157,0,fresh_clean_rerun
+Q-0131,CVE-2016-5385,medium,php php,vector_rag,CVE-2019-11043,True,False,,5436.540,1013,51,0,fresh_clean_rerun
+Q-0131,CVE-2016-5385,medium,php php,hybrid_rag,CVE-2026-109619,True,False,,2236.395,1005,132,0,fresh_clean_rerun
+Q-0131,CVE-2016-5385,medium,php php,hybrid_jev,,False,False,,799.199,unknown,unknown,1,fresh_clean_rerun
+Q-0131,CVE-2016-5385,medium,php php,jev_retrieval,CVE-2017-9841,True,False,,805.486,unknown,unknown,1,fresh_clean_rerun
+Q-0132,CVE-2016-5386,easy,golang go,llm_only,CVE-2020-29509,True,False,,2396.682,117,95,0,fresh_clean_rerun
+Q-0132,CVE-2016-5386,easy,golang go,vector_rag,CVE-2016-5386,True,True,,1925.969,849,37,0,fresh_clean_rerun
+Q-0132,CVE-2016-5386,easy,golang go,hybrid_rag,CVE-2016-5386,True,True,,2577.480,864,47,0,fresh_clean_rerun
+Q-0132,CVE-2016-5386,easy,golang go,hybrid_jev,CVE-2016-5386,True,True,,681.401,unknown,unknown,1,fresh_clean_rerun
+Q-0132,CVE-2016-5386,easy,golang go,jev_retrieval,CVE-2016-5386,True,True,,818.572,unknown,unknown,1,fresh_clean_rerun
+Q-0133,CVE-2016-5387,medium,apache http server,llm_only,CVE-2021-41773,True,False,,976.292,116,63,0,fresh_clean_rerun
+Q-0133,CVE-2016-5387,medium,apache http server,vector_rag,CVE-2016-5387,True,True,,2619.714,1029,67,0,fresh_clean_rerun
+Q-0133,CVE-2016-5387,medium,apache http server,hybrid_rag,CVE-2016-5387,True,True,,3679.649,949,50,0,fresh_clean_rerun
+Q-0133,CVE-2016-5387,medium,apache http server,hybrid_jev,CVE-2016-5387,True,True,,858.364,unknown,unknown,1,fresh_clean_rerun
+Q-0133,CVE-2016-5387,medium,apache http server,jev_retrieval,CVE-2016-5387,True,True,,819.655,unknown,unknown,1,fresh_clean_rerun
+Q-0134,CVE-2016-5388,easy,apache tomcat,llm_only,CVE-2020-9484,True,False,,875.559,117,82,0,fresh_clean_rerun
+Q-0134,CVE-2016-5388,easy,apache tomcat,vector_rag,CVE-2016-5388,True,True,,2402.250,1002,56,0,fresh_clean_rerun
+Q-0134,CVE-2016-5388,easy,apache tomcat,hybrid_rag,CVE-2016-5388,True,True,,4477.294,969,44,0,fresh_clean_rerun
+Q-0134,CVE-2016-5388,easy,apache tomcat,hybrid_jev,CVE-2016-5388,True,True,,809.077,unknown,unknown,1,fresh_clean_rerun
+Q-0134,CVE-2016-5388,easy,apache tomcat,jev_retrieval,CVE-2026-29146,True,False,,936.244,unknown,unknown,1,fresh_clean_rerun
+Q-0135,CVE-2016-5734,hard,phpmyadmin phpmyadmin,llm_only,CVE-2015-3306,True,False,,650.759,124,79,0,fresh_clean_rerun
+Q-0135,CVE-2016-5734,hard,phpmyadmin phpmyadmin,vector_rag,CVE-2016-5734,True,True,,3369.039,964,75,0,fresh_clean_rerun
+Q-0135,CVE-2016-5734,hard,phpmyadmin phpmyadmin,hybrid_rag,CVE-2016-5734,True,True,,2835.275,1018,76,0,fresh_clean_rerun
+Q-0135,CVE-2016-5734,hard,phpmyadmin phpmyadmin,hybrid_jev,CVE-2016-5734,True,True,,1479.155,unknown,unknown,1,fresh_clean_rerun
+Q-0135,CVE-2016-5734,hard,phpmyadmin phpmyadmin,jev_retrieval,CVE-2016-5734,True,True,,1166.565,unknown,unknown,1,fresh_clean_rerun
+Q-0138,CVE-2016-6287,medium,call-cc http-client,llm_only,CVE-2022-22965,True,False,,1078.004,119,69,0,fresh_clean_rerun
+Q-0138,CVE-2016-6287,medium,call-cc http-client,vector_rag,CVE-2021-31166,True,False,,2388.564,913,55,0,fresh_clean_rerun
+Q-0138,CVE-2016-6287,medium,call-cc http-client,hybrid_rag,CVE-2016-6287,True,True,,3715.381,861,39,0,fresh_clean_rerun
+Q-0138,CVE-2016-6287,medium,call-cc http-client,hybrid_jev,CVE-2016-6287,True,True,,779.001,unknown,unknown,1,fresh_clean_rerun
+Q-0138,CVE-2016-6287,medium,call-cc http-client,jev_retrieval,CVE-2016-6287,True,True,,1116.837,unknown,unknown,1,fresh_clean_rerun
+Q-0141,CVE-2016-7200,easy,microsoft edge,llm_only,CVE-2020-1380,True,False,,1265.727,113,158,0,fresh_clean_rerun
+Q-0141,CVE-2016-7200,easy,microsoft edge,vector_rag,CVE-2016-7200,True,True,,2397.690,763,46,0,fresh_clean_rerun
+Q-0141,CVE-2016-7200,easy,microsoft edge,hybrid_rag,CVE-2016-7200,True,True,,17546.749,763,42,0,fresh_clean_rerun
+Q-0141,CVE-2016-7200,easy,microsoft edge,hybrid_jev,CVE-2016-7200,True,True,,802.632,unknown,unknown,1,fresh_clean_rerun
+Q-0141,CVE-2016-7200,easy,microsoft edge,jev_retrieval,CVE-2016-7200,True,True,,1097.276,unknown,unknown,1,fresh_clean_rerun
+Q-0144,CVE-2016-7836,easy,skygroup skysea client view,llm_only,CVE-2020-10200,True,False,,1030.473,121,96,0,fresh_clean_rerun
+Q-0144,CVE-2016-7836,easy,skygroup skysea client view,vector_rag,CVE-2016-7836,True,True,,2137.178,782,46,0,fresh_clean_rerun
+Q-0144,CVE-2016-7836,easy,skygroup skysea client view,hybrid_rag,CVE-2016-7836,True,True,,3012.307,772,40,0,fresh_clean_rerun
+Q-0144,CVE-2016-7836,easy,skygroup skysea client view,hybrid_jev,CVE-2016-7836,True,True,,612.371,unknown,unknown,1,fresh_clean_rerun
+Q-0144,CVE-2016-7836,easy,skygroup skysea client view,jev_retrieval,CVE-2016-7836,True,True,,956.376,unknown,unknown,1,fresh_clean_rerun
+Q-0145,CVE-2016-7892,easy,adobe flash player,llm_only,CVE-2016-7912,True,False,,1003.932,118,82,0,fresh_clean_rerun
+Q-0145,CVE-2016-7892,easy,adobe flash player,vector_rag,CVE-2016-7892,True,True,,3480.403,715,40,0,fresh_clean_rerun
+Q-0145,CVE-2016-7892,easy,adobe flash player,hybrid_rag,CVE-2016-7892,True,True,,1600.658,715,39,0,fresh_clean_rerun
+Q-0145,CVE-2016-7892,easy,adobe flash player,hybrid_jev,CVE-2016-7892,True,True,,631.662,unknown,unknown,1,fresh_clean_rerun
+Q-0145,CVE-2016-7892,easy,adobe flash player,jev_retrieval,CVE-2016-7892,True,True,,797.554,unknown,unknown,1,fresh_clean_rerun
+Q-0146,CVE-2016-8735,easy,apache tomcat,llm_only,CVE-2020-9484,True,False,,818.714,117,51,0,fresh_clean_rerun
+Q-0146,CVE-2016-8735,easy,apache tomcat,vector_rag,CVE-2016-8735,True,True,,3340.440,889,42,0,fresh_clean_rerun
+Q-0146,CVE-2016-8735,easy,apache tomcat,hybrid_rag,CVE-2016-8735,True,True,,4327.476,991,41,0,fresh_clean_rerun
+Q-0146,CVE-2016-8735,easy,apache tomcat,hybrid_jev,CVE-2016-8735,True,True,,800.498,unknown,unknown,1,fresh_clean_rerun
+Q-0146,CVE-2016-8735,easy,apache tomcat,jev_retrieval,CVE-2016-8735,True,True,,801.049,unknown,unknown,1,fresh_clean_rerun
+Q-0147,CVE-2016-9086,easy,gitlab gitlab,llm_only,CVE-2016-9085,True,False,,955.719,121,57,0,fresh_clean_rerun
+Q-0147,CVE-2016-9086,easy,gitlab gitlab,vector_rag,CVE-2016-9086,True,True,,4489.592,1016,42,0,fresh_clean_rerun
+Q-0147,CVE-2016-9086,easy,gitlab gitlab,hybrid_rag,CVE-2016-9086,True,True,,5448.258,943,41,0,fresh_clean_rerun
+Q-0147,CVE-2016-9086,easy,gitlab gitlab,hybrid_jev,CVE-2016-9086,True,True,,1189.669,unknown,unknown,1,fresh_clean_rerun
+Q-0147,CVE-2016-9086,easy,gitlab gitlab,jev_retrieval,CVE-2016-9086,True,True,,989.936,unknown,unknown,1,fresh_clean_rerun
+Q-0158,CVE-2017-0149,easy,microsoft internet explorer,llm_only,CVE-2015-2426,True,False,,2463.282,118,95,0,fresh_clean_rerun
+Q-0158,CVE-2017-0149,easy,microsoft internet explorer,vector_rag,CVE-2017-0149,True,True,,2334.370,637,55,0,fresh_clean_rerun
+Q-0158,CVE-2017-0149,easy,microsoft internet explorer,hybrid_rag,CVE-2017-0149,True,True,,1475.374,637,51,0,fresh_clean_rerun
+Q-0158,CVE-2017-0149,easy,microsoft internet explorer,hybrid_jev,CVE-2017-0149,True,True,,1267.609,unknown,unknown,1,fresh_clean_rerun
+Q-0158,CVE-2017-0149,easy,microsoft internet explorer,jev_retrieval,CVE-2017-0149,True,True,,977.514,unknown,unknown,1,fresh_clean_rerun
+Q-0159,CVE-2017-0210,easy,microsoft internet explorer,llm_only,CVE-2016-3298,True,False,,1077.716,114,132,0,fresh_clean_rerun
+Q-0159,CVE-2017-0210,easy,microsoft internet explorer,vector_rag,CVE-2017-0210,True,True,,3459.656,585,30,0,fresh_clean_rerun
+Q-0159,CVE-2017-0210,easy,microsoft internet explorer,hybrid_rag,CVE-2017-0210,True,True,,1853.623,585,37,0,fresh_clean_rerun
+Q-0159,CVE-2017-0210,easy,microsoft internet explorer,hybrid_jev,CVE-2017-0210,True,True,,799.308,unknown,unknown,1,fresh_clean_rerun
+Q-0159,CVE-2017-0210,easy,microsoft internet explorer,jev_retrieval,CVE-2017-0210,True,True,,958.786,unknown,unknown,1,fresh_clean_rerun
+Q-0161,CVE-2017-0261,easy,microsoft office,llm_only,CVE-2015-1640,True,False,,1469.226,121,92,0,fresh_clean_rerun
+Q-0161,CVE-2017-0261,easy,microsoft office,vector_rag,CVE-2017-11882,True,False,,2050.274,630,56,0,fresh_clean_rerun
+Q-0161,CVE-2017-0261,easy,microsoft office,hybrid_rag,CVE-2017-11882,True,False,,2407.993,716,47,0,fresh_clean_rerun
+Q-0161,CVE-2017-0261,easy,microsoft office,hybrid_jev,,False,False,,951.638,unknown,unknown,1,fresh_clean_rerun
+Q-0161,CVE-2017-0261,easy,microsoft office,jev_retrieval,CVE-2017-0261,True,True,,968.743,unknown,unknown,1,fresh_clean_rerun
+Q-0163,CVE-2017-1000028,medium,oracle glassfish server,llm_only,CVE-2022-23169,True,False,,1267.318,117,86,0,fresh_clean_rerun
+Q-0163,CVE-2017-1000028,medium,oracle glassfish server,vector_rag,CVE-2017-1000028,True,True,,2079.538,791,63,0,fresh_clean_rerun
+Q-0163,CVE-2017-1000028,medium,oracle glassfish server,hybrid_rag,CVE-2017-1000028,True,True,,2559.403,929,56,0,fresh_clean_rerun
+Q-0163,CVE-2017-1000028,medium,oracle glassfish server,hybrid_jev,CVE-2017-1000028,True,True,,798.933,unknown,unknown,1,fresh_clean_rerun
+Q-0163,CVE-2017-1000028,medium,oracle glassfish server,jev_retrieval,CVE-2017-1000028,True,True,,960.088,unknown,unknown,1,fresh_clean_rerun
+Q-0164,CVE-2017-1000353,easy,jenkins jenkins,llm_only,CVE-2021-21664,True,False,,1615.351,120,102,0,fresh_clean_rerun
+Q-0164,CVE-2017-1000353,easy,jenkins jenkins,vector_rag,CVE-2017-1000353,True,True,,1901.899,647,51,0,fresh_clean_rerun
+Q-0164,CVE-2017-1000353,easy,jenkins jenkins,hybrid_rag,CVE-2017-1000353,True,True,,2720.325,872,36,0,fresh_clean_rerun
+Q-0164,CVE-2017-1000353,easy,jenkins jenkins,hybrid_jev,CVE-2017-1000353,True,True,,797.863,unknown,unknown,1,fresh_clean_rerun
+Q-0164,CVE-2017-1000353,easy,jenkins jenkins,jev_retrieval,CVE-2017-1000353,True,True,,809.284,unknown,unknown,1,fresh_clean_rerun
+Q-0165,CVE-2017-10271,medium,oracle weblogic server,llm_only,CVE-2020-14882,True,False,,983.958,121,49,0,fresh_clean_rerun
+Q-0165,CVE-2017-10271,medium,oracle weblogic server,vector_rag,CVE-2019-2725,True,False,,2847.009,955,65,0,fresh_clean_rerun
+Q-0165,CVE-2017-10271,medium,oracle weblogic server,hybrid_rag,CVE-2020-14882,True,False,,2079.073,974,48,0,fresh_clean_rerun
+Q-0165,CVE-2017-10271,medium,oracle weblogic server,hybrid_jev,,False,False,,798.812,unknown,unknown,1,fresh_clean_rerun
+Q-0165,CVE-2017-10271,medium,oracle weblogic server,jev_retrieval,CVE-2019-2725,True,False,,798.669,unknown,unknown,1,fresh_clean_rerun
+Q-0167,CVE-2017-11610,easy,supervisord supervisor,llm_only,CVE-2019-12484,True,False,,1120.329,118,108,0,fresh_clean_rerun
+Q-0167,CVE-2017-11610,easy,supervisord supervisor,vector_rag,CVE-2017-11610,True,True,,2398.971,603,63,0,fresh_clean_rerun
+Q-0167,CVE-2017-11610,easy,supervisord supervisor,hybrid_rag,CVE-2017-11610,True,True,,3087.420,882,32,0,fresh_clean_rerun
+Q-0167,CVE-2017-11610,easy,supervisord supervisor,hybrid_jev,CVE-2017-11610,True,True,,917.401,unknown,unknown,1,fresh_clean_rerun
+Q-0167,CVE-2017-11610,easy,supervisord supervisor,jev_retrieval,CVE-2017-11610,True,True,,952.972,unknown,unknown,1,fresh_clean_rerun
+Q-0168,CVE-2017-11774,medium,microsoft outlook,llm_only,CVE-2010-3333,True,False,,1279.582,119,72,0,fresh_clean_rerun
+Q-0168,CVE-2017-11774,medium,microsoft outlook,vector_rag,CVE-2017-11774,True,True,,2186.172,586,48,0,fresh_clean_rerun
+Q-0168,CVE-2017-11774,medium,microsoft outlook,hybrid_rag,CVE-2017-11774,True,True,,2612.458,586,41,0,fresh_clean_rerun
+Q-0168,CVE-2017-11774,medium,microsoft outlook,hybrid_jev,CVE-2017-11774,True,True,,647.212,unknown,unknown,1,fresh_clean_rerun
+Q-0168,CVE-2017-11774,medium,microsoft outlook,jev_retrieval,CVE-2017-11774,True,True,,952.294,unknown,unknown,1,fresh_clean_rerun
+Q-0169,CVE-2017-11882,easy,microsoft office,llm_only,CVE-2010-3335,True,False,,958.731,118,46,0,fresh_clean_rerun
+Q-0169,CVE-2017-11882,easy,microsoft office,vector_rag,CVE-2017-11882,True,True,,2557.812,764,40,0,fresh_clean_rerun
+Q-0169,CVE-2017-11882,easy,microsoft office,hybrid_rag,CVE-2017-11882,True,True,,2952.501,802,57,0,fresh_clean_rerun
+Q-0169,CVE-2017-11882,easy,microsoft office,hybrid_jev,CVE-2017-11882,True,True,,944.279,unknown,unknown,1,fresh_clean_rerun
+Q-0169,CVE-2017-11882,easy,microsoft office,jev_retrieval,CVE-2017-11882,True,True,,1883.516,unknown,unknown,1,fresh_clean_rerun
+Q-0176,CVE-2017-12611,medium,apache struts,llm_only,CVE-2017-5638,True,False,,903.980,124,45,0,fresh_clean_rerun
+Q-0176,CVE-2017-12611,medium,apache struts,vector_rag,CVE-2017-12611,True,True,,2600.332,786,57,0,fresh_clean_rerun
+Q-0176,CVE-2017-12611,medium,apache struts,hybrid_rag,CVE-2020-17530,True,False,,5117.403,670,64,0,fresh_clean_rerun
+Q-0176,CVE-2017-12611,medium,apache struts,hybrid_jev,,False,False,,646.969,unknown,unknown,1,fresh_clean_rerun
+Q-0176,CVE-2017-12611,medium,apache struts,jev_retrieval,CVE-2024-53677,True,False,,785.231,unknown,unknown,1,fresh_clean_rerun
+Q-0177,CVE-2017-12615,easy,apache tomcat,llm_only,CVE-2020-11996,True,False,,1122.056,117,88,0,fresh_clean_rerun
+Q-0177,CVE-2017-12615,easy,apache tomcat,vector_rag,CVE-2017-12615,True,True,,2238.527,1186,69,0,fresh_clean_rerun
+Q-0177,CVE-2017-12615,easy,apache tomcat,hybrid_rag,CVE-2017-12615,True,True,,2883.999,1186,44,0,fresh_clean_rerun
+Q-0177,CVE-2017-12615,easy,apache tomcat,hybrid_jev,CVE-2017-12615,True,True,,960.148,unknown,unknown,1,fresh_clean_rerun
+Q-0177,CVE-2017-12615,easy,apache tomcat,jev_retrieval,CVE-2017-12615,True,True,,945.319,unknown,unknown,1,fresh_clean_rerun
+Q-0178,CVE-2017-12629,hard,apache solr,llm_only,CVE-2021-27905,True,False,,1292.262,117,102,0,fresh_clean_rerun
+Q-0178,CVE-2017-12629,hard,apache solr,vector_rag,CVE-2017-12629,True,True,,2555.397,891,54,0,fresh_clean_rerun
+Q-0178,CVE-2017-12629,hard,apache solr,hybrid_rag,CVE-2017-12629,True,True,,2879.167,857,40,0,fresh_clean_rerun
+Q-0178,CVE-2017-12629,hard,apache solr,hybrid_jev,CVE-2017-12629,True,True,,957.170,unknown,unknown,1,fresh_clean_rerun
+Q-0178,CVE-2017-12629,hard,apache solr,jev_retrieval,CVE-2017-12629,True,True,,2243.023,unknown,unknown,1,fresh_clean_rerun
+Q-0179,CVE-2017-12635,easy,apache couchdb,llm_only,CVE-2015-5254,True,False,,957.967,119,53,0,fresh_clean_rerun
+Q-0179,CVE-2017-12635,easy,apache couchdb,vector_rag,CVE-2017-12635,True,True,,2557.944,882,45,0,fresh_clean_rerun
+Q-0179,CVE-2017-12635,easy,apache couchdb,hybrid_rag,CVE-2017-12635,True,True,,2880.131,1023,40,0,fresh_clean_rerun
+Q-0179,CVE-2017-12635,easy,apache couchdb,hybrid_jev,CVE-2017-12635,True,True,,686.842,unknown,unknown,1,fresh_clean_rerun
+Q-0179,CVE-2017-12635,easy,apache couchdb,jev_retrieval,CVE-2017-12635,True,True,,916.703,unknown,unknown,1,fresh_clean_rerun
+Q-0180,CVE-2017-12636,hard,apache couchdb,llm_only,CVE-2017-12635,True,False,,960.452,118,55,0,fresh_clean_rerun
+Q-0180,CVE-2017-12636,hard,apache couchdb,vector_rag,CVE-2017-12635,True,False,,2557.632,905,71,0,fresh_clean_rerun
+Q-0180,CVE-2017-12636,hard,apache couchdb,hybrid_rag,CVE-2017-12635,True,False,,2714.932,905,36,0,fresh_clean_rerun
+Q-0180,CVE-2017-12636,hard,apache couchdb,hybrid_jev,,False,False,,1623.421,unknown,unknown,1,fresh_clean_rerun
+Q-0180,CVE-2017-12636,hard,apache couchdb,jev_retrieval,CVE-2017-12636,True,True,,1179.085,unknown,unknown,1,fresh_clean_rerun
+Q-0181,CVE-2017-12794,medium,djangoproject django,llm_only,CVE-2020-9402,True,False,,1046.811,119,64,0,fresh_clean_rerun
+Q-0181,CVE-2017-12794,medium,djangoproject django,vector_rag,CVE-2017-12794,True,True,,3487.701,884,49,0,fresh_clean_rerun
+Q-0181,CVE-2017-12794,medium,djangoproject django,hybrid_rag,CVE-2017-12794,True,True,,1623.801,752,43,0,fresh_clean_rerun
+Q-0181,CVE-2017-12794,medium,djangoproject django,hybrid_jev,CVE-2017-12794,True,True,,683.237,unknown,unknown,1,fresh_clean_rerun
+Q-0181,CVE-2017-12794,medium,djangoproject django,jev_retrieval,CVE-2017-12794,True,True,,2835.762,unknown,unknown,1,fresh_clean_rerun
+Q-0182,CVE-2017-14849,medium,nodejs node.js,llm_only,CVE-2017-16137,True,False,,1011.216,119,94,0,fresh_clean_rerun
+Q-0182,CVE-2017-14849,medium,nodejs node.js,vector_rag,CVE-2017-14849,True,True,,2527.661,811,40,0,fresh_clean_rerun
+Q-0182,CVE-2017-14849,medium,nodejs node.js,hybrid_rag,CVE-2017-14849,True,True,,2856.078,890,45,0,fresh_clean_rerun
+Q-0182,CVE-2017-14849,medium,nodejs node.js,hybrid_jev,CVE-2017-14849,True,True,,964.202,unknown,unknown,1,fresh_clean_rerun
+Q-0182,CVE-2017-14849,medium,nodejs node.js,jev_retrieval,CVE-2017-14849,True,True,,956.511,unknown,unknown,1,fresh_clean_rerun
+Q-0185,CVE-2017-16082,easy,node-postgres pg,llm_only,CVE-2022-24765,True,False,,2554.468,117,100,0,fresh_clean_rerun
+Q-0185,CVE-2017-16082,easy,node-postgres pg,vector_rag,CVE-2017-16082,True,True,,763.705,742,38,0,fresh_clean_rerun
+Q-0185,CVE-2017-16082,easy,node-postgres pg,hybrid_rag,CVE-2017-16082,True,True,,2916.473,755,40,0,fresh_clean_rerun
+Q-0185,CVE-2017-16082,easy,node-postgres pg,hybrid_jev,CVE-2017-16082,True,True,,969.931,unknown,unknown,1,fresh_clean_rerun
+Q-0185,CVE-2017-16082,easy,node-postgres pg,jev_retrieval,CVE-2017-16082,True,True,,1273.044,unknown,unknown,1,fresh_clean_rerun
+Q-0186,CVE-2017-16651,hard,roundcube webmail,llm_only,CVE-2012-5588,True,False,,1032.002,122,137,0,fresh_clean_rerun
+Q-0186,CVE-2017-16651,hard,roundcube webmail,vector_rag,CVE-2017-16651,True,True,,2733.119,798,72,0,fresh_clean_rerun
+Q-0186,CVE-2017-16651,hard,roundcube webmail,hybrid_rag,CVE-2017-16651,True,True,,4708.352,759,70,0,fresh_clean_rerun
+Q-0186,CVE-2017-16651,hard,roundcube webmail,hybrid_jev,CVE-2017-16651,True,True,,799.685,unknown,unknown,1,fresh_clean_rerun
+Q-0186,CVE-2017-16651,hard,roundcube webmail,jev_retrieval,CVE-2017-16651,True,True,,959.666,unknown,unknown,1,fresh_clean_rerun
+Q-0187,CVE-2017-17405,easy,ruby-lang ruby,llm_only,CVE-2023-28840,True,False,,1325.944,116,123,0,fresh_clean_rerun
+Q-0187,CVE-2017-17405,easy,ruby-lang ruby,vector_rag,CVE-2017-17405,True,True,,2198.564,627,42,0,fresh_clean_rerun
+Q-0187,CVE-2017-17405,easy,ruby-lang ruby,hybrid_rag,CVE-2017-17405,True,True,,2552.312,1061,55,0,fresh_clean_rerun
+Q-0187,CVE-2017-17405,easy,ruby-lang ruby,hybrid_jev,CVE-2017-17405,True,True,,675.434,unknown,unknown,1,fresh_clean_rerun
+Q-0187,CVE-2017-17405,easy,ruby-lang ruby,jev_retrieval,CVE-2017-17405,True,True,,912.663,unknown,unknown,1,fresh_clean_rerun
+Q-0188,CVE-2017-17485,easy,fasterxml jackson-databind,llm_only,CVE-2017-7525,True,False,,1301.703,127,106,0,fresh_clean_rerun
+Q-0188,CVE-2017-17485,easy,fasterxml jackson-databind,vector_rag,CVE-2017-17485,True,True,,2213.092,908,43,0,fresh_clean_rerun
+Q-0188,CVE-2017-17485,easy,fasterxml jackson-databind,hybrid_rag,CVE-2017-17485,True,True,,2764.696,995,54,0,fresh_clean_rerun
+Q-0188,CVE-2017-17485,easy,fasterxml jackson-databind,hybrid_jev,CVE-2017-17485,True,True,,640.552,unknown,unknown,1,fresh_clean_rerun
+Q-0188,CVE-2017-17485,easy,fasterxml jackson-databind,jev_retrieval,CVE-2017-17485,True,True,,1248.061,unknown,unknown,1,fresh_clean_rerun
+Q-0189,CVE-2017-17562,easy,embedthis goahead,llm_only,CVE-2018-11523,True,False,,956.896,120,113,0,fresh_clean_rerun
+Q-0189,CVE-2017-17562,easy,embedthis goahead,vector_rag,CVE-2017-17562,True,True,,2781.871,769,45,0,fresh_clean_rerun
+Q-0189,CVE-2017-17562,easy,embedthis goahead,hybrid_rag,CVE-2017-17562,True,True,,2034.164,809,60,0,fresh_clean_rerun
+Q-0189,CVE-2017-17562,easy,embedthis goahead,hybrid_jev,CVE-2017-17562,True,True,,853.682,unknown,unknown,1,fresh_clean_rerun
+Q-0189,CVE-2017-17562,easy,embedthis goahead,jev_retrieval,CVE-2017-17562,True,True,,1800.029,unknown,unknown,1,fresh_clean_rerun
+Q-0191,CVE-2017-18362,hard,connectwise manageditsync,llm_only,CVE-2023-29446,True,False,,1142.665,118,97,0,fresh_clean_rerun
+Q-0191,CVE-2017-18362,hard,connectwise manageditsync,vector_rag,CVE-2017-18362,True,True,,2411.608,999,39,0,fresh_clean_rerun
+Q-0191,CVE-2017-18362,hard,connectwise manageditsync,hybrid_rag,CVE-2017-18362,True,True,,2572.949,720,30,0,fresh_clean_rerun
+Q-0191,CVE-2017-18362,hard,connectwise manageditsync,hybrid_jev,CVE-2017-18362,True,True,,963.355,unknown,unknown,1,fresh_clean_rerun
+Q-0191,CVE-2017-18362,hard,connectwise manageditsync,jev_retrieval,CVE-2017-18362,True,True,,746.679,unknown,unknown,1,fresh_clean_rerun
+Q-0192,CVE-2017-2824,easy,zabbix zabbix,llm_only,CVE-2022-23131,True,False,,1519.257,117,59,0,fresh_clean_rerun
+Q-0192,CVE-2017-2824,easy,zabbix zabbix,vector_rag,CVE-2017-2824,True,True,,1888.443,621,49,0,fresh_clean_rerun
+Q-0192,CVE-2017-2824,easy,zabbix zabbix,hybrid_rag,CVE-2017-2824,True,True,,2558.336,671,49,0,fresh_clean_rerun
+Q-0192,CVE-2017-2824,easy,zabbix zabbix,hybrid_jev,CVE-2017-2824,True,True,,659.166,unknown,unknown,1,fresh_clean_rerun
+Q-0192,CVE-2017-2824,easy,zabbix zabbix,jev_retrieval,CVE-2017-2824,True,True,,939.689,unknown,unknown,1,fresh_clean_rerun
+Q-0193,CVE-2017-3066,medium,adobe coldfusion,llm_only,CVE-2020-8192,True,False,,988.549,124,94,0,fresh_clean_rerun
+Q-0193,CVE-2017-3066,medium,adobe coldfusion,vector_rag,CVE-2017-3066,True,True,,2386.961,769,41,0,fresh_clean_rerun
+Q-0193,CVE-2017-3066,medium,adobe coldfusion,hybrid_rag,CVE-2017-3066,True,True,,2548.105,702,41,0,fresh_clean_rerun
+Q-0193,CVE-2017-3066,medium,adobe coldfusion,hybrid_jev,CVE-2017-3066,True,True,,803.135,unknown,unknown,1,fresh_clean_rerun
+Q-0193,CVE-2017-3066,medium,adobe coldfusion,jev_retrieval,CVE-2017-3066,True,True,,786.157,unknown,unknown,1,fresh_clean_rerun
+Q-0194,CVE-2017-3506,hard,oracle weblogic server,llm_only,CVE-2020-14882,True,False,,959.646,121,43,0,fresh_clean_rerun
+Q-0194,CVE-2017-3506,hard,oracle weblogic server,vector_rag,CVE-2017-3506,True,True,,2719.832,903,47,0,fresh_clean_rerun
+Q-0194,CVE-2017-3506,hard,oracle weblogic server,hybrid_rag,CVE-2017-3506,True,True,,2238.555,1143,74,0,fresh_clean_rerun
+Q-0194,CVE-2017-3506,hard,oracle weblogic server,hybrid_jev,CVE-2017-3506,True,True,,639.341,unknown,unknown,1,fresh_clean_rerun
+Q-0194,CVE-2017-3506,hard,oracle weblogic server,jev_retrieval,CVE-2017-3506,True,True,,966.560,unknown,unknown,1,fresh_clean_rerun
+Q-0195,CVE-2017-4971,easy,broadcom spring web flow,llm_only,CVE-2022-22965,True,False,,1036.652,117,138,0,fresh_clean_rerun
+Q-0195,CVE-2017-4971,easy,broadcom spring web flow,vector_rag,CVE-2017-4971,True,True,,2476.694,956,45,0,fresh_clean_rerun
+Q-0195,CVE-2017-4971,easy,broadcom spring web flow,hybrid_rag,CVE-2017-4971,True,True,,5286.000,901,91,0,fresh_clean_rerun
+Q-0195,CVE-2017-4971,easy,broadcom spring web flow,hybrid_jev,CVE-2017-4971,True,True,,791.136,unknown,unknown,1,fresh_clean_rerun
+Q-0195,CVE-2017-4971,easy,broadcom spring web flow,jev_retrieval,CVE-2017-4971,True,True,,799.312,unknown,unknown,1,fresh_clean_rerun
+Q-0196,CVE-2017-5070,medium,google chrome,llm_only,CVE-2023-4863,True,False,,851.077,117,90,0,fresh_clean_rerun
+Q-0196,CVE-2017-5070,medium,google chrome,vector_rag,CVE-2017-5070,True,True,,2598.776,629,55,0,fresh_clean_rerun
+Q-0196,CVE-2017-5070,medium,google chrome,hybrid_rag,CVE-2026-85046,True,False,,2559.776,585,37,0,fresh_clean_rerun
+Q-0196,CVE-2017-5070,medium,google chrome,hybrid_jev,CVE-2026-85046,True,False,,640.394,unknown,unknown,1,fresh_clean_rerun
+Q-0196,CVE-2017-5070,medium,google chrome,jev_retrieval,CVE-2026-85046,True,False,,726.610,unknown,unknown,1,fresh_clean_rerun
+Q-0197,CVE-2017-5223,easy,phpmailer project phpmailer,llm_only,CVE-2016-10033,True,False,,1586.164,122,63,0,fresh_clean_rerun
+Q-0197,CVE-2017-5223,easy,phpmailer project phpmailer,vector_rag,CVE-2017-5223,True,True,,2591.848,620,38,0,fresh_clean_rerun
+Q-0197,CVE-2017-5223,easy,phpmailer project phpmailer,hybrid_rag,CVE-2017-5223,True,True,,2037.032,622,38,0,fresh_clean_rerun
+Q-0197,CVE-2017-5223,easy,phpmailer project phpmailer,hybrid_jev,CVE-2017-5223,True,True,,801.735,unknown,unknown,1,fresh_clean_rerun
+Q-0197,CVE-2017-5223,easy,phpmailer project phpmailer,jev_retrieval,CVE-2017-5223,True,True,,719.031,unknown,unknown,1,fresh_clean_rerun
+Q-0199,CVE-2017-5638,medium,apache struts,llm_only,CVE-2017-5638,True,True,,681.007,116,40,0,fresh_clean_rerun
+Q-0199,CVE-2017-5638,medium,apache struts,vector_rag,CVE-2017-5638,True,True,,2546.257,888,39,0,fresh_clean_rerun
+Q-0199,CVE-2017-5638,medium,apache struts,hybrid_rag,CVE-2017-5638,True,True,,2777.701,853,30,0,fresh_clean_rerun
+Q-0199,CVE-2017-5638,medium,apache struts,hybrid_jev,CVE-2017-5638,True,True,,607.507,unknown,unknown,1,fresh_clean_rerun
+Q-0199,CVE-2017-5638,medium,apache struts,jev_retrieval,CVE-2017-5638,True,True,,985.326,unknown,unknown,1,fresh_clean_rerun
+Q-0200,CVE-2017-5645,hard,apache log4j,llm_only,CVE-2021-44228,True,False,,911.931,121,40,0,fresh_clean_rerun
+Q-0200,CVE-2017-5645,hard,apache log4j,vector_rag,CVE-2017-5645,True,True,,3088.536,908,75,0,fresh_clean_rerun
+Q-0200,CVE-2017-5645,hard,apache log4j,hybrid_rag,CVE-2017-5645,True,True,,1919.027,749,67,0,fresh_clean_rerun
+Q-0200,CVE-2017-5645,hard,apache log4j,hybrid_jev,CVE-2017-5645,True,True,,962.991,unknown,unknown,1,fresh_clean_rerun
+Q-0200,CVE-2017-5645,hard,apache log4j,jev_retrieval,CVE-2017-5645,True,True,,959.394,unknown,unknown,1,fresh_clean_rerun
+Q-0202,CVE-2017-6316,medium,citrix netscaler sd-wan,llm_only,CVE-2022-27518,True,False,,1208.998,124,75,0,fresh_clean_rerun
+Q-0202,CVE-2017-6316,medium,citrix netscaler sd-wan,vector_rag,CVE-2017-6316,True,True,,2091.107,858,52,0,fresh_clean_rerun
+Q-0202,CVE-2017-6316,medium,citrix netscaler sd-wan,hybrid_rag,CVE-2017-6316,True,True,,4068.653,742,44,0,fresh_clean_rerun
+Q-0202,CVE-2017-6316,medium,citrix netscaler sd-wan,hybrid_jev,CVE-2017-6316,True,True,,622.384,unknown,unknown,1,fresh_clean_rerun
+Q-0202,CVE-2017-6316,medium,citrix netscaler sd-wan,jev_retrieval,CVE-2017-6316,True,True,,802.536,unknown,unknown,1,fresh_clean_rerun
+Q-0211,CVE-2017-6920,easy,drupal drupal,llm_only,CVE-2020-13699,True,False,,1118.111,119,46,0,fresh_clean_rerun
+Q-0211,CVE-2017-6920,easy,drupal drupal,vector_rag,CVE-2017-6920,True,True,,2244.105,808,44,0,fresh_clean_rerun
+Q-0211,CVE-2017-6920,easy,drupal drupal,hybrid_rag,CVE-2018-7600,True,False,,2522.032,740,79,0,fresh_clean_rerun
+Q-0211,CVE-2017-6920,easy,drupal drupal,hybrid_jev,,False,False,,676.817,unknown,unknown,1,fresh_clean_rerun
+Q-0211,CVE-2017-6920,easy,drupal drupal,jev_retrieval,CVE-2017-6920,True,True,,1249.373,unknown,unknown,1,fresh_clean_rerun
+Q-0212,CVE-2017-7269,medium,microsoft internet information services,llm_only,CVE-2009-1535,True,False,,988.657,123,65,0,fresh_clean_rerun
+Q-0212,CVE-2017-7269,medium,microsoft internet information services,vector_rag,CVE-2017-7269,True,True,,2393.701,710,37,0,fresh_clean_rerun
+Q-0212,CVE-2017-7269,medium,microsoft internet information services,hybrid_rag,CVE-2017-7269,True,True,,2887.096,674,30,0,fresh_clean_rerun
+Q-0212,CVE-2017-7269,medium,microsoft internet information services,hybrid_jev,CVE-2017-7269,True,True,,791.913,unknown,unknown,1,fresh_clean_rerun
+Q-0212,CVE-2017-7269,medium,microsoft internet information services,jev_retrieval,CVE-2017-7269,True,True,,993.855,unknown,unknown,1,fresh_clean_rerun
+Q-0213,CVE-2017-7494,easy,samba samba,llm_only,CVE-2012-1182,True,False,,926.657,119,136,0,fresh_clean_rerun
+Q-0213,CVE-2017-7494,easy,samba samba,vector_rag,CVE-2017-7494,True,True,,2350.510,733,74,0,fresh_clean_rerun
+Q-0213,CVE-2017-7494,easy,samba samba,hybrid_rag,CVE-2017-7494,True,True,,2764.810,695,71,0,fresh_clean_rerun
+Q-0213,CVE-2017-7494,easy,samba samba,hybrid_jev,CVE-2017-7494,True,True,,669.915,unknown,unknown,1,fresh_clean_rerun
+Q-0213,CVE-2017-7494,easy,samba samba,jev_retrieval,CVE-2017-7494,True,True,,1944.715,unknown,unknown,1,fresh_clean_rerun
+Q-0215,CVE-2017-7525,hard,fasterxml jackson-databind,llm_only,CVE-2020-8840,True,False,,909.911,127,87,0,fresh_clean_rerun
+Q-0215,CVE-2017-7525,hard,fasterxml jackson-databind,vector_rag,CVE-2017-7525,True,True,,2559.346,858,44,0,fresh_clean_rerun
+Q-0215,CVE-2017-7525,hard,fasterxml jackson-databind,hybrid_rag,CVE-2017-7525,True,True,,3208.119,844,69,0,fresh_clean_rerun
+Q-0215,CVE-2017-7525,hard,fasterxml jackson-databind,hybrid_jev,CVE-2017-7525,True,True,,784.104,unknown,unknown,1,fresh_clean_rerun
+Q-0215,CVE-2017-7525,hard,fasterxml jackson-databind,jev_retrieval,CVE-2017-7525,True,True,,960.232,unknown,unknown,1,fresh_clean_rerun
+Q-0216,CVE-2017-7529,medium,f5 nginx,llm_only,CVE-2021-23017,True,False,,1131.758,119,186,0,fresh_clean_rerun
+Q-0216,CVE-2017-7529,medium,f5 nginx,vector_rag,CVE-2017-7529,True,True,,5063.202,1083,72,0,fresh_clean_rerun
+Q-0216,CVE-2017-7529,medium,f5 nginx,hybrid_rag,CVE-2017-7529,True,True,,2283.915,788,53,0,fresh_clean_rerun
+Q-0216,CVE-2017-7529,medium,f5 nginx,hybrid_jev,CVE-2017-7529,True,True,,803.909,unknown,unknown,1,fresh_clean_rerun
+Q-0216,CVE-2017-7529,medium,f5 nginx,jev_retrieval,CVE-2017-7529,True,True,,1470.245,unknown,unknown,1,fresh_clean_rerun
+Q-0219,CVE-2017-8291,medium,artifex ghostscript,llm_only,CVE-2017-8291,True,True,,1088.815,126,107,0,fresh_clean_rerun
+Q-0219,CVE-2017-8291,medium,artifex ghostscript,vector_rag,CVE-2017-8291,True,True,,2104.410,700,35,0,fresh_clean_rerun
+Q-0219,CVE-2017-8291,medium,artifex ghostscript,hybrid_rag,CVE-2017-8291,True,True,,5131.536,719,61,0,fresh_clean_rerun
+Q-0219,CVE-2017-8291,medium,artifex ghostscript,hybrid_jev,CVE-2017-8291,True,True,,756.278,unknown,unknown,1,fresh_clean_rerun
+Q-0219,CVE-2017-8291,medium,artifex ghostscript,jev_retrieval,CVE-2017-8291,True,True,,960.500,unknown,unknown,1,fresh_clean_rerun
+Q-0220,CVE-2017-8386,easy,git git-shell,llm_only,CVE-2022-24765,True,False,,1116.986,119,148,0,fresh_clean_rerun
+Q-0220,CVE-2017-8386,easy,git git-shell,vector_rag,CVE-2017-8386,True,True,,2315.751,1128,30,0,fresh_clean_rerun
+Q-0220,CVE-2017-8386,easy,git git-shell,hybrid_rag,CVE-2017-8386,True,True,,2488.468,1088,30,0,fresh_clean_rerun
+Q-0220,CVE-2017-8386,easy,git git-shell,hybrid_jev,CVE-2017-8386,True,True,,953.922,unknown,unknown,1,fresh_clean_rerun
+Q-0220,CVE-2017-8386,easy,git git-shell,jev_retrieval,CVE-2017-8386,True,True,,959.679,unknown,unknown,1,fresh_clean_rerun
+Q-0223,CVE-2017-8570,easy,microsoft office,llm_only,CVE-2021-40444,True,False,,959.790,113,48,0,fresh_clean_rerun
+Q-0223,CVE-2017-8570,easy,microsoft office,vector_rag,CVE-2017-8570,True,True,,2310.181,597,36,0,fresh_clean_rerun
+Q-0223,CVE-2017-8570,easy,microsoft office,hybrid_rag,CVE-2017-8570,True,True,,2968.762,641,36,0,fresh_clean_rerun
+Q-0223,CVE-2017-8570,easy,microsoft office,hybrid_jev,CVE-2017-8570,True,True,,798.908,unknown,unknown,1,fresh_clean_rerun
+Q-0223,CVE-2017-8570,easy,microsoft office,jev_retrieval,CVE-2017-8570,True,True,,798.130,unknown,unknown,1,fresh_clean_rerun
+Q-0224,CVE-2017-8917,medium,joomla joomla!,llm_only,CVE-2015-8562,True,False,,801.090,118,55,0,fresh_clean_rerun
+Q-0224,CVE-2017-8917,medium,joomla joomla!,vector_rag,CVE-2017-8917,True,True,,2717.469,535,86,0,fresh_clean_rerun
+Q-0224,CVE-2017-8917,medium,joomla joomla!,hybrid_rag,CVE-2017-8917,True,True,,2881.166,683,56,0,fresh_clean_rerun
+Q-0224,CVE-2017-8917,medium,joomla joomla!,hybrid_jev,CVE-2017-8917,True,True,,2080.033,unknown,unknown,1,fresh_clean_rerun
+Q-0224,CVE-2017-8917,medium,joomla joomla!,jev_retrieval,CVE-2017-8917,True,True,,970.923,unknown,unknown,1,fresh_clean_rerun
+Q-0225,CVE-2017-9791,easy,apache struts,llm_only,CVE-2013-1966,True,False,,812.125,122,111,0,fresh_clean_rerun
+Q-0225,CVE-2017-9791,easy,apache struts,vector_rag,CVE-2017-9791,True,True,,2704.178,735,47,0,fresh_clean_rerun
+Q-0225,CVE-2017-9791,easy,apache struts,hybrid_rag,CVE-2017-9791,True,True,,2555.405,730,45,0,fresh_clean_rerun
+Q-0225,CVE-2017-9791,easy,apache struts,hybrid_jev,CVE-2017-9791,True,True,,650.917,unknown,unknown,1,fresh_clean_rerun
+Q-0225,CVE-2017-9791,easy,apache struts,jev_retrieval,CVE-2017-9791,True,True,,940.567,unknown,unknown,1,fresh_clean_rerun
+Q-0226,CVE-2017-9805,hard,apache struts,llm_only,CVE-2020-17530,True,False,,976.503,122,80,0,fresh_clean_rerun
+Q-0226,CVE-2017-9805,hard,apache struts,vector_rag,CVE-2017-9805,True,True,,2546.397,709,38,0,fresh_clean_rerun
+Q-0226,CVE-2017-9805,hard,apache struts,hybrid_rag,CVE-2017-9805,True,True,,2556.045,709,39,0,fresh_clean_rerun
+Q-0226,CVE-2017-9805,hard,apache struts,hybrid_jev,CVE-2017-9805,True,True,,803.472,unknown,unknown,1,fresh_clean_rerun
+Q-0226,CVE-2017-9805,hard,apache struts,jev_retrieval,CVE-2017-9805,True,True,,974.545,unknown,unknown,1,fresh_clean_rerun
+Q-0227,CVE-2017-9841,easy,phpunit project phpunit,llm_only,CVE-2017-9841,True,True,,1106.264,119,67,0,fresh_clean_rerun
+Q-0227,CVE-2017-9841,easy,phpunit project phpunit,vector_rag,CVE-2017-9841,True,True,,2392.182,716,36,0,fresh_clean_rerun
+Q-0227,CVE-2017-9841,easy,phpunit project phpunit,hybrid_rag,CVE-2017-9841,True,True,,2245.374,781,34,0,fresh_clean_rerun
+Q-0227,CVE-2017-9841,easy,phpunit project phpunit,hybrid_jev,CVE-2017-9841,True,True,,633.967,unknown,unknown,1,fresh_clean_rerun
+Q-0227,CVE-2017-9841,easy,phpunit project phpunit,jev_retrieval,CVE-2017-9841,True,True,,798.279,unknown,unknown,1,fresh_clean_rerun
+Q-0228,CVE-2017-9993,easy,ffmpeg ffmpeg,llm_only,CVE-2015-5149,True,False,,1375.510,122,116,0,fresh_clean_rerun
+Q-0228,CVE-2017-9993,easy,ffmpeg ffmpeg,vector_rag,CVE-2017-9993,True,True,,2470.048,955,42,0,fresh_clean_rerun
+Q-0228,CVE-2017-9993,easy,ffmpeg ffmpeg,hybrid_rag,CVE-2017-9993,True,True,,3355.487,985,44,0,fresh_clean_rerun
+Q-0228,CVE-2017-9993,easy,ffmpeg ffmpeg,hybrid_jev,CVE-2017-9993,True,True,,957.765,unknown,unknown,1,fresh_clean_rerun
+Q-0228,CVE-2017-9993,easy,ffmpeg ffmpeg,jev_retrieval,CVE-2017-9993,True,True,,959.323,unknown,unknown,1,fresh_clean_rerun
+Q-0230,CVE-2018-0147,easy,cisco secure access control system,llm_only,CVE-2022-20723,True,False,,969.872,119,110,0,fresh_clean_rerun
+Q-0230,CVE-2018-0147,easy,cisco secure access control system,vector_rag,CVE-2018-0147,True,True,,5110.468,919,30,0,fresh_clean_rerun
+Q-0230,CVE-2018-0147,easy,cisco secure access control system,hybrid_rag,CVE-2018-0147,True,True,,2716.670,909,43,0,fresh_clean_rerun
+Q-0230,CVE-2018-0147,easy,cisco secure access control system,hybrid_jev,CVE-2018-0147,True,True,,639.296,unknown,unknown,1,fresh_clean_rerun
+Q-0230,CVE-2018-0147,easy,cisco secure access control system,jev_retrieval,CVE-2018-0147,True,True,,798.522,unknown,unknown,1,fresh_clean_rerun
+Q-0239,CVE-2018-0296,hard,cisco firepower threat defense,llm_only,CVE-2021-3478,True,False,,1441.326,121,44,0,fresh_clean_rerun
+Q-0239,CVE-2018-0296,hard,cisco firepower threat defense,vector_rag,CVE-2018-0296,True,True,,1918.884,1328,56,0,fresh_clean_rerun
+Q-0239,CVE-2018-0296,hard,cisco firepower threat defense,hybrid_rag,CVE-2018-0296,True,True,,2719.667,1380,99,0,fresh_clean_rerun
+Q-0239,CVE-2018-0296,hard,cisco firepower threat defense,hybrid_jev,CVE-2018-0296,True,True,,799.118,unknown,unknown,1,fresh_clean_rerun
+Q-0239,CVE-2018-0296,hard,cisco firepower threat defense,jev_retrieval,CVE-2018-0296,True,True,,1277.691,unknown,unknown,1,fresh_clean_rerun
+Q-0240,CVE-2018-0802,easy,microsoft office,llm_only,CVE-2017-11882,True,False,,1710.858,121,52,0,fresh_clean_rerun
+Q-0240,CVE-2018-0802,easy,microsoft office,vector_rag,CVE-2018-0802,True,True,,1813.265,675,44,0,fresh_clean_rerun
+Q-0240,CVE-2018-0802,easy,microsoft office,hybrid_rag,CVE-2018-0802,True,True,,3519.810,675,47,0,fresh_clean_rerun
+Q-0240,CVE-2018-0802,easy,microsoft office,hybrid_jev,CVE-2018-0802,True,True,,1624.829,unknown,unknown,1,fresh_clean_rerun
+Q-0240,CVE-2018-0802,easy,microsoft office,jev_retrieval,CVE-2018-0802,True,True,,930.857,unknown,unknown,1,fresh_clean_rerun
+Q-0241,CVE-2018-1000006,easy,atom electron,llm_only,CVE-2019-5786,True,False,,958.140,118,99,0,fresh_clean_rerun
+Q-0241,CVE-2018-1000006,easy,atom electron,vector_rag,CVE-2018-1000006,True,True,,3198.634,903,60,0,fresh_clean_rerun
+Q-0241,CVE-2018-1000006,easy,atom electron,hybrid_rag,CVE-2018-1000006,True,True,,3360.194,1067,82,0,fresh_clean_rerun
+Q-0241,CVE-2018-1000006,easy,atom electron,hybrid_jev,CVE-2018-1000006,True,True,,1743.584,unknown,unknown,1,fresh_clean_rerun
+Q-0241,CVE-2018-1000006,easy,atom electron,jev_retrieval,CVE-2018-1000006,True,True,,990.909,unknown,unknown,1,fresh_clean_rerun
+Q-0242,CVE-2018-1000533,hard,gitlist gitlist,llm_only,CVE-2015-8387,True,False,,3173.734,125,98,0,fresh_clean_rerun
+Q-0242,CVE-2018-1000533,hard,gitlist gitlist,vector_rag,CVE-2018-1000533,True,True,,1929.618,853,58,0,fresh_clean_rerun
+Q-0242,CVE-2018-1000533,hard,gitlist gitlist,hybrid_rag,CVE-2018-1000533,True,True,,4446.278,863,33,0,fresh_clean_rerun
+Q-0242,CVE-2018-1000533,hard,gitlist gitlist,hybrid_jev,CVE-2018-1000533,True,True,,768.557,unknown,unknown,1,fresh_clean_rerun
+Q-0242,CVE-2018-1000533,hard,gitlist gitlist,jev_retrieval,CVE-2018-1000533,True,True,,828.668,unknown,unknown,1,fresh_clean_rerun
+Q-0243,CVE-2018-1000861,easy,jenkins jenkins,llm_only,CVE-2021-21699,True,False,,1454.422,119,72,0,fresh_clean_rerun
+Q-0243,CVE-2018-1000861,easy,jenkins jenkins,vector_rag,CVE-2018-1000861,True,True,,3218.197,820,47,0,fresh_clean_rerun
+Q-0243,CVE-2018-1000861,easy,jenkins jenkins,hybrid_rag,CVE-2018-1000861,True,True,,1441.566,820,41,0,fresh_clean_rerun
+Q-0243,CVE-2018-1000861,easy,jenkins jenkins,hybrid_jev,CVE-2018-1000861,True,True,,717.104,unknown,unknown,1,fresh_clean_rerun
+Q-0243,CVE-2018-1000861,easy,jenkins jenkins,jev_retrieval,CVE-2018-1000861,True,True,,934.880,unknown,unknown,1,fresh_clean_rerun
+Q-0246,CVE-2018-1058,easy,postgresql postgresql,llm_only,CVE-2022-1557,True,False,,2079.749,117,60,0,fresh_clean_rerun
+Q-0246,CVE-2018-1058,easy,postgresql postgresql,vector_rag,CVE-2018-1058,True,True,,1395.301,718,55,0,fresh_clean_rerun
+Q-0246,CVE-2018-1058,easy,postgresql postgresql,hybrid_rag,CVE-2018-1058,True,True,,2874.976,744,56,0,fresh_clean_rerun
+Q-0246,CVE-2018-1058,easy,postgresql postgresql,hybrid_jev,CVE-2018-1058,True,True,,792.081,unknown,unknown,1,fresh_clean_rerun
+Q-0246,CVE-2018-1058,easy,postgresql postgresql,jev_retrieval,CVE-2018-1058,True,True,,1134.132,unknown,unknown,1,fresh_clean_rerun
+Q-0247,CVE-2018-10933,easy,libssh libssh,llm_only,CVE-2020-14145,True,False,,1745.519,122,169,0,fresh_clean_rerun
+Q-0247,CVE-2018-10933,easy,libssh libssh,vector_rag,CVE-2018-10933,True,True,,1598.553,797,39,0,fresh_clean_rerun
+Q-0247,CVE-2018-10933,easy,libssh libssh,hybrid_rag,CVE-2018-10933,True,True,,5577.066,791,42,0,fresh_clean_rerun
+Q-0247,CVE-2018-10933,easy,libssh libssh,hybrid_jev,CVE-2018-10933,True,True,,890.902,unknown,unknown,1,fresh_clean_rerun
+Q-0247,CVE-2018-10933,easy,libssh libssh,jev_retrieval,CVE-2018-10933,True,True,,699.361,unknown,unknown,1,fresh_clean_rerun
+Q-0249,CVE-2018-12613,medium,phpmyadmin phpmyadmin,llm_only,CVE-2020-25762,True,False,,1474.626,119,133,0,fresh_clean_rerun
+Q-0249,CVE-2018-12613,medium,phpmyadmin phpmyadmin,vector_rag,CVE-2018-12613,True,True,,5131.754,919,42,0,fresh_clean_rerun
+Q-0249,CVE-2018-12613,medium,phpmyadmin phpmyadmin,hybrid_rag,CVE-2018-12613,True,True,,2768.472,929,42,0,fresh_clean_rerun
+Q-0249,CVE-2018-12613,medium,phpmyadmin phpmyadmin,hybrid_jev,CVE-2018-12613,True,True,,632.124,unknown,unknown,1,fresh_clean_rerun
+Q-0249,CVE-2018-12613,medium,phpmyadmin phpmyadmin,jev_retrieval,CVE-2018-12613,True,True,,2259.361,unknown,unknown,1,fresh_clean_rerun
+Q-0250,CVE-2018-1270,hard,vmware spring framework,llm_only,CVE-2020-5398,True,False,,977.738,120,90,0,fresh_clean_rerun
+Q-0250,CVE-2018-1270,hard,vmware spring framework,vector_rag,CVE-2018-1271,True,False,,2624.267,888,85,0,fresh_clean_rerun
+Q-0250,CVE-2018-1270,hard,vmware spring framework,hybrid_rag,CVE-2018-1271,True,False,,2857.628,898,97,0,fresh_clean_rerun
+Q-0250,CVE-2018-1270,hard,vmware spring framework,hybrid_jev,CVE-2018-1271,True,False,,1487.168,unknown,unknown,1,fresh_clean_rerun
+Q-0250,CVE-2018-1270,hard,vmware spring framework,jev_retrieval,CVE-2018-1271,True,False,,751.859,unknown,unknown,1,fresh_clean_rerun
+Q-0251,CVE-2018-1271,medium,vmware spring framework,llm_only,CVE-2022-22965,True,False,,2098.367,116,112,0,fresh_clean_rerun
+Q-0251,CVE-2018-1271,medium,vmware spring framework,vector_rag,CVE-2018-1271,True,True,,1439.544,841,44,0,fresh_clean_rerun
+Q-0251,CVE-2018-1271,medium,vmware spring framework,hybrid_rag,CVE-2018-1271,True,True,,2558.189,841,43,0,fresh_clean_rerun
+Q-0251,CVE-2018-1271,medium,vmware spring framework,hybrid_jev,CVE-2018-1271,True,True,,638.769,unknown,unknown,1,fresh_clean_rerun
+Q-0251,CVE-2018-1271,medium,vmware spring framework,jev_retrieval,CVE-2018-1271,True,True,,964.331,unknown,unknown,1,fresh_clean_rerun
+Q-0254,CVE-2018-13374,easy,fortinet fortiadc,llm_only,CVE-2022-40684,True,False,,1473.503,123,111,0,fresh_clean_rerun
+Q-0254,CVE-2018-13374,easy,fortinet fortiadc,vector_rag,CVE-2018-13374,True,True,,1985.762,985,42,0,fresh_clean_rerun
+Q-0254,CVE-2018-13374,easy,fortinet fortiadc,hybrid_rag,CVE-2018-13374,True,True,,2304.980,1015,41,0,fresh_clean_rerun
+Q-0254,CVE-2018-13374,easy,fortinet fortiadc,hybrid_jev,CVE-2018-13374,True,True,,850.749,unknown,unknown,1,fresh_clean_rerun
+Q-0254,CVE-2018-13374,easy,fortinet fortiadc,jev_retrieval,CVE-2018-13374,True,True,,1034.397,unknown,unknown,1,fresh_clean_rerun
+Q-0255,CVE-2018-13379,medium,fortinet fortiproxy,llm_only,CVE-2022-40684,True,False,,1143.422,119,68,0,fresh_clean_rerun
+Q-0255,CVE-2018-13379,medium,fortinet fortiproxy,vector_rag,CVE-2018-13379,True,True,,2240.135,983,44,0,fresh_clean_rerun
+Q-0255,CVE-2018-13379,medium,fortinet fortiproxy,hybrid_rag,CVE-2018-13379,True,True,,3199.911,811,40,0,fresh_clean_rerun
+Q-0255,CVE-2018-13379,medium,fortinet fortiproxy,hybrid_jev,CVE-2018-13379,True,True,,662.376,unknown,unknown,1,fresh_clean_rerun
+Q-0255,CVE-2018-13379,medium,fortinet fortiproxy,jev_retrieval,CVE-2018-13379,True,True,,935.258,unknown,unknown,1,fresh_clean_rerun
+Q-0256,CVE-2018-13383,easy,fortinet fortiproxy,llm_only,CVE-2022-40684,True,False,,1278.772,118,87,0,fresh_clean_rerun
+Q-0256,CVE-2018-13383,easy,fortinet fortiproxy,vector_rag,CVE-2018-13383,True,True,,2261.182,1256,52,0,fresh_clean_rerun
+Q-0256,CVE-2018-13383,easy,fortinet fortiproxy,hybrid_rag,CVE-2018-13383,True,True,,2914.939,1156,62,0,fresh_clean_rerun
+Q-0256,CVE-2018-13383,easy,fortinet fortiproxy,hybrid_jev,CVE-2018-13383,True,True,,901.732,unknown,unknown,1,fresh_clean_rerun
+Q-0256,CVE-2018-13383,easy,fortinet fortiproxy,jev_retrieval,CVE-2018-13383,True,True,,958.421,unknown,unknown,1,fresh_clean_rerun
+Q-0258,CVE-2018-14667,medium,redhat richfaces,llm_only,CVE-2016-10086,True,False,,968.184,123,72,0,fresh_clean_rerun
+Q-0258,CVE-2018-14667,medium,redhat richfaces,vector_rag,CVE-2023-3519,True,False,,2396.267,469,66,0,fresh_clean_rerun
+Q-0258,CVE-2018-14667,medium,redhat richfaces,hybrid_rag,CVE-2018-14667,True,True,,3366.740,715,38,0,fresh_clean_rerun
+Q-0258,CVE-2018-14667,medium,redhat richfaces,hybrid_jev,CVE-2018-14667,True,True,,1267.387,unknown,unknown,1,fresh_clean_rerun
+Q-0258,CVE-2018-14667,medium,redhat richfaces,jev_retrieval,CVE-2018-14667,True,True,,957.888,unknown,unknown,1,fresh_clean_rerun
+Q-0261,CVE-2018-15473,easy,openbsd openssh,llm_only,CVE-2020-15778,True,False,,1605.416,121,68,0,fresh_clean_rerun
+Q-0261,CVE-2018-15473,easy,openbsd openssh,vector_rag,CVE-2018-15473,True,True,,2401.106,693,32,0,fresh_clean_rerun
+Q-0261,CVE-2018-15473,easy,openbsd openssh,hybrid_rag,CVE-2018-15473,True,True,,4472.514,625,49,0,fresh_clean_rerun
+Q-0261,CVE-2018-15473,easy,openbsd openssh,hybrid_jev,CVE-2018-15473,True,True,,800.212,unknown,unknown,1,fresh_clean_rerun
+Q-0261,CVE-2018-15473,easy,openbsd openssh,jev_retrieval,CVE-2018-15473,True,True,,826.807,unknown,unknown,1,fresh_clean_rerun
+Q-0262,CVE-2018-15685,hard,electronjs electron,llm_only,CVE-2020-16021,True,False,,1252.603,119,121,0,fresh_clean_rerun
+Q-0262,CVE-2018-15685,hard,electronjs electron,vector_rag,CVE-2018-15685,True,True,,3039.103,934,49,0,fresh_clean_rerun
+Q-0262,CVE-2018-15685,hard,electronjs electron,hybrid_rag,CVE-2018-15685,True,True,,1923.277,1043,47,0,fresh_clean_rerun
+Q-0262,CVE-2018-15685,hard,electronjs electron,hybrid_jev,CVE-2018-15685,True,True,,960.591,unknown,unknown,1,fresh_clean_rerun
+Q-0262,CVE-2018-15685,hard,electronjs electron,jev_retrieval,CVE-2018-15685,True,True,,952.271,unknown,unknown,1,fresh_clean_rerun
+Q-0264,CVE-2018-15961,easy,adobe coldfusion,llm_only,CVE-2010-2861,True,False,,961.516,120,68,0,fresh_clean_rerun
+Q-0264,CVE-2018-15961,easy,adobe coldfusion,vector_rag,CVE-2018-15961,True,True,,2557.341,749,54,0,fresh_clean_rerun
+Q-0264,CVE-2018-15961,easy,adobe coldfusion,hybrid_rag,CVE-2018-15961,True,True,,3200.388,669,30,0,fresh_clean_rerun
+Q-0264,CVE-2018-15961,easy,adobe coldfusion,hybrid_jev,CVE-2018-15961,True,True,,957.787,unknown,unknown,1,fresh_clean_rerun
+Q-0264,CVE-2018-15961,easy,adobe coldfusion,jev_retrieval,CVE-2018-15961,True,True,,959.595,unknown,unknown,1,fresh_clean_rerun
+Q-0265,CVE-2018-16509,easy,artifex ghostscript,llm_only,CVE-2022-24766,True,False,,1132.358,119,154,0,fresh_clean_rerun
+Q-0265,CVE-2018-16509,easy,artifex ghostscript,vector_rag,CVE-2018-16509,True,True,,2311.498,555,43,0,fresh_clean_rerun
+Q-0265,CVE-2018-16509,easy,artifex ghostscript,hybrid_rag,CVE-2018-16509,True,True,,2889.908,596,42,0,fresh_clean_rerun
+Q-0265,CVE-2018-16509,easy,artifex ghostscript,hybrid_jev,CVE-2018-16509,True,True,,691.595,unknown,unknown,1,fresh_clean_rerun
+Q-0265,CVE-2018-16509,easy,artifex ghostscript,jev_retrieval,CVE-2018-16509,True,True,,972.359,unknown,unknown,1,fresh_clean_rerun
+Q-0266,CVE-2018-16621,hard,sonatype nexus repository manager,llm_only,CVE-2020-13937,True,False,,1278.159,119,68,0,fresh_clean_rerun
+Q-0266,CVE-2018-16621,hard,sonatype nexus repository manager,vector_rag,CVE-2019-7238,True,False,,2164.670,439,48,0,fresh_clean_rerun
+Q-0266,CVE-2018-16621,hard,sonatype nexus repository manager,hybrid_rag,CVE-2019-7238,True,False,,3113.939,426,119,0,fresh_clean_rerun
+Q-0266,CVE-2018-16621,hard,sonatype nexus repository manager,hybrid_jev,,False,False,,959.336,unknown,unknown,1,fresh_clean_rerun
+Q-0266,CVE-2018-16621,hard,sonatype nexus repository manager,jev_retrieval,CVE-2018-16621,True,True,,852.527,unknown,unknown,1,fresh_clean_rerun
+Q-0267,CVE-2018-17246,easy,elastic kibana,llm_only,CVE-2022-23636,True,False,,1065.233,118,143,0,fresh_clean_rerun
+Q-0267,CVE-2018-17246,easy,elastic kibana,vector_rag,CVE-2018-17246,True,True,,2400.940,705,43,0,fresh_clean_rerun
+Q-0267,CVE-2018-17246,easy,elastic kibana,hybrid_rag,CVE-2018-17246,True,True,,2723.017,792,39,0,fresh_clean_rerun
+Q-0267,CVE-2018-17246,easy,elastic kibana,hybrid_jev,CVE-2018-17246,True,True,,759.525,unknown,unknown,1,fresh_clean_rerun
+Q-0267,CVE-2018-17246,easy,elastic kibana,jev_retrieval,CVE-2018-17246,True,True,,774.283,unknown,unknown,1,fresh_clean_rerun
+Q-0268,CVE-2018-17480,medium,google chrome,llm_only,CVE-2023-4285,True,False,,1306.822,115,122,0,fresh_clean_rerun
+Q-0268,CVE-2018-17480,medium,google chrome,vector_rag,CVE-2026-3910,True,False,,2123.713,595,43,0,fresh_clean_rerun
+Q-0268,CVE-2018-17480,medium,google chrome,hybrid_rag,CVE-2018-17480,True,True,,2552.342,619,37,0,fresh_clean_rerun
+Q-0268,CVE-2018-17480,medium,google chrome,hybrid_jev,CVE-2018-17480,True,True,,1451.082,unknown,unknown,1,fresh_clean_rerun
+Q-0268,CVE-2018-17480,medium,google chrome,jev_retrieval,CVE-2018-17480,True,True,,1433.006,unknown,unknown,1,fresh_clean_rerun
+Q-0276,CVE-2018-19475,easy,artifex ghostscript,llm_only,CVE-2015-8325,True,False,,950.187,124,62,0,fresh_clean_rerun
+Q-0276,CVE-2018-19475,easy,artifex ghostscript,vector_rag,CVE-2018-19475,True,True,,2514.123,689,37,0,fresh_clean_rerun
+Q-0276,CVE-2018-19475,easy,artifex ghostscript,hybrid_rag,CVE-2018-19475,True,True,,4432.016,779,32,0,fresh_clean_rerun
+Q-0276,CVE-2018-19475,easy,artifex ghostscript,hybrid_jev,CVE-2018-19475,True,True,,2535.484,unknown,unknown,1,fresh_clean_rerun
+Q-0276,CVE-2018-19475,easy,artifex ghostscript,jev_retrieval,CVE-2018-19475,True,True,,4957.620,unknown,unknown,1,fresh_clean_rerun
+Q-0277,CVE-2018-19518,easy,php php,llm_only,CVE-2011-1570,True,False,,1236.322,121,163,0,fresh_clean_rerun
+Q-0277,CVE-2018-19518,easy,php php,vector_rag,CVE-2018-19518,True,True,,2910.841,1245,54,0,fresh_clean_rerun
+Q-0277,CVE-2018-19518,easy,php php,hybrid_rag,CVE-2018-19518,True,True,,1945.690,898,76,0,fresh_clean_rerun
+Q-0277,CVE-2018-19518,easy,php php,hybrid_jev,CVE-2018-19518,True,True,,742.711,unknown,unknown,1,fresh_clean_rerun
+Q-0277,CVE-2018-19518,easy,php php,jev_retrieval,CVE-2018-19518,True,True,,851.047,unknown,unknown,1,fresh_clean_rerun
+Q-0280,CVE-2018-20062,easy,5none nonecms,llm_only,CVE-2018-20062,True,True,,950.467,118,111,0,fresh_clean_rerun
+Q-0280,CVE-2018-20062,easy,5none nonecms,vector_rag,CVE-2018-20062,True,True,,2550.033,797,35,0,fresh_clean_rerun
+Q-0280,CVE-2018-20062,easy,5none nonecms,hybrid_rag,CVE-2018-20062,True,True,,2364.113,819,32,0,fresh_clean_rerun
+Q-0280,CVE-2018-20062,easy,5none nonecms,hybrid_jev,CVE-2018-20062,True,True,,764.245,unknown,unknown,1,fresh_clean_rerun
+Q-0280,CVE-2018-20062,easy,5none nonecms,jev_retrieval,CVE-2018-20062,True,True,,834.129,unknown,unknown,1,fresh_clean_rerun
+Q-0284,CVE-2018-2628,medium,oracle weblogic server,llm_only,CVE-2020-14882,True,False,,799.596,119,70,0,fresh_clean_rerun
+Q-0284,CVE-2018-2628,medium,oracle weblogic server,vector_rag,CVE-2020-14882,True,False,,3044.101,953,55,0,fresh_clean_rerun
+Q-0284,CVE-2018-2628,medium,oracle weblogic server,hybrid_rag,CVE-2019-2725,True,False,,3191.478,904,34,0,fresh_clean_rerun
+Q-0284,CVE-2018-2628,medium,oracle weblogic server,hybrid_jev,CVE-2019-2725,True,False,,800.142,unknown,unknown,1,fresh_clean_rerun
+Q-0284,CVE-2018-2628,medium,oracle weblogic server,jev_retrieval,CVE-2019-2725,True,False,,844.527,unknown,unknown,1,fresh_clean_rerun
+Q-0285,CVE-2018-2894,medium,oracle weblogic server,llm_only,CVE-2020-14882,True,False,,915.290,120,79,0,fresh_clean_rerun
+Q-0285,CVE-2018-2894,medium,oracle weblogic server,vector_rag,CVE-2019-2725,True,False,,2570.656,954,43,0,fresh_clean_rerun
+Q-0285,CVE-2018-2894,medium,oracle weblogic server,hybrid_rag,CVE-2019-2725,True,False,,4948.704,973,44,0,fresh_clean_rerun
+Q-0285,CVE-2018-2894,medium,oracle weblogic server,hybrid_jev,CVE-2019-2725,True,False,,797.522,unknown,unknown,1,fresh_clean_rerun
+Q-0285,CVE-2018-2894,medium,oracle weblogic server,jev_retrieval,CVE-2019-2725,True,False,,958.669,unknown,unknown,1,fresh_clean_rerun
+Q-0286,CVE-2018-3760,easy,sprockets project sprockets,llm_only,CVE-2022-37434,True,False,,971.339,123,136,0,fresh_clean_rerun
+Q-0286,CVE-2018-3760,easy,sprockets project sprockets,vector_rag,CVE-2018-3760,True,True,,2596.784,642,34,0,fresh_clean_rerun
+Q-0286,CVE-2018-3760,easy,sprockets project sprockets,hybrid_rag,CVE-2018-3760,True,True,,2351.260,807,38,0,fresh_clean_rerun
+Q-0286,CVE-2018-3760,easy,sprockets project sprockets,hybrid_jev,CVE-2018-3760,True,True,,697.187,unknown,unknown,1,fresh_clean_rerun
+Q-0286,CVE-2018-3760,easy,sprockets project sprockets,jev_retrieval,CVE-2018-3760,True,True,,900.841,unknown,unknown,1,fresh_clean_rerun
+Q-0288,CVE-2018-4939,hard,adobe coldfusion,llm_only,CVE-2010-2861,True,False,,961.156,117,69,0,fresh_clean_rerun
+Q-0288,CVE-2018-4939,hard,adobe coldfusion,vector_rag,CVE-2018-4939,True,True,,2570.367,717,40,0,fresh_clean_rerun
+Q-0288,CVE-2018-4939,hard,adobe coldfusion,hybrid_rag,CVE-2018-4939,True,True,,2970.751,671,40,0,fresh_clean_rerun
+Q-0288,CVE-2018-4939,hard,adobe coldfusion,hybrid_jev,CVE-2018-4939,True,True,,1041.048,unknown,unknown,1,fresh_clean_rerun
+Q-0288,CVE-2018-4939,hard,adobe coldfusion,jev_retrieval,CVE-2018-4939,True,True,,2186.752,unknown,unknown,1,fresh_clean_rerun
+Q-0289,CVE-2018-5002,easy,adobe flash player,llm_only,CVE-2018-4878,True,False,,2543.629,114,87,0,fresh_clean_rerun
+Q-0289,CVE-2018-5002,easy,adobe flash player,vector_rag,CVE-2018-5002,True,True,,3089.409,711,44,0,fresh_clean_rerun
+Q-0289,CVE-2018-5002,easy,adobe flash player,hybrid_rag,CVE-2018-5002,True,True,,1275.653,711,41,0,fresh_clean_rerun
+Q-0289,CVE-2018-5002,easy,adobe flash player,hybrid_jev,CVE-2018-5002,True,True,,967.700,unknown,unknown,1,fresh_clean_rerun
+Q-0289,CVE-2018-5002,easy,adobe flash player,jev_retrieval,CVE-2018-5002,True,True,,953.604,unknown,unknown,1,fresh_clean_rerun
+Q-0292,CVE-2018-6882,medium,synacor zimbra collaboration suite,llm_only,CVE-2015-1815,True,False,,1282.895,124,77,0,fresh_clean_rerun
+Q-0292,CVE-2018-6882,medium,synacor zimbra collaboration suite,vector_rag,CVE-2018-6882,True,True,,2230.045,863,39,0,fresh_clean_rerun
+Q-0292,CVE-2018-6882,medium,synacor zimbra collaboration suite,hybrid_rag,CVE-2018-6882,True,True,,2559.027,786,48,0,fresh_clean_rerun
+Q-0292,CVE-2018-6882,medium,synacor zimbra collaboration suite,hybrid_jev,CVE-2018-6882,True,True,,704.905,unknown,unknown,1,fresh_clean_rerun
+Q-0292,CVE-2018-6882,medium,synacor zimbra collaboration suite,jev_retrieval,CVE-2018-6882,True,True,,894.352,unknown,unknown,1,fresh_clean_rerun
+Q-0295,CVE-2018-7600,hard,drupal drupal,llm_only,CVE-2018-7600,True,True,,1294.135,119,148,0,fresh_clean_rerun
+Q-0295,CVE-2018-7600,hard,drupal drupal,vector_rag,CVE-2018-7600,True,True,,2226.007,874,43,0,fresh_clean_rerun
+Q-0295,CVE-2018-7600,hard,drupal drupal,hybrid_rag,CVE-2018-7600,True,True,,2396.526,786,42,0,fresh_clean_rerun
+Q-0295,CVE-2018-7600,hard,drupal drupal,hybrid_jev,CVE-2018-7600,True,True,,800.313,unknown,unknown,1,fresh_clean_rerun
+Q-0295,CVE-2018-7600,hard,drupal drupal,jev_retrieval,CVE-2018-7600,True,True,,906.718,unknown,unknown,1,fresh_clean_rerun
+Q-0296,CVE-2018-7602,medium,drupal drupal,llm_only,CVE-2022-31152,True,False,,1363.012,116,87,0,fresh_clean_rerun
+Q-0296,CVE-2018-7602,medium,drupal drupal,vector_rag,CVE-2018-7602,True,True,,2206.725,837,58,0,fresh_clean_rerun
+Q-0296,CVE-2018-7602,medium,drupal drupal,hybrid_rag,CVE-2018-7602,True,True,,2566.838,924,47,0,fresh_clean_rerun
+Q-0296,CVE-2018-7602,medium,drupal drupal,hybrid_jev,CVE-2018-7602,True,True,,679.880,unknown,unknown,1,fresh_clean_rerun
+Q-0296,CVE-2018-7602,medium,drupal drupal,jev_retrieval,CVE-2018-7602,True,True,,926.462,unknown,unknown,1,fresh_clean_rerun
+Q-0298,CVE-2018-8298,easy,microsoft chakracore,llm_only,CVE-2021-26413,True,False,,944.901,118,164,0,fresh_clean_rerun
+Q-0298,CVE-2018-8298,easy,microsoft chakracore,vector_rag,CVE-2018-8298,True,True,,2390.452,545,43,0,fresh_clean_rerun
+Q-0298,CVE-2018-8298,easy,microsoft chakracore,hybrid_rag,CVE-2018-8298,True,True,,3036.718,580,38,0,fresh_clean_rerun
+Q-0298,CVE-2018-8298,easy,microsoft chakracore,hybrid_jev,CVE-2018-8298,True,True,,810.931,unknown,unknown,1,fresh_clean_rerun
+Q-0298,CVE-2018-8298,easy,microsoft chakracore,jev_retrieval,CVE-2018-8298,True,True,,891.334,unknown,unknown,1,fresh_clean_rerun
+Q-0299,CVE-2018-8373,hard,microsoft internet explorer,llm_only,CVE-2015-0015,True,False,,1187.225,116,59,0,fresh_clean_rerun
+Q-0299,CVE-2018-8373,hard,microsoft internet explorer,vector_rag,CVE-2021-27085,True,False,,2466.878,815,42,0,fresh_clean_rerun
+Q-0299,CVE-2018-8373,hard,microsoft internet explorer,hybrid_rag,CVE-2021-27085,True,False,,2491.898,651,46,0,fresh_clean_rerun
+Q-0299,CVE-2018-8373,hard,microsoft internet explorer,hybrid_jev,,False,False,,798.214,unknown,unknown,1,fresh_clean_rerun
+Q-0299,CVE-2018-8373,hard,microsoft internet explorer,jev_retrieval,CVE-2018-8373,True,True,,798.615,unknown,unknown,1,fresh_clean_rerun
+Q-0302,CVE-2018-8581,easy,microsoft exchange server,llm_only,CVE-2022-37966,True,False,,959.956,118,108,0,fresh_clean_rerun
+Q-0302,CVE-2018-8581,easy,microsoft exchange server,vector_rag,CVE-2018-8581,True,True,,2561.423,388,40,0,fresh_clean_rerun
+Q-0302,CVE-2018-8581,easy,microsoft exchange server,hybrid_rag,CVE-2018-8581,True,True,,2402.859,388,33,0,fresh_clean_rerun
+Q-0302,CVE-2018-8581,easy,microsoft exchange server,hybrid_jev,CVE-2018-8581,True,True,,800.432,unknown,unknown,1,fresh_clean_rerun
+Q-0302,CVE-2018-8581,easy,microsoft exchange server,jev_retrieval,CVE-2018-8581,True,True,,1112.877,unknown,unknown,1,fresh_clean_rerun
+Q-0305,CVE-2018-8715,medium,embedthis appweb,llm_only,CVE-2023-28531,True,False,,1091.084,121,131,0,fresh_clean_rerun
+Q-0305,CVE-2018-8715,medium,embedthis appweb,vector_rag,CVE-2018-8715,True,True,,3054.935,567,38,0,fresh_clean_rerun
+Q-0305,CVE-2018-8715,medium,embedthis appweb,hybrid_rag,CVE-2018-8715,True,True,,2431.905,821,39,0,fresh_clean_rerun
+Q-0305,CVE-2018-8715,medium,embedthis appweb,hybrid_jev,CVE-2018-8715,True,True,,608.634,unknown,unknown,1,fresh_clean_rerun
+Q-0305,CVE-2018-8715,medium,embedthis appweb,jev_retrieval,CVE-2018-8715,True,True,,776.200,unknown,unknown,1,fresh_clean_rerun
+Q-0306,CVE-2019-0193,medium,apache solr,llm_only,CVE-2021-27905,True,False,,991.912,119,91,0,fresh_clean_rerun
+Q-0306,CVE-2019-0193,medium,apache solr,vector_rag,CVE-2019-0193,True,True,,4671.615,1044,37,0,fresh_clean_rerun
+Q-0306,CVE-2019-0193,medium,apache solr,hybrid_rag,CVE-2019-0193,True,True,,2688.449,1039,42,0,fresh_clean_rerun
+Q-0306,CVE-2019-0193,medium,apache solr,hybrid_jev,CVE-2019-0193,True,True,,653.417,unknown,unknown,1,fresh_clean_rerun
+Q-0306,CVE-2019-0193,medium,apache solr,jev_retrieval,CVE-2019-0193,True,True,,943.534,unknown,unknown,1,fresh_clean_rerun
+Q-0308,CVE-2019-0230,medium,apache struts,llm_only,CVE-2010-1870,True,False,,1126.959,121,93,0,fresh_clean_rerun
+Q-0308,CVE-2019-0230,medium,apache struts,vector_rag,CVE-2019-0230,True,True,,3039.659,672,44,0,fresh_clean_rerun
+Q-0308,CVE-2019-0230,medium,apache struts,hybrid_rag,CVE-2020-17530,True,False,,2854.588,615,72,0,fresh_clean_rerun
+Q-0308,CVE-2019-0230,medium,apache struts,hybrid_jev,,False,False,,817.943,unknown,unknown,1,fresh_clean_rerun
+Q-0308,CVE-2019-0230,medium,apache struts,jev_retrieval,CVE-2020-17530,True,False,,801.029,unknown,unknown,1,fresh_clean_rerun
+Q-0309,CVE-2019-0344,easy,sap commerce cloud,llm_only,CVE-2020-6287,True,False,,1123.833,118,89,0,fresh_clean_rerun
+Q-0309,CVE-2019-0344,easy,sap commerce cloud,vector_rag,CVE-2019-0344,True,True,,2314.892,693,40,0,fresh_clean_rerun
+Q-0309,CVE-2019-0344,easy,sap commerce cloud,hybrid_rag,CVE-2019-0344,True,True,,2965.145,691,40,0,fresh_clean_rerun
+Q-0309,CVE-2019-0344,easy,sap commerce cloud,hybrid_jev,CVE-2019-0344,True,True,,971.148,unknown,unknown,1,fresh_clean_rerun
+Q-0309,CVE-2019-0344,easy,sap commerce cloud,jev_retrieval,CVE-2019-0344,True,True,,1131.103,unknown,unknown,1,fresh_clean_rerun
+Q-0313,CVE-2019-0752,hard,microsoft internet explorer,llm_only,CVE-2015-0076,True,False,,764.544,115,66,0,fresh_clean_rerun
+Q-0313,CVE-2019-0752,hard,microsoft internet explorer,vector_rag,CVE-2021-27085,True,False,,2727.498,814,44,0,fresh_clean_rerun
+Q-0313,CVE-2019-0752,hard,microsoft internet explorer,hybrid_rag,CVE-2021-27085,True,False,,2393.105,650,47,0,fresh_clean_rerun
+Q-0313,CVE-2019-0752,hard,microsoft internet explorer,hybrid_jev,,False,False,,1395.639,unknown,unknown,1,fresh_clean_rerun
+Q-0313,CVE-2019-0752,hard,microsoft internet explorer,jev_retrieval,CVE-2017-0149,True,False,,1089.555,unknown,unknown,1,fresh_clean_rerun
+Q-0318,CVE-2019-1003005,medium,jenkins script security,llm_only,CVE-2020-2100,True,False,,1021.731,119,96,0,fresh_clean_rerun
+Q-0318,CVE-2019-1003005,medium,jenkins script security,vector_rag,CVE-2019-1003029,True,False,,2892.169,894,51,0,fresh_clean_rerun
+Q-0318,CVE-2019-1003005,medium,jenkins script security,hybrid_rag,CVE-2019-1003005,True,True,,2079.864,871,50,0,fresh_clean_rerun
+Q-0318,CVE-2019-1003005,medium,jenkins script security,hybrid_jev,CVE-2019-1003005,True,True,,1598.148,unknown,unknown,1,fresh_clean_rerun
+Q-0318,CVE-2019-1003005,medium,jenkins script security,jev_retrieval,CVE-2019-1003005,True,True,,959.496,unknown,unknown,1,fresh_clean_rerun
+Q-0319,CVE-2019-1003029,hard,jenkins script security,llm_only,CVE-2021-21684,True,False,,1087.592,118,128,0,fresh_clean_rerun
+Q-0319,CVE-2019-1003029,hard,jenkins script security,vector_rag,CVE-2019-1003029,True,True,,3231.956,568,64,0,fresh_clean_rerun
+Q-0319,CVE-2019-1003029,hard,jenkins script security,hybrid_rag,CVE-2019-1003005,True,False,,2449.436,879,55,0,fresh_clean_rerun
+Q-0319,CVE-2019-1003029,hard,jenkins script security,hybrid_jev,CVE-2019-1003005,True,False,,1407.793,unknown,unknown,1,fresh_clean_rerun
+Q-0319,CVE-2019-1003029,hard,jenkins script security,jev_retrieval,CVE-2019-1003005,True,False,,1100.846,unknown,unknown,1,fresh_clean_rerun
+Q-0320,CVE-2019-10149,easy,exim exim,llm_only,CVE-2020-28004,True,False,,1372.568,117,116,0,fresh_clean_rerun
+Q-0320,CVE-2019-10149,easy,exim exim,vector_rag,CVE-2019-10149,True,True,,3124.980,630,51,0,fresh_clean_rerun
+Q-0320,CVE-2019-10149,easy,exim exim,hybrid_rag,CVE-2019-10149,True,True,,1741.349,699,30,0,fresh_clean_rerun
+Q-0320,CVE-2019-10149,easy,exim exim,hybrid_jev,CVE-2019-10149,True,True,,811.132,unknown,unknown,1,fresh_clean_rerun
+Q-0320,CVE-2019-10149,easy,exim exim,jev_retrieval,CVE-2019-10149,True,True,,786.674,unknown,unknown,1,fresh_clean_rerun
+Q-0322,CVE-2019-1068,easy,microsoft sql server,llm_only,CVE-2019-1068,True,True,,959.747,119,95,0,fresh_clean_rerun
+Q-0322,CVE-2019-1068,easy,microsoft sql server,vector_rag,CVE-2019-1068,True,True,,2559.968,524,46,0,fresh_clean_rerun
+Q-0322,CVE-2019-1068,easy,microsoft sql server,hybrid_rag,CVE-2019-1068,True,True,,2325.384,520,49,0,fresh_clean_rerun
+Q-0322,CVE-2019-1068,easy,microsoft sql server,hybrid_jev,CVE-2019-1068,True,True,,881.355,unknown,unknown,1,fresh_clean_rerun
+Q-0322,CVE-2019-1068,easy,microsoft sql server,jev_retrieval,CVE-2019-1068,True,True,,789.848,unknown,unknown,1,fresh_clean_rerun
+Q-0323,CVE-2019-10758,hard,mongo-express project mongo-express,llm_only,CVE-2022-31009,True,False,,958.771,129,52,0,fresh_clean_rerun
+Q-0323,CVE-2019-10758,hard,mongo-express project mongo-express,vector_rag,CVE-2019-10758,True,True,,2385.506,561,81,0,fresh_clean_rerun
+Q-0323,CVE-2019-10758,hard,mongo-express project mongo-express,hybrid_rag,CVE-2019-10758,True,True,,2558.410,874,54,0,fresh_clean_rerun
+Q-0323,CVE-2019-10758,hard,mongo-express project mongo-express,hybrid_jev,CVE-2019-10758,True,True,,654.361,unknown,unknown,1,fresh_clean_rerun
+Q-0323,CVE-2019-10758,hard,mongo-express project mongo-express,jev_retrieval,CVE-2019-10758,True,True,,739.232,unknown,unknown,1,fresh_clean_rerun
+Q-0325,CVE-2019-11043,easy,php php,llm_only,CVE-2019-11043,True,True,,1055.039,118,69,0,fresh_clean_rerun
+Q-0325,CVE-2019-11043,easy,php php,vector_rag,CVE-2019-11043,True,True,,3324.652,1033,43,0,fresh_clean_rerun
+Q-0325,CVE-2019-11043,easy,php php,hybrid_rag,CVE-2019-11043,True,True,,1753.738,780,43,0,fresh_clean_rerun
+Q-0325,CVE-2019-11043,easy,php php,hybrid_jev,CVE-2019-11043,True,True,,617.409,unknown,unknown,1,fresh_clean_rerun
+Q-0325,CVE-2019-11043,easy,php php,jev_retrieval,CVE-2019-11043,True,True,,671.860,unknown,unknown,1,fresh_clean_rerun
+Q-0329,CVE-2019-11581,hard,atlassian jira server,llm_only,CVE-2022-26134,True,False,,1112.713,119,51,0,fresh_clean_rerun
+Q-0329,CVE-2019-11581,hard,atlassian jira server,vector_rag,CVE-2019-11581,True,True,,5107.543,839,54,0,fresh_clean_rerun
+Q-0329,CVE-2019-11581,hard,atlassian jira server,hybrid_rag,CVE-2019-11581,True,True,,2626.141,839,71,0,fresh_clean_rerun
+Q-0329,CVE-2019-11581,hard,atlassian jira server,hybrid_jev,CVE-2019-11581,True,True,,834.760,unknown,unknown,1,fresh_clean_rerun
+Q-0329,CVE-2019-11581,hard,atlassian jira server,jev_retrieval,CVE-2019-11581,True,True,,868.135,unknown,unknown,1,fresh_clean_rerun
+Q-0336,CVE-2019-13608,easy,citrix storefront server,llm_only,CVE-2020-8193,True,False,,880.465,123,146,0,fresh_clean_rerun
+Q-0336,CVE-2019-13608,easy,citrix storefront server,vector_rag,CVE-2019-13608,True,True,,2499.236,744,31,0,fresh_clean_rerun
+Q-0336,CVE-2019-13608,easy,citrix storefront server,hybrid_rag,CVE-2019-13608,True,True,,2538.920,804,34,0,fresh_clean_rerun
+Q-0336,CVE-2019-13608,easy,citrix storefront server,hybrid_jev,CVE-2019-13608,True,True,,683.748,unknown,unknown,1,fresh_clean_rerun
+Q-0336,CVE-2019-13608,easy,citrix storefront server,jev_retrieval,CVE-2019-13608,True,True,,740.728,unknown,unknown,1,fresh_clean_rerun
+Q-0337,CVE-2019-1367,hard,microsoft internet explorer,llm_only,CVE-2021-40444,True,False,,1133.868,120,71,0,fresh_clean_rerun
+Q-0337,CVE-2019-1367,hard,microsoft internet explorer,vector_rag,CVE-2018-8373,True,False,,2404.299,819,41,0,fresh_clean_rerun
+Q-0337,CVE-2019-1367,hard,microsoft internet explorer,hybrid_rag,CVE-2020-1380,True,False,,2554.245,890,63,0,fresh_clean_rerun
+Q-0337,CVE-2019-1367,hard,microsoft internet explorer,hybrid_jev,,False,False,,684.944,unknown,unknown,1,fresh_clean_rerun
+Q-0337,CVE-2019-1367,hard,microsoft internet explorer,jev_retrieval,CVE-2018-8373,True,False,,758.997,unknown,unknown,1,fresh_clean_rerun
+Q-0340,CVE-2019-14234,medium,djangoproject django,llm_only,CVE-2021-33203,True,False,,777.004,118,55,0,fresh_clean_rerun
+Q-0340,CVE-2019-14234,medium,djangoproject django,vector_rag,CVE-2019-14234,True,True,,2900.385,792,74,0,fresh_clean_rerun
+Q-0340,CVE-2019-14234,medium,djangoproject django,hybrid_rag,CVE-2019-14234,True,True,,2399.278,1060,61,0,fresh_clean_rerun
+Q-0340,CVE-2019-14234,medium,djangoproject django,hybrid_jev,CVE-2019-14234,True,True,,795.348,unknown,unknown,1,fresh_clean_rerun
+Q-0340,CVE-2019-14234,medium,djangoproject django,jev_retrieval,CVE-2019-14234,True,True,,800.338,unknown,unknown,1,fresh_clean_rerun
+Q-0344,CVE-2019-15752,easy,docker docker,llm_only,CVE-2022-24765,True,False,,1286.796,114,124,0,fresh_clean_rerun
+Q-0344,CVE-2019-15752,easy,docker docker,vector_rag,CVE-2019-15752,True,True,,2054.235,702,31,0,fresh_clean_rerun
+Q-0344,CVE-2019-15752,easy,docker docker,hybrid_rag,CVE-2019-15752,True,True,,2736.697,884,39,0,fresh_clean_rerun
+Q-0344,CVE-2019-15752,easy,docker docker,hybrid_jev,CVE-2019-15752,True,True,,809.173,unknown,unknown,1,fresh_clean_rerun
+Q-0344,CVE-2019-15752,easy,docker docker,jev_retrieval,CVE-2019-15752,True,True,,798.668,unknown,unknown,1,fresh_clean_rerun
+Q-0346,CVE-2019-16278,easy,nazgul nostromo nhttpd,llm_only,CVE-2015-2080,True,False,,934.761,122,56,0,fresh_clean_rerun
+Q-0346,CVE-2019-16278,easy,nazgul nostromo nhttpd,vector_rag,CVE-2019-16278,True,True,,2573.675,721,54,0,fresh_clean_rerun
+Q-0346,CVE-2019-16278,easy,nazgul nostromo nhttpd,hybrid_rag,CVE-2019-16278,True,True,,2424.778,772,47,0,fresh_clean_rerun
+Q-0346,CVE-2019-16278,easy,nazgul nostromo nhttpd,hybrid_jev,CVE-2019-16278,True,True,,644.403,unknown,unknown,1,fresh_clean_rerun
+Q-0346,CVE-2019-16278,easy,nazgul nostromo nhttpd,jev_retrieval,CVE-2019-16278,True,True,,781.235,unknown,unknown,1,fresh_clean_rerun
+Q-0348,CVE-2019-16759,medium,vbulletin vbulletin,llm_only,CVE-2020-10878,True,False,,1097.159,124,78,0,fresh_clean_rerun
+Q-0348,CVE-2019-16759,medium,vbulletin vbulletin,vector_rag,CVE-2019-16759,True,True,,2372.292,740,43,0,fresh_clean_rerun
+Q-0348,CVE-2019-16759,medium,vbulletin vbulletin,hybrid_rag,CVE-2019-16759,True,True,,2602.471,660,69,0,fresh_clean_rerun
+Q-0348,CVE-2019-16759,medium,vbulletin vbulletin,hybrid_jev,CVE-2019-16759,True,True,,754.819,unknown,unknown,1,fresh_clean_rerun
+Q-0348,CVE-2019-16759,medium,vbulletin vbulletin,jev_retrieval,CVE-2019-16759,True,True,,742.906,unknown,unknown,1,fresh_clean_rerun
+Q-0349,CVE-2019-16928,easy,exim exim,llm_only,CVE-2020-14145,True,False,,1068.491,120,102,0,fresh_clean_rerun
+Q-0349,CVE-2019-16928,easy,exim exim,vector_rag,CVE-2019-16928,True,True,,2543.048,557,49,0,fresh_clean_rerun
+Q-0349,CVE-2019-16928,easy,exim exim,hybrid_rag,CVE-2019-16928,True,True,,2566.705,651,46,0,fresh_clean_rerun
+Q-0349,CVE-2019-16928,easy,exim exim,hybrid_jev,CVE-2019-16928,True,True,,641.256,unknown,unknown,1,fresh_clean_rerun
+Q-0349,CVE-2019-16928,easy,exim exim,jev_retrieval,CVE-2019-16928,True,True,,1871.842,unknown,unknown,1,fresh_clean_rerun
+Q-0350,CVE-2019-17558,medium,apache solr,llm_only,CVE-2021-27905,True,False,,1484.043,116,110,0,fresh_clean_rerun
+Q-0350,CVE-2019-17558,medium,apache solr,vector_rag,CVE-2019-17558,True,True,,2109.743,1041,46,0,fresh_clean_rerun
+Q-0350,CVE-2019-17558,medium,apache solr,hybrid_rag,CVE-2019-17558,True,True,,4912.167,1041,46,0,fresh_clean_rerun
+Q-0350,CVE-2019-17558,medium,apache solr,hybrid_jev,CVE-2019-17558,True,True,,650.508,unknown,unknown,1,fresh_clean_rerun
+Q-0350,CVE-2019-17558,medium,apache solr,jev_retrieval,CVE-2019-17558,True,True,,961.129,unknown,unknown,1,fresh_clean_rerun
+Q-0353,CVE-2019-18187,easy,trendmicro officescan,llm_only,CVE-2020-13379,True,False,,959.058,117,84,0,fresh_clean_rerun
+Q-0353,CVE-2019-18187,easy,trendmicro officescan,vector_rag,CVE-2019-18187,True,True,,3125.234,716,38,0,fresh_clean_rerun
+Q-0353,CVE-2019-18187,easy,trendmicro officescan,hybrid_rag,CVE-2019-18187,True,True,,1684.352,717,38,0,fresh_clean_rerun
+Q-0353,CVE-2019-18187,easy,trendmicro officescan,hybrid_jev,CVE-2019-18187,True,True,,637.270,unknown,unknown,1,fresh_clean_rerun
+Q-0353,CVE-2019-18187,easy,trendmicro officescan,jev_retrieval,CVE-2019-18187,True,True,,1516.149,unknown,unknown,1,fresh_clean_rerun
+Q-0355,CVE-2019-19006,easy,sangoma freepbx,llm_only,CVE-2023-27350,True,False,,1208.406,127,101,0,fresh_clean_rerun
+Q-0355,CVE-2019-19006,easy,sangoma freepbx,vector_rag,CVE-2019-19006,True,True,,2362.454,731,45,0,fresh_clean_rerun
+Q-0355,CVE-2019-19006,easy,sangoma freepbx,hybrid_rag,CVE-2019-19006,True,True,,2611.345,731,65,0,fresh_clean_rerun
+Q-0355,CVE-2019-19006,easy,sangoma freepbx,hybrid_jev,CVE-2019-19006,True,True,,664.877,unknown,unknown,1,fresh_clean_rerun
+Q-0355,CVE-2019-19006,easy,sangoma freepbx,jev_retrieval,CVE-2019-19006,True,True,,1062.653,unknown,unknown,1,fresh_clean_rerun
+Q-0358,CVE-2019-20933,medium,influxdata influxdb,llm_only,CVE-2019-13466,True,False,,2627.341,123,122,0,fresh_clean_rerun
+Q-0358,CVE-2019-20933,medium,influxdata influxdb,vector_rag,CVE-2019-20933,True,True,,1068.043,1026,37,0,fresh_clean_rerun
+Q-0358,CVE-2019-20933,medium,influxdata influxdb,hybrid_rag,CVE-2019-20933,True,True,,2230.617,1097,31,0,fresh_clean_rerun
+Q-0358,CVE-2019-20933,medium,influxdata influxdb,hybrid_jev,CVE-2019-20933,True,True,,1646.303,unknown,unknown,1,fresh_clean_rerun
+Q-0358,CVE-2019-20933,medium,influxdata influxdb,jev_retrieval,CVE-2019-20933,True,True,,1235.152,unknown,unknown,1,fresh_clean_rerun
+Q-0361,CVE-2019-2725,medium,oracle weblogic server,llm_only,CVE-2020-14882,True,False,,1271.145,119,51,0,fresh_clean_rerun
+Q-0361,CVE-2019-2725,medium,oracle weblogic server,vector_rag,CVE-2020-14882,True,False,,3063.185,973,54,0,fresh_clean_rerun
+Q-0361,CVE-2019-2725,medium,oracle weblogic server,hybrid_rag,CVE-2020-14882,True,False,,1383.066,913,46,0,fresh_clean_rerun
+Q-0361,CVE-2019-2725,medium,oracle weblogic server,hybrid_jev,,False,False,,1050.410,unknown,unknown,1,fresh_clean_rerun
+Q-0361,CVE-2019-2725,medium,oracle weblogic server,jev_retrieval,CVE-2019-2725,True,True,,12418.176,unknown,unknown,1,fresh_clean_rerun
+Q-0363,CVE-2019-3396,medium,atlassian confluence server,llm_only,CVE-2021-26084,True,False,,1424.289,123,111,0,fresh_clean_rerun
+Q-0363,CVE-2019-3396,medium,atlassian confluence server,vector_rag,CVE-2019-3396,True,True,,1943.402,866,51,0,fresh_clean_rerun
+Q-0363,CVE-2019-3396,medium,atlassian confluence server,hybrid_rag,CVE-2019-3396,True,True,,3136.251,860,37,0,fresh_clean_rerun
+Q-0363,CVE-2019-3396,medium,atlassian confluence server,hybrid_jev,CVE-2019-3396,True,True,,829.488,unknown,unknown,1,fresh_clean_rerun
+Q-0363,CVE-2019-3396,medium,atlassian confluence server,jev_retrieval,CVE-2019-3396,True,True,,741.078,unknown,unknown,1,fresh_clean_rerun
+Q-0364,CVE-2019-3398,hard,atlassian confluence server,llm_only,CVE-2022-26134,True,False,,1051.669,121,55,0,fresh_clean_rerun
+Q-0364,CVE-2019-3398,hard,atlassian confluence server,vector_rag,CVE-2023-22518,True,False,,3188.961,754,61,0,fresh_clean_rerun
+Q-0364,CVE-2019-3398,hard,atlassian confluence server,hybrid_rag,CVE-2023-22518,True,False,,1760.202,786,46,0,fresh_clean_rerun
+Q-0364,CVE-2019-3398,hard,atlassian confluence server,hybrid_jev,CVE-2023-22518,True,False,,3054.997,unknown,unknown,1,fresh_clean_rerun
+Q-0364,CVE-2019-3398,hard,atlassian confluence server,jev_retrieval,CVE-2023-22518,True,False,,1104.035,unknown,unknown,1,fresh_clean_rerun
+Q-0366,CVE-2019-4716,easy,ibm planning analytics,llm_only,CVE-2022-39372,True,False,,740.081,119,71,0,fresh_clean_rerun
+Q-0366,CVE-2019-4716,easy,ibm planning analytics,vector_rag,CVE-2019-4716,True,True,,4068.475,750,47,0,fresh_clean_rerun
+Q-0366,CVE-2019-4716,easy,ibm planning analytics,hybrid_rag,CVE-2019-4716,True,True,,1428.613,712,49,0,fresh_clean_rerun
+Q-0366,CVE-2019-4716,easy,ibm planning analytics,hybrid_jev,CVE-2019-4716,True,True,,884.124,unknown,unknown,1,fresh_clean_rerun
+Q-0366,CVE-2019-4716,easy,ibm planning analytics,jev_retrieval,CVE-2019-4716,True,True,,1139.911,unknown,unknown,1,fresh_clean_rerun
+Q-0369,CVE-2019-5786,easy,google chrome,llm_only,CVE-2023-4863,True,False,,1127.722,117,77,0,fresh_clean_rerun
+Q-0369,CVE-2019-5786,easy,google chrome,vector_rag,CVE-2019-5786,True,True,,2557.642,582,43,0,fresh_clean_rerun
+Q-0369,CVE-2019-5786,easy,google chrome,hybrid_rag,CVE-2019-5786,True,True,,2608.841,591,41,0,fresh_clean_rerun
+Q-0369,CVE-2019-5786,easy,google chrome,hybrid_jev,CVE-2019-5786,True,True,,839.221,unknown,unknown,1,fresh_clean_rerun
+Q-0369,CVE-2019-5786,easy,google chrome,jev_retrieval,CVE-2019-5786,True,True,,1197.927,unknown,unknown,1,fresh_clean_rerun
+Q-0370,CVE-2019-6116,hard,artifex ghostscript,llm_only,CVE-2020-11757,True,False,,2068.503,127,82,0,fresh_clean_rerun
+Q-0370,CVE-2019-6116,hard,artifex ghostscript,vector_rag,CVE-2019-6116,True,True,,2473.076,583,47,0,fresh_clean_rerun
+Q-0370,CVE-2019-6116,hard,artifex ghostscript,hybrid_rag,CVE-2019-6116,True,True,,1423.877,720,40,0,fresh_clean_rerun
+Q-0370,CVE-2019-6116,hard,artifex ghostscript,hybrid_jev,CVE-2019-6116,True,True,,863.738,unknown,unknown,1,fresh_clean_rerun
+Q-0370,CVE-2019-6116,hard,artifex ghostscript,jev_retrieval,CVE-2019-6116,True,True,,1289.345,unknown,unknown,1,fresh_clean_rerun
+Q-0372,CVE-2019-6339,hard,drupal drupal,llm_only,CVE-2019-6340,True,False,,1359.732,119,48,0,fresh_clean_rerun
+Q-0372,CVE-2019-6339,hard,drupal drupal,vector_rag,CVE-2019-6339,True,True,,2568.960,930,58,0,fresh_clean_rerun
+Q-0372,CVE-2019-6339,hard,drupal drupal,hybrid_rag,CVE-2018-7602,True,False,,3359.616,865,96,0,fresh_clean_rerun
+Q-0372,CVE-2019-6339,hard,drupal drupal,hybrid_jev,CVE-2018-7602,True,False,,2069.923,unknown,unknown,1,fresh_clean_rerun
+Q-0372,CVE-2019-6339,hard,drupal drupal,jev_retrieval,CVE-2018-7602,True,False,,1277.696,unknown,unknown,1,fresh_clean_rerun
+Q-0373,CVE-2019-6340,hard,drupal drupal,llm_only,CVE-2018-7600,True,False,,961.728,118,71,0,fresh_clean_rerun
+Q-0373,CVE-2019-6340,hard,drupal drupal,vector_rag,CVE-2019-6341,True,False,,4475.906,808,59,0,fresh_clean_rerun
+Q-0373,CVE-2019-6340,hard,drupal drupal,hybrid_rag,CVE-2019-6341,True,False,,1286.329,730,58,0,fresh_clean_rerun
+Q-0373,CVE-2019-6340,hard,drupal drupal,hybrid_jev,,False,False,,793.008,unknown,unknown,1,fresh_clean_rerun
+Q-0373,CVE-2019-6340,hard,drupal drupal,jev_retrieval,CVE-2019-6340,True,True,,769.584,unknown,unknown,1,fresh_clean_rerun
+Q-0374,CVE-2019-6341,easy,drupal drupal,llm_only,CVE-2018-7600,True,False,,989.639,118,112,0,fresh_clean_rerun
+Q-0374,CVE-2019-6341,easy,drupal drupal,vector_rag,CVE-2019-6341,True,True,,4805.172,856,44,0,fresh_clean_rerun
+Q-0374,CVE-2019-6341,easy,drupal drupal,hybrid_rag,CVE-2019-6341,True,True,,3194.195,856,33,0,fresh_clean_rerun
+Q-0374,CVE-2019-6341,easy,drupal drupal,hybrid_jev,CVE-2019-6341,True,True,,658.228,unknown,unknown,1,fresh_clean_rerun
+Q-0374,CVE-2019-6341,easy,drupal drupal,jev_retrieval,CVE-2019-6341,True,True,,940.284,unknown,unknown,1,fresh_clean_rerun
+Q-0377,CVE-2019-7194,easy,qnap photo station,llm_only,CVE-2022-24754,True,False,,963.991,119,65,0,fresh_clean_rerun
+Q-0377,CVE-2019-7194,easy,qnap photo station,vector_rag,CVE-2019-7194,True,True,,2394.255,734,39,0,fresh_clean_rerun
+Q-0377,CVE-2019-7194,easy,qnap photo station,hybrid_rag,CVE-2019-7194,True,True,,3845.597,734,39,0,fresh_clean_rerun
+Q-0377,CVE-2019-7194,easy,qnap photo station,hybrid_jev,CVE-2019-7194,True,True,,791.752,unknown,unknown,1,fresh_clean_rerun
+Q-0377,CVE-2019-7194,easy,qnap photo station,jev_retrieval,CVE-2019-7194,True,True,,1786.997,unknown,unknown,1,fresh_clean_rerun
+Q-0378,CVE-2019-7238,hard,sonatype nexus repository manager,llm_only,CVE-2019-7238,True,True,,1106.818,118,62,0,fresh_clean_rerun
+Q-0378,CVE-2019-7238,hard,sonatype nexus repository manager,vector_rag,CVE-2019-7238,True,True,,4315.874,491,80,0,fresh_clean_rerun
+Q-0378,CVE-2019-7238,hard,sonatype nexus repository manager,hybrid_rag,CVE-2018-16621,True,False,,1300.930,425,48,0,fresh_clean_rerun
+Q-0378,CVE-2019-7238,hard,sonatype nexus repository manager,hybrid_jev,CVE-2018-16621,True,False,,766.391,unknown,unknown,1,fresh_clean_rerun
+Q-0378,CVE-2019-7238,hard,sonatype nexus repository manager,jev_retrieval,CVE-2018-16621,True,False,,800.687,unknown,unknown,1,fresh_clean_rerun
+Q-0382,CVE-2019-7609,medium,elastic kibana,llm_only,CVE-2015-1427,True,False,,958.720,119,78,0,fresh_clean_rerun
+Q-0382,CVE-2019-7609,medium,elastic kibana,vector_rag,CVE-2019-7609,True,True,,2404.204,793,101,0,fresh_clean_rerun
+Q-0382,CVE-2019-7609,medium,elastic kibana,hybrid_rag,CVE-2019-7609,True,True,,5452.130,793,74,0,fresh_clean_rerun
+Q-0382,CVE-2019-7609,medium,elastic kibana,hybrid_jev,CVE-2019-7609,True,True,,781.186,unknown,unknown,1,fresh_clean_rerun
+Q-0382,CVE-2019-7609,medium,elastic kibana,jev_retrieval,CVE-2019-7609,True,True,,1118.219,unknown,unknown,1,fresh_clean_rerun
+Q-0383,CVE-2019-8394,medium,zohocorp manageengine servicedesk plus,llm_only,CVE-2022-47966,True,False,,1206.144,127,128,0,fresh_clean_rerun
+Q-0383,CVE-2019-8394,medium,zohocorp manageengine servicedesk plus,vector_rag,CVE-2019-8394,True,True,,2322.536,1047,48,0,fresh_clean_rerun
+Q-0383,CVE-2019-8394,medium,zohocorp manageengine servicedesk plus,hybrid_rag,CVE-2019-8394,True,True,,3351.244,921,63,0,fresh_clean_rerun
+Q-0383,CVE-2019-8394,medium,zohocorp manageengine servicedesk plus,hybrid_jev,CVE-2019-8394,True,True,,724.826,unknown,unknown,1,fresh_clean_rerun
+Q-0383,CVE-2019-8394,medium,zohocorp manageengine servicedesk plus,jev_retrieval,CVE-2019-8394,True,True,,1033.051,unknown,unknown,1,fresh_clean_rerun
+Q-0387,CVE-2019-9193,hard,postgresql postgresql,llm_only,CVE-2022-1557,True,False,,1284.543,124,121,0,fresh_clean_rerun
+Q-0387,CVE-2019-9193,hard,postgresql postgresql,vector_rag,CVE-2018-1058,True,False,,2466.769,725,96,0,fresh_clean_rerun
+Q-0387,CVE-2019-9193,hard,postgresql postgresql,hybrid_rag,CVE-2019-9193,True,True,,2641.153,829,49,0,fresh_clean_rerun
+Q-0387,CVE-2019-9193,hard,postgresql postgresql,hybrid_jev,CVE-2019-9193,True,True,,693.833,unknown,unknown,1,fresh_clean_rerun
+Q-0387,CVE-2019-9193,hard,postgresql postgresql,jev_retrieval,CVE-2019-9193,True,True,,750.206,unknown,unknown,1,fresh_clean_rerun
+Q-0388,CVE-2019-9670,easy,synacor zimbra collaboration suite,llm_only,CVE-2022-27925,True,False,,6428.736,126,70,0,fresh_clean_rerun
+Q-0388,CVE-2019-9670,easy,synacor zimbra collaboration suite,vector_rag,CVE-2019-9670,True,True,,16300.380,830,78,0,fresh_clean_rerun
+Q-0388,CVE-2019-9670,easy,synacor zimbra collaboration suite,hybrid_rag,CVE-2019-9670,True,True,,1596.310,722,52,0,fresh_clean_rerun
+Q-0388,CVE-2019-9670,easy,synacor zimbra collaboration suite,hybrid_jev,CVE-2019-9670,True,True,,949.141,unknown,unknown,1,fresh_clean_rerun
+Q-0388,CVE-2019-9670,easy,synacor zimbra collaboration suite,jev_retrieval,CVE-2019-9670,True,True,,967.786,unknown,unknown,1,fresh_clean_rerun
+Q-0389,CVE-2019-9874,medium,sitecore cms,llm_only,CVE-2020-12458,True,False,,1274.563,118,76,0,fresh_clean_rerun
+Q-0389,CVE-2019-9874,medium,sitecore cms,vector_rag,CVE-2019-9874,True,True,,2045.776,757,85,0,fresh_clean_rerun
+Q-0389,CVE-2019-9874,medium,sitecore cms,hybrid_rag,CVE-2019-9874,True,True,,2919.545,590,62,0,fresh_clean_rerun
+Q-0389,CVE-2019-9874,medium,sitecore cms,hybrid_jev,CVE-2019-9874,True,True,,639.010,unknown,unknown,1,fresh_clean_rerun
+Q-0389,CVE-2019-9874,medium,sitecore cms,jev_retrieval,CVE-2019-9874,True,True,,960.476,unknown,unknown,1,fresh_clean_rerun
+Q-0393,CVE-2020-0618,hard,microsoft sql server,llm_only,CVE-2019-1259,True,False,,932.512,115,153,0,fresh_clean_rerun
+Q-0393,CVE-2020-0618,hard,microsoft sql server,vector_rag,CVE-2019-1068,True,False,,2593.292,520,41,0,fresh_clean_rerun
+Q-0393,CVE-2020-0618,hard,microsoft sql server,hybrid_rag,CVE-2019-1068,True,False,,2871.325,516,63,0,fresh_clean_rerun
+Q-0393,CVE-2020-0618,hard,microsoft sql server,hybrid_jev,CVE-2019-1068,True,False,,860.315,unknown,unknown,1,fresh_clean_rerun
+Q-0393,CVE-2020-0618,hard,microsoft sql server,jev_retrieval,CVE-2019-1068,True,False,,1270.743,unknown,unknown,1,fresh_clean_rerun
+Q-0394,CVE-2020-0646,medium,microsoft .net framework,llm_only,CVE-2020-0605,True,False,,1389.738,118,70,0,fresh_clean_rerun
+Q-0394,CVE-2020-0646,medium,microsoft .net framework,vector_rag,CVE-2020-0646,True,True,,2930.296,481,61,0,fresh_clean_rerun
+Q-0394,CVE-2020-0646,medium,microsoft .net framework,hybrid_rag,CVE-2020-0646,True,True,,1916.148,532,76,0,fresh_clean_rerun
+Q-0394,CVE-2020-0646,medium,microsoft .net framework,hybrid_jev,CVE-2020-0646,True,True,,1274.300,unknown,unknown,1,fresh_clean_rerun
+Q-0394,CVE-2020-0646,medium,microsoft .net framework,jev_retrieval,CVE-2020-0646,True,True,,1714.037,unknown,unknown,1,fresh_clean_rerun
+Q-0401,CVE-2020-10199,medium,sonatype nexus,llm_only,CVE-2020-10204,True,False,,2163.503,120,87,0,fresh_clean_rerun
+Q-0401,CVE-2020-10199,medium,sonatype nexus,vector_rag,CVE-2020-10204,True,False,,2661.432,440,53,0,fresh_clean_rerun
+Q-0401,CVE-2020-10199,medium,sonatype nexus,hybrid_rag,CVE-2019-7238,True,False,,3201.766,428,85,0,fresh_clean_rerun
+Q-0401,CVE-2020-10199,medium,sonatype nexus,hybrid_jev,,False,False,,1079.168,unknown,unknown,1,fresh_clean_rerun
+Q-0401,CVE-2020-10199,medium,sonatype nexus,jev_retrieval,CVE-2020-10204,True,False,,1158.724,unknown,unknown,1,fresh_clean_rerun
+Q-0404,CVE-2020-10221,easy,rconfig rconfig,llm_only,CVE-2022-24820,True,False,,970.928,122,143,0,fresh_clean_rerun
+Q-0404,CVE-2020-10221,easy,rconfig rconfig,vector_rag,CVE-2020-10221,True,True,,2543.161,642,41,0,fresh_clean_rerun
+Q-0404,CVE-2020-10221,easy,rconfig rconfig,hybrid_rag,CVE-2020-10221,True,True,,2861.131,684,42,0,fresh_clean_rerun
+Q-0404,CVE-2020-10221,easy,rconfig rconfig,hybrid_jev,CVE-2020-10221,True,True,,671.655,unknown,unknown,1,fresh_clean_rerun
+Q-0404,CVE-2020-10221,easy,rconfig rconfig,jev_retrieval,CVE-2020-10221,True,True,,915.653,unknown,unknown,1,fresh_clean_rerun
+Q-0409,CVE-2020-11651,medium,saltstack salt,llm_only,CVE-2020-16846,True,False,,985.456,118,149,0,fresh_clean_rerun
+Q-0409,CVE-2020-11651,medium,saltstack salt,vector_rag,CVE-2020-11651,True,True,,2373.158,595,58,0,fresh_clean_rerun
+Q-0409,CVE-2020-11651,medium,saltstack salt,hybrid_rag,CVE-2020-11651,True,True,,3360.308,595,66,0,fresh_clean_rerun
+Q-0409,CVE-2020-11651,medium,saltstack salt,hybrid_jev,CVE-2020-11651,True,True,,1108.967,unknown,unknown,1,fresh_clean_rerun
+Q-0409,CVE-2020-11651,medium,saltstack salt,jev_retrieval,CVE-2020-11651,True,True,,802.622,unknown,unknown,1,fresh_clean_rerun
+Q-0410,CVE-2020-11652,hard,saltstack salt,llm_only,CVE-2021-20288,True,False,,1150.006,117,52,0,fresh_clean_rerun
+Q-0410,CVE-2020-11652,hard,saltstack salt,vector_rag,CVE-2020-11651,True,False,,2534.153,594,44,0,fresh_clean_rerun
+Q-0410,CVE-2020-11652,hard,saltstack salt,hybrid_rag,CVE-2020-11651,True,False,,2984.008,594,46,0,fresh_clean_rerun
+Q-0410,CVE-2020-11652,hard,saltstack salt,hybrid_jev,CVE-2020-11651,True,False,,856.977,unknown,unknown,1,fresh_clean_rerun
+Q-0410,CVE-2020-11652,hard,saltstack salt,jev_retrieval,CVE-2020-11652,True,True,,957.905,unknown,unknown,1,fresh_clean_rerun
+Q-0411,CVE-2020-11800,medium,zabbix zabbix,llm_only,CVE-2016-10158,True,False,,1609.974,123,135,0,fresh_clean_rerun
+Q-0411,CVE-2020-11800,medium,zabbix zabbix,vector_rag,CVE-2020-11800,True,True,,2072.515,627,42,0,fresh_clean_rerun
+Q-0411,CVE-2020-11800,medium,zabbix zabbix,hybrid_rag,CVE-2020-11800,True,True,,2108.147,687,42,0,fresh_clean_rerun
+Q-0411,CVE-2020-11800,medium,zabbix zabbix,hybrid_jev,CVE-2020-11800,True,True,,705.829,unknown,unknown,1,fresh_clean_rerun
+Q-0411,CVE-2020-11800,medium,zabbix zabbix,jev_retrieval,CVE-2020-11800,True,True,,1171.671,unknown,unknown,1,fresh_clean_rerun
+Q-0413,CVE-2020-11978,hard,apache airflow,llm_only,CVE-2020-11989,True,False,,1293.363,114,158,0,fresh_clean_rerun
+Q-0413,CVE-2020-11978,hard,apache airflow,vector_rag,CVE-2020-11978,True,True,,2237.812,649,41,0,fresh_clean_rerun
+Q-0413,CVE-2020-11978,hard,apache airflow,hybrid_rag,CVE-2020-11978,True,True,,2717.182,668,41,0,fresh_clean_rerun
+Q-0413,CVE-2020-11978,hard,apache airflow,hybrid_jev,CVE-2020-11978,True,True,,797.093,unknown,unknown,1,fresh_clean_rerun
+Q-0413,CVE-2020-11978,hard,apache airflow,jev_retrieval,CVE-2020-11978,True,True,,756.835,unknown,unknown,1,fresh_clean_rerun
+Q-0414,CVE-2020-11981,easy,apache airflow,llm_only,CVE-2020-11984,True,False,,1247.694,117,98,0,fresh_clean_rerun
+Q-0414,CVE-2020-11981,easy,apache airflow,vector_rag,CVE-2020-11981,True,True,,2634.478,652,36,0,fresh_clean_rerun
+Q-0414,CVE-2020-11981,easy,apache airflow,hybrid_rag,CVE-2020-11981,True,True,,1922.188,652,46,0,fresh_clean_rerun
+Q-0414,CVE-2020-11981,easy,apache airflow,hybrid_jev,CVE-2020-11981,True,True,,794.331,unknown,unknown,1,fresh_clean_rerun
+Q-0414,CVE-2020-11981,easy,apache airflow,jev_retrieval,CVE-2020-11981,True,True,,960.092,unknown,unknown,1,fresh_clean_rerun
+Q-0415,CVE-2020-12641,easy,roundcube webmail,llm_only,CVE-2015-3197,True,False,,960.168,123,97,0,fresh_clean_rerun
+Q-0415,CVE-2020-12641,easy,roundcube webmail,vector_rag,CVE-2020-12641,True,True,,2877.208,796,39,0,fresh_clean_rerun
+Q-0415,CVE-2020-12641,easy,roundcube webmail,hybrid_rag,CVE-2020-12641,True,True,,1984.953,768,68,0,fresh_clean_rerun
+Q-0415,CVE-2020-12641,easy,roundcube webmail,hybrid_jev,CVE-2020-12641,True,True,,688.385,unknown,unknown,1,fresh_clean_rerun
+Q-0415,CVE-2020-12641,easy,roundcube webmail,jev_retrieval,CVE-2020-12641,True,True,,844.709,unknown,unknown,1,fresh_clean_rerun
+Q-0416,CVE-2020-13671,medium,drupal drupal,llm_only,CVE-2020-13698,True,False,,1295.220,118,114,0,fresh_clean_rerun
+Q-0416,CVE-2020-13671,medium,drupal drupal,vector_rag,CVE-2020-13671,True,True,,2336.417,929,62,0,fresh_clean_rerun
+Q-0416,CVE-2020-13671,medium,drupal drupal,hybrid_rag,CVE-2020-13671,True,True,,5167.259,850,44,0,fresh_clean_rerun
+Q-0416,CVE-2020-13671,medium,drupal drupal,hybrid_jev,CVE-2020-13671,True,True,,798.705,unknown,unknown,1,fresh_clean_rerun
+Q-0416,CVE-2020-13671,medium,drupal drupal,jev_retrieval,CVE-2020-13671,True,True,,959.337,unknown,unknown,1,fresh_clean_rerun
+Q-0417,CVE-2020-1380,medium,microsoft internet explorer,llm_only,CVE-2010-0249,True,False,,838.634,115,50,0,fresh_clean_rerun
+Q-0417,CVE-2020-1380,medium,microsoft internet explorer,vector_rag,CVE-2021-27085,True,False,,2684.456,635,49,0,fresh_clean_rerun
+Q-0417,CVE-2020-1380,medium,microsoft internet explorer,hybrid_rag,CVE-2020-1380,True,True,,2559.653,739,75,0,fresh_clean_rerun
+Q-0417,CVE-2020-1380,medium,microsoft internet explorer,hybrid_jev,CVE-2020-1380,True,True,,631.461,unknown,unknown,1,fresh_clean_rerun
+Q-0417,CVE-2020-1380,medium,microsoft internet explorer,jev_retrieval,CVE-2020-1380,True,True,,1131.293,unknown,unknown,1,fresh_clean_rerun
+Q-0418,CVE-2020-13927,easy,apache airflow,llm_only,CVE-2020-11978,True,False,,816.377,114,56,0,fresh_clean_rerun
+Q-0418,CVE-2020-13927,easy,apache airflow,vector_rag,CVE-2020-13927,True,True,,2778.096,716,54,0,fresh_clean_rerun
+Q-0418,CVE-2020-13927,easy,apache airflow,hybrid_rag,CVE-2020-13927,True,True,,2368.706,716,43,0,fresh_clean_rerun
+Q-0418,CVE-2020-13927,easy,apache airflow,hybrid_jev,CVE-2020-13927,True,True,,936.272,unknown,unknown,1,fresh_clean_rerun
+Q-0418,CVE-2020-13927,easy,apache airflow,jev_retrieval,CVE-2020-13927,True,True,,935.202,unknown,unknown,1,fresh_clean_rerun
+Q-0420,CVE-2020-13942,easy,apache unomi,llm_only,CVE-2022-26303,True,False,,1622.007,121,132,0,fresh_clean_rerun
+Q-0420,CVE-2020-13942,easy,apache unomi,vector_rag,CVE-2020-13942,True,True,,1896.944,755,31,0,fresh_clean_rerun
+Q-0420,CVE-2020-13942,easy,apache unomi,hybrid_rag,CVE-2020-13942,True,True,,2553.955,649,50,0,fresh_clean_rerun
+Q-0420,CVE-2020-13942,easy,apache unomi,hybrid_jev,CVE-2020-13942,True,True,,1440.856,unknown,unknown,1,fresh_clean_rerun
+Q-0420,CVE-2020-13942,easy,apache unomi,jev_retrieval,CVE-2020-13942,True,True,,1249.021,unknown,unknown,1,fresh_clean_rerun
+Q-0421,CVE-2020-13945,easy,apache apisix,llm_only,CVE-2022-23943,True,False,,994.001,123,64,0,fresh_clean_rerun
+Q-0421,CVE-2020-13945,easy,apache apisix,vector_rag,CVE-2020-13945,True,True,,2550.761,884,46,0,fresh_clean_rerun
+Q-0421,CVE-2020-13945,easy,apache apisix,hybrid_rag,CVE-2020-13945,True,True,,2560.911,829,44,0,fresh_clean_rerun
+Q-0421,CVE-2020-13945,easy,apache apisix,hybrid_jev,CVE-2020-13945,True,True,,805.593,unknown,unknown,1,fresh_clean_rerun
+Q-0421,CVE-2020-13945,easy,apache apisix,jev_retrieval,CVE-2020-13945,True,True,,951.773,unknown,unknown,1,fresh_clean_rerun
+Q-0423,CVE-2020-14644,medium,oracle weblogic server,llm_only,CVE-2020-14882,True,False,,967.459,121,51,0,fresh_clean_rerun
+Q-0423,CVE-2020-14644,medium,oracle weblogic server,vector_rag,CVE-2020-14882,True,False,,2800.164,972,51,0,fresh_clean_rerun
+Q-0423,CVE-2020-14644,medium,oracle weblogic server,hybrid_rag,CVE-2020-14882,True,False,,2234.311,974,37,0,fresh_clean_rerun
+Q-0423,CVE-2020-14644,medium,oracle weblogic server,hybrid_jev,,False,False,,627.982,unknown,unknown,1,fresh_clean_rerun
+Q-0423,CVE-2020-14644,medium,oracle weblogic server,jev_retrieval,CVE-2019-2725,True,False,,754.755,unknown,unknown,1,fresh_clean_rerun
+Q-0424,CVE-2020-14864,easy,oracle business intelligence,llm_only,CVE-2021-44228,True,False,,1255.927,117,45,0,fresh_clean_rerun
+Q-0424,CVE-2020-14864,easy,oracle business intelligence,vector_rag,CVE-2020-14864,True,True,,2860.349,978,60,0,fresh_clean_rerun
+Q-0424,CVE-2020-14864,easy,oracle business intelligence,hybrid_rag,CVE-2020-14864,True,True,,1935.766,978,59,0,fresh_clean_rerun
+Q-0424,CVE-2020-14864,easy,oracle business intelligence,hybrid_jev,CVE-2020-14864,True,True,,637.172,unknown,unknown,1,fresh_clean_rerun
+Q-0424,CVE-2020-14864,easy,oracle business intelligence,jev_retrieval,CVE-2020-14864,True,True,,958.839,unknown,unknown,1,fresh_clean_rerun
+Q-0426,CVE-2020-14882,hard,oracle weblogic server,llm_only,CVE-2020-14882,True,True,,948.746,119,66,0,fresh_clean_rerun
+Q-0426,CVE-2020-14882,hard,oracle weblogic server,vector_rag,CVE-2020-14882,True,True,,2872.560,973,54,0,fresh_clean_rerun
+Q-0426,CVE-2020-14882,hard,oracle weblogic server,hybrid_rag,CVE-2020-14882,True,True,,1991.569,913,69,0,fresh_clean_rerun
+Q-0426,CVE-2020-14882,hard,oracle weblogic server,hybrid_jev,,False,False,,848.262,unknown,unknown,1,fresh_clean_rerun
+Q-0426,CVE-2020-14882,hard,oracle weblogic server,jev_retrieval,CVE-2019-2725,True,False,,1020.080,unknown,unknown,1,fresh_clean_rerun
+Q-0427,CVE-2020-14883,hard,oracle weblogic server,llm_only,CVE-2020-14882,True,False,,878.071,119,53,0,fresh_clean_rerun
+Q-0427,CVE-2020-14883,hard,oracle weblogic server,vector_rag,CVE-2020-14883,True,True,,2550.408,1042,80,0,fresh_clean_rerun
+Q-0427,CVE-2020-14883,hard,oracle weblogic server,hybrid_rag,CVE-2020-14883,True,True,,5530.677,940,42,0,fresh_clean_rerun
+Q-0427,CVE-2020-14883,hard,oracle weblogic server,hybrid_jev,CVE-2020-14883,True,True,,962.606,unknown,unknown,1,fresh_clean_rerun
+Q-0427,CVE-2020-14883,hard,oracle weblogic server,jev_retrieval,CVE-2020-14883,True,True,,954.099,unknown,unknown,1,fresh_clean_rerun
+Q-0431,CVE-2020-16010,easy,google chrome,llm_only,CVE-2023-5043,True,False,,1284.972,115,123,0,fresh_clean_rerun
+Q-0431,CVE-2020-16010,easy,google chrome,vector_rag,CVE-2020-16010,True,True,,2231.119,642,37,0,fresh_clean_rerun
+Q-0431,CVE-2020-16010,easy,google chrome,hybrid_rag,CVE-2020-16010,True,True,,2474.074,612,36,0,fresh_clean_rerun
+Q-0431,CVE-2020-16010,easy,google chrome,hybrid_jev,CVE-2020-16010,True,True,,853.340,unknown,unknown,1,fresh_clean_rerun
+Q-0431,CVE-2020-16010,easy,google chrome,jev_retrieval,CVE-2020-16010,True,True,,779.194,unknown,unknown,1,fresh_clean_rerun
+Q-0432,CVE-2020-16017,easy,google chrome,llm_only,CVE-2023-28152,True,False,,835.843,117,71,0,fresh_clean_rerun
+Q-0432,CVE-2020-16017,easy,google chrome,vector_rag,CVE-2020-16017,True,True,,2734.504,586,42,0,fresh_clean_rerun
+Q-0432,CVE-2020-16017,easy,google chrome,hybrid_rag,CVE-2020-16017,True,True,,3519.233,576,42,0,fresh_clean_rerun
+Q-0432,CVE-2020-16017,easy,google chrome,hybrid_jev,CVE-2020-16017,True,True,,724.981,unknown,unknown,1,fresh_clean_rerun
+Q-0432,CVE-2020-16017,easy,google chrome,jev_retrieval,CVE-2020-16017,True,True,,1201.521,unknown,unknown,1,fresh_clean_rerun
+Q-0434,CVE-2020-16846,easy,saltstack salt,llm_only,CVE-2020-16846,True,True,,1111.073,118,133,0,fresh_clean_rerun
+Q-0434,CVE-2020-16846,easy,saltstack salt,vector_rag,CVE-2020-16846,True,True,,2145.322,595,43,0,fresh_clean_rerun
+Q-0434,CVE-2020-16846,easy,saltstack salt,hybrid_rag,CVE-2020-16846,True,True,,2814.192,595,39,0,fresh_clean_rerun
+Q-0434,CVE-2020-16846,easy,saltstack salt,hybrid_jev,CVE-2020-16846,True,True,,958.677,unknown,unknown,1,fresh_clean_rerun
+Q-0434,CVE-2020-16846,easy,saltstack salt,jev_retrieval,CVE-2020-16846,True,True,,1282.987,unknown,unknown,1,fresh_clean_rerun
+Q-0437,CVE-2020-17496,hard,vbulletin vbulletin,llm_only,CVE-2020-10878,True,False,,1277.722,125,70,0,fresh_clean_rerun
+Q-0437,CVE-2020-17496,hard,vbulletin vbulletin,vector_rag,CVE-2019-16759,True,False,,2158.439,741,46,0,fresh_clean_rerun
+Q-0437,CVE-2020-17496,hard,vbulletin vbulletin,hybrid_rag,CVE-2019-16759,True,False,,2806.936,835,153,0,fresh_clean_rerun
+Q-0437,CVE-2020-17496,hard,vbulletin vbulletin,hybrid_jev,CVE-2019-16759,True,False,,791.752,unknown,unknown,1,fresh_clean_rerun
+Q-0437,CVE-2020-17496,hard,vbulletin vbulletin,jev_retrieval,CVE-2019-16759,True,False,,960.982,unknown,unknown,1,fresh_clean_rerun
+Q-0438,CVE-2020-17518,hard,apache flink,llm_only,CVE-2020-13940,True,False,,956.537,120,63,0,fresh_clean_rerun
+Q-0438,CVE-2020-17518,hard,apache flink,vector_rag,CVE-2020-17518,True,True,,2399.364,806,47,0,fresh_clean_rerun
+Q-0438,CVE-2020-17518,hard,apache flink,hybrid_rag,CVE-2020-17518,True,True,,2563.396,819,47,0,fresh_clean_rerun
+Q-0438,CVE-2020-17518,hard,apache flink,hybrid_jev,CVE-2020-17518,True,True,,799.490,unknown,unknown,1,fresh_clean_rerun
+Q-0438,CVE-2020-17518,hard,apache flink,jev_retrieval,CVE-2020-17518,True,True,,955.212,unknown,unknown,1,fresh_clean_rerun
+Q-0439,CVE-2020-17519,medium,apache flink,llm_only,CVE-2020-13934,True,False,,969.123,118,95,0,fresh_clean_rerun
+Q-0439,CVE-2020-17519,medium,apache flink,vector_rag,CVE-2020-17519,True,True,,2549.407,804,42,0,fresh_clean_rerun
+Q-0439,CVE-2020-17519,medium,apache flink,hybrid_rag,CVE-2020-17519,True,True,,2558.594,982,40,0,fresh_clean_rerun
+Q-0439,CVE-2020-17519,medium,apache flink,hybrid_jev,CVE-2020-17519,True,True,,675.600,unknown,unknown,1,fresh_clean_rerun
+Q-0439,CVE-2020-17519,medium,apache flink,jev_retrieval,CVE-2020-17519,True,True,,927.590,unknown,unknown,1,fresh_clean_rerun
+Q-0440,CVE-2020-17526,medium,apache airflow,llm_only,CVE-2020-11984,True,False,,1452.799,118,86,0,fresh_clean_rerun
+Q-0440,CVE-2020-17526,medium,apache airflow,vector_rag,CVE-2020-17526,True,True,,2064.417,672,41,0,fresh_clean_rerun
+Q-0440,CVE-2020-17526,medium,apache airflow,hybrid_rag,CVE-2020-17526,True,True,,2217.446,672,43,0,fresh_clean_rerun
+Q-0440,CVE-2020-17526,medium,apache airflow,hybrid_jev,CVE-2020-17526,True,True,,827.103,unknown,unknown,1,fresh_clean_rerun
+Q-0440,CVE-2020-17526,medium,apache airflow,jev_retrieval,CVE-2020-17526,True,True,,748.204,unknown,unknown,1,fresh_clean_rerun
+Q-0441,CVE-2020-17530,medium,apache struts,llm_only,CVE-2018-11776,True,False,,1320.670,116,122,0,fresh_clean_rerun
+Q-0441,CVE-2020-17530,medium,apache struts,vector_rag,CVE-2020-17530,True,True,,3523.130,701,37,0,fresh_clean_rerun
+Q-0441,CVE-2020-17530,medium,apache struts,hybrid_rag,CVE-2020-17530,True,True,,1394.994,606,91,0,fresh_clean_rerun
+Q-0441,CVE-2020-17530,medium,apache struts,hybrid_jev,CVE-2020-17530,True,True,,842.641,unknown,unknown,1,fresh_clean_rerun
+Q-0441,CVE-2020-17530,medium,apache struts,jev_retrieval,CVE-2020-17530,True,True,,703.827,unknown,unknown,1,fresh_clean_rerun
+Q-0442,CVE-2020-1938,medium,apache tomcat,llm_only,CVE-2020-11996,True,False,,1217.011,118,81,0,fresh_clean_rerun
+Q-0442,CVE-2020-1938,medium,apache tomcat,vector_rag,CVE-2016-5388,True,False,,2235.492,896,56,0,fresh_clean_rerun
+Q-0442,CVE-2020-1938,medium,apache tomcat,hybrid_rag,CVE-2020-1938,True,True,,3199.739,1227,78,0,fresh_clean_rerun
+Q-0442,CVE-2020-1938,medium,apache tomcat,hybrid_jev,,False,False,,638.868,unknown,unknown,1,fresh_clean_rerun
+Q-0442,CVE-2020-1938,medium,apache tomcat,jev_retrieval,CVE-2020-1938,True,True,,963.492,unknown,unknown,1,fresh_clean_rerun
+Q-0443,CVE-2020-1956,medium,apache kylin,llm_only,CVE-2020-11978,True,False,,955.386,120,71,0,fresh_clean_rerun
+Q-0443,CVE-2020-1956,medium,apache kylin,vector_rag,CVE-2020-1956,True,True,,5280.376,1170,46,0,fresh_clean_rerun
+Q-0443,CVE-2020-1956,medium,apache kylin,hybrid_rag,CVE-2020-1956,True,True,,2242.675,1042,53,0,fresh_clean_rerun
+Q-0443,CVE-2020-1956,medium,apache kylin,hybrid_jev,CVE-2020-1956,True,True,,634.567,unknown,unknown,1,fresh_clean_rerun
+Q-0443,CVE-2020-1956,medium,apache kylin,jev_retrieval,CVE-2020-1956,True,True,,958.968,unknown,unknown,1,fresh_clean_rerun
+Q-0444,CVE-2020-1957,hard,apache shiro,llm_only,CVE-2020-1954,True,False,,963.327,119,90,0,fresh_clean_rerun
+Q-0444,CVE-2020-1957,hard,apache shiro,vector_rag,CVE-2020-1957,True,True,,2245.130,1058,42,0,fresh_clean_rerun
+Q-0444,CVE-2020-1957,hard,apache shiro,hybrid_rag,CVE-2020-1957,True,True,,4333.839,670,42,0,fresh_clean_rerun
+Q-0444,CVE-2020-1957,hard,apache shiro,hybrid_jev,CVE-2020-1957,True,True,,965.006,unknown,unknown,1,fresh_clean_rerun
+Q-0444,CVE-2020-1957,hard,apache shiro,jev_retrieval,CVE-2020-1957,True,True,,931.134,unknown,unknown,1,fresh_clean_rerun
+Q-0447,CVE-2020-2506,easy,qnap helpdesk,llm_only,CVE-2022-24924,True,False,,1040.705,117,148,0,fresh_clean_rerun
+Q-0447,CVE-2020-2506,easy,qnap helpdesk,vector_rag,CVE-2020-2506,True,True,,2475.990,852,47,0,fresh_clean_rerun
+Q-0447,CVE-2020-2506,easy,qnap helpdesk,hybrid_rag,CVE-2020-2506,True,True,,2559.962,736,42,0,fresh_clean_rerun
+Q-0447,CVE-2020-2506,easy,qnap helpdesk,hybrid_jev,CVE-2020-2506,True,True,,668.551,unknown,unknown,1,fresh_clean_rerun
+Q-0447,CVE-2020-2506,easy,qnap helpdesk,jev_retrieval,CVE-2020-2506,True,True,,930.054,unknown,unknown,1,fresh_clean_rerun
+Q-0449,CVE-2020-25213,medium,filemanagerpro file manager,llm_only,CVE-2020-25213,True,True,,959.252,121,99,0,fresh_clean_rerun
+Q-0449,CVE-2020-25213,medium,filemanagerpro file manager,vector_rag,CVE-2020-25213,True,True,,2559.983,616,73,0,fresh_clean_rerun
+Q-0449,CVE-2020-25213,medium,filemanagerpro file manager,hybrid_rag,CVE-2020-25213,True,True,,2562.251,792,41,0,fresh_clean_rerun
+Q-0449,CVE-2020-25213,medium,filemanagerpro file manager,hybrid_jev,CVE-2020-25213,True,True,,960.750,unknown,unknown,1,fresh_clean_rerun
+Q-0449,CVE-2020-25213,medium,filemanagerpro file manager,jev_retrieval,CVE-2020-25213,True,True,,954.561,unknown,unknown,1,fresh_clean_rerun
+Q-0451,CVE-2020-2551,medium,oracle weblogic server,llm_only,CVE-2020-14882,True,False,,893.271,117,65,0,fresh_clean_rerun
+Q-0451,CVE-2020-2551,medium,oracle weblogic server,vector_rag,CVE-2020-14882,True,False,,2895.536,951,68,0,fresh_clean_rerun
+Q-0451,CVE-2020-2551,medium,oracle weblogic server,hybrid_rag,CVE-2019-2725,True,False,,1960.060,916,45,0,fresh_clean_rerun
+Q-0451,CVE-2020-2551,medium,oracle weblogic server,hybrid_jev,CVE-2019-2725,True,False,,811.293,unknown,unknown,1,fresh_clean_rerun
+Q-0451,CVE-2020-2551,medium,oracle weblogic server,jev_retrieval,CVE-2019-2725,True,False,,1118.632,unknown,unknown,1,fresh_clean_rerun
+Q-0455,CVE-2020-2883,hard,oracle weblogic server,llm_only,CVE-2020-14882,True,False,,1436.394,121,49,0,fresh_clean_rerun
+Q-0455,CVE-2020-2883,hard,oracle weblogic server,vector_rag,CVE-2020-14882,True,False,,2047.673,972,53,0,fresh_clean_rerun
+Q-0455,CVE-2020-2883,hard,oracle weblogic server,hybrid_rag,CVE-2020-14882,True,False,,2596.180,974,45,0,fresh_clean_rerun
+Q-0455,CVE-2020-2883,hard,oracle weblogic server,hybrid_jev,,False,False,,983.646,unknown,unknown,1,fresh_clean_rerun
+Q-0455,CVE-2020-2883,hard,oracle weblogic server,jev_retrieval,CVE-2019-2725,True,False,,1251.992,unknown,unknown,1,fresh_clean_rerun
+Q-0458,CVE-2020-29599,medium,imagemagick imagemagick,llm_only,CVE-2022-44268,True,False,,1296.050,125,118,0,fresh_clean_rerun
+Q-0458,CVE-2020-29599,medium,imagemagick imagemagick,vector_rag,CVE-2020-29599,True,True,,2017.799,755,45,0,fresh_clean_rerun
+Q-0458,CVE-2020-29599,medium,imagemagick imagemagick,hybrid_rag,CVE-2020-29599,True,True,,3085.287,730,46,0,fresh_clean_rerun
+Q-0458,CVE-2020-29599,medium,imagemagick imagemagick,hybrid_jev,CVE-2020-29599,True,True,,642.367,unknown,unknown,1,fresh_clean_rerun
+Q-0458,CVE-2020-29599,medium,imagemagick imagemagick,jev_retrieval,CVE-2020-29599,True,True,,952.791,unknown,unknown,1,fresh_clean_rerun
+Q-0459,CVE-2020-3153,easy,cisco anyconnect secure mobility client,llm_only,CVE-2023-2006,True,False,,959.070,122,106,0,fresh_clean_rerun
+Q-0459,CVE-2020-3153,easy,cisco anyconnect secure mobility client,vector_rag,CVE-2020-3153,True,True,,2562.080,936,55,0,fresh_clean_rerun
+Q-0459,CVE-2020-3153,easy,cisco anyconnect secure mobility client,hybrid_rag,CVE-2020-3153,True,True,,6052.143,972,35,0,fresh_clean_rerun
+Q-0459,CVE-2020-3153,easy,cisco anyconnect secure mobility client,hybrid_jev,CVE-2020-3153,True,True,,987.319,unknown,unknown,1,fresh_clean_rerun
+Q-0459,CVE-2020-3153,easy,cisco anyconnect secure mobility client,jev_retrieval,CVE-2020-3153,True,True,,956.212,unknown,unknown,1,fresh_clean_rerun
+Q-0461,CVE-2020-3433,easy,cisco anyconnect secure mobility client,llm_only,CVE-2021-34771,True,False,,958.726,121,142,0,fresh_clean_rerun
+Q-0461,CVE-2020-3433,easy,cisco anyconnect secure mobility client,vector_rag,CVE-2020-3433,True,True,,2879.323,1023,36,0,fresh_clean_rerun
+Q-0461,CVE-2020-3433,easy,cisco anyconnect secure mobility client,hybrid_rag,CVE-2020-3433,True,True,,3363.863,997,34,0,fresh_clean_rerun
+Q-0461,CVE-2020-3433,easy,cisco anyconnect secure mobility client,hybrid_jev,CVE-2020-3433,True,True,,647.592,unknown,unknown,1,fresh_clean_rerun
+Q-0461,CVE-2020-3433,easy,cisco anyconnect secure mobility client,jev_retrieval,CVE-2020-3433,True,True,,945.344,unknown,unknown,1,fresh_clean_rerun
+Q-0462,CVE-2020-35476,easy,opentsdb opentsdb,llm_only,CVE-2022-24706,True,False,,253852.294,120,58,0,fresh_clean_rerun
+Q-0462,CVE-2020-35476,easy,opentsdb opentsdb,vector_rag,CVE-2020-35476,True,True,,4326947.492,667,38,0,fresh_clean_rerun
+Q-0462,CVE-2020-35476,easy,opentsdb opentsdb,hybrid_rag,CVE-2020-35476,True,True,,6091.961,679,75,0,fresh_clean_rerun
+Q-0462,CVE-2020-35476,easy,opentsdb opentsdb,hybrid_jev,CVE-2020-35476,True,True,,985.944,unknown,unknown,1,fresh_clean_rerun
+Q-0462,CVE-2020-35476,easy,opentsdb opentsdb,jev_retrieval,CVE-2020-35476,True,True,,5504.011,unknown,unknown,1,fresh_clean_rerun
+Q-0464,CVE-2020-35730,easy,roundcube webmail,llm_only,CVE-2017-15944,True,False,,4619.061,120,95,0,fresh_clean_rerun
+Q-0464,CVE-2020-35730,easy,roundcube webmail,vector_rag,CVE-2020-35730,True,True,,10270.955,800,59,0,fresh_clean_rerun
+Q-0464,CVE-2020-35730,easy,roundcube webmail,hybrid_rag,CVE-2023-43770,True,False,,5124.853,827,58,0,fresh_clean_rerun
+Q-0464,CVE-2020-35730,easy,roundcube webmail,hybrid_jev,,False,False,,4239.854,unknown,unknown,1,fresh_clean_rerun
+Q-0464,CVE-2020-35730,easy,roundcube webmail,jev_retrieval,CVE-2020-35730,True,True,,983.159,unknown,unknown,1,fresh_clean_rerun
+Q-0467,CVE-2020-3952,easy,vmware vcenter server,llm_only,CVE-2022-22954,True,False,,1384.738,123,60,0,fresh_clean_rerun
+Q-0467,CVE-2020-3952,easy,vmware vcenter server,vector_rag,CVE-2020-3952,True,True,,4145.908,732,42,0,fresh_clean_rerun
+Q-0467,CVE-2020-3952,easy,vmware vcenter server,hybrid_rag,CVE-2020-3952,True,True,,6119.512,808,36,0,fresh_clean_rerun
+Q-0467,CVE-2020-3952,easy,vmware vcenter server,hybrid_jev,CVE-2020-3952,True,True,,5521.772,unknown,unknown,1,fresh_clean_rerun
+Q-0467,CVE-2020-3952,easy,vmware vcenter server,jev_retrieval,CVE-2020-3952,True,True,,1495.127,unknown,unknown,1,fresh_clean_rerun
+Q-0469,CVE-2020-4428,medium,ibm data risk manager,llm_only,CVE-2020-0605,True,False,,3200.211,120,113,0,fresh_clean_rerun
+Q-0469,CVE-2020-4428,medium,ibm data risk manager,vector_rag,,False,False,Connection error.,3907.092,unknown,unknown,0,fresh_clean_rerun
+Q-0469,CVE-2020-4428,medium,ibm data risk manager,hybrid_rag,CVE-2020-4428,True,True,,16173.889,692,62,0,fresh_clean_rerun
+Q-0469,CVE-2020-4428,medium,ibm data risk manager,hybrid_jev,CVE-2020-4428,True,True,,704.812,unknown,unknown,1,fresh_clean_rerun
+Q-0469,CVE-2020-4428,medium,ibm data risk manager,jev_retrieval,CVE-2020-4428,True,True,,821.186,unknown,unknown,1,fresh_clean_rerun
+Q-0470,CVE-2020-4430,hard,ibm data risk manager,llm_only,CVE-2022-25879,True,False,,1073.593,120,59,0,fresh_clean_rerun
+Q-0470,CVE-2020-4430,hard,ibm data risk manager,vector_rag,CVE-2020-4428,True,False,,2438.944,653,57,0,fresh_clean_rerun
+Q-0470,CVE-2020-4430,hard,ibm data risk manager,hybrid_rag,CVE-2020-4428,True,False,,2715.154,802,74,0,fresh_clean_rerun
+Q-0470,CVE-2020-4430,hard,ibm data risk manager,hybrid_jev,CVE-2020-4428,True,False,,799.777,unknown,unknown,1,fresh_clean_rerun
+Q-0470,CVE-2020-4430,hard,ibm data risk manager,jev_retrieval,CVE-2020-4428,True,False,,982.302,unknown,unknown,1,fresh_clean_rerun
+Q-0471,CVE-2020-5410,easy,vmware spring cloud config,llm_only,CVE-2022-22965,True,False,,1103.987,120,88,0,fresh_clean_rerun
+Q-0471,CVE-2020-5410,easy,vmware spring cloud config,vector_rag,CVE-2020-5410,True,True,,2576.710,819,45,0,fresh_clean_rerun
+Q-0471,CVE-2020-5410,easy,vmware spring cloud config,hybrid_rag,CVE-2020-5410,True,True,,2858.049,760,46,0,fresh_clean_rerun
+Q-0471,CVE-2020-5410,easy,vmware spring cloud config,hybrid_jev,CVE-2020-5410,True,True,,757.735,unknown,unknown,1,fresh_clean_rerun
+Q-0471,CVE-2020-5410,easy,vmware spring cloud config,jev_retrieval,CVE-2020-5410,True,True,,845.119,unknown,unknown,1,fresh_clean_rerun
+Q-0476,CVE-2020-6418,medium,google chrome,llm_only,CVE-2021-21224,True,False,,800.680,116,79,0,fresh_clean_rerun
+Q-0476,CVE-2020-6418,medium,google chrome,vector_rag,CVE-2021-30563,True,False,,2342.637,592,29,0,fresh_clean_rerun
+Q-0476,CVE-2020-6418,medium,google chrome,hybrid_rag,CVE-2020-6418,True,True,,2949.117,579,31,0,fresh_clean_rerun
+Q-0476,CVE-2020-6418,medium,google chrome,hybrid_jev,,False,False,,777.833,unknown,unknown,1,fresh_clean_rerun
+Q-0476,CVE-2020-6418,medium,google chrome,jev_retrieval,CVE-2020-6418,True,True,,957.448,unknown,unknown,1,fresh_clean_rerun
+Q-0479,CVE-2020-7012,hard,elastic kibana,llm_only,CVE-2021-3115,True,False,,953.971,117,84,0,fresh_clean_rerun
+Q-0479,CVE-2020-7012,hard,elastic kibana,vector_rag,CVE-2020-7012,True,True,,2470.133,701,43,0,fresh_clean_rerun
+Q-0479,CVE-2020-7012,hard,elastic kibana,hybrid_rag,CVE-2020-7012,True,True,,2654.475,791,40,0,fresh_clean_rerun
+Q-0479,CVE-2020-7012,hard,elastic kibana,hybrid_jev,CVE-2020-7012,True,True,,1632.404,unknown,unknown,1,fresh_clean_rerun
+Q-0479,CVE-2020-7012,hard,elastic kibana,jev_retrieval,CVE-2020-7012,True,True,,1130.735,unknown,unknown,1,fresh_clean_rerun
+Q-0480,CVE-2020-7247,hard,openbsd opensmtpd,llm_only,CVE-2020-7247,True,True,,1078.600,126,104,0,fresh_clean_rerun
+Q-0480,CVE-2020-7247,hard,openbsd opensmtpd,vector_rag,CVE-2020-7247,True,True,,2594.926,685,50,0,fresh_clean_rerun
+Q-0480,CVE-2020-7247,hard,openbsd opensmtpd,hybrid_rag,CVE-2020-7247,True,True,,4743.848,773,57,0,fresh_clean_rerun
+Q-0480,CVE-2020-7247,hard,openbsd opensmtpd,hybrid_jev,CVE-2020-7247,True,True,,1221.852,unknown,unknown,1,fresh_clean_rerun
+Q-0480,CVE-2020-7247,hard,openbsd opensmtpd,jev_retrieval,CVE-2020-7247,True,True,,2419.129,unknown,unknown,1,fresh_clean_rerun
+Q-0481,CVE-2020-7961,medium,liferay liferay portal,llm_only,CVE-2020-7961,True,True,,841.035,124,89,0,fresh_clean_rerun
+Q-0481,CVE-2020-7961,medium,liferay liferay portal,vector_rag,CVE-2020-7961,True,True,,4060.653,609,67,0,fresh_clean_rerun
+Q-0481,CVE-2020-7961,medium,liferay liferay portal,hybrid_rag,,False,False,Connection error.,19851.243,unknown,unknown,0,fresh_clean_rerun
+Q-0481,CVE-2020-7961,medium,liferay liferay portal,hybrid_jev,,False,False,,13.119,unknown,unknown,0,fresh_clean_rerun
+Q-0481,CVE-2020-7961,medium,liferay liferay portal,jev_retrieval,CVE-2020-7961,True,True,,922.196,unknown,unknown,1,fresh_clean_rerun
+Q-0484,CVE-2020-8243,medium,ivanti connect secure,llm_only,CVE-2021-34473,True,False,,1330.274,121,134,0,fresh_clean_rerun
+Q-0484,CVE-2020-8243,medium,ivanti connect secure,vector_rag,CVE-2021-22899,True,False,,2159.881,630,45,0,fresh_clean_rerun
+Q-0484,CVE-2020-8243,medium,ivanti connect secure,hybrid_rag,CVE-2021-22893,True,False,,2703.836,621,154,0,fresh_clean_rerun
+Q-0484,CVE-2020-8243,medium,ivanti connect secure,hybrid_jev,,False,False,,812.546,unknown,unknown,1,fresh_clean_rerun
+Q-0484,CVE-2020-8243,medium,ivanti connect secure,jev_retrieval,CVE-2021-22893,True,False,,959.889,unknown,unknown,1,fresh_clean_rerun
+Q-0488,CVE-2020-8655,easy,eyesofnetwork eyesofnetwork,llm_only,CVE-2021-3156,True,False,,974.920,121,107,0,fresh_clean_rerun
+Q-0488,CVE-2020-8655,easy,eyesofnetwork eyesofnetwork,vector_rag,CVE-2020-8655,True,True,,2545.492,585,40,0,fresh_clean_rerun
+Q-0488,CVE-2020-8655,easy,eyesofnetwork eyesofnetwork,hybrid_rag,CVE-2020-8655,True,True,,2557.046,640,37,0,fresh_clean_rerun
+Q-0488,CVE-2020-8655,easy,eyesofnetwork eyesofnetwork,hybrid_jev,CVE-2020-8655,True,True,,764.182,unknown,unknown,1,fresh_clean_rerun
+Q-0488,CVE-2020-8655,easy,eyesofnetwork eyesofnetwork,jev_retrieval,CVE-2020-8655,True,True,,994.083,unknown,unknown,1,fresh_clean_rerun
+Q-0489,CVE-2020-8816,easy,pi-hole pi-hole,llm_only,CVE-2021-28831,True,False,,1119.906,120,90,0,fresh_clean_rerun
+Q-0489,CVE-2020-8816,easy,pi-hole pi-hole,vector_rag,CVE-2020-8816,True,True,,2471.833,921,42,0,fresh_clean_rerun
+Q-0489,CVE-2020-8816,easy,pi-hole pi-hole,hybrid_rag,CVE-2020-8816,True,True,,2646.842,716,42,0,fresh_clean_rerun
+Q-0489,CVE-2020-8816,easy,pi-hole pi-hole,hybrid_jev,CVE-2020-8816,True,True,,760.543,unknown,unknown,1,fresh_clean_rerun
+Q-0489,CVE-2020-8816,easy,pi-hole pi-hole,jev_retrieval,CVE-2020-8816,True,True,,841.747,unknown,unknown,1,fresh_clean_rerun
+Q-0491,CVE-2020-9402,medium,djangoproject django,llm_only,CVE-2015-8399,True,False,,1117.641,121,114,0,fresh_clean_rerun
+Q-0491,CVE-2020-9402,medium,djangoproject django,vector_rag,CVE-2017-12794,True,False,,2724.780,868,76,0,fresh_clean_rerun
+Q-0491,CVE-2020-9402,medium,djangoproject django,hybrid_rag,CVE-2017-12794,True,False,,3231.039,868,47,0,fresh_clean_rerun
+Q-0491,CVE-2020-9402,medium,djangoproject django,hybrid_jev,,False,False,,3429.410,unknown,unknown,1,fresh_clean_rerun
+Q-0491,CVE-2020-9402,medium,djangoproject django,jev_retrieval,CVE-2020-9402,True,True,,962.785,unknown,unknown,1,fresh_clean_rerun
+Q-0492,CVE-2020-9496,medium,apache ofbiz,llm_only,CVE-2020-11979,True,False,,1863.227,120,105,0,fresh_clean_rerun
+Q-0492,CVE-2020-9496,medium,apache ofbiz,vector_rag,CVE-2020-9496,True,True,,3427.988,557,38,0,fresh_clean_rerun
+Q-0492,CVE-2020-9496,medium,apache ofbiz,hybrid_rag,CVE-2020-9496,True,True,,3018.382,546,43,0,fresh_clean_rerun
+Q-0492,CVE-2020-9496,medium,apache ofbiz,hybrid_jev,CVE-2020-9496,True,True,,1461.353,unknown,unknown,1,fresh_clean_rerun
+Q-0492,CVE-2020-9496,medium,apache ofbiz,jev_retrieval,CVE-2020-9496,True,True,,1512.608,unknown,unknown,1,fresh_clean_rerun
+Q-0506,CVE-2021-20021,hard,sonicwall email security,llm_only,CVE-2022-20827,True,False,,1815.011,120,93,0,fresh_clean_rerun
+Q-0506,CVE-2021-20021,hard,sonicwall email security,vector_rag,CVE-2021-20023,True,False,,3103.471,550,55,0,fresh_clean_rerun
+Q-0506,CVE-2021-20021,hard,sonicwall email security,hybrid_rag,CVE-2021-20021,True,True,,1599.553,531,41,0,fresh_clean_rerun
+Q-0506,CVE-2021-20021,hard,sonicwall email security,hybrid_jev,CVE-2021-20021,True,True,,638.957,unknown,unknown,1,fresh_clean_rerun
+Q-0506,CVE-2021-20021,hard,sonicwall email security,jev_retrieval,CVE-2021-20021,True,True,,1049.732,unknown,unknown,1,fresh_clean_rerun
+Q-0507,CVE-2021-20023,medium,sonicwall email security,llm_only,CVE-2020-14884,True,False,,809.664,118,82,0,fresh_clean_rerun
+Q-0507,CVE-2021-20023,medium,sonicwall email security,vector_rag,CVE-2021-20021,True,False,,2639.256,548,81,0,fresh_clean_rerun
+Q-0507,CVE-2021-20023,medium,sonicwall email security,hybrid_rag,CVE-2021-20021,True,False,,2623.964,548,49,0,fresh_clean_rerun
+Q-0507,CVE-2021-20023,medium,sonicwall email security,hybrid_jev,,False,False,,717.654,unknown,unknown,1,fresh_clean_rerun
+Q-0507,CVE-2021-20023,medium,sonicwall email security,jev_retrieval,CVE-2021-20023,True,True,,954.505,unknown,unknown,1,fresh_clean_rerun
+Q-0510,CVE-2021-20123,easy,draytek vigorconnect,llm_only,CVE-2020-15704,True,False,,1287.432,117,65,0,fresh_clean_rerun
+Q-0510,CVE-2021-20123,easy,draytek vigorconnect,vector_rag,CVE-2021-20123,True,True,,1916.730,817,42,0,fresh_clean_rerun
+Q-0510,CVE-2021-20123,easy,draytek vigorconnect,hybrid_rag,CVE-2021-20123,True,True,,2575.960,683,47,0,fresh_clean_rerun
+Q-0510,CVE-2021-20123,easy,draytek vigorconnect,hybrid_jev,CVE-2021-20123,True,True,,964.557,unknown,unknown,1,fresh_clean_rerun
+Q-0510,CVE-2021-20123,easy,draytek vigorconnect,jev_retrieval,CVE-2021-20123,True,True,,1736.592,unknown,unknown,1,fresh_clean_rerun
+Q-0512,CVE-2021-21166,easy,google chrome,llm_only,CVE-2023-28155,True,False,,917.497,117,82,0,fresh_clean_rerun
+Q-0512,CVE-2021-21166,easy,google chrome,vector_rag,CVE-2021-21166,True,True,,2252.215,589,38,0,fresh_clean_rerun
+Q-0512,CVE-2021-21166,easy,google chrome,hybrid_rag,CVE-2021-21166,True,True,,3065.221,596,36,0,fresh_clean_rerun
+Q-0512,CVE-2021-21166,easy,google chrome,hybrid_jev,CVE-2021-21166,True,True,,845.381,unknown,unknown,1,fresh_clean_rerun
+Q-0512,CVE-2021-21166,easy,google chrome,jev_retrieval,CVE-2021-21166,True,True,,1072.573,unknown,unknown,1,fresh_clean_rerun
+Q-0513,CVE-2021-21206,easy,google chrome,llm_only,CVE-2023-27933,True,False,,961.210,116,94,0,fresh_clean_rerun
+Q-0513,CVE-2021-21206,easy,google chrome,vector_rag,CVE-2021-21206,True,True,,2556.408,594,45,0,fresh_clean_rerun
+Q-0513,CVE-2021-21206,easy,google chrome,hybrid_rag,CVE-2021-21206,True,True,,2879.607,578,44,0,fresh_clean_rerun
+Q-0513,CVE-2021-21206,easy,google chrome,hybrid_jev,CVE-2021-21206,True,True,,676.887,unknown,unknown,1,fresh_clean_rerun
+Q-0513,CVE-2021-21206,easy,google chrome,jev_retrieval,CVE-2021-21206,True,True,,922.887,unknown,unknown,1,fresh_clean_rerun
+Q-0514,CVE-2021-21220,easy,google chrome,llm_only,CVE-2020-16019,True,False,,959.753,116,100,0,fresh_clean_rerun
+Q-0514,CVE-2021-21220,easy,google chrome,vector_rag,CVE-2021-21220,True,True,,2581.189,608,40,0,fresh_clean_rerun
+Q-0514,CVE-2021-21220,easy,google chrome,hybrid_rag,CVE-2021-21220,True,True,,3180.620,606,40,0,fresh_clean_rerun
+Q-0514,CVE-2021-21220,easy,google chrome,hybrid_jev,CVE-2021-21220,True,True,,636.044,unknown,unknown,1,fresh_clean_rerun
+Q-0514,CVE-2021-21220,easy,google chrome,jev_retrieval,CVE-2021-21220,True,True,,957.970,unknown,unknown,1,fresh_clean_rerun
+Q-0515,CVE-2021-21311,medium,adminer adminer,llm_only,CVE-2015-5686,True,False,,1146.306,118,136,0,fresh_clean_rerun
+Q-0515,CVE-2021-21311,medium,adminer adminer,vector_rag,CVE-2021-21311,True,True,,2876.633,748,43,0,fresh_clean_rerun
+Q-0515,CVE-2021-21311,medium,adminer adminer,hybrid_rag,CVE-2021-21311,True,True,,2193.122,756,43,0,fresh_clean_rerun
+Q-0515,CVE-2021-21311,medium,adminer adminer,hybrid_jev,CVE-2021-21311,True,True,,638.933,unknown,unknown,1,fresh_clean_rerun
+Q-0515,CVE-2021-21311,medium,adminer adminer,jev_retrieval,CVE-2021-21311,True,True,,1004.082,unknown,unknown,1,fresh_clean_rerun
+Q-0516,CVE-2021-21351,medium,xstream xstream,llm_only,CVE-2013-7285,True,False,,936.876,123,61,0,fresh_clean_rerun
+Q-0516,CVE-2021-21351,medium,xstream xstream,vector_rag,CVE-2021-21351,True,True,,2886.825,724,76,0,fresh_clean_rerun
+Q-0516,CVE-2021-21351,medium,xstream xstream,hybrid_rag,CVE-2021-21351,True,True,,2932.867,760,93,0,fresh_clean_rerun
+Q-0516,CVE-2021-21351,medium,xstream xstream,hybrid_jev,CVE-2021-21351,True,True,,739.446,unknown,unknown,1,fresh_clean_rerun
+Q-0516,CVE-2021-21351,medium,xstream xstream,jev_retrieval,CVE-2021-21351,True,True,,798.138,unknown,unknown,1,fresh_clean_rerun
+Q-0519,CVE-2021-21985,hard,vmware vcenter server,llm_only,CVE-2021-21972,True,False,,895.146,121,57,0,fresh_clean_rerun
+Q-0519,CVE-2021-21985,hard,vmware vcenter server,vector_rag,CVE-2021-21972,True,False,,5024.941,873,44,0,fresh_clean_rerun
+Q-0519,CVE-2021-21985,hard,vmware vcenter server,hybrid_rag,CVE-2021-21972,True,False,,2586.952,887,50,0,fresh_clean_rerun
+Q-0519,CVE-2021-21985,hard,vmware vcenter server,hybrid_jev,CVE-2021-21972,True,False,,668.891,unknown,unknown,1,fresh_clean_rerun
+Q-0519,CVE-2021-21985,hard,vmware vcenter server,jev_retrieval,CVE-2021-21972,True,False,,1069.913,unknown,unknown,1,fresh_clean_rerun
+Q-0520,CVE-2021-22017,hard,vmware vcenter server,llm_only,CVE-2022-22954,True,False,,1115.696,119,116,0,fresh_clean_rerun
+Q-0520,CVE-2021-22017,hard,vmware vcenter server,vector_rag,CVE-2021-21972,True,False,,2401.279,814,44,0,fresh_clean_rerun
+Q-0520,CVE-2021-22017,hard,vmware vcenter server,hybrid_rag,CVE-2021-21972,True,False,,2561.206,795,69,0,fresh_clean_rerun
+Q-0520,CVE-2021-22017,hard,vmware vcenter server,hybrid_jev,CVE-2021-21972,True,False,,788.422,unknown,unknown,1,fresh_clean_rerun
+Q-0520,CVE-2021-22017,hard,vmware vcenter server,jev_retrieval,CVE-2021-21972,True,False,,961.897,unknown,unknown,1,fresh_clean_rerun
+Q-0521,CVE-2021-22175,easy,gitlab gitlab,llm_only,CVE-2022-29173,True,False,,943.967,117,72,0,fresh_clean_rerun
+Q-0521,CVE-2021-22175,easy,gitlab gitlab,vector_rag,CVE-2021-22175,True,True,,2403.954,680,48,0,fresh_clean_rerun
+Q-0521,CVE-2021-22175,easy,gitlab gitlab,hybrid_rag,CVE-2021-22175,True,True,,3234.370,862,36,0,fresh_clean_rerun
+Q-0521,CVE-2021-22175,easy,gitlab gitlab,hybrid_jev,CVE-2021-22175,True,True,,686.466,unknown,unknown,1,fresh_clean_rerun
+Q-0521,CVE-2021-22175,easy,gitlab gitlab,jev_retrieval,CVE-2021-22175,True,True,,719.577,unknown,unknown,1,fresh_clean_rerun
+Q-0522,CVE-2021-22204,easy,exiftool project exiftool,llm_only,CVE-2023-46604,True,False,,806.087,122,105,0,fresh_clean_rerun
+Q-0522,CVE-2021-22204,easy,exiftool project exiftool,vector_rag,CVE-2021-22204,True,True,,2814.854,735,37,0,fresh_clean_rerun
+Q-0522,CVE-2021-22204,easy,exiftool project exiftool,hybrid_rag,CVE-2021-22204,True,True,,2445.013,685,42,0,fresh_clean_rerun
+Q-0522,CVE-2021-22204,easy,exiftool project exiftool,hybrid_jev,CVE-2021-22204,True,True,,1197.282,unknown,unknown,1,fresh_clean_rerun
+Q-0522,CVE-2021-22204,easy,exiftool project exiftool,jev_retrieval,CVE-2021-22204,True,True,,1412.381,unknown,unknown,1,fresh_clean_rerun
+Q-0524,CVE-2021-22502,medium,microfocus operation bridge reporter,llm_only,CVE-2020-14871,True,False,,922.026,119,65,0,fresh_clean_rerun
+Q-0524,CVE-2021-22502,medium,microfocus operation bridge reporter,vector_rag,CVE-2021-22502,True,True,,2866.979,427,50,0,fresh_clean_rerun
+Q-0524,CVE-2021-22502,medium,microfocus operation bridge reporter,hybrid_rag,CVE-2021-22502,True,True,,2971.094,681,30,0,fresh_clean_rerun
+Q-0524,CVE-2021-22502,medium,microfocus operation bridge reporter,hybrid_jev,CVE-2021-22502,True,True,,684.292,unknown,unknown,1,fresh_clean_rerun
+Q-0524,CVE-2021-22502,medium,microfocus operation bridge reporter,jev_retrieval,CVE-2021-22502,True,True,,869.610,unknown,unknown,1,fresh_clean_rerun
+Q-0527,CVE-2021-22893,medium,ivanti connect secure,llm_only,CVE-2020-12812,True,False,,1072.611,121,127,0,fresh_clean_rerun
+Q-0527,CVE-2021-22893,medium,ivanti connect secure,vector_rag,CVE-2019-11539,True,False,,2246.294,798,48,0,fresh_clean_rerun
+Q-0527,CVE-2021-22893,medium,ivanti connect secure,hybrid_rag,CVE-2019-11539,True,False,,3276.627,816,49,0,fresh_clean_rerun
+Q-0527,CVE-2021-22893,medium,ivanti connect secure,hybrid_jev,,False,False,,958.116,unknown,unknown,1,fresh_clean_rerun
+Q-0527,CVE-2021-22893,medium,ivanti connect secure,jev_retrieval,CVE-2021-22893,True,True,,924.569,unknown,unknown,1,fresh_clean_rerun
+Q-0528,CVE-2021-22899,hard,ivanti connect secure,llm_only,CVE-2022-22979,True,False,,1156.458,119,161,0,fresh_clean_rerun
+Q-0528,CVE-2021-22899,hard,ivanti connect secure,vector_rag,CVE-2024-21887,True,False,,2358.404,658,39,0,fresh_clean_rerun
+Q-0528,CVE-2021-22899,hard,ivanti connect secure,hybrid_rag,CVE-2024-21887,True,False,,3006.628,661,39,0,fresh_clean_rerun
+Q-0528,CVE-2021-22899,hard,ivanti connect secure,hybrid_jev,CVE-2024-21887,True,False,,675.379,unknown,unknown,1,fresh_clean_rerun
+Q-0528,CVE-2021-22899,hard,ivanti connect secure,jev_retrieval,CVE-2024-21887,True,False,,808.025,unknown,unknown,1,fresh_clean_rerun
+Q-0529,CVE-2021-22911,easy,rocket.chat rocket.chat,llm_only,CVE-2022-23699,True,False,,833.288,115,69,0,fresh_clean_rerun
+Q-0529,CVE-2021-22911,easy,rocket.chat rocket.chat,vector_rag,CVE-2021-22911,True,True,,2958.322,783,43,0,fresh_clean_rerun
+Q-0529,CVE-2021-22911,easy,rocket.chat rocket.chat,hybrid_rag,CVE-2021-22911,True,True,,2398.611,644,45,0,fresh_clean_rerun
+Q-0529,CVE-2021-22911,easy,rocket.chat rocket.chat,hybrid_jev,CVE-2021-22911,True,True,,1624.627,unknown,unknown,1,fresh_clean_rerun
+Q-0529,CVE-2021-22911,easy,rocket.chat rocket.chat,jev_retrieval,CVE-2021-22911,True,True,,1406.174,unknown,unknown,1,fresh_clean_rerun
+Q-0532,CVE-2021-23874,easy,mcafee total protection,llm_only,CVE-2023-4270,True,False,,1181.019,120,68,0,fresh_clean_rerun
+Q-0532,CVE-2021-23874,easy,mcafee total protection,vector_rag,CVE-2021-23874,True,True,,2345.939,497,43,0,fresh_clean_rerun
+Q-0532,CVE-2021-23874,easy,mcafee total protection,hybrid_rag,CVE-2021-23874,True,True,,2882.225,596,45,0,fresh_clean_rerun
+Q-0532,CVE-2021-23874,easy,mcafee total protection,hybrid_jev,CVE-2021-23874,True,True,,773.774,unknown,unknown,1,fresh_clean_rerun
+Q-0532,CVE-2021-23874,easy,mcafee total protection,jev_retrieval,CVE-2021-23874,True,True,,1302.926,unknown,unknown,1,fresh_clean_rerun
+Q-0533,CVE-2021-25297,easy,nagios nagios xi,llm_only,CVE-2020-23839,True,False,,1325.599,119,76,0,fresh_clean_rerun
+Q-0533,CVE-2021-25297,easy,nagios nagios xi,vector_rag,CVE-2021-25297,True,True,,2399.654,1043,31,0,fresh_clean_rerun
+Q-0533,CVE-2021-25297,easy,nagios nagios xi,hybrid_rag,CVE-2021-25297,True,True,,2372.563,939,43,0,fresh_clean_rerun
+Q-0533,CVE-2021-25297,easy,nagios nagios xi,hybrid_jev,CVE-2021-25297,True,True,,948.698,unknown,unknown,1,fresh_clean_rerun
+Q-0533,CVE-2021-25297,easy,nagios nagios xi,jev_retrieval,CVE-2021-25297,True,True,,1009.556,unknown,unknown,1,fresh_clean_rerun
+Q-0539,CVE-2021-25646,easy,apache druid,llm_only,CVE-2022-25710,True,False,,1125.210,115,59,0,fresh_clean_rerun
+Q-0539,CVE-2021-25646,easy,apache druid,vector_rag,CVE-2021-25646,True,True,,2445.691,1023,57,0,fresh_clean_rerun
+Q-0539,CVE-2021-25646,easy,apache druid,hybrid_rag,CVE-2021-25646,True,True,,5911.102,1056,69,0,fresh_clean_rerun
+Q-0539,CVE-2021-25646,easy,apache druid,hybrid_jev,CVE-2021-25646,True,True,,1054.968,unknown,unknown,1,fresh_clean_rerun
+Q-0539,CVE-2021-25646,easy,apache druid,jev_retrieval,CVE-2021-25646,True,True,,1534.503,unknown,unknown,1,fresh_clean_rerun
+Q-0540,CVE-2021-26084,medium,atlassian confluence server,llm_only,CVE-2022-26134,True,False,,1788.846,120,77,0,fresh_clean_rerun
+Q-0540,CVE-2021-26084,medium,atlassian confluence server,vector_rag,CVE-2023-22518,True,False,,1640.157,785,42,0,fresh_clean_rerun
+Q-0540,CVE-2021-26084,medium,atlassian confluence server,hybrid_rag,CVE-2023-22518,True,False,,2833.373,779,43,0,fresh_clean_rerun
+Q-0540,CVE-2021-26084,medium,atlassian confluence server,hybrid_jev,CVE-2023-22518,True,False,,766.731,unknown,unknown,1,fresh_clean_rerun
+Q-0540,CVE-2021-26084,medium,atlassian confluence server,jev_retrieval,CVE-2023-22518,True,False,,1380.760,unknown,unknown,1,fresh_clean_rerun
+Q-0541,CVE-2021-26086,easy,atlassian jira server,llm_only,CVE-2023-22515,True,False,,890.412,122,45,0,fresh_clean_rerun
+Q-0541,CVE-2021-26086,easy,atlassian jira server,vector_rag,CVE-2021-26086,True,True,,2541.742,848,87,0,fresh_clean_rerun
+Q-0541,CVE-2021-26086,easy,atlassian jira server,hybrid_rag,CVE-2021-26086,True,True,,2579.097,842,56,0,fresh_clean_rerun
+Q-0541,CVE-2021-26086,easy,atlassian jira server,hybrid_jev,CVE-2021-26086,True,True,,850.630,unknown,unknown,1,fresh_clean_rerun
+Q-0541,CVE-2021-26086,easy,atlassian jira server,jev_retrieval,CVE-2021-26086,True,True,,1714.017,unknown,unknown,1,fresh_clean_rerun
+Q-0542,CVE-2021-26119,easy,smarty smarty,llm_only,CVE-2015-8865,True,False,,810.228,117,67,0,fresh_clean_rerun
+Q-0542,CVE-2021-26119,easy,smarty smarty,vector_rag,CVE-2021-26119,True,True,,3341.974,408,56,0,fresh_clean_rerun
+Q-0542,CVE-2021-26119,easy,smarty smarty,hybrid_rag,CVE-2021-26119,True,True,,2945.147,815,43,0,fresh_clean_rerun
+Q-0542,CVE-2021-26119,easy,smarty smarty,hybrid_jev,CVE-2021-26119,True,True,,1219.605,unknown,unknown,1,fresh_clean_rerun
+Q-0542,CVE-2021-26119,easy,smarty smarty,jev_retrieval,CVE-2021-26119,True,True,,1607.927,unknown,unknown,1,fresh_clean_rerun
+Q-0543,CVE-2021-26120,hard,smarty smarty,llm_only,CVE-2022-31184,True,False,,1369.617,118,119,0,fresh_clean_rerun
+Q-0543,CVE-2021-26120,hard,smarty smarty,vector_rag,CVE-2021-26120,True,True,,2403.013,482,48,0,fresh_clean_rerun
+Q-0543,CVE-2021-26120,hard,smarty smarty,hybrid_rag,CVE-2021-26119,True,False,,2473.443,788,45,0,fresh_clean_rerun
+Q-0543,CVE-2021-26120,hard,smarty smarty,hybrid_jev,CVE-2021-26119,True,False,,943.905,unknown,unknown,1,fresh_clean_rerun
+Q-0543,CVE-2021-26120,hard,smarty smarty,jev_retrieval,CVE-2021-26119,True,False,,2299.178,unknown,unknown,1,fresh_clean_rerun
+Q-0544,CVE-2021-26828,easy,scadabr scadabr,llm_only,CVE-2020-10644,True,False,,1355.569,126,108,0,fresh_clean_rerun
+Q-0544,CVE-2021-26828,easy,scadabr scadabr,vector_rag,CVE-2021-26828,True,True,,3053.158,500,43,0,fresh_clean_rerun
+Q-0544,CVE-2021-26828,easy,scadabr scadabr,hybrid_rag,CVE-2021-26828,True,True,,1927.751,672,49,0,fresh_clean_rerun
+Q-0544,CVE-2021-26828,easy,scadabr scadabr,hybrid_jev,CVE-2021-26828,True,True,,1438.240,unknown,unknown,1,fresh_clean_rerun
+Q-0544,CVE-2021-26828,easy,scadabr scadabr,jev_retrieval,CVE-2021-26829,True,False,,4312.223,unknown,unknown,1,fresh_clean_rerun
+Q-0545,CVE-2021-26829,hard,scadabr scadabr,llm_only,CVE-2020-10692,True,False,,1445.366,125,105,0,fresh_clean_rerun
+Q-0545,CVE-2021-26829,hard,scadabr scadabr,vector_rag,CVE-2021-26828,True,False,,2394.183,635,43,0,fresh_clean_rerun
+Q-0545,CVE-2021-26829,hard,scadabr scadabr,hybrid_rag,CVE-2021-26828,True,False,,2240.851,558,43,0,fresh_clean_rerun
+Q-0545,CVE-2021-26829,hard,scadabr scadabr,hybrid_jev,CVE-2021-26828,True,False,,957.096,unknown,unknown,1,fresh_clean_rerun
+Q-0545,CVE-2021-26829,hard,scadabr scadabr,jev_retrieval,CVE-2021-26829,True,True,,956.918,unknown,unknown,1,fresh_clean_rerun
+Q-0556,CVE-2021-27852,easy,checkbox survey,llm_only,CVE-2022-22965,True,False,,968.828,119,112,0,fresh_clean_rerun
+Q-0556,CVE-2021-27852,easy,checkbox survey,vector_rag,CVE-2021-27852,True,True,,2478.577,649,39,0,fresh_clean_rerun
+Q-0556,CVE-2021-27852,easy,checkbox survey,hybrid_rag,CVE-2021-27852,True,True,,2635.043,649,85,0,fresh_clean_rerun
+Q-0556,CVE-2021-27852,easy,checkbox survey,hybrid_jev,CVE-2021-27852,True,True,,657.365,unknown,unknown,1,fresh_clean_rerun
+Q-0556,CVE-2021-27852,easy,checkbox survey,jev_retrieval,CVE-2021-27852,True,True,,885.478,unknown,unknown,1,fresh_clean_rerun
+Q-0557,CVE-2021-27876,easy,veritas backup exec,llm_only,CVE-2010-2568,True,False,,1172.783,117,88,0,fresh_clean_rerun
+Q-0557,CVE-2021-27876,easy,veritas backup exec,vector_rag,CVE-2021-27876,True,True,,2110.415,673,37,0,fresh_clean_rerun
+Q-0557,CVE-2021-27876,easy,veritas backup exec,hybrid_rag,CVE-2021-27876,True,True,,2845.397,716,37,0,fresh_clean_rerun
+Q-0557,CVE-2021-27876,easy,veritas backup exec,hybrid_jev,CVE-2021-27876,True,True,,802.150,unknown,unknown,1,fresh_clean_rerun
+Q-0557,CVE-2021-27876,easy,veritas backup exec,jev_retrieval,CVE-2021-27876,True,True,,780.096,unknown,unknown,1,fresh_clean_rerun
+Q-0558,CVE-2021-27878,hard,veritas backup exec,llm_only,CVE-2022-30295,True,False,,894.317,118,69,0,fresh_clean_rerun
+Q-0558,CVE-2021-27878,hard,veritas backup exec,vector_rag,CVE-2021-27876,True,False,,2452.370,706,43,0,fresh_clean_rerun
+Q-0558,CVE-2021-27878,hard,veritas backup exec,hybrid_rag,CVE-2021-27876,True,False,,2749.828,793,58,0,fresh_clean_rerun
+Q-0558,CVE-2021-27878,hard,veritas backup exec,hybrid_jev,CVE-2021-27876,True,False,,798.947,unknown,unknown,1,fresh_clean_rerun
+Q-0558,CVE-2021-27878,hard,veritas backup exec,jev_retrieval,CVE-2021-27878,True,True,,961.110,unknown,unknown,1,fresh_clean_rerun
+Q-0559,CVE-2021-28164,medium,eclipse jetty,llm_only,CVE-2020-27216,True,False,,802.762,120,70,0,fresh_clean_rerun
+Q-0559,CVE-2021-28164,medium,eclipse jetty,vector_rag,CVE-2021-28164,True,True,,2875.131,931,45,0,fresh_clean_rerun
+Q-0559,CVE-2021-28164,medium,eclipse jetty,hybrid_rag,CVE-2021-28164,True,True,,2260.869,931,46,0,fresh_clean_rerun
+Q-0559,CVE-2021-28164,medium,eclipse jetty,hybrid_jev,CVE-2021-28164,True,True,,782.718,unknown,unknown,1,fresh_clean_rerun
+Q-0559,CVE-2021-28164,medium,eclipse jetty,jev_retrieval,CVE-2021-28164,True,True,,795.096,unknown,unknown,1,fresh_clean_rerun
+Q-0560,CVE-2021-28169,medium,eclipse jetty,llm_only,CVE-2020-11984,True,False,,1117.906,121,61,0,fresh_clean_rerun
+Q-0560,CVE-2021-28169,medium,eclipse jetty,vector_rag,CVE-2021-28164,True,False,,3522.018,932,44,0,fresh_clean_rerun
+Q-0560,CVE-2021-28169,medium,eclipse jetty,hybrid_rag,CVE-2021-34429,True,False,,2139.840,932,58,0,fresh_clean_rerun
+Q-0560,CVE-2021-28169,medium,eclipse jetty,hybrid_jev,,False,False,,738.713,unknown,unknown,1,fresh_clean_rerun
+Q-0560,CVE-2021-28169,medium,eclipse jetty,jev_retrieval,CVE-2021-28164,True,False,,1063.109,unknown,unknown,1,fresh_clean_rerun
+Q-0564,CVE-2021-29441,easy,alibaba nacos,llm_only,CVE-2021-29425,True,False,,1134.542,119,54,0,fresh_clean_rerun
+Q-0564,CVE-2021-29441,easy,alibaba nacos,vector_rag,CVE-2021-29441,True,True,,5143.041,970,35,0,fresh_clean_rerun
+Q-0564,CVE-2021-29441,easy,alibaba nacos,hybrid_rag,CVE-2021-29441,True,True,,1976.353,859,38,0,fresh_clean_rerun
+Q-0564,CVE-2021-29441,easy,alibaba nacos,hybrid_jev,CVE-2021-29441,True,True,,1425.206,unknown,unknown,1,fresh_clean_rerun
+Q-0564,CVE-2021-29441,easy,alibaba nacos,jev_retrieval,CVE-2021-29441,True,True,,1798.814,unknown,unknown,1,fresh_clean_rerun
+Q-0565,CVE-2021-29442,medium,alibaba nacos,llm_only,CVE-2021-29425,True,False,,1373.547,118,104,0,fresh_clean_rerun
+Q-0565,CVE-2021-29442,medium,alibaba nacos,vector_rag,CVE-2021-29442,True,True,,2253.225,859,42,0,fresh_clean_rerun
+Q-0565,CVE-2021-29442,medium,alibaba nacos,hybrid_rag,CVE-2021-29442,True,True,,2603.485,877,68,0,fresh_clean_rerun
+Q-0565,CVE-2021-29442,medium,alibaba nacos,hybrid_jev,CVE-2021-29442,True,True,,2597.500,unknown,unknown,1,fresh_clean_rerun
+Q-0565,CVE-2021-29442,medium,alibaba nacos,jev_retrieval,CVE-2021-29442,True,True,,2342.812,unknown,unknown,1,fresh_clean_rerun
+Q-0566,CVE-2021-29505,medium,xstream xstream,llm_only,CVE-2021-21300,True,False,,2331.433,120,61,0,fresh_clean_rerun
+Q-0566,CVE-2021-29505,medium,xstream xstream,vector_rag,CVE-2021-29505,True,True,,1866.004,721,63,0,fresh_clean_rerun
+Q-0566,CVE-2021-29505,medium,xstream xstream,hybrid_rag,CVE-2021-21351,True,False,,2020.309,757,66,0,fresh_clean_rerun
+Q-0566,CVE-2021-29505,medium,xstream xstream,hybrid_jev,,False,False,,1117.692,unknown,unknown,1,fresh_clean_rerun
+Q-0566,CVE-2021-29505,medium,xstream xstream,jev_retrieval,CVE-2021-29505,True,True,,1178.982,unknown,unknown,1,fresh_clean_rerun
+Q-0567,CVE-2021-30533,easy,google chrome,llm_only,CVE-2023-5850,True,False,,1269.373,119,66,0,fresh_clean_rerun
+Q-0567,CVE-2021-30533,easy,google chrome,vector_rag,CVE-2021-30533,True,True,,2919.488,594,40,0,fresh_clean_rerun
+Q-0567,CVE-2021-30533,easy,google chrome,hybrid_rag,CVE-2021-30533,True,True,,1980.708,598,36,0,fresh_clean_rerun
+Q-0567,CVE-2021-30533,easy,google chrome,hybrid_jev,CVE-2021-30533,True,True,,3556.376,unknown,unknown,1,fresh_clean_rerun
+Q-0567,CVE-2021-30533,easy,google chrome,jev_retrieval,CVE-2021-30533,True,True,,1560.227,unknown,unknown,1,fresh_clean_rerun
+Q-0568,CVE-2021-30554,easy,google chrome,llm_only,CVE-2023-27944,True,False,,1117.888,118,111,0,fresh_clean_rerun
+Q-0568,CVE-2021-30554,easy,google chrome,vector_rag,CVE-2021-30554,True,True,,2607.769,620,49,0,fresh_clean_rerun
+Q-0568,CVE-2021-30554,easy,google chrome,hybrid_rag,CVE-2021-30554,True,True,,2843.169,602,43,0,fresh_clean_rerun
+Q-0568,CVE-2021-30554,easy,google chrome,hybrid_jev,CVE-2021-30554,True,True,,927.737,unknown,unknown,1,fresh_clean_rerun
+Q-0568,CVE-2021-30554,easy,google chrome,jev_retrieval,CVE-2021-30554,True,True,,1431.626,unknown,unknown,1,fresh_clean_rerun
+Q-0569,CVE-2021-30563,medium,google chrome,llm_only,CVE-2020-16045,True,False,,1137.475,116,55,0,fresh_clean_rerun
+Q-0569,CVE-2021-30563,medium,google chrome,vector_rag,CVE-2023-2033,True,False,,2539.376,582,27,0,fresh_clean_rerun
+Q-0569,CVE-2021-30563,medium,google chrome,hybrid_rag,CVE-2021-30563,True,True,,2498.554,582,37,0,fresh_clean_rerun
+Q-0569,CVE-2021-30563,medium,google chrome,hybrid_jev,,False,False,,1148.655,unknown,unknown,1,fresh_clean_rerun
+Q-0569,CVE-2021-30563,medium,google chrome,jev_retrieval,CVE-2020-6418,True,False,,1172.371,unknown,unknown,1,fresh_clean_rerun
+Q-0570,CVE-2021-30633,easy,google chrome,llm_only,CVE-2022-3060,True,False,,1287.791,117,146,0,fresh_clean_rerun
+Q-0570,CVE-2021-30633,easy,google chrome,vector_rag,CVE-2021-30633,True,True,,2238.059,604,39,0,fresh_clean_rerun
+Q-0570,CVE-2021-30633,easy,google chrome,hybrid_rag,CVE-2021-30633,True,True,,2599.799,579,39,0,fresh_clean_rerun
+Q-0570,CVE-2021-30633,easy,google chrome,hybrid_jev,CVE-2021-30633,True,True,,2940.582,unknown,unknown,1,fresh_clean_rerun
+Q-0570,CVE-2021-30633,easy,google chrome,jev_retrieval,CVE-2021-30633,True,True,,5281.546,unknown,unknown,1,fresh_clean_rerun
+Q-0584,CVE-2021-3156,medium,sudo project sudo,llm_only,CVE-2021-3156,True,True,,1492.724,123,155,0,fresh_clean_rerun
+Q-0584,CVE-2021-3156,medium,sudo project sudo,vector_rag,CVE-2021-3156,True,True,,2156.567,675,48,0,fresh_clean_rerun
+Q-0584,CVE-2021-3156,medium,sudo project sudo,hybrid_rag,CVE-2021-3156,True,True,,2275.435,716,50,0,fresh_clean_rerun
+Q-0584,CVE-2021-3156,medium,sudo project sudo,hybrid_jev,CVE-2021-3156,True,True,,792.189,unknown,unknown,1,fresh_clean_rerun
+Q-0584,CVE-2021-3156,medium,sudo project sudo,jev_retrieval,CVE-2021-3156,True,True,,983.122,unknown,unknown,1,fresh_clean_rerun
+Q-0588,CVE-2021-32648,easy,octobercms october,llm_only,CVE-2022-31104,True,False,,987.361,119,110,0,fresh_clean_rerun
+Q-0588,CVE-2021-32648,easy,octobercms october,vector_rag,CVE-2021-32648,True,True,,2913.171,673,65,0,fresh_clean_rerun
+Q-0588,CVE-2021-32648,easy,octobercms october,hybrid_rag,CVE-2021-32648,True,True,,2245.578,615,41,0,fresh_clean_rerun
+Q-0588,CVE-2021-32648,easy,octobercms october,hybrid_jev,CVE-2021-32648,True,True,,967.170,unknown,unknown,1,fresh_clean_rerun
+Q-0588,CVE-2021-32648,easy,octobercms october,jev_retrieval,CVE-2021-32648,True,True,,1551.720,unknown,unknown,1,fresh_clean_rerun
+Q-0589,CVE-2021-32682,medium,std42 elfinder,llm_only,CVE-2020-11651,True,False,,1040.957,117,99,0,fresh_clean_rerun
+Q-0589,CVE-2021-32682,medium,std42 elfinder,vector_rag,CVE-2021-32682,True,True,,2640.844,503,45,0,fresh_clean_rerun
+Q-0589,CVE-2021-32682,medium,std42 elfinder,hybrid_rag,CVE-2021-32682,True,True,,2393.774,1050,48,0,fresh_clean_rerun
+Q-0589,CVE-2021-32682,medium,std42 elfinder,hybrid_jev,CVE-2021-32682,True,True,,1003.772,unknown,unknown,1,fresh_clean_rerun
+Q-0589,CVE-2021-32682,medium,std42 elfinder,jev_retrieval,CVE-2021-32682,True,True,,1560.441,unknown,unknown,1,fresh_clean_rerun
+Q-0594,CVE-2021-34371,medium,neo4j neo4j,llm_only,CVE-2022-24706,True,False,,976.979,121,68,0,fresh_clean_rerun
+Q-0594,CVE-2021-34371,medium,neo4j neo4j,vector_rag,,False,False,,3384.363,344,115,0,fresh_clean_rerun
+Q-0594,CVE-2021-34371,medium,neo4j neo4j,hybrid_rag,CVE-2021-34371,True,True,,1571.434,676,39,0,fresh_clean_rerun
+Q-0594,CVE-2021-34371,medium,neo4j neo4j,hybrid_jev,CVE-2021-34371,True,True,,758.111,unknown,unknown,1,fresh_clean_rerun
+Q-0594,CVE-2021-34371,medium,neo4j neo4j,jev_retrieval,CVE-2021-34371,True,True,,980.724,unknown,unknown,1,fresh_clean_rerun
+Q-0595,CVE-2021-34429,medium,eclipse jetty,llm_only,CVE-2020-27216,True,False,,1118.317,123,87,0,fresh_clean_rerun
+Q-0595,CVE-2021-34429,medium,eclipse jetty,vector_rag,CVE-2021-28164,True,False,,2038.060,934,44,0,fresh_clean_rerun
+Q-0595,CVE-2021-34429,medium,eclipse jetty,hybrid_rag,CVE-2021-28164,True,False,,3399.784,934,54,0,fresh_clean_rerun
+Q-0595,CVE-2021-34429,medium,eclipse jetty,hybrid_jev,,False,False,,717.562,unknown,unknown,1,fresh_clean_rerun
+Q-0595,CVE-2021-34429,medium,eclipse jetty,jev_retrieval,CVE-2021-34429,True,True,,1041.021,unknown,unknown,1,fresh_clean_rerun
+Q-0600,CVE-2021-35042,medium,djangoproject django,llm_only,CVE-2021-33203,True,False,,996.564,121,84,0,fresh_clean_rerun
+Q-0600,CVE-2021-35042,medium,djangoproject django,vector_rag,CVE-2021-35042,True,True,,2522.532,732,44,0,fresh_clean_rerun
+Q-0600,CVE-2021-35042,medium,djangoproject django,hybrid_rag,CVE-2021-35042,True,True,,2587.289,835,44,0,fresh_clean_rerun
+Q-0600,CVE-2021-35042,medium,djangoproject django,hybrid_jev,,False,False,,930.980,unknown,unknown,1,fresh_clean_rerun
+Q-0600,CVE-2021-35042,medium,djangoproject django,jev_retrieval,CVE-2021-35042,True,True,,966.181,unknown,unknown,1,fresh_clean_rerun
+Q-0609,CVE-2021-37973,easy,google chrome,llm_only,CVE-2023-28150,True,False,,974.774,117,87,0,fresh_clean_rerun
+Q-0609,CVE-2021-37973,easy,google chrome,vector_rag,CVE-2021-37973,True,True,,2768.121,594,35,0,fresh_clean_rerun
+Q-0609,CVE-2021-37973,easy,google chrome,hybrid_rag,CVE-2021-37973,True,True,,2271.796,576,45,0,fresh_clean_rerun
+Q-0609,CVE-2021-37973,easy,google chrome,hybrid_jev,CVE-2021-37973,True,True,,800.789,unknown,unknown,1,fresh_clean_rerun
+Q-0609,CVE-2021-37973,easy,google chrome,jev_retrieval,CVE-2021-37973,True,True,,964.091,unknown,unknown,1,fresh_clean_rerun
+Q-0610,CVE-2021-37976,easy,google chrome,llm_only,CVE-2023-5049,True,False,,1010.054,114,78,0,fresh_clean_rerun
+Q-0610,CVE-2021-37976,easy,google chrome,vector_rag,CVE-2021-37976,True,True,,2681.572,615,41,0,fresh_clean_rerun
+Q-0610,CVE-2021-37976,easy,google chrome,hybrid_rag,CVE-2021-37976,True,True,,2436.107,615,37,0,fresh_clean_rerun
+Q-0610,CVE-2021-37976,easy,google chrome,hybrid_jev,CVE-2021-37976,True,True,,959.130,unknown,unknown,1,fresh_clean_rerun
+Q-0610,CVE-2021-37976,easy,google chrome,jev_retrieval,CVE-2021-37976,True,True,,959.644,unknown,unknown,1,fresh_clean_rerun
+Q-0611,CVE-2021-38000,easy,google chrome,llm_only,CVE-2023-27979,True,False,,947.246,115,84,0,fresh_clean_rerun
+Q-0611,CVE-2021-38000,easy,google chrome,vector_rag,CVE-2021-38000,True,True,,4955.464,602,35,0,fresh_clean_rerun
+Q-0611,CVE-2021-38000,easy,google chrome,hybrid_rag,CVE-2021-38000,True,True,,2897.633,597,45,0,fresh_clean_rerun
+Q-0611,CVE-2021-38000,easy,google chrome,hybrid_jev,CVE-2021-38000,True,True,,693.059,unknown,unknown,1,fresh_clean_rerun
+Q-0611,CVE-2021-38000,easy,google chrome,jev_retrieval,CVE-2021-38000,True,True,,932.374,unknown,unknown,1,fresh_clean_rerun
+Q-0612,CVE-2021-38163,medium,sap netweaver,llm_only,CVE-2020-6287,True,False,,720.284,123,69,0,fresh_clean_rerun
+Q-0612,CVE-2021-38163,medium,sap netweaver,vector_rag,CVE-2021-38163,True,True,,2615.562,787,50,0,fresh_clean_rerun
+Q-0612,CVE-2021-38163,medium,sap netweaver,hybrid_rag,CVE-2021-38163,True,True,,2600.738,787,47,0,fresh_clean_rerun
+Q-0612,CVE-2021-38163,medium,sap netweaver,hybrid_jev,CVE-2021-38163,True,True,,758.376,unknown,unknown,1,fresh_clean_rerun
+Q-0612,CVE-2021-38163,medium,sap netweaver,jev_retrieval,CVE-2021-38163,True,True,,905.626,unknown,unknown,1,fresh_clean_rerun
+Q-0616,CVE-2021-39144,medium,xstream xstream,llm_only,CVE-2021-39118,True,False,,1006.282,118,53,0,fresh_clean_rerun
+Q-0616,CVE-2021-39144,medium,xstream xstream,vector_rag,CVE-2021-39144,True,True,,2425.613,703,49,0,fresh_clean_rerun
+Q-0616,CVE-2021-39144,medium,xstream xstream,hybrid_rag,CVE-2021-29505,True,False,,3016.509,703,44,0,fresh_clean_rerun
+Q-0616,CVE-2021-39144,medium,xstream xstream,hybrid_jev,CVE-2021-29505,True,False,,705.752,unknown,unknown,1,fresh_clean_rerun
+Q-0616,CVE-2021-39144,medium,xstream xstream,jev_retrieval,CVE-2021-29505,True,False,,1369.561,unknown,unknown,1,fresh_clean_rerun
+Q-0618,CVE-2021-4034,easy,polkit project polkit,llm_only,CVE-2021-4034,True,True,,1125.080,118,58,0,fresh_clean_rerun
+Q-0618,CVE-2021-4034,easy,polkit project polkit,vector_rag,CVE-2021-4034,True,True,,3248.216,855,37,0,fresh_clean_rerun
+Q-0618,CVE-2021-4034,easy,polkit project polkit,hybrid_rag,CVE-2021-4034,True,True,,1471.656,913,40,0,fresh_clean_rerun
+Q-0618,CVE-2021-4034,easy,polkit project polkit,hybrid_jev,CVE-2021-4034,True,True,,711.233,unknown,unknown,1,fresh_clean_rerun
+Q-0618,CVE-2021-4034,easy,polkit project polkit,jev_retrieval,CVE-2021-4034,True,True,,961.994,unknown,unknown,1,fresh_clean_rerun
+Q-0622,CVE-2021-40539,hard,zohocorp manageengine adselfservice plus,llm_only,CVE-2022-47966,True,False,,1006.052,128,76,0,fresh_clean_rerun
+Q-0622,CVE-2021-40539,hard,zohocorp manageengine adselfservice plus,vector_rag,CVE-2021-40539,True,True,,2448.212,1004,77,0,fresh_clean_rerun
+Q-0622,CVE-2021-40539,hard,zohocorp manageengine adselfservice plus,hybrid_rag,CVE-2021-40539,True,True,,2555.883,1004,75,0,fresh_clean_rerun
+Q-0622,CVE-2021-40539,hard,zohocorp manageengine adselfservice plus,hybrid_jev,CVE-2021-40539,True,True,,704.513,unknown,unknown,1,fresh_clean_rerun
+Q-0622,CVE-2021-40539,hard,zohocorp manageengine adselfservice plus,jev_retrieval,CVE-2021-40539,True,True,,971.446,unknown,unknown,1,fresh_clean_rerun
+Q-0623,CVE-2021-40822,medium,osgeo geoserver,llm_only,CVE-2021-27905,True,False,,902.925,122,96,0,fresh_clean_rerun
+Q-0623,CVE-2021-40822,medium,osgeo geoserver,vector_rag,CVE-2021-40822,True,True,,2931.139,1050,48,0,fresh_clean_rerun
+Q-0623,CVE-2021-40822,medium,osgeo geoserver,hybrid_rag,CVE-2021-40822,True,True,,2224.680,1051,84,0,fresh_clean_rerun
+Q-0623,CVE-2021-40822,medium,osgeo geoserver,hybrid_jev,CVE-2021-40822,True,True,,998.655,unknown,unknown,1,fresh_clean_rerun
+Q-0623,CVE-2021-40822,medium,osgeo geoserver,jev_retrieval,CVE-2021-40822,True,True,,928.696,unknown,unknown,1,fresh_clean_rerun
+Q-0624,CVE-2021-40870,medium,aviatrix controller,llm_only,CVE-2022-39937,True,False,,1288.124,119,122,0,fresh_clean_rerun
+Q-0624,CVE-2021-40870,medium,aviatrix controller,vector_rag,CVE-2021-40870,True,True,,2238.182,742,47,0,fresh_clean_rerun
+Q-0624,CVE-2021-40870,medium,aviatrix controller,hybrid_rag,CVE-2021-40870,True,True,,2873.674,742,41,0,fresh_clean_rerun
+Q-0624,CVE-2021-40870,medium,aviatrix controller,hybrid_jev,CVE-2021-40870,True,True,,652.967,unknown,unknown,1,fresh_clean_rerun
+Q-0624,CVE-2021-40870,medium,aviatrix controller,jev_retrieval,CVE-2021-40870,True,True,,943.301,unknown,unknown,1,fresh_clean_rerun
+Q-0625,CVE-2021-41277,easy,metabase metabase,llm_only,CVE-2023-27539,True,False,,970.766,114,74,0,fresh_clean_rerun
+Q-0625,CVE-2021-41277,easy,metabase metabase,vector_rag,CVE-2021-41277,True,True,,2490.359,817,40,0,fresh_clean_rerun
+Q-0625,CVE-2021-41277,easy,metabase metabase,hybrid_rag,CVE-2021-41277,True,True,,2478.630,817,75,0,fresh_clean_rerun
+Q-0625,CVE-2021-41277,easy,metabase metabase,hybrid_jev,CVE-2021-41277,True,True,,718.648,unknown,unknown,1,fresh_clean_rerun
+Q-0625,CVE-2021-41277,easy,metabase metabase,jev_retrieval,CVE-2021-41277,True,True,,1000.329,unknown,unknown,1,fresh_clean_rerun
+Q-0627,CVE-2021-41773,medium,apache http server,llm_only,CVE-2021-41773,True,True,,979.073,120,53,0,fresh_clean_rerun
+Q-0627,CVE-2021-41773,medium,apache http server,vector_rag,CVE-2021-41773,True,True,,5442.440,1033,36,0,fresh_clean_rerun
+Q-0627,CVE-2021-41773,medium,apache http server,hybrid_rag,CVE-2021-41773,True,True,,1961.343,1033,58,0,fresh_clean_rerun
+Q-0627,CVE-2021-41773,medium,apache http server,hybrid_jev,CVE-2021-41773,True,True,,911.859,unknown,unknown,1,fresh_clean_rerun
+Q-0627,CVE-2021-41773,medium,apache http server,jev_retrieval,CVE-2021-41773,True,True,,975.108,unknown,unknown,1,fresh_clean_rerun
+Q-0628,CVE-2021-42013,easy,apache http server,llm_only,CVE-2021-41773,True,False,,610.086,116,65,0,fresh_clean_rerun
+Q-0628,CVE-2021-42013,easy,apache http server,vector_rag,CVE-2021-41773,True,False,,3212.915,1029,92,0,fresh_clean_rerun
+Q-0628,CVE-2021-42013,easy,apache http server,hybrid_rag,CVE-2021-41773,True,False,,2202.247,1029,60,0,fresh_clean_rerun
+Q-0628,CVE-2021-42013,easy,apache http server,hybrid_jev,CVE-2021-41773,True,False,,759.359,unknown,unknown,1,fresh_clean_rerun
+Q-0628,CVE-2021-42013,easy,apache http server,jev_retrieval,CVE-2021-41773,True,False,,880.429,unknown,unknown,1,fresh_clean_rerun
+Q-0630,CVE-2021-42258,hard,bqe billquick web suite,llm_only,CVE-2018-11757,True,False,,1916.204,124,71,0,fresh_clean_rerun
+Q-0630,CVE-2021-42258,hard,bqe billquick web suite,vector_rag,CVE-2021-42258,True,True,,1597.642,926,46,0,fresh_clean_rerun
+Q-0630,CVE-2021-42258,hard,bqe billquick web suite,hybrid_rag,CVE-2021-42258,True,True,,2288.887,891,49,0,fresh_clean_rerun
+Q-0630,CVE-2021-42258,hard,bqe billquick web suite,hybrid_jev,CVE-2021-42258,True,True,,953.265,unknown,unknown,1,fresh_clean_rerun
+Q-0630,CVE-2021-42258,hard,bqe billquick web suite,jev_retrieval,CVE-2021-42258,True,True,,5421.518,unknown,unknown,1,fresh_clean_rerun
+Q-0633,CVE-2021-42342,easy,embedthis goahead,llm_only,CVE-2015-0890,True,False,,1368.313,116,148,0,fresh_clean_rerun
+Q-0633,CVE-2021-42342,easy,embedthis goahead,vector_rag,CVE-2021-42342,True,True,,2166.110,1019,37,0,fresh_clean_rerun
+Q-0633,CVE-2021-42342,easy,embedthis goahead,hybrid_rag,CVE-2021-42342,True,True,,2517.551,745,35,0,fresh_clean_rerun
+Q-0633,CVE-2021-42342,easy,embedthis goahead,hybrid_jev,CVE-2021-42342,True,True,,1438.989,unknown,unknown,1,fresh_clean_rerun
+Q-0633,CVE-2021-42342,easy,embedthis goahead,jev_retrieval,CVE-2021-42342,True,True,,809.577,unknown,unknown,1,fresh_clean_rerun
+Q-0634,CVE-2021-42392,medium,h2database h2,llm_only,CVE-2021-33879,True,False,,1433.054,120,117,0,fresh_clean_rerun
+Q-0634,CVE-2021-42392,medium,h2database h2,vector_rag,CVE-2021-42392,True,True,,2583.824,1051,43,0,fresh_clean_rerun
+Q-0634,CVE-2021-42392,medium,h2database h2,hybrid_rag,CVE-2021-42392,True,True,,2245.379,1057,78,0,fresh_clean_rerun
+Q-0634,CVE-2021-42392,medium,h2database h2,hybrid_jev,CVE-2021-42392,True,True,,1255.812,unknown,unknown,1,fresh_clean_rerun
+Q-0634,CVE-2021-42392,medium,h2database h2,jev_retrieval,CVE-2021-42392,True,True,,973.026,unknown,unknown,1,fresh_clean_rerun
+Q-0635,CVE-2021-43008,easy,adminer adminer,llm_only,CVE-2020-11022,True,False,,1021.372,118,79,0,fresh_clean_rerun
+Q-0635,CVE-2021-43008,easy,adminer adminer,vector_rag,CVE-2021-43008,True,True,,2474.754,786,54,0,fresh_clean_rerun
+Q-0635,CVE-2021-43008,easy,adminer adminer,hybrid_rag,CVE-2021-43008,True,True,,2587.665,709,38,0,fresh_clean_rerun
+Q-0635,CVE-2021-43008,easy,adminer adminer,hybrid_jev,CVE-2021-43008,True,True,,932.449,unknown,unknown,1,fresh_clean_rerun
+Q-0635,CVE-2021-43008,easy,adminer adminer,jev_retrieval,CVE-2021-43008,True,True,,1028.679,unknown,unknown,1,fresh_clean_rerun
+Q-0636,CVE-2021-43798,easy,grafana grafana,llm_only,CVE-2021-43798,True,True,,1046.835,123,116,0,fresh_clean_rerun
+Q-0636,CVE-2021-43798,easy,grafana grafana,vector_rag,CVE-2021-43798,True,True,,2488.347,818,46,0,fresh_clean_rerun
+Q-0636,CVE-2021-43798,easy,grafana grafana,hybrid_rag,CVE-2021-43798,True,True,,2470.799,818,51,0,fresh_clean_rerun
+Q-0636,CVE-2021-43798,easy,grafana grafana,hybrid_jev,CVE-2021-43798,True,True,,798.822,unknown,unknown,1,fresh_clean_rerun
+Q-0636,CVE-2021-43798,easy,grafana grafana,jev_retrieval,CVE-2021-43798,True,True,,1122.755,unknown,unknown,1,fresh_clean_rerun
+Q-0640,CVE-2021-44228,medium,apache log4j,llm_only,CVE-2021-44228,True,True,,968.169,119,43,0,fresh_clean_rerun
+Q-0640,CVE-2021-44228,medium,apache log4j,vector_rag,CVE-2021-44228,True,True,,4869.258,780,37,0,fresh_clean_rerun
+Q-0640,CVE-2021-44228,medium,apache log4j,hybrid_rag,CVE-2021-44228,True,True,,2805.592,898,39,0,fresh_clean_rerun
+Q-0640,CVE-2021-44228,medium,apache log4j,hybrid_jev,CVE-2021-44228,True,True,,712.421,unknown,unknown,1,fresh_clean_rerun
+Q-0640,CVE-2021-44228,medium,apache log4j,jev_retrieval,CVE-2021-44228,True,True,,886.115,unknown,unknown,1,fresh_clean_rerun
+Q-0641,CVE-2021-44515,hard,zohocorp manageengine desktop central,llm_only,CVE-2022-47966,True,False,,907.301,124,78,0,fresh_clean_rerun
+Q-0641,CVE-2021-44515,hard,zohocorp manageengine desktop central,vector_rag,CVE-2021-44515,True,True,,2603.460,641,40,0,fresh_clean_rerun
+Q-0641,CVE-2021-44515,hard,zohocorp manageengine desktop central,hybrid_rag,CVE-2021-44515,True,True,,2567.851,641,44,0,fresh_clean_rerun
+Q-0641,CVE-2021-44515,hard,zohocorp manageengine desktop central,hybrid_jev,CVE-2021-44515,True,True,,796.777,unknown,unknown,1,fresh_clean_rerun
+Q-0641,CVE-2021-44515,hard,zohocorp manageengine desktop central,jev_retrieval,CVE-2021-44515,True,True,,1354.718,unknown,unknown,1,fresh_clean_rerun
+Q-0642,CVE-2021-45046,medium,apache log4j,llm_only,CVE-2021-44228,True,False,,877.502,115,49,0,fresh_clean_rerun
+Q-0642,CVE-2021-45046,medium,apache log4j,vector_rag,CVE-2021-45046,True,True,,3840.262,990,69,0,fresh_clean_rerun
+Q-0642,CVE-2021-45046,medium,apache log4j,hybrid_rag,CVE-2021-45046,True,True,,1263.670,836,43,0,fresh_clean_rerun
+Q-0642,CVE-2021-45046,medium,apache log4j,hybrid_jev,CVE-2021-45046,True,True,,705.024,unknown,unknown,1,fresh_clean_rerun
+Q-0642,CVE-2021-45046,medium,apache log4j,jev_retrieval,CVE-2021-45046,True,True,,929.179,unknown,unknown,1,fresh_clean_rerun
+Q-0645,CVE-2021-45788,easy,metersphere metersphere,llm_only,CVE-2022-27469,True,False,,1158.465,122,65,0,fresh_clean_rerun
+Q-0645,CVE-2021-45788,easy,metersphere metersphere,vector_rag,CVE-2021-45788,True,True,,2269.930,782,38,0,fresh_clean_rerun
+Q-0645,CVE-2021-45788,easy,metersphere metersphere,hybrid_rag,CVE-2021-45788,True,True,,2485.427,623,69,0,fresh_clean_rerun
+Q-0645,CVE-2021-45788,easy,metersphere metersphere,hybrid_jev,CVE-2021-45788,True,True,,955.334,unknown,unknown,1,fresh_clean_rerun
+Q-0645,CVE-2021-45788,easy,metersphere metersphere,jev_retrieval,CVE-2021-45788,True,True,,808.271,unknown,unknown,1,fresh_clean_rerun
+Q-0648,CVE-2022-0543,easy,redis redis,llm_only,CVE-2022-41723,True,False,,782.387,117,110,0,fresh_clean_rerun
+Q-0648,CVE-2022-0543,easy,redis redis,vector_rag,CVE-2022-0543,True,True,,2699.948,692,38,0,fresh_clean_rerun
+Q-0648,CVE-2022-0543,easy,redis redis,hybrid_rag,CVE-2022-0543,True,True,,2441.801,853,37,0,fresh_clean_rerun
+Q-0648,CVE-2022-0543,easy,redis redis,hybrid_jev,CVE-2022-0543,True,True,,1117.975,unknown,unknown,1,fresh_clean_rerun
+Q-0648,CVE-2022-0543,easy,redis redis,jev_retrieval,CVE-2022-0543,True,True,,931.739,unknown,unknown,1,fresh_clean_rerun
+Q-0649,CVE-2022-0778,hard,openssl openssl,llm_only,CVE-2022-0778,True,True,,965.141,116,77,0,fresh_clean_rerun
+Q-0649,CVE-2022-0778,hard,openssl openssl,vector_rag,CVE-2021-25369,True,False,,2873.909,912,106,0,fresh_clean_rerun
+Q-0649,CVE-2022-0778,hard,openssl openssl,hybrid_rag,CVE-2022-0778,True,True,,2240.709,1186,41,0,fresh_clean_rerun
+Q-0649,CVE-2022-0778,hard,openssl openssl,hybrid_jev,CVE-2022-0778,True,True,,645.960,unknown,unknown,1,fresh_clean_rerun
+Q-0649,CVE-2022-0778,hard,openssl openssl,jev_retrieval,CVE-2022-0778,True,True,,953.798,unknown,unknown,1,fresh_clean_rerun
+Q-0652,CVE-2022-1364,easy,google chrome,llm_only,CVE-2023-28155,True,False,,879.368,119,103,0,fresh_clean_rerun
+Q-0652,CVE-2022-1364,easy,google chrome,vector_rag,CVE-2022-1364,True,True,,2803.805,580,56,0,fresh_clean_rerun
+Q-0652,CVE-2022-1364,easy,google chrome,hybrid_rag,CVE-2022-1364,True,True,,2279.135,580,72,0,fresh_clean_rerun
+Q-0652,CVE-2022-1364,easy,google chrome,hybrid_jev,CVE-2022-1364,True,True,,643.578,unknown,unknown,1,fresh_clean_rerun
+Q-0652,CVE-2022-1364,easy,google chrome,jev_retrieval,CVE-2022-1364,True,True,,890.969,unknown,unknown,1,fresh_clean_rerun
+Q-0656,CVE-2022-20775,medium,cisco sd-wan,llm_only,CVE-2022-20864,True,False,,938.584,122,70,0,fresh_clean_rerun
+Q-0656,CVE-2022-20775,medium,cisco sd-wan,vector_rag,CVE-2022-20775,True,True,,2626.380,1049,53,0,fresh_clean_rerun
+Q-0656,CVE-2022-20775,medium,cisco sd-wan,hybrid_rag,CVE-2022-20775,True,True,,3956.803,1067,46,0,fresh_clean_rerun
+Q-0656,CVE-2022-20775,medium,cisco sd-wan,hybrid_jev,CVE-2022-20775,True,True,,3738.958,unknown,unknown,1,fresh_clean_rerun
+Q-0656,CVE-2022-20775,medium,cisco sd-wan,jev_retrieval,CVE-2022-20775,True,True,,1120.718,unknown,unknown,1,fresh_clean_rerun
+Q-0657,CVE-2022-21445,medium,oracle application development framework,llm_only,CVE-2021-21224,True,False,,1518.049,117,212,0,fresh_clean_rerun
+Q-0657,CVE-2022-21445,medium,oracle application development framework,vector_rag,CVE-2022-21445,True,True,,2317.775,1000,35,0,fresh_clean_rerun
+Q-0657,CVE-2022-21445,medium,oracle application development framework,hybrid_rag,CVE-2022-21445,True,True,,5186.442,893,46,0,fresh_clean_rerun
+Q-0657,CVE-2022-21445,medium,oracle application development framework,hybrid_jev,CVE-2022-21445,True,True,,2531.077,unknown,unknown,1,fresh_clean_rerun
+Q-0657,CVE-2022-21445,medium,oracle application development framework,jev_retrieval,CVE-2022-21445,True,True,,5812.662,unknown,unknown,1,fresh_clean_rerun
+Q-0667,CVE-2022-22947,easy,vmware spring cloud gateway,llm_only,CVE-2022-22965,True,False,,2676.745,117,102,0,fresh_clean_rerun
+Q-0667,CVE-2022-22947,easy,vmware spring cloud gateway,vector_rag,CVE-2022-22947,True,True,,4185.867,761,42,0,fresh_clean_rerun
+Q-0667,CVE-2022-22947,easy,vmware spring cloud gateway,hybrid_rag,CVE-2022-22947,True,True,,1620.120,761,42,0,fresh_clean_rerun
+Q-0667,CVE-2022-22947,easy,vmware spring cloud gateway,hybrid_jev,CVE-2022-22947,True,True,,724.669,unknown,unknown,1,fresh_clean_rerun
+Q-0667,CVE-2022-22947,easy,vmware spring cloud gateway,jev_retrieval,CVE-2022-22947,True,True,,997.889,unknown,unknown,1,fresh_clean_rerun
+Q-0670,CVE-2022-22963,hard,vmware spring cloud function,llm_only,CVE-2022-22963,True,True,,1088.423,118,137,0,fresh_clean_rerun
+Q-0670,CVE-2022-22963,hard,vmware spring cloud function,vector_rag,CVE-2022-22963,True,True,,3735.193,758,46,0,fresh_clean_rerun
+Q-0670,CVE-2022-22963,hard,vmware spring cloud function,hybrid_rag,CVE-2022-22963,True,True,,1983.292,758,53,0,fresh_clean_rerun
+Q-0670,CVE-2022-22963,hard,vmware spring cloud function,hybrid_jev,CVE-2022-22963,True,True,,917.246,unknown,unknown,1,fresh_clean_rerun
+Q-0670,CVE-2022-22963,hard,vmware spring cloud function,jev_retrieval,CVE-2022-22963,True,True,,1221.907,unknown,unknown,1,fresh_clean_rerun
+Q-0671,CVE-2022-22965,medium,oracle jdk,llm_only,CVE-2023-21839,True,False,,759.758,117,65,0,fresh_clean_rerun
+Q-0671,CVE-2022-22965,medium,oracle jdk,vector_rag,CVE-2022-22965,True,True,,3561.226,788,45,0,fresh_clean_rerun
+Q-0671,CVE-2022-22965,medium,oracle jdk,hybrid_rag,CVE-2022-22965,True,True,,1974.541,850,44,0,fresh_clean_rerun
+Q-0671,CVE-2022-22965,medium,oracle jdk,hybrid_jev,CVE-2022-22965,True,True,,958.156,unknown,unknown,1,fresh_clean_rerun
+Q-0671,CVE-2022-22965,medium,oracle jdk,jev_retrieval,CVE-2022-22965,True,True,,2190.839,unknown,unknown,1,fresh_clean_rerun
+Q-0672,CVE-2022-22978,medium,vmware spring security,llm_only,CVE-2022-22963,True,False,,1094.895,120,73,0,fresh_clean_rerun
+Q-0672,CVE-2022-22978,medium,vmware spring security,vector_rag,CVE-2022-22978,True,True,,2411.230,849,39,0,fresh_clean_rerun
+Q-0672,CVE-2022-22978,medium,vmware spring security,hybrid_rag,CVE-2022-22978,True,True,,2787.510,831,54,0,fresh_clean_rerun
+Q-0672,CVE-2022-22978,medium,vmware spring security,hybrid_jev,CVE-2022-22978,True,True,,1250.503,unknown,unknown,1,fresh_clean_rerun
+Q-0672,CVE-2022-22978,medium,vmware spring security,jev_retrieval,CVE-2022-22978,True,True,,2571.091,unknown,unknown,1,fresh_clean_rerun
+Q-0673,CVE-2022-23131,easy,zabbix zabbix,llm_only,CVE-2022-23131,True,True,,2210.821,122,90,0,fresh_clean_rerun
+Q-0673,CVE-2022-23131,easy,zabbix zabbix,vector_rag,CVE-2022-23131,True,True,,1670.012,675,38,0,fresh_clean_rerun
+Q-0673,CVE-2022-23131,easy,zabbix zabbix,hybrid_rag,CVE-2022-23131,True,True,,2750.698,667,48,0,fresh_clean_rerun
+Q-0673,CVE-2022-23131,easy,zabbix zabbix,hybrid_jev,CVE-2022-23131,True,True,,1279.664,unknown,unknown,1,fresh_clean_rerun
+Q-0673,CVE-2022-23131,easy,zabbix zabbix,jev_retrieval,CVE-2022-23131,True,True,,2363.839,unknown,unknown,1,fresh_clean_rerun
+Q-0674,CVE-2022-23134,medium,zabbix zabbix,llm_only,CVE-2022-23131,True,False,,970.633,118,65,0,fresh_clean_rerun
+Q-0674,CVE-2022-23134,medium,zabbix zabbix,vector_rag,CVE-2022-23131,True,False,,5730.224,682,45,0,fresh_clean_rerun
+Q-0674,CVE-2022-23134,medium,zabbix zabbix,hybrid_rag,CVE-2022-23134,True,True,,2234.091,669,55,0,fresh_clean_rerun
+Q-0674,CVE-2022-23134,medium,zabbix zabbix,hybrid_jev,CVE-2022-23134,True,True,,1273.904,unknown,unknown,1,fresh_clean_rerun
+Q-0674,CVE-2022-23134,medium,zabbix zabbix,jev_retrieval,CVE-2022-23134,True,True,,1599.119,unknown,unknown,1,fresh_clean_rerun
+Q-0675,CVE-2022-23221,easy,h2database h2,llm_only,CVE-2021-32695,True,False,,1440.237,118,89,0,fresh_clean_rerun
+Q-0675,CVE-2022-23221,easy,h2database h2,vector_rag,CVE-2022-23221,True,True,,2323.793,753,57,0,fresh_clean_rerun
+Q-0675,CVE-2022-23221,easy,h2database h2,hybrid_rag,CVE-2022-23221,True,True,,3343.962,822,49,0,fresh_clean_rerun
+Q-0675,CVE-2022-23221,easy,h2database h2,hybrid_jev,CVE-2022-23221,True,True,,1495.308,unknown,unknown,1,fresh_clean_rerun
+Q-0675,CVE-2022-23221,easy,h2database h2,jev_retrieval,CVE-2022-23221,True,True,,1959.027,unknown,unknown,1,fresh_clean_rerun
+Q-0677,CVE-2022-24112,medium,apache apisix,llm_only,CVE-2023-44444,True,False,,1283.400,123,81,0,fresh_clean_rerun
+Q-0677,CVE-2022-24112,medium,apache apisix,vector_rag,CVE-2022-24112,True,True,,6280.157,754,49,0,fresh_clean_rerun
+Q-0677,CVE-2022-24112,medium,apache apisix,hybrid_rag,CVE-2022-24112,True,True,,1077.369,884,37,0,fresh_clean_rerun
+Q-0677,CVE-2022-24112,medium,apache apisix,hybrid_jev,CVE-2022-24112,True,True,,792.719,unknown,unknown,1,fresh_clean_rerun
+Q-0677,CVE-2022-24112,medium,apache apisix,jev_retrieval,CVE-2022-24112,True,True,,1043.366,unknown,unknown,1,fresh_clean_rerun
+Q-0679,CVE-2022-24706,hard,apache couchdb,llm_only,CVE-2020-35491,True,False,,1202.992,120,126,0,fresh_clean_rerun
+Q-0679,CVE-2022-24706,hard,apache couchdb,vector_rag,CVE-2022-24706,True,True,,3246.648,822,41,0,fresh_clean_rerun
+Q-0679,CVE-2022-24706,hard,apache couchdb,hybrid_rag,CVE-2022-24706,True,True,,1561.787,907,46,0,fresh_clean_rerun
+Q-0679,CVE-2022-24706,hard,apache couchdb,hybrid_jev,CVE-2022-24706,True,True,,1054.890,unknown,unknown,1,fresh_clean_rerun
+Q-0679,CVE-2022-24706,hard,apache couchdb,jev_retrieval,CVE-2022-24706,True,True,,1749.893,unknown,unknown,1,fresh_clean_rerun
+Q-0680,CVE-2022-24816,easy,geosolutionsgroup jai-ext,llm_only,CVE-2022-22978,True,False,,1128.463,122,90,0,fresh_clean_rerun
+Q-0680,CVE-2022-24816,easy,geosolutionsgroup jai-ext,vector_rag,CVE-2022-24816,True,True,,2679.940,817,46,0,fresh_clean_rerun
+Q-0680,CVE-2022-24816,easy,geosolutionsgroup jai-ext,hybrid_rag,CVE-2022-24816,True,True,,2496.053,773,30,0,fresh_clean_rerun
+Q-0680,CVE-2022-24816,easy,geosolutionsgroup jai-ext,hybrid_jev,CVE-2022-24816,True,True,,1433.846,unknown,unknown,1,fresh_clean_rerun
+Q-0680,CVE-2022-24816,easy,geosolutionsgroup jai-ext,jev_retrieval,CVE-2022-24816,True,True,,1614.921,unknown,unknown,1,fresh_clean_rerun
+Q-0683,CVE-2022-26134,medium,atlassian confluence server,llm_only,CVE-2022-26134,True,True,,958.875,121,58,0,fresh_clean_rerun
+Q-0683,CVE-2022-26134,medium,atlassian confluence server,vector_rag,CVE-2023-22527,True,False,,3802.838,786,54,0,fresh_clean_rerun
+Q-0683,CVE-2022-26134,medium,atlassian confluence server,hybrid_rag,CVE-2023-22518,True,False,,1046.733,780,45,0,fresh_clean_rerun
+Q-0683,CVE-2022-26134,medium,atlassian confluence server,hybrid_jev,,False,False,,889.263,unknown,unknown,1,fresh_clean_rerun
+Q-0683,CVE-2022-26134,medium,atlassian confluence server,jev_retrieval,CVE-2023-22518,True,False,,884.481,unknown,unknown,1,fresh_clean_rerun
+Q-0688,CVE-2022-26500,easy,veeam veeam backup & replication,llm_only,CVE-2022-31139,True,False,,960.897,125,69,0,fresh_clean_rerun
+Q-0688,CVE-2022-26500,easy,veeam veeam backup & replication,vector_rag,CVE-2022-26500,True,True,,2428.731,572,40,0,fresh_clean_rerun
+Q-0688,CVE-2022-26500,easy,veeam veeam backup & replication,hybrid_rag,CVE-2022-26500,True,True,,2523.370,598,46,0,fresh_clean_rerun
+Q-0688,CVE-2022-26500,easy,veeam veeam backup & replication,hybrid_jev,CVE-2022-26500,True,True,,732.567,unknown,unknown,1,fresh_clean_rerun
+Q-0688,CVE-2022-26500,easy,veeam veeam backup & replication,jev_retrieval,CVE-2022-26500,True,True,,1181.512,unknown,unknown,1,fresh_clean_rerun
+Q-0689,CVE-2022-26501,hard,veeam veeam backup & replication,llm_only,CVE-2022-30141,True,False,,1119.235,121,126,0,fresh_clean_rerun
+Q-0689,CVE-2022-26501,hard,veeam veeam backup & replication,vector_rag,CVE-2022-26501,True,True,,2482.817,686,43,0,fresh_clean_rerun
+Q-0689,CVE-2022-26501,hard,veeam veeam backup & replication,hybrid_rag,CVE-2022-26501,True,True,,5492.277,686,86,0,fresh_clean_rerun
+Q-0689,CVE-2022-26501,hard,veeam veeam backup & replication,hybrid_jev,CVE-2022-26501,True,True,,906.375,unknown,unknown,1,fresh_clean_rerun
+Q-0689,CVE-2022-26501,hard,veeam veeam backup & replication,jev_retrieval,CVE-2022-26501,True,True,,1038.948,unknown,unknown,1,fresh_clean_rerun
+Q-0692,CVE-2022-27593,medium,qnap photo station,llm_only,CVE-2022-24923,True,False,,1550.425,117,77,0,fresh_clean_rerun
+Q-0692,CVE-2022-27593,medium,qnap photo station,vector_rag,CVE-2022-27593,True,True,,2021.890,847,51,0,fresh_clean_rerun
+Q-0692,CVE-2022-27593,medium,qnap photo station,hybrid_rag,CVE-2022-27593,True,True,,2554.246,846,66,0,fresh_clean_rerun
+Q-0692,CVE-2022-27593,medium,qnap photo station,hybrid_jev,CVE-2022-27593,True,True,,915.845,unknown,unknown,1,fresh_clean_rerun
+Q-0692,CVE-2022-27593,medium,qnap photo station,jev_retrieval,CVE-2022-27593,True,True,,1180.740,unknown,unknown,1,fresh_clean_rerun
+Q-0697,CVE-2022-29499,easy,mitel mivoice connect,llm_only,CVE-2020-11832,True,False,,1131.256,123,102,0,fresh_clean_rerun
+Q-0697,CVE-2022-29499,easy,mitel mivoice connect,vector_rag,CVE-2022-29499,True,True,,2749.799,659,40,0,fresh_clean_rerun
+Q-0697,CVE-2022-29499,easy,mitel mivoice connect,hybrid_rag,CVE-2022-29499,True,True,,2370.666,729,41,0,fresh_clean_rerun
+Q-0697,CVE-2022-29499,easy,mitel mivoice connect,hybrid_jev,CVE-2022-29499,True,True,,1119.203,unknown,unknown,1,fresh_clean_rerun
+Q-0697,CVE-2022-29499,easy,mitel mivoice connect,jev_retrieval,CVE-2022-29499,True,True,,1131.634,unknown,unknown,1,fresh_clean_rerun
+Q-0699,CVE-2022-3038,easy,google chrome,llm_only,CVE-2023-5045,True,False,,1266.994,117,90,0,fresh_clean_rerun
+Q-0699,CVE-2022-3038,easy,google chrome,vector_rag,CVE-2022-3038,True,True,,2539.483,579,42,0,fresh_clean_rerun
+Q-0699,CVE-2022-3038,easy,google chrome,hybrid_rag,CVE-2022-3038,True,True,,2259.704,579,44,0,fresh_clean_rerun
+Q-0699,CVE-2022-3038,easy,google chrome,hybrid_jev,CVE-2022-3038,True,True,,897.524,unknown,unknown,1,fresh_clean_rerun
+Q-0699,CVE-2022-3038,easy,google chrome,jev_retrieval,CVE-2022-3038,True,True,,1244.000,unknown,unknown,1,fresh_clean_rerun
+Q-0701,CVE-2022-3236,easy,sophos firewall,llm_only,CVE-2023-27997,True,False,,2112.019,116,124,0,fresh_clean_rerun
+Q-0701,CVE-2022-3236,easy,sophos firewall,vector_rag,CVE-2022-3236,True,True,,1950.939,550,43,0,fresh_clean_rerun
+Q-0701,CVE-2022-3236,easy,sophos firewall,hybrid_rag,CVE-2022-3236,True,True,,2098.084,550,42,0,fresh_clean_rerun
+Q-0701,CVE-2022-3236,easy,sophos firewall,hybrid_jev,CVE-2022-3236,True,True,,812.765,unknown,unknown,1,fresh_clean_rerun
+Q-0701,CVE-2022-3236,easy,sophos firewall,jev_retrieval,CVE-2022-3236,True,True,,1223.922,unknown,unknown,1,fresh_clean_rerun
+Q-0704,CVE-2022-33891,medium,apache spark,llm_only,CVE-2022-33891,True,True,,887.622,115,74,0,fresh_clean_rerun
+Q-0704,CVE-2022-33891,medium,apache spark,vector_rag,CVE-2022-33891,True,True,,2658.665,884,58,0,fresh_clean_rerun
+Q-0704,CVE-2022-33891,medium,apache spark,hybrid_rag,CVE-2022-33891,True,True,,2437.244,961,34,0,fresh_clean_rerun
+Q-0704,CVE-2022-33891,medium,apache spark,hybrid_jev,CVE-2022-33891,True,True,,949.187,unknown,unknown,1,fresh_clean_rerun
+Q-0704,CVE-2022-33891,medium,apache spark,jev_retrieval,CVE-2022-33891,True,True,,1154.733,unknown,unknown,1,fresh_clean_rerun
+Q-0707,CVE-2022-35914,medium,glpi-project glpi,llm_only,CVE-2020-11579,True,False,,1084.498,122,80,0,fresh_clean_rerun
+Q-0707,CVE-2022-35914,medium,glpi-project glpi,vector_rag,CVE-2022-35914,True,True,,3265.104,885,47,0,fresh_clean_rerun
+Q-0707,CVE-2022-35914,medium,glpi-project glpi,hybrid_rag,CVE-2022-35914,True,True,,1691.329,695,44,0,fresh_clean_rerun
+Q-0707,CVE-2022-35914,medium,glpi-project glpi,hybrid_jev,CVE-2022-35914,True,True,,800.870,unknown,unknown,1,fresh_clean_rerun
+Q-0707,CVE-2022-35914,medium,glpi-project glpi,jev_retrieval,CVE-2022-35914,True,True,,1007.310,unknown,unknown,1,fresh_clean_rerun
+Q-0708,CVE-2022-36537,medium,zkoss zk framework,llm_only,CVE-2022-22944,True,False,,1217.681,118,178,0,fresh_clean_rerun
+Q-0708,CVE-2022-36537,medium,zkoss zk framework,vector_rag,CVE-2022-36537,True,True,,2365.878,813,44,0,fresh_clean_rerun
+Q-0708,CVE-2022-36537,medium,zkoss zk framework,hybrid_rag,CVE-2022-36537,True,True,,2607.117,891,62,0,fresh_clean_rerun
+Q-0708,CVE-2022-36537,medium,zkoss zk framework,hybrid_jev,CVE-2022-36537,True,True,,813.373,unknown,unknown,1,fresh_clean_rerun
+Q-0708,CVE-2022-36537,medium,zkoss zk framework,jev_retrieval,CVE-2022-36537,True,True,,977.555,unknown,unknown,1,fresh_clean_rerun
+Q-0709,CVE-2022-37042,medium,synacor zimbra collaboration suite,llm_only,CVE-2021-20016,True,False,,957.433,123,44,0,fresh_clean_rerun
+Q-0709,CVE-2022-37042,medium,synacor zimbra collaboration suite,vector_rag,CVE-2022-37042,True,True,,2532.428,803,42,0,fresh_clean_rerun
+Q-0709,CVE-2022-37042,medium,synacor zimbra collaboration suite,hybrid_rag,CVE-2022-37042,True,True,,2899.135,785,39,0,fresh_clean_rerun
+Q-0709,CVE-2022-37042,medium,synacor zimbra collaboration suite,hybrid_jev,CVE-2022-37042,True,True,,684.244,unknown,unknown,1,fresh_clean_rerun
+Q-0709,CVE-2022-37042,medium,synacor zimbra collaboration suite,jev_retrieval,CVE-2022-37042,True,True,,966.819,unknown,unknown,1,fresh_clean_rerun
+Q-0712,CVE-2022-39197,easy,helpsystems cobalt strike,llm_only,CVE-2022-22965,True,False,,912.469,118,148,0,fresh_clean_rerun
+Q-0712,CVE-2022-39197,easy,helpsystems cobalt strike,vector_rag,CVE-2022-39197,True,True,,2854.429,432,64,0,fresh_clean_rerun
+Q-0712,CVE-2022-39197,easy,helpsystems cobalt strike,hybrid_rag,CVE-2022-39197,True,True,,2238.582,730,46,0,fresh_clean_rerun
+Q-0712,CVE-2022-39197,easy,helpsystems cobalt strike,hybrid_jev,CVE-2022-39197,True,True,,702.176,unknown,unknown,1,fresh_clean_rerun
+Q-0712,CVE-2022-39197,easy,helpsystems cobalt strike,jev_retrieval,CVE-2022-39197,True,True,,1075.904,unknown,unknown,1,fresh_clean_rerun
+Q-0720,CVE-2022-41223,easy,mitel mivoice connect,llm_only,CVE-2022-30644,True,False,,1263.615,120,98,0,fresh_clean_rerun
+Q-0720,CVE-2022-41223,easy,mitel mivoice connect,vector_rag,CVE-2022-41223,True,True,,2501.286,639,39,0,fresh_clean_rerun
+Q-0720,CVE-2022-41223,easy,mitel mivoice connect,hybrid_rag,CVE-2022-41223,True,True,,2742.551,944,39,0,fresh_clean_rerun
+Q-0720,CVE-2022-41223,easy,mitel mivoice connect,hybrid_jev,CVE-2022-41223,True,True,,763.391,unknown,unknown,1,fresh_clean_rerun
+Q-0720,CVE-2022-41223,easy,mitel mivoice connect,jev_retrieval,CVE-2022-41223,True,True,,924.719,unknown,unknown,1,fresh_clean_rerun
+Q-0721,CVE-2022-4135,easy,google chrome,llm_only,CVE-2023-5045,True,False,,900.598,117,75,0,fresh_clean_rerun
+Q-0721,CVE-2022-4135,easy,google chrome,vector_rag,CVE-2022-4135,True,True,,5047.539,644,43,0,fresh_clean_rerun
+Q-0721,CVE-2022-4135,easy,google chrome,hybrid_rag,CVE-2022-4135,True,True,,2467.953,614,41,0,fresh_clean_rerun
+Q-0721,CVE-2022-4135,easy,google chrome,hybrid_jev,CVE-2022-4135,True,True,,740.346,unknown,unknown,1,fresh_clean_rerun
+Q-0721,CVE-2022-4135,easy,google chrome,jev_retrieval,CVE-2022-4135,True,True,,925.494,unknown,unknown,1,fresh_clean_rerun
+Q-0723,CVE-2022-41678,medium,apache activemq,llm_only,CVE-2020-9484,True,False,,984.859,120,81,0,fresh_clean_rerun
+Q-0723,CVE-2022-41678,medium,apache activemq,vector_rag,CVE-2024-32114,True,False,,2529.165,987,52,0,fresh_clean_rerun
+Q-0723,CVE-2022-41678,medium,apache activemq,hybrid_rag,CVE-2024-32114,True,False,,3005.482,1122,70,0,fresh_clean_rerun
+Q-0723,CVE-2022-41678,medium,apache activemq,hybrid_jev,CVE-2024-32114,True,False,,929.469,unknown,unknown,1,fresh_clean_rerun
+Q-0723,CVE-2022-41678,medium,apache activemq,jev_retrieval,CVE-2022-41678,True,True,,1011.988,unknown,unknown,1,fresh_clean_rerun
+Q-0730,CVE-2022-44268,easy,imagemagick imagemagick,llm_only,CVE-2023-21036,True,False,,920.193,121,90,0,fresh_clean_rerun
+Q-0730,CVE-2022-44268,easy,imagemagick imagemagick,vector_rag,CVE-2022-44268,True,True,,2514.564,746,39,0,fresh_clean_rerun
+Q-0730,CVE-2022-44268,easy,imagemagick imagemagick,hybrid_rag,CVE-2022-44268,True,True,,2549.822,751,42,0,fresh_clean_rerun
+Q-0730,CVE-2022-44268,easy,imagemagick imagemagick,hybrid_jev,CVE-2022-44268,True,True,,763.531,unknown,unknown,1,fresh_clean_rerun
+Q-0730,CVE-2022-44268,easy,imagemagick imagemagick,jev_retrieval,CVE-2022-44268,True,True,,979.754,unknown,unknown,1,fresh_clean_rerun
+Q-0731,CVE-2022-44645,hard,apache linkis,llm_only,CVE-2022-42486,True,False,,1014.211,119,124,0,fresh_clean_rerun
+Q-0731,CVE-2022-44645,hard,apache linkis,vector_rag,CVE-2022-44645,True,True,,2490.509,949,53,0,fresh_clean_rerun
+Q-0731,CVE-2022-44645,hard,apache linkis,hybrid_rag,CVE-2022-44645,True,True,,2551.249,854,55,0,fresh_clean_rerun
+Q-0731,CVE-2022-44645,hard,apache linkis,hybrid_jev,CVE-2022-44645,True,True,,876.840,unknown,unknown,1,fresh_clean_rerun
+Q-0731,CVE-2022-44645,hard,apache linkis,jev_retrieval,CVE-2022-44645,True,True,,1000.201,unknown,unknown,1,fresh_clean_rerun
+Q-0734,CVE-2022-46169,hard,cacti cacti,llm_only,CVE-2020-15568,True,False,,929.179,117,81,0,fresh_clean_rerun
+Q-0734,CVE-2022-46169,hard,cacti cacti,vector_rag,CVE-2022-46169,True,True,,2547.331,880,42,0,fresh_clean_rerun
+Q-0734,CVE-2022-46169,hard,cacti cacti,hybrid_rag,CVE-2022-46169,True,True,,2558.876,1101,76,0,fresh_clean_rerun
+Q-0734,CVE-2022-46169,hard,cacti cacti,hybrid_jev,CVE-2022-46169,True,True,,799.171,unknown,unknown,1,fresh_clean_rerun
+Q-0734,CVE-2022-46169,hard,cacti cacti,jev_retrieval,CVE-2022-46169,True,True,,1135.912,unknown,unknown,1,fresh_clean_rerun

@@ -1,0 +1,6 @@
+arm,cost,accuracy,included
+llm_only,unknown,0.0033333333333333335,False
+vector_rag,unknown,0.0,False
+hybrid_rag,unknown,0.0,False
+hybrid_jev,unknown,0.0,False
+jev_retrieval,unknown,0.0,False

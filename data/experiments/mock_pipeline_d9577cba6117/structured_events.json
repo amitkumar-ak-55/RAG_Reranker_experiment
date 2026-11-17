@@ -1,0 +1,23 @@
+[
+  {
+    "event": "experiment_started"
+  },
+  {
+    "event": "question_completed",
+    "question_id": "Q-0091",
+    "retrieval_calls": 1
+  },
+  {
+    "event": "question_completed",
+    "question_id": "Q-0092",
+    "retrieval_calls": 2
+  },
+  {
+    "event": "question_completed",
+    "question_id": "Q-0102",
+    "retrieval_calls": 3
+  },
+  {
+    "event": "experiment_completed"
+  }
+]

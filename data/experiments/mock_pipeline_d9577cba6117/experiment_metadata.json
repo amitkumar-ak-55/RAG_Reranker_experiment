@@ -1,0 +1,39 @@
+{
+  "arms": [
+    "A_hybrid_baseline",
+    "B_hybrid_jina_mock",
+    "C_hybrid_jev_mock"
+  ],
+  "created_at_utc": "2026-11-17T14:15:58.296989+00:00",
+  "dataset": {
+    "difficulty_counts": {
+      "easy": 139,
+      "hard": 59,
+      "medium": 102
+    },
+    "duplicate_groups": {},
+    "filename": "C:\\Users\\bhagy\\Desktop\\CysekRAG\\data\\eval\\final\\eval_hard_300.jsonl",
+    "record_count": 300,
+    "sha256": "0dad81945e4c0e27783923a4d5bd50f8f5a764587a05391b9c80ee9e378afa69",
+    "unique_question_ids": 300,
+    "unique_question_texts": 300,
+    "valid_300_record_dataset": true
+  },
+  "embedding_model": "BAAI/bge-base-en-v1.5",
+  "embedding_revision": "a5beb1e3e68b9ab74eb54cfd186867f64f240e1a",
+  "evidence_limit": 5,
+  "external_calls": false,
+  "index_version": "2c40d0807bdc76d29d4914f338501e8a022ab7cbe5e67f62cf4543419489a279",
+  "mode": "mock_provider_development",
+  "providers": {
+    "answer": "mock-answer-provider",
+    "jev": "jev-mock",
+    "jina": "jina-mock"
+  },
+  "retrieval": {
+    "candidate_limit": 10,
+    "implementation": "rag_verify_lab.rag.retrieve.retrieve",
+    "reranker": false,
+    "sparse": true
+  }
+}

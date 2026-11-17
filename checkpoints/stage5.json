@@ -1,0 +1,8 @@
+{
+  "stage": "stage5",
+  "status": "pass",
+  "selected_count": 300,
+  "required_count": 300,
+  "confuser_max": 2,
+  "gold_unique": true
+}

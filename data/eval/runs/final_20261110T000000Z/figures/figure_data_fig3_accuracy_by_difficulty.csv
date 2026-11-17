@@ -1,0 +1,16 @@
+arm,difficulty,accuracy,n
+llm_only,easy,0.0,139
+llm_only,medium,0.0,102
+llm_only,hard,0.01694915254237288,59
+vector_rag,easy,0.0,139
+vector_rag,medium,0.0,102
+vector_rag,hard,0.0,59
+hybrid_rag,easy,0.0,139
+hybrid_rag,medium,0.0,102
+hybrid_rag,hard,0.0,59
+hybrid_jev,easy,0.0,139
+hybrid_jev,medium,0.0,102
+hybrid_jev,hard,0.0,59
+jev_retrieval,easy,0.0,139
+jev_retrieval,medium,0.0,102
+jev_retrieval,hard,0.0,59

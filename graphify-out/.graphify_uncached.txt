@@ -1,0 +1,4 @@
+C:\Users\bhagy\Desktop\CysekRAG\AGENTS.md
+C:\Users\bhagy\Desktop\CysekRAG\README.md
+C:\Users\bhagy\Desktop\CysekRAG\requirements-kb.txt
+C:\Users\bhagy\Desktop\CysekRAG\requirements.txt

@@ -1,0 +1,6 @@
+arm,calls,correct,accuracy,median latency,p95 latency,recorded LLM input tokens,recorded LLM output tokens,recorded LLM calls,JEV calls,observed JEV spend USD,notes
+llm_only,300,26,0.08666666666666667,1103.987,2163.503,35908,27315,300,0,0,No JEV calls; Groq answer-provider billing was not supplied
+vector_rag,300,247,0.8233333333333334,2545.492,5047.539,231819,14641,299,0,0,No JEV calls; one provider-error LLM call has no token usage
+hybrid_rag,300,249,0.83,2586.952,5131.536,236144,15057,299,0,0,No JEV calls; one provider-error LLM call has no token usage
+hybrid_jev,300,244,0.8133333333333334,800.87,1789.969,236144,15057,299,299,not separately invoiced,Part of the observed $0.09 combined JEV spend for Arms D and E (599 calls)
+jev_retrieval,300,262,0.8733333333333333,961.994,2299.178,0,0,0,300,not separately invoiced,Part of the observed $0.09 combined JEV spend for Arms D and E (599 calls)

@@ -1,0 +1,1094 @@
+[
+  [
+    "CVE-2016-9299",
+    {
+      "rule": "vendor_product",
+      "value": "fedoraproject:fedora"
+    }
+  ],
+  [
+    "CVE-2019-14287",
+    {
+      "rule": "cwe",
+      "value": "CWE-755",
+      "also": {
+        "rule": "vendor_product",
+        "value": "canonical:ubuntu_linux"
+      }
+    }
+  ],
+  [
+    "CVE-2020-13935",
+    {
+      "rule": "cwe",
+      "value": "CWE-835",
+      "also": {
+        "rule": "vendor_product",
+        "value": "apache:tomcat"
+      }
+    }
+  ],
+  [
+    "CVE-2023-2640",
+    {
+      "rule": "cwe",
+      "value": "CWE-863",
+      "also": {
+        "rule": "vendor_product",
+        "value": "canonical:ubuntu_linux"
+      }
+    }
+  ],
+  [
+    "CVE-2023-2986",
+    {
+      "rule": "cwe",
+      "value": "CWE-288"
+    }
+  ],
+  [
+    "CVE-2023-6246",
+    {
+      "rule": "cwe",
+      "value": "CWE-122",
+      "also": {
+        "rule": "vendor_product",
+        "value": "fedoraproject:fedora"
+      }
+    }
+  ],
+  [
+    "CVE-2024-10443",
+    {
+      "rule": "cwe",
+      "value": "CWE-77",
+      "also": {
+        "rule": "vendor_product",
+        "value": "synology:diskstation_manager"
+      }
+    }
+  ],
+  [
+    "CVE-2024-22120",
+    {
+      "rule": "cwe",
+      "value": "CWE-20",
+      "also": {
+        "rule": "vendor_product",
+        "value": "zabbix:zabbix"
+      }
+    }
+  ],
+  [
+    "CVE-2024-3094",
+    {
+      "rule": "cwe",
+      "value": "CWE-506"
+    }
+  ],
+  [
+    "CVE-2024-45409",
+    {
+      "rule": "cwe",
+      "value": "CWE-347",
+      "also": {
+        "rule": "vendor_product",
+        "value": "gitlab:gitlab"
+      }
+    }
+  ],
+  [
+    "CVE-2024-55556",
+    {
+      "rule": "cwe",
+      "value": "CWE-502"
+    }
+  ],
+  [
+    "CVE-2024-56331",
+    {
+      "rule": "cwe",
+      "value": "CWE-22"
+    }
+  ],
+  [
+    "CVE-2024-9487",
+    {
+      "rule": "cwe",
+      "value": "CWE-347"
+    }
+  ],
+  [
+    "CVE-2025-1550",
+    {
+      "rule": "cwe",
+      "value": "CWE-94"
+    }
+  ],
+  [
+    "CVE-2025-25291",
+    {
+      "rule": "cwe",
+      "value": "CWE-347",
+      "also": {
+        "rule": "vendor_product",
+        "value": "netapp:storagegrid"
+      }
+    }
+  ],
+  [
+    "CVE-2025-6216",
+    {
+      "rule": "cwe",
+      "value": "CWE-640"
+    }
+  ],
+  [
+    "CVE-2025-68926",
+    {
+      "rule": "cwe",
+      "value": "CWE-287"
+    }
+  ],
+  [
+    "CVE-2025-6984",
+    {
+      "rule": "cwe",
+      "value": "CWE-200"
+    }
+  ],
+  [
+    "CVE-2025-71260",
+    {
+      "rule": "cwe",
+      "value": "CWE-502"
+    }
+  ],
+  [
+    "CVE-2026-10795",
+    {
+      "rule": "cwe",
+      "value": "CWE-347"
+    }
+  ],
+  [
+    "CVE-2026-8467",
+    {
+      "rule": "cwe",
+      "value": "CWE-94"
+    }
+  ],
+  [
+    "CVE-2022-42889",
+    {
+      "rule": "cwe",
+      "value": "CWE-94"
+    }
+  ],
+  [
+    "CVE-2018-25031",
+    {
+      "rule": "cwe",
+      "value": "CWE-20"
+    }
+  ],
+  [
+    "CVE-2022-29455",
+    {
+      "rule": "cwe",
+      "value": "CWE-79"
+    }
+  ],
+  [
+    "CVE-2024-29882",
+    {
+      "rule": "cwe",
+      "value": "CWE-79"
+    }
+  ],
+  [
+    "CVE-2025-24752",
+    {
+      "rule": "cwe",
+      "value": "CWE-79"
+    }
+  ],
+  [
+    "CVE-2025-25062",
+    {
+      "rule": "cwe",
+      "value": "CWE-79"
+    }
+  ],
+  [
+    "CVE-2025-50738",
+    {
+      "rule": "cwe",
+      "value": "CWE-200"
+    }
+  ],
+  [
+    "CVE-2025-7901",
+    {
+      "rule": "cwe",
+      "value": "CWE-79"
+    }
+  ],
+  [
+    "CVE-2025-8191",
+    {
+      "rule": "cwe",
+      "value": "CWE-79"
+    }
+  ],
+  [
+    "CVE-2000-0760",
+    {
+      "rule": "vendor_product",
+      "value": "apache:tomcat"
+    }
+  ],
+  [
+    "CVE-2001-0537",
+    {
+      "rule": "cwe",
+      "value": "CWE-287",
+      "also": {
+        "rule": "vendor_product",
+        "value": "cisco:ios"
+      }
+    }
+  ],
+  [
+    "CVE-2006-3392",
+    {
+      "rule": "vendor_product",
+      "value": "webmin:webmin"
+    }
+  ],
+  [
+    "CVE-2007-2449",
+    {
+      "rule": "vendor_product",
+      "value": "apache:tomcat"
+    }
+  ],
+  [
+    "CVE-2007-5728",
+    {
+      "rule": "cwe",
+      "value": "CWE-79"
+    }
+  ],
+  [
+    "CVE-2008-1059",
+    {
+      "rule": "cwe",
+      "value": "CWE-94"
+    }
+  ],
+  [
+    "CVE-2008-1061",
+    {
+      "rule": "cwe",
+      "value": "CWE-79"
+    }
+  ],
+  [
+    "CVE-2008-1547",
+    {
+      "rule": "cwe",
+      "value": "CWE-601",
+      "also": {
+        "rule": "vendor_product",
+        "value": "microsoft:exchange_server"
+      }
+    }
+  ],
+  [
+    "CVE-2008-2052",
+    {
+      "rule": "cwe",
+      "value": "CWE-601"
+    }
+  ],
+  [
+    "CVE-2008-2398",
+    {
+      "rule": "cwe",
+      "value": "CWE-79"
+    }
+  ],
+  [
+    "CVE-2008-2650",
+    {
+      "rule": "cwe",
+      "value": "CWE-22"
+    }
+  ],
+  [
+    "CVE-2008-4668",
+    {
+      "rule": "cwe",
+      "value": "CWE-22"
+    }
+  ],
+  [
+    "CVE-2008-4764",
+    {
+      "rule": "cwe",
+      "value": "CWE-22",
+      "also": {
+        "rule": "vendor_product",
+        "value": "joomla:joomla\\!"
+      }
+    }
+  ],
+  [
+    "CVE-2008-5587",
+    {
+      "rule": "cwe",
+      "value": "CWE-22"
+    }
+  ],
+  [
+    "CVE-2008-6080",
+    {
+      "rule": "cwe",
+      "value": "CWE-22"
+    }
+  ],
+  [
+    "CVE-2008-6172",
+    {
+      "rule": "cwe",
+      "value": "CWE-22"
+    }
+  ],
+  [
+    "CVE-2008-6222",
+    {
+      "rule": "cwe",
+      "value": "CWE-22"
+    }
+  ],
+  [
+    "CVE-2008-6465",
+    {
+      "rule": "cwe",
+      "value": "CWE-79"
+    }
+  ],
+  [
+    "CVE-2008-6668",
+    {
+      "rule": "cwe",
+      "value": "CWE-22"
+    }
+  ],
+  [
+    "CVE-2008-6982",
+    {
+      "rule": "cwe",
+      "value": "CWE-79"
+    }
+  ],
+  [
+    "CVE-2008-7269",
+    {
+      "rule": "cwe",
+      "value": "CWE-20"
+    }
+  ],
+  [
+    "CVE-2009-0347",
+    {
+      "rule": "cwe",
+      "value": "CWE-59"
+    }
+  ],
+  [
+    "CVE-2009-0545",
+    {
+      "rule": "cwe",
+      "value": "CWE-20"
+    }
+  ],
+  [
+    "CVE-2009-0932",
+    {
+      "rule": "cwe",
+      "value": "CWE-22"
+    }
+  ],
+  [
+    "CVE-2009-1496",
+    {
+      "rule": "cwe",
+      "value": "CWE-22"
+    }
+  ],
+  [
+    "CVE-2009-1558",
+    {
+      "rule": "cwe",
+      "value": "CWE-22"
+    }
+  ],
+  [
+    "CVE-2009-1872",
+    {
+      "rule": "cwe",
+      "value": "CWE-79",
+      "also": {
+        "rule": "vendor_product",
+        "value": "adobe:coldfusion"
+      }
+    }
+  ],
+  [
+    "CVE-2009-2015",
+    {
+      "rule": "cwe",
+      "value": "CWE-22"
+    }
+  ],
+  [
+    "CVE-2009-2100",
+    {
+      "rule": "cwe",
+      "value": "CWE-22"
+    }
+  ],
+  [
+    "CVE-2009-3053",
+    {
+      "rule": "cwe",
+      "value": "CWE-22"
+    }
+  ],
+  [
+    "CVE-2009-3318",
+    {
+      "rule": "cwe",
+      "value": "CWE-22"
+    }
+  ],
+  [
+    "CVE-2009-4202",
+    {
+      "rule": "cwe",
+      "value": "CWE-22",
+      "also": {
+        "rule": "vendor_product",
+        "value": "joomla:joomla\\!"
+      }
+    }
+  ],
+  [
+    "CVE-2009-4223",
+    {
+      "rule": "cwe",
+      "value": "CWE-94"
+    }
+  ],
+  [
+    "CVE-2009-4679",
+    {
+      "rule": "cwe",
+      "value": "CWE-22",
+      "also": {
+        "rule": "vendor_product",
+        "value": "joomla:joomla\\!"
+      }
+    }
+  ],
+  [
+    "CVE-2009-5020",
+    {
+      "rule": "cwe",
+      "value": "CWE-20"
+    }
+  ],
+  [
+    "CVE-2009-5114",
+    {
+      "rule": "cwe",
+      "value": "CWE-22"
+    }
+  ],
+  [
+    "CVE-2010-0157",
+    {
+      "rule": "cwe",
+      "value": "CWE-22",
+      "also": {
+        "rule": "vendor_product",
+        "value": "joomla:joomla\\!"
+      }
+    }
+  ],
+  [
+    "CVE-2010-0467",
+    {
+      "rule": "cwe",
+      "value": "CWE-22",
+      "also": {
+        "rule": "vendor_product",
+        "value": "joomla:joomla\\!"
+      }
+    }
+  ],
+  [
+    "CVE-2010-0696",
+    {
+      "rule": "cwe",
+      "value": "CWE-22"
+    }
+  ],
+  [
+    "CVE-2010-0759",
+    {
+      "rule": "cwe",
+      "value": "CWE-22",
+      "also": {
+        "rule": "vendor_product",
+        "value": "joomla:joomla\\!"
+      }
+    }
+  ],
+  [
+    "CVE-2010-0942",
+    {
+      "rule": "cwe",
+      "value": "CWE-22",
+      "also": {
+        "rule": "vendor_product",
+        "value": "joomla:joomla\\!"
+      }
+    }
+  ],
+  [
+    "CVE-2010-0943",
+    {
+      "rule": "cwe",
+      "value": "CWE-22",
+      "also": {
+        "rule": "vendor_product",
+        "value": "joomla:joomla\\!"
+      }
+    }
+  ],
+  [
+    "CVE-2010-0944",
+    {
+      "rule": "cwe",
+      "value": "CWE-22",
+      "also": {
+        "rule": "vendor_product",
+        "value": "joomla:joomla\\!"
+      }
+    }
+  ],
+  [
+    "CVE-2010-0972",
+    {
+      "rule": "cwe",
+      "value": "CWE-22",
+      "also": {
+        "rule": "vendor_product",
+        "value": "joomla:joomla\\!"
+      }
+    }
+  ],
+  [
+    "CVE-2010-0982",
+    {
+      "rule": "cwe",
+      "value": "CWE-22",
+      "also": {
+        "rule": "vendor_product",
+        "value": "joomla:joomla\\!"
+      }
+    }
+  ],
+  [
+    "CVE-2010-0985",
+    {
+      "rule": "cwe",
+      "value": "CWE-22",
+      "also": {
+        "rule": "vendor_product",
+        "value": "joomla:joomla\\!"
+      }
+    }
+  ],
+  [
+    "CVE-2010-1056",
+    {
+      "rule": "cwe",
+      "value": "CWE-22",
+      "also": {
+        "rule": "vendor_product",
+        "value": "joomla:joomla\\!"
+      }
+    }
+  ],
+  [
+    "CVE-2010-1081",
+    {
+      "rule": "cwe",
+      "value": "CWE-22",
+      "also": {
+        "rule": "vendor_product",
+        "value": "joomla:joomla\\!"
+      }
+    }
+  ],
+  [
+    "CVE-2010-1217",
+    {
+      "rule": "cwe",
+      "value": "CWE-22"
+    }
+  ],
+  [
+    "CVE-2010-1219",
+    {
+      "rule": "cwe",
+      "value": "CWE-22"
+    }
+  ],
+  [
+    "CVE-2010-1302",
+    {
+      "rule": "cwe",
+      "value": "CWE-22",
+      "also": {
+        "rule": "vendor_product",
+        "value": "joomla:joomla\\!"
+      }
+    }
+  ],
+  [
+    "CVE-2010-1304",
+    {
+      "rule": "cwe",
+      "value": "CWE-22",
+      "also": {
+        "rule": "vendor_product",
+        "value": "joomla:joomla\\!"
+      }
+    }
+  ],
+  [
+    "CVE-2010-1305",
+    {
+      "rule": "cwe",
+      "value": "CWE-22",
+      "also": {
+        "rule": "vendor_product",
+        "value": "joomla:joomla\\!"
+      }
+    }
+  ],
+  [
+    "CVE-2010-1306",
+    {
+      "rule": "cwe",
+      "value": "CWE-22",
+      "also": {
+        "rule": "vendor_product",
+        "value": "joomla:joomla\\!"
+      }
+    }
+  ],
+  [
+    "CVE-2010-1307",
+    {
+      "rule": "cwe",
+      "value": "CWE-22",
+      "also": {
+        "rule": "vendor_product",
+        "value": "joomla:joomla\\!"
+      }
+    }
+  ],
+  [
+    "CVE-2010-1308",
+    {
+      "rule": "cwe",
+      "value": "CWE-22",
+      "also": {
+        "rule": "vendor_product",
+        "value": "joomla:joomla\\!"
+      }
+    }
+  ],
+  [
+    "CVE-2010-1312",
+    {
+      "rule": "cwe",
+      "value": "CWE-22",
+      "also": {
+        "rule": "vendor_product",
+        "value": "joomla:joomla\\!"
+      }
+    }
+  ],
+  [
+    "CVE-2010-1313",
+    {
+      "rule": "cwe",
+      "value": "CWE-22",
+      "also": {
+        "rule": "vendor_product",
+        "value": "joomla:joomla\\!"
+      }
+    }
+  ],
+  [
+    "CVE-2010-1314",
+    {
+      "rule": "cwe",
+      "value": "CWE-22",
+      "also": {
+        "rule": "vendor_product",
+        "value": "joomla:joomla\\!"
+      }
+    }
+  ],
+  [
+    "CVE-2010-1315",
+    {
+      "rule": "cwe",
+      "value": "CWE-22",
+      "also": {
+        "rule": "vendor_product",
+        "value": "joomla:joomla\\!"
+      }
+    }
+  ],
+  [
+    "CVE-2010-1340",
+    {
+      "rule": "cwe",
+      "value": "CWE-22",
+      "also": {
+        "rule": "vendor_product",
+        "value": "joomla:joomla\\!"
+      }
+    }
+  ],
+  [
+    "CVE-2010-1345",
+    {
+      "rule": "cwe",
+      "value": "CWE-22",
+      "also": {
+        "rule": "vendor_product",
+        "value": "joomla:joomla\\!"
+      }
+    }
+  ],
+  [
+    "CVE-2010-1352",
+    {
+      "rule": "cwe",
+      "value": "CWE-22",
+      "also": {
+        "rule": "vendor_product",
+        "value": "joomla:joomla\\!"
+      }
+    }
+  ],
+  [
+    "CVE-2010-1353",
+    {
+      "rule": "cwe",
+      "value": "CWE-22",
+      "also": {
+        "rule": "vendor_product",
+        "value": "joomla:joomla\\!"
+      }
+    }
+  ],
+  [
+    "CVE-2010-1354",
+    {
+      "rule": "cwe",
+      "value": "CWE-22",
+      "also": {
+        "rule": "vendor_product",
+        "value": "joomla:joomla\\!"
+      }
+    }
+  ],
+  [
+    "CVE-2010-1429",
+    {
+      "rule": "vendor_product",
+      "value": "redhat:jboss_enterprise_application_platform"
+    }
+  ],
+  [
+    "CVE-2010-1461",
+    {
+      "rule": "cwe",
+      "value": "CWE-22",
+      "also": {
+        "rule": "vendor_product",
+        "value": "joomla:joomla\\!"
+      }
+    }
+  ],
+  [
+    "CVE-2010-1469",
+    {
+      "rule": "cwe",
+      "value": "CWE-22",
+      "also": {
+        "rule": "vendor_product",
+        "value": "joomla:joomla\\!"
+      }
+    }
+  ],
+  [
+    "CVE-2010-1470",
+    {
+      "rule": "cwe",
+      "value": "CWE-22"
+    }
+  ],
+  [
+    "CVE-2010-1471",
+    {
+      "rule": "cwe",
+      "value": "CWE-22",
+      "also": {
+        "rule": "vendor_product",
+        "value": "joomla:joomla\\!"
+      }
+    }
+  ],
+  [
+    "CVE-2010-1472",
+    {
+      "rule": "cwe",
+      "value": "CWE-22",
+      "also": {
+        "rule": "vendor_product",
+        "value": "joomla:joomla\\!"
+      }
+    }
+  ],
+  [
+    "CVE-2010-1473",
+    {
+      "rule": "cwe",
+      "value": "CWE-22",
+      "also": {
+        "rule": "vendor_product",
+        "value": "joomla:joomla\\!"
+      }
+    }
+  ],
+  [
+    "CVE-2010-1474",
+    {
+      "rule": "cwe",
+      "value": "CWE-22",
+      "also": {
+        "rule": "vendor_product",
+        "value": "joomla:joomla\\!"
+      }
+    }
+  ],
+  [
+    "CVE-2010-1475",
+    {
+      "rule": "cwe",
+      "value": "CWE-22",
+      "also": {
+        "rule": "vendor_product",
+        "value": "joomla:joomla\\!"
+      }
+    }
+  ],
+  [
+    "CVE-2010-1476",
+    {
+      "rule": "cwe",
+      "value": "CWE-22",
+      "also": {
+        "rule": "vendor_product",
+        "value": "joomla:joomla\\!"
+      }
+    }
+  ],
+  [
+    "CVE-2010-1478",
+    {
+      "rule": "cwe",
+      "value": "CWE-22",
+      "also": {
+        "rule": "vendor_product",
+        "value": "joomla:joomla\\!"
+      }
+    }
+  ],
+  [
+    "CVE-2010-1491",
+    {
+      "rule": "cwe",
+      "value": "CWE-22",
+      "also": {
+        "rule": "vendor_product",
+        "value": "joomla:joomla\\!"
+      }
+    }
+  ],
+  [
+    "CVE-2010-1494",
+    {
+      "rule": "cwe",
+      "value": "CWE-22",
+      "also": {
+        "rule": "vendor_product",
+        "value": "joomla:joomla\\!"
+      }
+    }
+  ],
+  [
+    "CVE-2010-1495",
+    {
+      "rule": "cwe",
+      "value": "CWE-22",
+      "also": {
+        "rule": "vendor_product",
+        "value": "joomla:joomla\\!"
+      }
+    }
+  ],
+  [
+    "CVE-2010-1531",
+    {
+      "rule": "cwe",
+      "value": "CWE-22",
+      "also": {
+        "rule": "vendor_product",
+        "value": "joomla:joomla\\!"
+      }
+    }
+  ],
+  [
+    "CVE-2010-1532",
+    {
+      "rule": "cwe",
+      "value": "CWE-22",
+      "also": {
+        "rule": "vendor_product",
+        "value": "joomla:joomla\\!"
+      }
+    }
+  ],
+  [
+    "CVE-2010-1533",
+    {
+      "rule": "cwe",
+      "value": "CWE-22",
+      "also": {
+        "rule": "vendor_product",
+        "value": "joomla:joomla\\!"
+      }
+    }
+  ],
+  [
+    "CVE-2010-1534",
+    {
+      "rule": "cwe",
+      "value": "CWE-22",
+      "also": {
+        "rule": "vendor_product",
+        "value": "joomla:joomla\\!"
+      }
+    }
+  ],
+  [
+    "CVE-2010-1535",
+    {
+      "rule": "cwe",
+      "value": "CWE-22",
+      "also": {
+        "rule": "vendor_product",
+        "value": "joomla:joomla\\!"
+      }
+    }
+  ],
+  [
+    "CVE-2010-1540",
+    {
+      "rule": "cwe",
+      "value": "CWE-22",
+      "also": {
+        "rule": "vendor_product",
+        "value": "joomla:joomla\\!"
+      }
+    }
+  ],
+  [
+    "CVE-2010-1586",
+    {
+      "rule": "cwe",
+      "value": "CWE-20",
+      "also": {
+        "rule": "vendor_product",
+        "value": "hp:system_management_homepage"
+      }
+    }
+  ],
+  [
+    "CVE-2010-1601",
+    {
+      "rule": "cwe",
+      "value": "CWE-22",
+      "also": {
+        "rule": "vendor_product",
+        "value": "joomla:joomla\\!"
+      }
+    }
+  ],
+  [
+    "CVE-2010-1602",
+    {
+      "rule": "cwe",
+      "value": "CWE-22",
+      "also": {
+        "rule": "vendor_product",
+        "value": "joomla:joomla\\!"
+      }
+    }
+  ],
+  [
+    "CVE-2010-1603",
+    {
+      "rule": "cwe",
+      "value": "CWE-22",
+      "also": {
+        "rule": "vendor_product",
+        "value": "joomla:joomla\\!"
+      }
+    }
+  ],
+  [
+    "CVE-2010-1607",
+    {
+      "rule": "cwe",
+      "value": "CWE-22",
+      "also": {
+        "rule": "vendor_product",
+        "value": "joomla:joomla\\!"
+      }
+    }
+  ]
+]

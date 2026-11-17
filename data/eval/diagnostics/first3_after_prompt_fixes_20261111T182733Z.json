@@ -1,0 +1,200 @@
+{
+  "started_at_utc": "2026-11-11T18:22:49.381804+00:00",
+  "finished_at_utc": "2026-11-11T18:27:33.500769+00:00",
+  "dataset": "data/eval/final/eval_hard_300.jsonl",
+  "rows_selected": [
+    "Q-0091",
+    "Q-0092",
+    "Q-0102"
+  ],
+  "index_version": "68e2ecad34e25474fcf5d50c0b14fdcc7b8bf92ea8d4ec5d2347a08e7361a3ea",
+  "summary": {
+    "llm_only": {
+      "correct": 1,
+      "total": 3,
+      "errors": 1
+    },
+    "vector_rag": {
+      "correct": 0,
+      "total": 3,
+      "errors": 2
+    },
+    "hybrid_rag": {
+      "correct": 0,
+      "total": 3,
+      "errors": 2
+    },
+    "hybrid_jev": {
+      "correct": 0,
+      "total": 3,
+      "errors": 2
+    },
+    "jev_retrieval": {
+      "correct": 0,
+      "total": 3,
+      "errors": 3
+    }
+  },
+  "results": [
+    {
+      "question_id": "Q-0091",
+      "question": "Which CVE affects Apache ActiveMQ 5.x before version 5.13.0, where the broker does not restrict classes serialized in a crafted JMS ObjectMessage, potentially allowing arbitrary code execution?",
+      "gold_cve": "CVE-2015-5254",
+      "difficulty": "hard",
+      "arms": {
+        "llm_only": {
+          "answer": "CVE-2015-5254",
+          "raw": "CVE-2015-5254",
+          "correct": true,
+          "latency_ms": 1934.63,
+          "input_tokens": 150,
+          "output_tokens": 70,
+          "jev_calls": 0,
+          "evidence_docs": []
+        },
+        "vector_rag": {
+          "answer": "CVE-2020-13945",
+          "raw": "CVE-2020-13945",
+          "correct": false,
+          "latency_ms": 1504.07,
+          "input_tokens": 994,
+          "output_tokens": 83,
+          "jev_calls": 0,
+          "evidence_docs": [
+            "[withheld CVE]: Apache ActiveMQ 5.x before 5.13.0 does not restrict the classes that can be serialized in the broker,...",
+            "nuclei:CVE-2023-46604: Apache ActiveMQ is vulnerable to Remote Code Execution.The vulnerability may allow a remote at...",
+            "CVE-2026-34197: Improper Input Validation, Improper Control of Generation of Code ('Code Injection') vulnerability in...",
+            "nuclei:CVE-2016-3088: Apache ActiveMQ 5.x before 5.14.0 allows remote attackers to upload and execute arbitrary files...",
+            "nuclei:CVE-2026-34197: Improper Input Validation, Improper Control of Generation of Code ('Code Injection') vulnerabi..."
+          ]
+        },
+        "hybrid_rag": {
+          "answer": null,
+          "correct": false,
+          "error": "Request timed out.",
+          "latency_ms": 55441.63,
+          "jev_calls": 0
+        },
+        "hybrid_jev": {
+          "answer": null,
+          "correct": false,
+          "error": "hybrid answer unavailable",
+          "jev_calls": 0
+        },
+        "jev_retrieval": {
+          "answer": null,
+          "correct": false,
+          "error": "JEV request failed: https://api.typesafe.ai/v1/systemone error=[Errno 11001] getaddrinfo failed",
+          "latency_ms": 11895.57,
+          "jev_calls": 0
+        }
+      }
+    },
+    {
+      "question_id": "Q-0092",
+      "question": "Which CVE affects Microsoft Silverlight 5 before version 5.1.41212.0, where mishandling negative offsets during decoding can cause arbitrary code execution or denial of service via a crafted website?",
+      "gold_cve": "CVE-2016-0034",
+      "difficulty": "easy",
+      "arms": {
+        "llm_only": {
+          "answer": "CVE-2015-0095",
+          "raw": "CVE-2015-0095",
+          "correct": false,
+          "latency_ms": 8714.2,
+          "input_tokens": 153,
+          "output_tokens": 144,
+          "jev_calls": 0,
+          "evidence_docs": []
+        },
+        "vector_rag": {
+          "answer": null,
+          "correct": false,
+          "error": "Request timed out.",
+          "latency_ms": 61370.63,
+          "jev_calls": 0
+        },
+        "hybrid_rag": {
+          "answer": null,
+          "correct": false,
+          "error": "Connection error.",
+          "latency_ms": 14865.92,
+          "jev_calls": 0
+        },
+        "hybrid_jev": {
+          "answer": null,
+          "correct": false,
+          "error": "hybrid answer unavailable",
+          "jev_calls": 0
+        },
+        "jev_retrieval": {
+          "answer": null,
+          "correct": false,
+          "error": "JEV request failed: https://api.typesafe.ai/v1/systemone error=[Errno 11001] getaddrinfo failed",
+          "latency_ms": 517.62,
+          "jev_calls": 0
+        }
+      }
+    },
+    {
+      "question_id": "Q-0102",
+      "question": "Could you identify the yaws yaws vulnerability described by yaws before 2 0 4?",
+      "gold_cve": "CVE-2016-1000108",
+      "difficulty": "easy",
+      "arms": {
+        "llm_only": {
+          "answer": null,
+          "correct": false,
+          "error": "Connection error.",
+          "latency_ms": 283.84,
+          "jev_calls": 0
+        },
+        "vector_rag": {
+          "answer": null,
+          "correct": false,
+          "error": "Connection error.",
+          "latency_ms": 2454.98,
+          "jev_calls": 0
+        },
+        "hybrid_rag": {
+          "answer": "CVE-2016-5385",
+          "raw": "CVE-2016-5385",
+          "correct": false,
+          "latency_ms": 3450.88,
+          "input_tokens": 954,
+          "output_tokens": 62,
+          "jev_calls": 0,
+          "evidence_docs": [
+            "[withheld CVE]: yaws before 2.0.4 does not attempt to address RFC 3875 section 4.1.18 namespace conflicts and there...",
+            "nuclei:CVE-2010-1429: Red Hat JBoss Enterprise Application Platform 4.2 before 4.2.0.CP09 and 4.3 before 4.3.0.CP08 i...",
+            "CVE-2019-3398: Confluence Server and Data Center had a path traversal vulnerability in the downloadallattachments res...",
+            "CVE-2026-48172: LiteSpeed User-End cPanel Plugin before 2.4.5 allows privilege escalation (possibly to root), as expl...",
+            "CVE-2025-7901: A vulnerability was found in yangzongzhuan RuoYi up to 4.8.1."
+          ]
+        },
+        "hybrid_jev": {
+          "answer": "CVE-2016-5385",
+          "proposed_answer": "CVE-2016-5385",
+          "correct": false,
+          "label": "SUPPORTED",
+          "citation_correct": true,
+          "latency_ms": 3892.8,
+          "jev_calls": 1,
+          "evidence_docs": [
+            "[withheld CVE]: yaws before 2.0.4 does not attempt to address RFC 3875 section 4.1.18 namespace conflicts and there...",
+            "nuclei:CVE-2010-1429: Red Hat JBoss Enterprise Application Platform 4.2 before 4.2.0.CP09 and 4.3 before 4.3.0.CP08 i...",
+            "CVE-2019-3398: Confluence Server and Data Center had a path traversal vulnerability in the downloadallattachments res...",
+            "CVE-2026-48172: LiteSpeed User-End cPanel Plugin before 2.4.5 allows privilege escalation (possibly to root), as expl...",
+            "CVE-2025-7901: A vulnerability was found in yangzongzhuan RuoYi up to 4.8.1."
+          ]
+        },
+        "jev_retrieval": {
+          "answer": null,
+          "correct": false,
+          "error": "JEV request failed: https://api.typesafe.ai/v1/systemone error=[WinError 10054] An existing connection was forcibly closed by the remote host",
+          "latency_ms": 37609.44,
+          "jev_calls": 1
+        }
+      }
+    }
+  ]
+}

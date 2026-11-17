@@ -1,0 +1,26 @@
+{
+  "created_at": "2026-11-09T19:56:49.274534+00:00",
+  "seed": 42,
+  "corpus_sha256": "8c4daa39da534a7f4871f4e4f4d72af03bf8fd3ce5b34e5dac586e11e585f6fc",
+  "index_version": "68e2ecad34e25474fcf5d50c0b14fdcc7b8bf92ea8d4ec5d2347a08e7361a3ea",
+  "thread_count": 2,
+  "retrieval_methods": [
+    "dense",
+    "hybrid",
+    "hybrid_reranker"
+  ],
+  "retrieval_settings": {
+    "dense_limit": 50,
+    "hybrid_limit": 10,
+    "reranker_input_limit": 10,
+    "reranker_not_found_rule": "gold outside hybrid top 10 is not_found@50",
+    "document_level_collapsing": "best chunk rank per CVE",
+    "filters": {}
+  },
+  "settings": {
+    "embedding_model": "BAAI/bge-base-en-v1.5",
+    "embedding_revision": "a5beb1e3e68b9ab74eb54cfd186867f64f240e1a",
+    "rerank_model": "BAAI/bge-reranker-v2-m3",
+    "rerank_revision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e"
+  }
+}

@@ -1,0 +1,38 @@
+from __future__ import annotations
+
+import argparse
+
+from .experiment import run_mock_dry_run, run_production_pilot, validate_dataset
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description="Research-grade A/B/C reranker experiment.")
+    commands = parser.add_subparsers(dest="command", required=True)
+    commands.add_parser("validate-dataset")
+    dry_run = commands.add_parser("mock-dry-run")
+    dry_run.add_argument("--provider", choices=("mock",), required=True)
+    dry_run.add_argument("--questions", type=int, choices=range(1, 4), default=3)
+    pilot = commands.add_parser("pilot", help="Explicitly authorized small production pilot.")
+    pilot.add_argument("--provider", choices=("production",), required=True)
+    pilot.add_argument("--questions", type=int, choices=range(1, 4), default=1)
+    full = commands.add_parser("full", help="Reserved for an explicitly authorized real-API run.")
+    full.add_argument("--provider", choices=("production",), required=True)
+    args = parser.parse_args()
+    if args.command == "validate-dataset":
+        print(validate_dataset())
+        return 0
+    if args.command == "mock-dry-run":
+        print(run_mock_dry_run(question_limit=args.questions))
+        return 0
+    if args.command == "pilot":
+        print(run_production_pilot(question_limit=args.questions))
+        return 0
+    raise SystemExit(
+        "Real API execution is intentionally not started automatically. "
+        "Run the documented pilot/full workflow only after explicit authorization."
+    )
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
+

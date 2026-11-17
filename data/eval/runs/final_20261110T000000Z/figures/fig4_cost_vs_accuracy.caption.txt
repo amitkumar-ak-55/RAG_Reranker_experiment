@@ -1,0 +1,1 @@
+All arms are excluded: recorded cost is unknown for every arm.

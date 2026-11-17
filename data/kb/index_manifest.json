@@ -1,0 +1,48 @@
+{
+  "bm25_tokenizer": "rag_verify_lab.rag.index.tokenize (CVE/CWE IDs remain single tokens)",
+  "built_at": "2026-11-06T13:50:03.133010+00:00",
+  "chunking": {
+    "max_tokens": 450,
+    "overlap_tokens": 50,
+    "sentence_boundaries": true,
+    "short_document_tokens": 512
+  },
+  "configured_model": "BAAI/bge-reranker-v2-m3",
+  "configured_revision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e",
+  "corpus_sha256": "8c4daa39da534a7f4871f4e4f4d72af03bf8fd3ce5b34e5dac586e11e585f6fc",
+  "document_count": 2027,
+  "document_count_by_doc_type": {
+    "attack": 12,
+    "cve": 1142,
+    "cwe": 171,
+    "distractor": 120,
+    "nuclei": 582
+  },
+  "document_count_by_group": {
+    "distractor": 236,
+    "kev": 947,
+    "positive": 844
+  },
+  "embedding_dimension": 768,
+  "embedding_input": "document title, newline, then chunk text",
+  "embedding_model": "BAAI/bge-base-en-v1.5",
+  "embedding_revision": "a5beb1e3e68b9ab74eb54cfd186867f64f240e1a",
+  "fallback_reason": null,
+  "fallback_used": false,
+  "index_version": "68e2ecad34e25474fcf5d50c0b14fdcc7b8bf92ea8d4ec5d2347a08e7361a3ea",
+  "loaded_model": "BAAI/bge-reranker-v2-m3",
+  "reranker_model": "BAAI/bge-reranker-v2-m3",
+  "reranker_model_requested": "BAAI/bge-reranker-v2-m3",
+  "reranker_model_used": "BAAI/bge-reranker-v2-m3",
+  "reranker_revision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e",
+  "reranker_revision_used": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e",
+  "self_retrieval_by_doc_type": {
+    "attack": 1.0,
+    "cve": 0.9912280701754386,
+    "cwe": 1.0,
+    "distractor": 1.0,
+    "nuclei": 0.9836065573770492
+  },
+  "self_retrieval_rate": 0.99,
+  "tokenizer_name": "BAAI/bge-base-en-v1.5@a5beb1e3e68b9ab74eb54cfd186867f64f240e1a"
+}

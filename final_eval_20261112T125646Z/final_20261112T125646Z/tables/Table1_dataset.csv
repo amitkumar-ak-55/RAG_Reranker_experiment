@@ -1,0 +1,301 @@
+question_id,difficulty,difficulty_count,product,product_count,cwe_count,confuser_rules
+Q-0091,hard,59,apache activemq,3,1,cwe;vendor+product
+Q-0092,easy,139,microsoft silverlight,1,1,cwe;cwe
+Q-0102,easy,139,yaws yaws,1,1,cwe;cwe
+Q-0103,easy,139,facebook hhvm,1,1,cwe;cwe
+Q-0104,easy,139,python python,1,1,cwe;cwe
+Q-0106,easy,139,phpmailer project phpmailer,2,2,vendor+product;vendor+product
+Q-0107,easy,139,zabbix zabbix,5,1,cwe;cwe
+Q-0109,medium,102,adobe flash player,4,1,cwe;cwe
+Q-0110,easy,139,google chrome,20,2,cwe;vendor+product
+Q-0111,hard,59,ffmpeg ffmpeg,3,1,both;cwe
+Q-0112,medium,102,ffmpeg ffmpeg,3,1,both;cwe
+Q-0115,easy,139,apache struts,7,2,cwe;cwe
+Q-0116,easy,139,apache activemq,3,2,vendor+product;cwe
+Q-0118,medium,102,microsoft internet explorer,7,1,vendor+product;cwe
+Q-0120,easy,139,oracle jrockit,1,2,cwe;cwe
+Q-0121,medium,102,imagemagick imagemagick,4,2,vendor+product;cwe
+Q-0122,easy,139,imagemagick imagemagick,4,2,cwe;both
+Q-0124,medium,102,adobe flash player,4,1,vendor+product;cwe
+Q-0125,easy,139,apache shiro,2,2,cwe;cwe
+Q-0126,easy,139,trihedral vtscada,1,2,cwe;cwe
+Q-0129,hard,59,pivotal spring security oauth,1,1,cwe;cwe
+Q-0131,medium,102,php php,3,1,vendor+product;vendor+product
+Q-0132,easy,139,golang go,1,1,cwe;cwe
+Q-0133,medium,102,apache http server,3,1,cwe;cwe
+Q-0134,easy,139,apache tomcat,4,1,cwe;vendor+product
+Q-0135,hard,59,phpmyadmin phpmyadmin,2,1,cwe;cwe
+Q-0138,medium,102,call-cc http-client,1,1,cwe;cwe
+Q-0141,easy,139,microsoft edge,1,2,cwe;vendor+product
+Q-0144,easy,139,skygroup skysea client view,1,2,cwe;cwe
+Q-0145,easy,139,adobe flash player,4,2,cwe;cwe
+Q-0146,easy,139,apache tomcat,4,1,vendor+product;cwe
+Q-0147,easy,139,gitlab gitlab,2,1,cwe;cwe
+Q-0158,easy,139,microsoft internet explorer,7,2,cwe;vendor+product
+Q-0159,easy,139,microsoft internet explorer,7,1,cwe;cwe
+Q-0161,easy,139,microsoft office,4,2,cwe;vendor+product
+Q-0163,medium,102,oracle glassfish server,1,1,cwe;cwe
+Q-0164,easy,139,jenkins jenkins,2,2,cwe;cwe
+Q-0165,medium,102,oracle weblogic server,10,2,cwe;cwe
+Q-0167,easy,139,supervisord supervisor,1,1,vendor+product;vendor+product
+Q-0168,medium,102,microsoft outlook,1,2,cwe;cwe
+Q-0169,easy,139,microsoft office,4,2,cwe;cwe
+Q-0176,medium,102,apache struts,7,1,cwe;cwe
+Q-0177,easy,139,apache tomcat,4,2,vendor+product;vendor+product
+Q-0178,hard,59,apache solr,3,1,cwe;vendor+product
+Q-0179,easy,139,apache couchdb,3,1,cwe;vendor+product
+Q-0180,hard,59,apache couchdb,3,1,vendor+product;cwe
+Q-0181,medium,102,djangoproject django,4,1,vendor+product;cwe
+Q-0182,medium,102,nodejs node.js,1,1,cwe;cwe
+Q-0185,easy,139,node-postgres pg,1,2,cwe;cwe
+Q-0186,hard,59,roundcube webmail,3,2,vendor+product;cwe
+Q-0187,easy,139,ruby-lang ruby,1,1,cwe;cwe
+Q-0188,easy,139,fasterxml jackson-databind,2,2,cwe;vendor+product
+Q-0189,easy,139,embedthis goahead,2,1,cwe;cwe
+Q-0191,hard,59,connectwise manageditsync,1,2,cwe;cwe
+Q-0192,easy,139,zabbix zabbix,5,1,cwe;cwe
+Q-0193,medium,102,adobe coldfusion,3,2,cwe;cwe
+Q-0194,hard,59,oracle weblogic server,10,2,cwe;cwe
+Q-0195,easy,139,broadcom spring web flow,1,1,cwe;cwe
+Q-0196,medium,102,google chrome,20,2,cwe;vendor+product
+Q-0197,easy,139,phpmailer project phpmailer,2,1,vendor+product;cwe
+Q-0199,medium,102,apache struts,7,2,vendor+product;vendor+product
+Q-0200,hard,59,apache log4j,3,1,vendor+product;cwe
+Q-0202,medium,102,citrix netscaler sd-wan,1,1,cwe;cwe
+Q-0211,easy,139,drupal drupal,7,1,vendor+product;vendor+product
+Q-0212,medium,102,microsoft internet information services,1,2,cwe;cwe
+Q-0213,easy,139,samba samba,1,2,cwe;cwe
+Q-0215,hard,59,fasterxml jackson-databind,2,2,both;cwe
+Q-0216,medium,102,f5 nginx,1,2,cwe;vendor+product
+Q-0219,medium,102,artifex ghostscript,4,2,vendor+product;vendor+product
+Q-0220,easy,139,git git-shell,1,1,cwe;cwe
+Q-0223,easy,139,microsoft office,4,1,cwe;cwe
+Q-0224,medium,102,joomla joomla!,1,1,cwe;cwe
+Q-0225,easy,139,apache struts,7,2,cwe;cwe
+Q-0226,hard,59,apache struts,7,2,cwe;vendor+product
+Q-0227,easy,139,phpunit project phpunit,1,2,vendor+product;cwe
+Q-0228,easy,139,ffmpeg ffmpeg,3,1,cwe;cwe
+Q-0230,easy,139,cisco secure access control system,1,2,cwe;cwe
+Q-0239,hard,59,cisco firepower threat defense,1,2,cwe;cwe
+Q-0240,easy,139,microsoft office,4,2,cwe;cwe
+Q-0241,easy,139,atom electron,1,1,cwe;cwe
+Q-0242,hard,59,gitlist gitlist,1,1,cwe;cwe
+Q-0243,easy,139,jenkins jenkins,2,2,vendor+product;cwe
+Q-0246,easy,139,postgresql postgresql,2,2,vendor+product;cwe
+Q-0247,easy,139,libssh libssh,1,2,cwe;cwe
+Q-0249,medium,102,phpmyadmin phpmyadmin,2,1,cwe;cwe
+Q-0250,hard,59,vmware spring framework,2,2,cwe;vendor+product
+Q-0251,medium,102,vmware spring framework,2,2,cwe;cwe
+Q-0254,easy,139,fortinet fortiadc,1,2,cwe;cwe
+Q-0255,medium,102,fortinet fortiproxy,2,2,vendor+product;cwe
+Q-0256,easy,139,fortinet fortiproxy,2,2,cwe;cwe
+Q-0258,medium,102,redhat richfaces,1,2,cwe;cwe
+Q-0261,easy,139,openbsd openssh,1,2,vendor+product;cwe
+Q-0262,hard,59,electronjs electron,1,1,cwe;cwe
+Q-0264,easy,139,adobe coldfusion,3,2,vendor+product;cwe
+Q-0265,easy,139,artifex ghostscript,4,1,cwe;cwe
+Q-0266,hard,59,sonatype nexus repository manager,2,1,vendor+product;cwe
+Q-0267,easy,139,elastic kibana,3,2,vendor+product;vendor+product
+Q-0268,medium,102,google chrome,20,2,cwe;cwe
+Q-0276,easy,139,artifex ghostscript,4,1,cwe;cwe
+Q-0277,easy,139,php php,3,1,cwe;cwe
+Q-0280,easy,139,5none nonecms,1,1,cwe;cwe
+Q-0284,medium,102,oracle weblogic server,10,2,vendor+product;cwe
+Q-0285,medium,102,oracle weblogic server,10,1,cwe;cwe
+Q-0286,easy,139,sprockets project sprockets,1,2,cwe;cwe
+Q-0288,hard,59,adobe coldfusion,3,2,vendor+product;cwe
+Q-0289,easy,139,adobe flash player,4,2,cwe;cwe
+Q-0292,medium,102,synacor zimbra collaboration suite,3,2,cwe;cwe
+Q-0295,hard,59,drupal drupal,7,2,cwe;cwe
+Q-0296,medium,102,drupal drupal,7,2,cwe;cwe
+Q-0298,easy,139,microsoft chakracore,1,2,cwe;cwe
+Q-0299,hard,59,microsoft internet explorer,7,2,cwe;cwe
+Q-0302,easy,139,microsoft exchange server,1,1,cwe;cwe
+Q-0305,medium,102,embedthis appweb,1,1,cwe;cwe
+Q-0306,medium,102,apache solr,3,2,vendor+product;cwe
+Q-0308,medium,102,apache struts,7,1,vendor+product;vendor+product
+Q-0309,easy,139,sap commerce cloud,1,2,cwe;cwe
+Q-0313,hard,59,microsoft internet explorer,7,2,cwe;vendor+product
+Q-0318,medium,102,jenkins script security,2,1,cwe;cwe
+Q-0319,hard,59,jenkins script security,2,1,cwe;cwe
+Q-0320,easy,139,exim exim,2,2,cwe;cwe
+Q-0322,easy,139,microsoft sql server,2,2,cwe;cwe
+Q-0323,hard,59,mongo-express project mongo-express,1,2,cwe;cwe
+Q-0325,easy,139,php php,3,2,cwe;vendor+product
+Q-0329,hard,59,atlassian jira server,2,2,cwe;cwe
+Q-0336,easy,139,citrix storefront server,1,2,cwe;cwe
+Q-0337,hard,59,microsoft internet explorer,7,2,cwe;cwe
+Q-0340,medium,102,djangoproject django,4,1,both;cwe
+Q-0344,easy,139,docker docker,1,2,cwe;cwe
+Q-0346,easy,139,nazgul nostromo nhttpd,1,2,cwe;cwe
+Q-0348,medium,102,vbulletin vbulletin,2,2,vendor+product;cwe
+Q-0349,easy,139,exim exim,2,2,vendor+product;cwe
+Q-0350,medium,102,apache solr,3,2,cwe;cwe
+Q-0353,easy,139,trendmicro officescan,1,2,cwe;cwe
+Q-0355,easy,139,sangoma freepbx,1,2,cwe;cwe
+Q-0358,medium,102,influxdata influxdb,1,1,cwe;cwe
+Q-0361,medium,102,oracle weblogic server,10,1,vendor+product;vendor+product
+Q-0363,medium,102,atlassian confluence server,4,2,both;cwe
+Q-0364,hard,59,atlassian confluence server,4,2,cwe;cwe
+Q-0366,easy,139,ibm planning analytics,1,2,cwe;cwe
+Q-0369,easy,139,google chrome,20,2,cwe;cwe
+Q-0370,hard,59,artifex ghostscript,4,1,cwe;cwe
+Q-0372,hard,59,drupal drupal,7,1,cwe;cwe
+Q-0373,hard,59,drupal drupal,7,2,vendor+product;vendor+product
+Q-0374,easy,139,drupal drupal,7,1,cwe;cwe
+Q-0377,easy,139,qnap photo station,2,2,cwe;cwe
+Q-0378,hard,59,sonatype nexus repository manager,2,1,vendor+product;cwe
+Q-0382,medium,102,elastic kibana,3,2,cwe;cwe
+Q-0383,medium,102,zohocorp manageengine servicedesk plus,1,2,cwe;cwe
+Q-0387,hard,59,postgresql postgresql,2,1,cwe;cwe
+Q-0388,easy,139,synacor zimbra collaboration suite,3,2,cwe;vendor+product
+Q-0389,medium,102,sitecore cms,1,2,cwe;cwe
+Q-0393,hard,59,microsoft sql server,2,2,cwe;cwe
+Q-0394,medium,102,microsoft .net framework,1,2,cwe;vendor+product
+Q-0401,medium,102,sonatype nexus,1,2,vendor+product;cwe
+Q-0404,easy,139,rconfig rconfig,1,2,cwe;cwe
+Q-0409,medium,102,saltstack salt,3,1,cwe;cwe
+Q-0410,hard,59,saltstack salt,3,2,cwe;vendor+product
+Q-0411,medium,102,zabbix zabbix,5,1,cwe;cwe
+Q-0413,hard,59,apache airflow,4,2,cwe;cwe
+Q-0414,easy,139,apache airflow,4,1,cwe;cwe
+Q-0415,easy,139,roundcube webmail,3,2,vendor+product;cwe
+Q-0416,medium,102,drupal drupal,7,2,cwe;cwe
+Q-0417,medium,102,microsoft internet explorer,7,2,cwe;cwe
+Q-0418,easy,139,apache airflow,4,5,vendor+product;vendor+product
+Q-0420,easy,139,apache unomi,1,2,cwe;cwe
+Q-0421,easy,139,apache apisix,2,1,cwe;cwe
+Q-0423,medium,102,oracle weblogic server,10,1,cwe;cwe
+Q-0424,easy,139,oracle business intelligence,1,1,cwe;cwe
+Q-0426,hard,59,oracle weblogic server,10,1,vendor+product;vendor+product
+Q-0427,hard,59,oracle weblogic server,10,1,cwe;cwe
+Q-0431,easy,139,google chrome,20,2,vendor+product;cwe
+Q-0432,easy,139,google chrome,20,2,vendor+product;vendor+product
+Q-0434,easy,139,saltstack salt,3,2,cwe;cwe
+Q-0437,hard,59,vbulletin vbulletin,2,2,cwe;cwe
+Q-0438,hard,59,apache flink,2,2,cwe;cwe
+Q-0439,medium,102,apache flink,2,2,cwe;cwe
+Q-0440,medium,102,apache airflow,4,1,cwe;cwe
+Q-0441,medium,102,apache struts,7,2,vendor+product;cwe
+Q-0442,medium,102,apache tomcat,4,1,cwe;cwe
+Q-0443,medium,102,apache kylin,1,2,cwe;cwe
+Q-0444,hard,59,apache shiro,2,1,cwe;cwe
+Q-0447,easy,139,qnap helpdesk,1,2,cwe;cwe
+Q-0449,medium,102,filemanagerpro file manager,1,2,cwe;cwe
+Q-0451,medium,102,oracle weblogic server,10,1,cwe;cwe
+Q-0455,hard,59,oracle weblogic server,10,1,cwe;cwe
+Q-0458,medium,102,imagemagick imagemagick,4,1,cwe;vendor+product
+Q-0459,easy,139,cisco anyconnect secure mobility client,2,2,both;cwe
+Q-0461,easy,139,cisco anyconnect secure mobility client,2,2,both;cwe
+Q-0462,easy,139,opentsdb opentsdb,1,1,cwe;cwe
+Q-0464,easy,139,roundcube webmail,3,2,cwe;cwe
+Q-0467,easy,139,vmware vcenter server,3,2,cwe;cwe
+Q-0469,medium,102,ibm data risk manager,2,2,cwe;cwe
+Q-0470,hard,59,ibm data risk manager,2,2,cwe;cwe
+Q-0471,easy,139,vmware spring cloud config,1,2,cwe;cwe
+Q-0476,medium,102,google chrome,20,2,vendor+product;cwe
+Q-0479,hard,59,elastic kibana,3,2,cwe;cwe
+Q-0480,hard,59,openbsd opensmtpd,1,3,cwe;cwe
+Q-0481,medium,102,liferay liferay portal,1,2,cwe;cwe
+Q-0484,medium,102,ivanti connect secure,3,2,vendor+product;cwe
+Q-0488,easy,139,eyesofnetwork eyesofnetwork,1,2,cwe;cwe
+Q-0489,easy,139,pi-hole pi-hole,1,2,cwe;cwe
+Q-0491,medium,102,djangoproject django,4,1,vendor+product;both
+Q-0492,medium,102,apache ofbiz,1,2,cwe;cwe
+Q-0506,hard,59,sonicwall email security,2,2,cwe;cwe
+Q-0507,medium,102,sonicwall email security,2,2,cwe;cwe
+Q-0510,easy,139,draytek vigorconnect,1,2,cwe;cwe
+Q-0512,easy,139,google chrome,20,2,vendor+product;cwe
+Q-0513,easy,139,google chrome,20,2,cwe;cwe
+Q-0514,easy,139,google chrome,20,2,cwe;cwe
+Q-0515,medium,102,adminer adminer,2,1,cwe;cwe
+Q-0516,medium,102,xstream xstream,3,3,vendor+product;cwe
+Q-0519,hard,59,vmware vcenter server,3,4,cwe;cwe
+Q-0520,hard,59,vmware vcenter server,3,1,vendor+product;cwe
+Q-0521,easy,139,gitlab gitlab,2,2,cwe;cwe
+Q-0522,easy,139,exiftool project exiftool,1,2,cwe;cwe
+Q-0524,medium,102,microfocus operation bridge reporter,1,2,cwe;cwe
+Q-0527,medium,102,ivanti connect secure,3,2,cwe;cwe
+Q-0528,hard,59,ivanti connect secure,3,2,cwe;cwe
+Q-0529,easy,139,rocket.chat rocket.chat,1,2,cwe;cwe
+Q-0532,easy,139,mcafee total protection,1,2,cwe;cwe
+Q-0533,easy,139,nagios nagios xi,1,2,cwe;cwe
+Q-0539,easy,139,apache druid,1,1,cwe;cwe
+Q-0540,medium,102,atlassian confluence server,4,2,vendor+product;vendor+product
+Q-0541,easy,139,atlassian jira server,2,2,cwe;cwe
+Q-0542,easy,139,smarty smarty,2,1,cwe;cwe
+Q-0543,hard,59,smarty smarty,2,1,vendor+product;cwe
+Q-0544,easy,139,scadabr scadabr,2,2,cwe;cwe
+Q-0545,hard,59,scadabr scadabr,2,2,cwe;cwe
+Q-0556,easy,139,checkbox survey,1,2,cwe;cwe
+Q-0557,easy,139,veritas backup exec,2,1,cwe;cwe
+Q-0558,hard,59,veritas backup exec,2,1,cwe;cwe
+Q-0559,medium,102,eclipse jetty,3,3,cwe;cwe
+Q-0560,medium,102,eclipse jetty,3,2,vendor+product;cwe
+Q-0564,easy,139,alibaba nacos,2,2,vendor+product;cwe
+Q-0565,medium,102,alibaba nacos,2,1,vendor+product;cwe
+Q-0566,medium,102,xstream xstream,3,3,vendor+product;cwe
+Q-0567,easy,139,google chrome,20,2,vendor+product;vendor+product
+Q-0568,easy,139,google chrome,20,2,vendor+product;cwe
+Q-0569,medium,102,google chrome,20,2,vendor+product;vendor+product
+Q-0570,easy,139,google chrome,20,2,cwe;cwe
+Q-0584,medium,102,sudo project sudo,1,2,vendor+product;vendor+product
+Q-0588,easy,139,octobercms october,1,2,cwe;cwe
+Q-0589,medium,102,std42 elfinder,1,3,cwe;cwe
+Q-0594,medium,102,neo4j neo4j,1,1,cwe;cwe
+Q-0595,medium,102,eclipse jetty,3,3,cwe;cwe
+Q-0600,medium,102,djangoproject django,4,1,cwe;cwe
+Q-0609,easy,139,google chrome,20,2,vendor+product;both
+Q-0610,easy,139,google chrome,20,2,vendor+product;vendor+product
+Q-0611,easy,139,google chrome,20,3,cwe;vendor+product
+Q-0612,medium,102,sap netweaver,1,2,cwe;cwe
+Q-0616,medium,102,xstream xstream,3,4,cwe;cwe
+Q-0618,easy,139,polkit project polkit,1,3,cwe;cwe
+Q-0622,hard,59,zohocorp manageengine adselfservice plus,1,2,vendor+product;cwe
+Q-0623,medium,102,osgeo geoserver,1,1,cwe;cwe
+Q-0624,medium,102,aviatrix controller,1,1,cwe;vendor+product
+Q-0625,easy,139,metabase metabase,1,2,cwe;cwe
+Q-0627,medium,102,apache http server,3,2,cwe;cwe
+Q-0628,easy,139,apache http server,3,3,cwe;cwe
+Q-0630,hard,59,bqe billquick web suite,1,2,cwe;cwe
+Q-0633,easy,139,embedthis goahead,2,1,cwe;cwe
+Q-0634,medium,102,h2database h2,2,2,cwe;cwe
+Q-0635,easy,139,adminer adminer,2,1,cwe;cwe
+Q-0636,easy,139,grafana grafana,1,1,cwe;cwe
+Q-0640,medium,102,apache log4j,3,4,vendor+product;cwe
+Q-0641,hard,59,zohocorp manageengine desktop central,1,1,cwe;cwe
+Q-0642,medium,102,apache log4j,3,2,cwe;vendor+product
+Q-0645,easy,139,metersphere metersphere,1,1,cwe;cwe
+Q-0648,easy,139,redis redis,1,2,cwe;cwe
+Q-0649,hard,59,openssl openssl,1,2,vendor+product;vendor+product
+Q-0652,easy,139,google chrome,20,2,cwe;vendor+product
+Q-0656,medium,102,cisco sd-wan,1,2,cwe;cwe
+Q-0657,medium,102,oracle application development framework,1,2,cwe;cwe
+Q-0667,easy,139,vmware spring cloud gateway,1,2,cwe;cwe
+Q-0670,hard,59,vmware spring cloud function,1,2,cwe;cwe
+Q-0671,medium,102,oracle jdk,1,2,cwe;cwe
+Q-0672,medium,102,vmware spring security,1,2,cwe;cwe
+Q-0673,easy,139,zabbix zabbix,5,2,vendor+product;cwe
+Q-0674,medium,102,zabbix zabbix,5,2,cwe;cwe
+Q-0675,easy,139,h2database h2,2,2,cwe;cwe
+Q-0677,medium,102,apache apisix,2,2,cwe;cwe
+Q-0679,hard,59,apache couchdb,3,2,cwe;cwe
+Q-0680,easy,139,geosolutionsgroup jai-ext,1,2,cwe;cwe
+Q-0683,medium,102,atlassian confluence server,4,2,vendor+product;vendor+product
+Q-0688,easy,139,veeam veeam backup & replication,2,2,vendor+product;vendor+product
+Q-0689,hard,59,veeam veeam backup & replication,2,2,cwe;cwe
+Q-0692,medium,102,qnap photo station,2,2,cwe;vendor+product
+Q-0697,easy,139,mitel mivoice connect,2,2,cwe;cwe
+Q-0699,easy,139,google chrome,20,2,cwe;cwe
+Q-0701,easy,139,sophos firewall,1,2,cwe;cwe
+Q-0704,medium,102,apache spark,1,2,cwe;cwe
+Q-0707,medium,102,glpi-project glpi,1,2,cwe;cwe
+Q-0708,medium,102,zkoss zk framework,1,1,cwe;cwe
+Q-0709,medium,102,synacor zimbra collaboration suite,3,2,cwe;cwe
+Q-0712,easy,139,helpsystems cobalt strike,1,2,cwe;cwe
+Q-0720,easy,139,mitel mivoice connect,2,2,vendor+product;cwe
+Q-0721,easy,139,google chrome,20,2,cwe;cwe
+Q-0723,medium,102,apache activemq,3,1,cwe;cwe
+Q-0730,easy,139,imagemagick imagemagick,4,2,cwe;cwe
+Q-0731,hard,59,apache linkis,1,1,vendor+product;both
+Q-0734,hard,59,cacti cacti,1,3,cwe;cwe

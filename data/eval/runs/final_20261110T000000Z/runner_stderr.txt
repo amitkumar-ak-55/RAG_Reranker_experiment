@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 203, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\bhagy\Desktop\CysekRAG\rag_verify_lab\eval_final\final_runner.py", line 391, in <module>
+    print(run(supplied))
+          ~~~^^^^^^^^^^
+  File "C:\Users\bhagy\Desktop\CysekRAG\rag_verify_lab\eval_final\final_runner.py", line 332, in run
+    raise RuntimeError(f"Run directory exists without resumable predictions: {run_dir}")
+RuntimeError: Run directory exists without resumable predictions: C:\Users\bhagy\Desktop\CysekRAG\data\eval\runs\final_20261110T000000Z

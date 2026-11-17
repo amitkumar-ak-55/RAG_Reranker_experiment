@@ -1,0 +1,9 @@
+{
+  "stage": "stage3",
+  "status": "pass",
+  "counts": {
+    "easy": 156,
+    "hard": 66,
+    "medium": 114
+  }
+}

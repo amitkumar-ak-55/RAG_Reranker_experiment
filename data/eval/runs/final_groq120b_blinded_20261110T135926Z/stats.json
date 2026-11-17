@@ -1,0 +1,79 @@
+{
+  "arms": {
+    "llm_only": {
+      "accuracy": 0.07333333333333333,
+      "wilson_95_ci": [
+        0.04892399383922859,
+        0.10853134160571733
+      ],
+      "counts": {
+        "correct": 22,
+        "wrong": 254,
+        "invalid": 1,
+        "error": 23
+      },
+      "completed": 300
+    },
+    "vector_rag": {
+      "accuracy": 0.04666666666666667,
+      "wilson_95_ci": [
+        0.027998933682334012,
+        0.07679736022792105
+      ],
+      "counts": {
+        "correct": 14,
+        "wrong": 229,
+        "invalid": 34,
+        "error": 23
+      },
+      "completed": 300
+    },
+    "hybrid_rag": {
+      "accuracy": 0.07,
+      "wilson_95_ci": [
+        0.046236944827176336,
+        0.10463601042593323
+      ],
+      "counts": {
+        "correct": 21,
+        "wrong": 231,
+        "invalid": 26,
+        "error": 22
+      },
+      "completed": 300
+    },
+    "hybrid_jev": {
+      "accuracy": 0.02,
+      "wilson_95_ci": [
+        0.009197631557703617,
+        0.042939620817860576
+      ],
+      "counts": {
+        "correct": 6,
+        "wrong": 40,
+        "invalid": 254,
+        "error": 0
+      },
+      "completed": 300
+    },
+    "jev_retrieval": {
+      "accuracy": 0.043333333333333335,
+      "wilson_95_ci": [
+        0.025496448084407246,
+        0.07271746563401146
+      ],
+      "counts": {
+        "correct": 13,
+        "wrong": 213,
+        "invalid": 26,
+        "error": 48
+      },
+      "completed": 300
+    }
+  },
+  "paired_C_vs_D": {
+    "b": 0,
+    "c": 15,
+    "mcnemar_p_value": 6.103515625e-05
+  }
+}

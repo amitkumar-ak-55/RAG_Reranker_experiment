@@ -1,0 +1,38 @@
+{
+  "stage": "stage4",
+  "status": "pass",
+  "gate_counts": {
+    "G1": {
+      "pass": 336,
+      "fail": 0
+    },
+    "G2": {
+      "pass": 336,
+      "fail": 0
+    },
+    "G3": {
+      "pass": 336,
+      "fail": 0
+    },
+    "G4": {
+      "pass": 336,
+      "fail": 0
+    },
+    "G5": {
+      "pass": 336,
+      "fail": 0
+    },
+    "G6": {
+      "pass": 336,
+      "fail": 0
+    },
+    "G7": {
+      "pass": 336,
+      "fail": 0
+    },
+    "G8": {
+      "pass": 336,
+      "fail": 0
+    }
+  }
+}

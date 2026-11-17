@@ -1,0 +1,27 @@
+[
+  {
+    "event": "experiment_started",
+    "experiment_id": "mock_3c3c434a8ba7",
+    "mode": "mock_dry_run"
+  },
+  {
+    "event": "dataset_validation_completed",
+    "experiment_id": "mock_3c3c434a8ba7",
+    "question_count": 2
+  },
+  {
+    "event": "candidate_pool_saved",
+    "experiment_id": "mock_3c3c434a8ba7",
+    "question_count": 2
+  },
+  {
+    "event": "metrics_calculated",
+    "experiment_id": "mock_3c3c434a8ba7",
+    "status": "mock_only"
+  },
+  {
+    "event": "experiment_completed",
+    "experiment_id": "mock_3c3c434a8ba7",
+    "status": "mock_validation_only"
+  }
+]

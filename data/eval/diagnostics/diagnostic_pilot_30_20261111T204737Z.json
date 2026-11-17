@@ -1,0 +1,3142 @@
+{
+  "run_id": "diagnostic_pilot_30_20261111T204737Z",
+  "created_at_utc": "2026-11-11T20:51:53.179132+00:00",
+  "source": {
+    "path": "data\\eval\\final\\eval_hard_300.jsonl",
+    "records_selected": 30,
+    "question_ids": [
+      "Q-0091",
+      "Q-0092",
+      "Q-0102",
+      "Q-0103",
+      "Q-0104",
+      "Q-0106",
+      "Q-0107",
+      "Q-0109",
+      "Q-0110",
+      "Q-0111",
+      "Q-0112",
+      "Q-0115",
+      "Q-0116",
+      "Q-0118",
+      "Q-0120",
+      "Q-0121",
+      "Q-0122",
+      "Q-0124",
+      "Q-0125",
+      "Q-0126",
+      "Q-0129",
+      "Q-0131",
+      "Q-0132",
+      "Q-0133",
+      "Q-0134",
+      "Q-0135",
+      "Q-0138",
+      "Q-0141",
+      "Q-0144",
+      "Q-0145"
+    ],
+    "reused_question_ids": [
+      "Q-0091",
+      "Q-0092",
+      "Q-0102"
+    ],
+    "fresh_question_ids": [
+      "Q-0103",
+      "Q-0104",
+      "Q-0106",
+      "Q-0107",
+      "Q-0109",
+      "Q-0110",
+      "Q-0111",
+      "Q-0112",
+      "Q-0115",
+      "Q-0116",
+      "Q-0118",
+      "Q-0120",
+      "Q-0121",
+      "Q-0122",
+      "Q-0124",
+      "Q-0125",
+      "Q-0126",
+      "Q-0129",
+      "Q-0131",
+      "Q-0132",
+      "Q-0133",
+      "Q-0134",
+      "Q-0135",
+      "Q-0138",
+      "Q-0141",
+      "Q-0144",
+      "Q-0145"
+    ],
+    "index_version": "68e2ecad34e25474fcf5d50c0b14fdcc7b8bf92ea8d4ec5d2347a08e7361a3ea"
+  },
+  "arms": [
+    "llm_only",
+    "vector_rag",
+    "hybrid_rag",
+    "hybrid_jev",
+    "jev_retrieval"
+  ],
+  "results": [
+    {
+      "question_id": "Q-0091",
+      "question": "Which CVE affects Apache ActiveMQ 5.x before version 5.13.0, where the broker does not restrict classes serialized in a crafted JMS ObjectMessage, potentially allowing arbitrary code execution?",
+      "gold_cve": "CVE-2015-5254",
+      "arms": {
+        "llm_only": {
+          "raw_answer": "CVE-2015-5254",
+          "parsed_answer": "CVE-2015-5254",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 2218.633,
+          "input_tokens": 139,
+          "output_tokens": 53,
+          "jev_calls": 0,
+          "candidate_cve_ids": [],
+          "selected_cve": ""
+        },
+        "vector_rag": {
+          "raw_answer": "CVE-2015-5254",
+          "parsed_answer": "CVE-2015-5254",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 19946.477,
+          "input_tokens": 1064,
+          "output_tokens": 36,
+          "jev_calls": 0,
+          "candidate_cve_ids": [
+            "CVE-2015-5254",
+            "CVE-2026-34197"
+          ],
+          "selected_cve": ""
+        },
+        "hybrid_rag": {
+          "raw_answer": "CVE-2015-5254",
+          "parsed_answer": "CVE-2015-5254",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 2558.914,
+          "input_tokens": 1083,
+          "output_tokens": 37,
+          "jev_calls": 0,
+          "candidate_cve_ids": [
+            "CVE-2015-5254",
+            "CVE-2026-34197",
+            "CVE-2017-7504"
+          ],
+          "selected_cve": ""
+        },
+        "hybrid_jev": {
+          "raw_answer": "CVE-2015-5254",
+          "parsed_answer": "CVE-2015-5254",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 689.821,
+          "input_tokens": "unknown",
+          "output_tokens": "unknown",
+          "jev_calls": 1,
+          "candidate_cve_ids": [
+            "CVE-2015-5254",
+            "CVE-2026-34197",
+            "CVE-2017-7504"
+          ],
+          "selected_cve": "CVE-2015-5254"
+        },
+        "jev_retrieval": {
+          "raw_answer": "CVE-2015-5254",
+          "parsed_answer": "CVE-2015-5254",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 910.322,
+          "input_tokens": "unknown",
+          "output_tokens": "unknown",
+          "jev_calls": 1,
+          "candidate_cve_ids": [
+            "CVE-2015-5254",
+            "CVE-2017-7504",
+            "CVE-2017-12149",
+            "CVE-2026-34197",
+            "CVE-2023-46604",
+            "CVE-2016-3088",
+            "CVE-2024-32113",
+            "CVE-2024-43441",
+            "CVE-2022-41678",
+            "CVE-2026-60137",
+            "CVE-2017-9805",
+            "CVE-2016-5388",
+            "CVE-2021-22991"
+          ],
+          "selected_cve": "CVE-2015-5254"
+        }
+      }
+    },
+    {
+      "question_id": "Q-0092",
+      "question": "Which CVE affects Microsoft Silverlight 5 before version 5.1.41212.0, where mishandling negative offsets during decoding can cause arbitrary code execution or denial of service via a crafted website?",
+      "gold_cve": "CVE-2016-0034",
+      "arms": {
+        "llm_only": {
+          "raw_answer": "CVE-2015-0096",
+          "parsed_answer": "CVE-2015-0096",
+          "valid": true,
+          "correct": false,
+          "error": "",
+          "latency_ms": 960.274,
+          "input_tokens": 142,
+          "output_tokens": 84,
+          "jev_calls": 0,
+          "candidate_cve_ids": [],
+          "selected_cve": ""
+        },
+        "vector_rag": {
+          "raw_answer": "CVE-2016-0034",
+          "parsed_answer": "CVE-2016-0034",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 2576.596,
+          "input_tokens": 523,
+          "output_tokens": 30,
+          "jev_calls": 0,
+          "candidate_cve_ids": [
+            "CVE-2016-0034",
+            "CVE-2024-38094",
+            "CVE-2023-24955",
+            "CVE-2025-53770",
+            "CVE-2024-38189"
+          ],
+          "selected_cve": ""
+        },
+        "hybrid_rag": {
+          "raw_answer": "CVE-2016-0034",
+          "parsed_answer": "CVE-2016-0034",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 2435.56,
+          "input_tokens": 711,
+          "output_tokens": 30,
+          "jev_calls": 0,
+          "candidate_cve_ids": [
+            "CVE-2016-0034",
+            "CVE-2016-0189",
+            "CVE-2017-0149",
+            "CVE-2016-1019",
+            "CVE-2016-4657"
+          ],
+          "selected_cve": ""
+        },
+        "hybrid_jev": {
+          "raw_answer": "CVE-2016-0034",
+          "parsed_answer": "CVE-2016-0034",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 916.376,
+          "input_tokens": "unknown",
+          "output_tokens": "unknown",
+          "jev_calls": 1,
+          "candidate_cve_ids": [
+            "CVE-2016-0034",
+            "CVE-2016-0189",
+            "CVE-2017-0149",
+            "CVE-2016-1019",
+            "CVE-2016-4657"
+          ],
+          "selected_cve": "CVE-2016-0034"
+        },
+        "jev_retrieval": {
+          "raw_answer": "CVE-2016-0034",
+          "parsed_answer": "CVE-2016-0034",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 1136.029,
+          "input_tokens": "unknown",
+          "output_tokens": "unknown",
+          "jev_calls": 1,
+          "candidate_cve_ids": [
+            "CVE-2016-0034",
+            "CVE-2016-4657",
+            "CVE-2016-0189",
+            "CVE-2017-0149",
+            "CVE-2016-7200",
+            "CVE-2015-5254",
+            "CVE-2016-1646",
+            "CVE-2019-5418",
+            "CVE-2026-111497",
+            "CVE-2016-1019",
+            "CVE-2017-5638",
+            "CVE-2024-43441",
+            "CVE-2017-7494",
+            "CVE-2018-0159"
+          ],
+          "selected_cve": "CVE-2016-0034"
+        }
+      }
+    },
+    {
+      "question_id": "Q-0102",
+      "question": "Which CVE affects Yaws before version 2.0.4 when untrusted HTTP_PROXY environment data makes CGI requests route through an attacker-controlled proxy?",
+      "gold_cve": "CVE-2016-1000108",
+      "arms": {
+        "llm_only": {
+          "raw_answer": "CVE-2020-25714",
+          "parsed_answer": "CVE-2020-25714",
+          "valid": true,
+          "correct": false,
+          "error": "",
+          "latency_ms": 967.129,
+          "input_tokens": 130,
+          "output_tokens": 84,
+          "jev_calls": 0,
+          "candidate_cve_ids": [],
+          "selected_cve": ""
+        },
+        "vector_rag": {
+          "raw_answer": "CVE-2016-1000108",
+          "parsed_answer": "CVE-2016-1000108",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 2693.634,
+          "input_tokens": 1023,
+          "output_tokens": 50,
+          "jev_calls": 0,
+          "candidate_cve_ids": [
+            "CVE-2016-1000108",
+            "CVE-2021-42013",
+            "CVE-2016-5388",
+            "CVE-2021-41773",
+            "CVE-2016-5387"
+          ],
+          "selected_cve": ""
+        },
+        "hybrid_rag": {
+          "raw_answer": "CVE-2016-1000108",
+          "parsed_answer": "CVE-2016-1000108",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 2233.743,
+          "input_tokens": 913,
+          "output_tokens": 32,
+          "jev_calls": 0,
+          "candidate_cve_ids": [
+            "CVE-2016-1000108",
+            "CVE-2016-5388",
+            "CVE-2016-6287",
+            "CVE-2016-6286",
+            "CVE-2016-5387"
+          ],
+          "selected_cve": ""
+        },
+        "hybrid_jev": {
+          "raw_answer": "CVE-2016-1000108",
+          "parsed_answer": "CVE-2016-1000108",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 631.465,
+          "input_tokens": "unknown",
+          "output_tokens": "unknown",
+          "jev_calls": 1,
+          "candidate_cve_ids": [
+            "CVE-2016-1000108",
+            "CVE-2016-5388",
+            "CVE-2016-6287",
+            "CVE-2016-6286",
+            "CVE-2016-5387"
+          ],
+          "selected_cve": "CVE-2016-1000108"
+        },
+        "jev_retrieval": {
+          "raw_answer": "CVE-2016-1000108",
+          "parsed_answer": "CVE-2016-1000108",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 779.238,
+          "input_tokens": "unknown",
+          "output_tokens": "unknown",
+          "jev_calls": 1,
+          "candidate_cve_ids": [
+            "CVE-2016-1000108",
+            "CVE-2016-5385",
+            "CVE-2016-6287",
+            "CVE-2016-6286",
+            "CVE-2016-5386",
+            "CVE-2016-1000111",
+            "CVE-2016-5388",
+            "CVE-2016-1000109",
+            "CVE-2016-5387",
+            "CVE-2016-1000107",
+            "CVE-2016-1000110",
+            "CVE-2026-42208",
+            "CVE-2021-40438",
+            "CVE-2021-42342",
+            "CVE-2017-17562",
+            "CVE-2021-40822",
+            "CVE-2023-4966",
+            "CVE-2025-24472"
+          ],
+          "selected_cve": "CVE-2016-1000108"
+        }
+      }
+    },
+    {
+      "question_id": "Q-0103",
+      "question": "The facebook hhvm report describes HHVM does not attempt address; which CVE is it?",
+      "gold_cve": "CVE-2016-1000109",
+      "arms": {
+        "llm_only": {
+          "raw_answer": "CVE-2018-19903",
+          "parsed_answer": "CVE-2018-19903",
+          "valid": true,
+          "correct": false,
+          "error": "",
+          "latency_ms": 2692.792,
+          "input_tokens": 118,
+          "output_tokens": 120,
+          "jev_calls": 0,
+          "candidate_cve_ids": [],
+          "selected_cve": ""
+        },
+        "vector_rag": {
+          "raw_answer": "CVE-2016-1000109",
+          "parsed_answer": "CVE-2016-1000109",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 24465.728,
+          "input_tokens": 853,
+          "output_tokens": 32,
+          "jev_calls": 0,
+          "candidate_cve_ids": [
+            "CVE-2016-1000109",
+            "CVE-2020-1040",
+            "CVE-2026-22769"
+          ],
+          "selected_cve": ""
+        },
+        "hybrid_rag": {
+          "raw_answer": "CVE-2016-1000109",
+          "parsed_answer": "CVE-2016-1000109",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 2339.502,
+          "input_tokens": 833,
+          "output_tokens": 38,
+          "jev_calls": 0,
+          "candidate_cve_ids": [
+            "CVE-2016-1000109",
+            "CVE-2016-1000108",
+            "CVE-2020-1040",
+            "CVE-2016-1000111"
+          ],
+          "selected_cve": ""
+        },
+        "hybrid_jev": {
+          "raw_answer": "CVE-2016-1000109",
+          "parsed_answer": "CVE-2016-1000109",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 914.326,
+          "input_tokens": "unknown",
+          "output_tokens": "unknown",
+          "jev_calls": 1,
+          "candidate_cve_ids": [
+            "CVE-2016-1000109",
+            "CVE-2016-1000108",
+            "CVE-2020-1040",
+            "CVE-2016-1000111"
+          ],
+          "selected_cve": "CVE-2016-1000109"
+        },
+        "jev_retrieval": {
+          "raw_answer": "CVE-2016-1000109",
+          "parsed_answer": "CVE-2016-1000109",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 1171.833,
+          "input_tokens": "unknown",
+          "output_tokens": "unknown",
+          "jev_calls": 1,
+          "candidate_cve_ids": [
+            "CVE-2016-1000109",
+            "CVE-2016-1000108",
+            "CVE-2016-1000111",
+            "CVE-2016-5386",
+            "CVE-2016-5385",
+            "CVE-2024-50302",
+            "CVE-2026-53266",
+            "CVE-2017-7504",
+            "CVE-2017-12149",
+            "CVE-2016-5387",
+            "CVE-2024-47177",
+            "CVE-2024-12987",
+            "CVE-2026-16232"
+          ],
+          "selected_cve": "CVE-2016-1000109"
+        }
+      }
+    },
+    {
+      "question_id": "Q-0104",
+      "question": "A finding for python python mentions CGIHandler class Python before 2; what CVE fits?",
+      "gold_cve": "CVE-2016-1000110",
+      "arms": {
+        "llm_only": {
+          "raw_answer": "CVE-2006-4339",
+          "parsed_answer": "CVE-2006-4339",
+          "valid": true,
+          "correct": false,
+          "error": "",
+          "latency_ms": 1296.377,
+          "input_tokens": 118,
+          "output_tokens": 60,
+          "jev_calls": 0,
+          "candidate_cve_ids": [],
+          "selected_cve": ""
+        },
+        "vector_rag": {
+          "raw_answer": "CVE-2016-1000110",
+          "parsed_answer": "CVE-2016-1000110",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 2192.587,
+          "input_tokens": 853,
+          "output_tokens": 32,
+          "jev_calls": 0,
+          "candidate_cve_ids": [
+            "CVE-2016-1000110",
+            "CVE-2016-6286",
+            "CVE-2016-5388",
+            "CVE-2017-17562",
+            "CVE-2016-1000108"
+          ],
+          "selected_cve": ""
+        },
+        "hybrid_rag": {
+          "raw_answer": "CVE-2016-1000110",
+          "parsed_answer": "CVE-2016-1000110",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 2430.124,
+          "input_tokens": 787,
+          "output_tokens": 39,
+          "jev_calls": 0,
+          "candidate_cve_ids": [
+            "CVE-2016-1000110",
+            "CVE-2017-17562",
+            "CVE-2016-5387",
+            "CVE-2019-0752",
+            "CVE-2016-6286"
+          ],
+          "selected_cve": ""
+        },
+        "hybrid_jev": {
+          "raw_answer": "CVE-2016-1000110",
+          "parsed_answer": "CVE-2016-1000110",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 956.781,
+          "input_tokens": "unknown",
+          "output_tokens": "unknown",
+          "jev_calls": 1,
+          "candidate_cve_ids": [
+            "CVE-2016-1000110",
+            "CVE-2017-17562",
+            "CVE-2016-5387",
+            "CVE-2019-0752",
+            "CVE-2016-6286"
+          ],
+          "selected_cve": "CVE-2016-1000110"
+        },
+        "jev_retrieval": {
+          "raw_answer": "CVE-2016-1000110",
+          "parsed_answer": "CVE-2016-1000110",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 949.629,
+          "input_tokens": "unknown",
+          "output_tokens": "unknown",
+          "jev_calls": 1,
+          "candidate_cve_ids": [
+            "CVE-2016-1000110",
+            "CVE-2023-51449",
+            "CVE-2025-2945",
+            "CVE-2025-1550",
+            "CVE-2026-39987",
+            "CVE-2024-23334",
+            "CVE-2023-37941",
+            "CVE-2025-24016",
+            "CVE-2026-33017",
+            "CVE-2024-47177",
+            "CVE-2020-11651",
+            "CVE-2020-11652",
+            "CVE-2017-17562",
+            "CVE-2022-23748",
+            "CVE-2025-66478"
+          ],
+          "selected_cve": "CVE-2016-1000110"
+        }
+      }
+    },
+    {
+      "question_id": "Q-0106",
+      "question": "For a phpmailer project phpmailer assessment involving mailSend function isMail transport PHPMailer, give the CVE.",
+      "gold_cve": "CVE-2016-10033",
+      "arms": {
+        "llm_only": {
+          "raw_answer": "CVE-2016-10033",
+          "parsed_answer": "CVE-2016-10033",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 944.381,
+          "input_tokens": 124,
+          "output_tokens": 63,
+          "jev_calls": 0,
+          "candidate_cve_ids": [],
+          "selected_cve": ""
+        },
+        "vector_rag": {
+          "raw_answer": "CVE-2016-10033",
+          "parsed_answer": "CVE-2016-10033",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 2876.454,
+          "input_tokens": 648,
+          "output_tokens": 78,
+          "jev_calls": 0,
+          "candidate_cve_ids": [
+            "CVE-2016-10033",
+            "CVE-2017-5223",
+            "CVE-2021-33766",
+            "CVE-2024-42323"
+          ],
+          "selected_cve": ""
+        },
+        "hybrid_rag": {
+          "raw_answer": "CVE-2016-10033",
+          "parsed_answer": "CVE-2016-10033",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 2022.307,
+          "input_tokens": 789,
+          "output_tokens": 75,
+          "jev_calls": 0,
+          "candidate_cve_ids": [
+            "CVE-2016-10033",
+            "CVE-2017-5223",
+            "CVE-2018-19518"
+          ],
+          "selected_cve": ""
+        },
+        "hybrid_jev": {
+          "raw_answer": "CVE-2016-10033",
+          "parsed_answer": "CVE-2016-10033",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 679.682,
+          "input_tokens": "unknown",
+          "output_tokens": "unknown",
+          "jev_calls": 1,
+          "candidate_cve_ids": [
+            "CVE-2016-10033",
+            "CVE-2017-5223",
+            "CVE-2018-19518"
+          ],
+          "selected_cve": "CVE-2016-10033"
+        },
+        "jev_retrieval": {
+          "raw_answer": "CVE-2016-10033",
+          "parsed_answer": "CVE-2016-10033",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 901.116,
+          "input_tokens": "unknown",
+          "output_tokens": "unknown",
+          "jev_calls": 1,
+          "candidate_cve_ids": [
+            "CVE-2016-10033",
+            "CVE-2017-5223",
+            "CVE-2017-0037",
+            "CVE-2024-47177",
+            "CVE-2017-12635",
+            "CVE-2022-24816",
+            "CVE-2018-8715",
+            "CVE-2022-46169",
+            "CVE-2019-16928",
+            "CVE-2024-1086"
+          ],
+          "selected_cve": "CVE-2016-10033"
+        }
+      }
+    },
+    {
+      "question_id": "Q-0107",
+      "question": "Match zabbix zabbix to the CVE for the behavior SQL injection vulnerability Zabbix before.",
+      "gold_cve": "CVE-2016-10134",
+      "arms": {
+        "llm_only": {
+          "raw_answer": "CVE-2020-11800",
+          "parsed_answer": "CVE-2020-11800",
+          "valid": true,
+          "correct": false,
+          "error": "",
+          "latency_ms": 2257.257,
+          "input_tokens": 121,
+          "output_tokens": 73,
+          "jev_calls": 0,
+          "candidate_cve_ids": [],
+          "selected_cve": ""
+        },
+        "vector_rag": {
+          "raw_answer": "CVE-2016-10134",
+          "parsed_answer": "CVE-2016-10134",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 1049.525,
+          "input_tokens": 626,
+          "output_tokens": 44,
+          "jev_calls": 0,
+          "candidate_cve_ids": [
+            "CVE-2016-10134",
+            "CVE-2024-22120",
+            "CVE-2020-11800"
+          ],
+          "selected_cve": ""
+        },
+        "hybrid_rag": {
+          "raw_answer": "CVE-2016-10134",
+          "parsed_answer": "CVE-2016-10134",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 2573.295,
+          "input_tokens": 631,
+          "output_tokens": 47,
+          "jev_calls": 0,
+          "candidate_cve_ids": [
+            "CVE-2016-10134",
+            "CVE-2024-22120",
+            "CVE-2017-2824"
+          ],
+          "selected_cve": ""
+        },
+        "hybrid_jev": {
+          "raw_answer": "CVE-2016-10134",
+          "parsed_answer": "CVE-2016-10134",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 786.535,
+          "input_tokens": "unknown",
+          "output_tokens": "unknown",
+          "jev_calls": 1,
+          "candidate_cve_ids": [
+            "CVE-2016-10134",
+            "CVE-2024-22120",
+            "CVE-2017-2824"
+          ],
+          "selected_cve": "CVE-2016-10134"
+        },
+        "jev_retrieval": {
+          "raw_answer": "CVE-2016-10134",
+          "parsed_answer": "CVE-2016-10134",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 984.452,
+          "input_tokens": "unknown",
+          "output_tokens": "unknown",
+          "jev_calls": 1,
+          "candidate_cve_ids": [
+            "CVE-2016-10134",
+            "CVE-2017-2824",
+            "CVE-2024-22120",
+            "CVE-2022-23131",
+            "CVE-2020-11800",
+            "CVE-2022-23134",
+            "CVE-2021-42258",
+            "CVE-2024-9379",
+            "CVE-2024-6670",
+            "CVE-2020-29574",
+            "CVE-2024-9264",
+            "CVE-2026-63030",
+            "CVE-2016-2386"
+          ],
+          "selected_cve": "CVE-2016-10134"
+        }
+      }
+    },
+    {
+      "question_id": "Q-0109",
+      "question": "Which vulnerability record for adobe flash player reports Adobe Flash Player 21 0?",
+      "gold_cve": "CVE-2016-1019",
+      "arms": {
+        "llm_only": {
+          "raw_answer": "CVE-2016-7865",
+          "parsed_answer": "CVE-2016-7865",
+          "valid": true,
+          "correct": false,
+          "error": "",
+          "latency_ms": 775.84,
+          "input_tokens": 115,
+          "output_tokens": 89,
+          "jev_calls": 0,
+          "candidate_cve_ids": [],
+          "selected_cve": ""
+        },
+        "vector_rag": {
+          "raw_answer": "CVE-2016-1019",
+          "parsed_answer": "CVE-2016-1019",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 2721.196,
+          "input_tokens": 712,
+          "output_tokens": 55,
+          "jev_calls": 0,
+          "candidate_cve_ids": [
+            "CVE-2016-1019",
+            "CVE-2016-0984",
+            "CVE-2016-4171",
+            "CVE-2016-7892",
+            "CVE-2018-5002"
+          ],
+          "selected_cve": ""
+        },
+        "hybrid_rag": {
+          "raw_answer": "CVE-2016-1019",
+          "parsed_answer": "CVE-2016-1019",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 2609.74,
+          "input_tokens": 712,
+          "output_tokens": 53,
+          "jev_calls": 0,
+          "candidate_cve_ids": [
+            "CVE-2016-1019",
+            "CVE-2016-4171",
+            "CVE-2016-0984",
+            "CVE-2018-5002",
+            "CVE-2016-7892"
+          ],
+          "selected_cve": ""
+        },
+        "hybrid_jev": {
+          "raw_answer": "CVE-2016-1019",
+          "parsed_answer": "CVE-2016-1019",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 693.988,
+          "input_tokens": "unknown",
+          "output_tokens": "unknown",
+          "jev_calls": 1,
+          "candidate_cve_ids": [
+            "CVE-2016-1019",
+            "CVE-2016-4171",
+            "CVE-2016-0984",
+            "CVE-2018-5002",
+            "CVE-2016-7892"
+          ],
+          "selected_cve": "CVE-2016-1019"
+        },
+        "jev_retrieval": {
+          "raw_answer": "CVE-2016-4171",
+          "parsed_answer": "CVE-2016-4171",
+          "valid": true,
+          "correct": false,
+          "error": "",
+          "latency_ms": 861.594,
+          "input_tokens": "unknown",
+          "output_tokens": "unknown",
+          "jev_calls": 1,
+          "candidate_cve_ids": [
+            "CVE-2016-4171",
+            "CVE-2016-1019",
+            "CVE-2018-5002",
+            "CVE-2016-7892",
+            "CVE-2016-0984",
+            "CVE-2020-0938",
+            "CVE-2020-1020",
+            "CVE-2026-96652",
+            "CVE-2018-15961",
+            "CVE-2023-29300",
+            "CVE-2018-4939",
+            "CVE-2020-9715"
+          ],
+          "selected_cve": "CVE-2016-4171"
+        }
+      }
+    },
+    {
+      "question_id": "Q-0110",
+      "question": "What CVE is indicated by the google chrome behavior described as Array prototype concat implementation builtins?",
+      "gold_cve": "CVE-2016-1646",
+      "arms": {
+        "llm_only": {
+          "raw_answer": "CVE\u20112023\u20114863",
+          "parsed_answer": "",
+          "valid": false,
+          "correct": false,
+          "error": "",
+          "latency_ms": 1113.91,
+          "input_tokens": 118,
+          "output_tokens": 128,
+          "jev_calls": 0,
+          "candidate_cve_ids": [],
+          "selected_cve": ""
+        },
+        "vector_rag": {
+          "raw_answer": "CVE-2016-1646",
+          "parsed_answer": "CVE-2016-1646",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 2407.552,
+          "input_tokens": 614,
+          "output_tokens": 42,
+          "jev_calls": 0,
+          "candidate_cve_ids": [
+            "CVE-2016-1646",
+            "CVE-2018-17480",
+            "CVE-2021-37976",
+            "CVE-2026-3910",
+            "CVE-2024-5274"
+          ],
+          "selected_cve": ""
+        },
+        "hybrid_rag": {
+          "raw_answer": "CVE-2016-1646",
+          "parsed_answer": "CVE-2016-1646",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 2558.391,
+          "input_tokens": 612,
+          "output_tokens": 35,
+          "jev_calls": 0,
+          "candidate_cve_ids": [
+            "CVE-2016-1646",
+            "CVE-2021-37976",
+            "CVE-2018-17480",
+            "CVE-2026-3910",
+            "CVE-2026-85046"
+          ],
+          "selected_cve": ""
+        },
+        "hybrid_jev": {
+          "raw_answer": "CVE-2016-1646",
+          "parsed_answer": "CVE-2016-1646",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 716.528,
+          "input_tokens": "unknown",
+          "output_tokens": "unknown",
+          "jev_calls": 1,
+          "candidate_cve_ids": [
+            "CVE-2016-1646",
+            "CVE-2021-37976",
+            "CVE-2018-17480",
+            "CVE-2026-3910",
+            "CVE-2026-85046"
+          ],
+          "selected_cve": "CVE-2016-1646"
+        },
+        "jev_retrieval": {
+          "raw_answer": "CVE-2016-1646",
+          "parsed_answer": "CVE-2016-1646",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 1039.885,
+          "input_tokens": "unknown",
+          "output_tokens": "unknown",
+          "jev_calls": 1,
+          "candidate_cve_ids": [
+            "CVE-2016-1646",
+            "CVE-2026-9991",
+            "CVE-2021-37976",
+            "CVE-2026-9989",
+            "CVE-2018-17480",
+            "CVE-2026-3910",
+            "CVE-2021-28169",
+            "CVE-2026-34621",
+            "CVE-2025-66644",
+            "CVE-2023-28461",
+            "CVE-2022-4223",
+            "CVE-2016-1897",
+            "CVE-2026-85046",
+            "CVE-2021-37973",
+            "CVE-2026-87491",
+            "CVE-2020-16017",
+            "CVE-2020-16010",
+            "CVE-2021-30633",
+            "CVE-2023-2136"
+          ],
+          "selected_cve": "CVE-2016-1646"
+        }
+      }
+    },
+    {
+      "question_id": "Q-0111",
+      "question": "A security issue in ffmpeg ffmpeg lets an attacker FFmpeg 2 x allows remote; identify the CVE.",
+      "gold_cve": "CVE-2016-1897",
+      "arms": {
+        "llm_only": {
+          "raw_answer": "CVE-2022-36117",
+          "parsed_answer": "CVE-2022-36117",
+          "valid": true,
+          "correct": false,
+          "error": "",
+          "latency_ms": 1126.32,
+          "input_tokens": 123,
+          "output_tokens": 85,
+          "jev_calls": 0,
+          "candidate_cve_ids": [],
+          "selected_cve": ""
+        },
+        "vector_rag": {
+          "raw_answer": "CVE-2016-1898",
+          "parsed_answer": "CVE-2016-1898",
+          "valid": true,
+          "correct": false,
+          "error": "",
+          "latency_ms": 2400.282,
+          "input_tokens": 750,
+          "output_tokens": 99,
+          "jev_calls": 0,
+          "candidate_cve_ids": [
+            "CVE-2016-1898",
+            "CVE-2016-1897",
+            "CVE-2017-9993",
+            "CVE-2020-1040"
+          ],
+          "selected_cve": ""
+        },
+        "hybrid_rag": {
+          "raw_answer": "CVE-2016-1897",
+          "parsed_answer": "CVE-2016-1897",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 2898.523,
+          "input_tokens": 706,
+          "output_tokens": 61,
+          "jev_calls": 0,
+          "candidate_cve_ids": [
+            "CVE-2016-1897",
+            "CVE-2016-1898",
+            "CVE-2017-9993",
+            "CVE-2019-1367",
+            "CVE-2019-0752"
+          ],
+          "selected_cve": ""
+        },
+        "hybrid_jev": {
+          "raw_answer": "CVE-2016-1897",
+          "parsed_answer": "CVE-2016-1897",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 818.696,
+          "input_tokens": "unknown",
+          "output_tokens": "unknown",
+          "jev_calls": 1,
+          "candidate_cve_ids": [
+            "CVE-2016-1897",
+            "CVE-2016-1898",
+            "CVE-2017-9993",
+            "CVE-2019-1367",
+            "CVE-2019-0752"
+          ],
+          "selected_cve": "CVE-2016-1897"
+        },
+        "jev_retrieval": {
+          "raw_answer": "CVE-2016-1897",
+          "parsed_answer": "CVE-2016-1897",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 986.533,
+          "input_tokens": "unknown",
+          "output_tokens": "unknown",
+          "jev_calls": 1,
+          "candidate_cve_ids": [
+            "CVE-2016-1897",
+            "CVE-2016-1898",
+            "CVE-2017-9993",
+            "CVE-2021-20021",
+            "CVE-2017-9791",
+            "CVE-2016-5388",
+            "CVE-2021-20023",
+            "CVE-2020-35730",
+            "CVE-2017-16651",
+            "CVE-2017-5638",
+            "CVE-2016-5195",
+            "CVE-2016-5387",
+            "CVE-2020-12641",
+            "CVE-2016-6415",
+            "CVE-2021-30869",
+            "CVE-2023-35081"
+          ],
+          "selected_cve": "CVE-2016-1897"
+        }
+      }
+    },
+    {
+      "question_id": "Q-0112",
+      "question": "Using the ffmpeg ffmpeg description, which CVE covers FFmpeg 2 x allows remote?",
+      "gold_cve": "CVE-2016-1898",
+      "arms": {
+        "llm_only": {
+          "raw_answer": "CVE-2015-7979",
+          "parsed_answer": "CVE-2015-7979",
+          "valid": true,
+          "correct": false,
+          "error": "",
+          "latency_ms": 909.333,
+          "input_tokens": 119,
+          "output_tokens": 79,
+          "jev_calls": 0,
+          "candidate_cve_ids": [],
+          "selected_cve": ""
+        },
+        "vector_rag": {
+          "raw_answer": "CVE-2016-1898",
+          "parsed_answer": "CVE-2016-1898",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 2548.634,
+          "input_tokens": 743,
+          "output_tokens": 51,
+          "jev_calls": 0,
+          "candidate_cve_ids": [
+            "CVE-2016-1898",
+            "CVE-2016-1897",
+            "CVE-2017-9993",
+            "CVE-2020-1040"
+          ],
+          "selected_cve": ""
+        },
+        "hybrid_rag": {
+          "raw_answer": "CVE-2016-1897",
+          "parsed_answer": "CVE-2016-1897",
+          "valid": true,
+          "correct": false,
+          "error": "",
+          "latency_ms": 2237.659,
+          "input_tokens": 809,
+          "output_tokens": 54,
+          "jev_calls": 0,
+          "candidate_cve_ids": [
+            "CVE-2016-1897",
+            "CVE-2016-1898",
+            "CVE-2017-9993"
+          ],
+          "selected_cve": ""
+        },
+        "hybrid_jev": {
+          "raw_answer": "CVE-2016-1897",
+          "parsed_answer": "CVE-2016-1897",
+          "valid": true,
+          "correct": false,
+          "error": "",
+          "latency_ms": 870.238,
+          "input_tokens": "unknown",
+          "output_tokens": "unknown",
+          "jev_calls": 1,
+          "candidate_cve_ids": [
+            "CVE-2016-1897",
+            "CVE-2016-1898",
+            "CVE-2017-9993"
+          ],
+          "selected_cve": "CVE-2016-1897"
+        },
+        "jev_retrieval": {
+          "raw_answer": "CVE-2016-1897",
+          "parsed_answer": "CVE-2016-1897",
+          "valid": true,
+          "correct": false,
+          "error": "",
+          "latency_ms": 803.899,
+          "input_tokens": "unknown",
+          "output_tokens": "unknown",
+          "jev_calls": 1,
+          "candidate_cve_ids": [
+            "CVE-2016-1897",
+            "CVE-2016-1898",
+            "CVE-2017-9993",
+            "CVE-2017-5638",
+            "CVE-2026-60137",
+            "CVE-2017-9805",
+            "CVE-2020-5410",
+            "CVE-2024-47177",
+            "CVE-2017-7504",
+            "CVE-2016-5388",
+            "CVE-2017-5645",
+            "CVE-2006-3392",
+            "CVE-2016-4977",
+            "CVE-2010-1586",
+            "CVE-2021-22986"
+          ],
+          "selected_cve": "CVE-2016-1897"
+        }
+      }
+    },
+    {
+      "question_id": "Q-0115",
+      "question": "Which CVE should a reviewer associate with apache struts and Apache Struts 2 3 19?",
+      "gold_cve": "CVE-2016-3081",
+      "arms": {
+        "llm_only": {
+          "raw_answer": "CVE-2017-5638",
+          "parsed_answer": "CVE-2017-5638",
+          "valid": true,
+          "correct": false,
+          "error": "",
+          "latency_ms": 1138.146,
+          "input_tokens": 121,
+          "output_tokens": 72,
+          "jev_calls": 0,
+          "candidate_cve_ids": [],
+          "selected_cve": ""
+        },
+        "vector_rag": {
+          "raw_answer": "CVE-2016-3081",
+          "parsed_answer": "CVE-2016-3081",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 2625.731,
+          "input_tokens": 734,
+          "output_tokens": 42,
+          "jev_calls": 0,
+          "candidate_cve_ids": [
+            "CVE-2016-3081",
+            "CVE-2017-9791"
+          ],
+          "selected_cve": ""
+        },
+        "hybrid_rag": {
+          "raw_answer": "CVE-2016-3081",
+          "parsed_answer": "CVE-2016-3081",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 2530.56,
+          "input_tokens": 758,
+          "output_tokens": 47,
+          "jev_calls": 0,
+          "candidate_cve_ids": [
+            "CVE-2016-3081",
+            "CVE-2017-9791"
+          ],
+          "selected_cve": ""
+        },
+        "hybrid_jev": {
+          "raw_answer": "CVE-2016-3081",
+          "parsed_answer": "CVE-2016-3081",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 795.289,
+          "input_tokens": "unknown",
+          "output_tokens": "unknown",
+          "jev_calls": 1,
+          "candidate_cve_ids": [
+            "CVE-2016-3081",
+            "CVE-2017-9791"
+          ],
+          "selected_cve": "CVE-2016-3081"
+        },
+        "jev_retrieval": {
+          "raw_answer": "CVE-2016-3081",
+          "parsed_answer": "CVE-2016-3081",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 788.203,
+          "input_tokens": "unknown",
+          "output_tokens": "unknown",
+          "jev_calls": 1,
+          "candidate_cve_ids": [
+            "CVE-2017-9791",
+            "CVE-2016-3081",
+            "CVE-2017-12611",
+            "CVE-2024-53677",
+            "CVE-2017-5638",
+            "CVE-2017-9805",
+            "CVE-2020-17530",
+            "CVE-2023-50164",
+            "CVE-2018-11776",
+            "CVE-2019-0230",
+            "CVE-2026-34197"
+          ],
+          "selected_cve": "CVE-2016-3081"
+        }
+      }
+    },
+    {
+      "question_id": "Q-0116",
+      "question": "Report the CVE linked to apache activemq when the behavior is Fileserver web application Apache ActiveMQ.",
+      "gold_cve": "CVE-2016-3088",
+      "arms": {
+        "llm_only": {
+          "raw_answer": "CVE-2020-11996",
+          "parsed_answer": "CVE-2020-11996",
+          "valid": true,
+          "correct": false,
+          "error": "",
+          "latency_ms": 1177.771,
+          "input_tokens": 120,
+          "output_tokens": 108,
+          "jev_calls": 0,
+          "candidate_cve_ids": [],
+          "selected_cve": ""
+        },
+        "vector_rag": {
+          "raw_answer": "CVE-2016-3088",
+          "parsed_answer": "CVE-2016-3088",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 2312.1,
+          "input_tokens": 852,
+          "output_tokens": 41,
+          "jev_calls": 0,
+          "candidate_cve_ids": [
+            "CVE-2016-3088",
+            "CVE-2026-34197"
+          ],
+          "selected_cve": ""
+        },
+        "hybrid_rag": {
+          "raw_answer": "CVE-2016-3088",
+          "parsed_answer": "CVE-2016-3088",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 5042.727,
+          "input_tokens": 988,
+          "output_tokens": 37,
+          "jev_calls": 0,
+          "candidate_cve_ids": [
+            "CVE-2016-3088",
+            "CVE-2026-34197"
+          ],
+          "selected_cve": ""
+        },
+        "hybrid_jev": {
+          "raw_answer": "CVE-2016-3088",
+          "parsed_answer": "CVE-2016-3088",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 1443.59,
+          "input_tokens": "unknown",
+          "output_tokens": "unknown",
+          "jev_calls": 1,
+          "candidate_cve_ids": [
+            "CVE-2016-3088",
+            "CVE-2026-34197"
+          ],
+          "selected_cve": "CVE-2016-3088"
+        },
+        "jev_retrieval": {
+          "raw_answer": "CVE-2016-3088",
+          "parsed_answer": "CVE-2016-3088",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 944.851,
+          "input_tokens": "unknown",
+          "output_tokens": "unknown",
+          "jev_calls": 1,
+          "candidate_cve_ids": [
+            "CVE-2016-3088",
+            "CVE-2026-34197",
+            "CVE-2024-32114",
+            "CVE-2015-5254",
+            "CVE-2020-1938",
+            "CVE-2022-41678",
+            "CVE-2019-0604",
+            "CVE-2016-5388",
+            "CVE-2016-5387",
+            "CVE-2017-5645"
+          ],
+          "selected_cve": "CVE-2016-3088"
+        }
+      }
+    },
+    {
+      "question_id": "Q-0118",
+      "question": "In a microsoft internet explorer finding, what CVE is tied to Microsoft Internet Explorer 9 through?",
+      "gold_cve": "CVE-2016-3298",
+      "arms": {
+        "llm_only": {
+          "raw_answer": "CVE-2015-0095",
+          "parsed_answer": "CVE-2015-0095",
+          "valid": true,
+          "correct": false,
+          "error": "",
+          "latency_ms": 797.708,
+          "input_tokens": 119,
+          "output_tokens": 91,
+          "jev_calls": 0,
+          "candidate_cve_ids": [],
+          "selected_cve": ""
+        },
+        "vector_rag": {
+          "raw_answer": "CVE-2016-3351",
+          "parsed_answer": "CVE-2016-3351",
+          "valid": true,
+          "correct": false,
+          "error": "",
+          "latency_ms": 2415.421,
+          "input_tokens": 749,
+          "output_tokens": 41,
+          "jev_calls": 0,
+          "candidate_cve_ids": [
+            "CVE-2016-3351",
+            "CVE-2017-0149",
+            "CVE-2016-3298",
+            "CVE-2018-8373",
+            "CVE-2016-0189"
+          ],
+          "selected_cve": ""
+        },
+        "hybrid_rag": {
+          "raw_answer": "CVE-2017-0149",
+          "parsed_answer": "CVE-2017-0149",
+          "valid": true,
+          "correct": false,
+          "error": "",
+          "latency_ms": 2389.516,
+          "input_tokens": 749,
+          "output_tokens": 37,
+          "jev_calls": 0,
+          "candidate_cve_ids": [
+            "CVE-2017-0149",
+            "CVE-2016-3351",
+            "CVE-2018-8373",
+            "CVE-2016-3298",
+            "CVE-2016-0189"
+          ],
+          "selected_cve": ""
+        },
+        "hybrid_jev": {
+          "raw_answer": "CVE-2017-0149",
+          "parsed_answer": "CVE-2017-0149",
+          "valid": true,
+          "correct": false,
+          "error": "",
+          "latency_ms": 803.364,
+          "input_tokens": "unknown",
+          "output_tokens": "unknown",
+          "jev_calls": 1,
+          "candidate_cve_ids": [
+            "CVE-2017-0149",
+            "CVE-2016-3351",
+            "CVE-2018-8373",
+            "CVE-2016-3298",
+            "CVE-2016-0189"
+          ],
+          "selected_cve": "CVE-2017-0149"
+        },
+        "jev_retrieval": {
+          "raw_answer": "CVE-2017-0149",
+          "parsed_answer": "CVE-2017-0149",
+          "valid": true,
+          "correct": false,
+          "error": "",
+          "latency_ms": 1237.312,
+          "input_tokens": "unknown",
+          "output_tokens": "unknown",
+          "jev_calls": 1,
+          "candidate_cve_ids": [
+            "CVE-2017-0149",
+            "CVE-2018-8373",
+            "CVE-2016-3298",
+            "CVE-2016-3351",
+            "CVE-2017-0037",
+            "CVE-2016-0189",
+            "CVE-2019-1367",
+            "CVE-2019-0752",
+            "CVE-2021-27085",
+            "CVE-2017-0210",
+            "CVE-2020-1380",
+            "CVE-2018-0802",
+            "CVE-2017-7269",
+            "CVE-2017-8570",
+            "CVE-2025-53770",
+            "CVE-2019-0604",
+            "CVE-2017-11882",
+            "CVE-2025-33053"
+          ],
+          "selected_cve": "CVE-2017-0149"
+        }
+      }
+    },
+    {
+      "question_id": "Q-0120",
+      "question": "Reviewing oracle jrockit, which vulnerability is represented by Unspecified vulnerability Oracle Java SE?",
+      "gold_cve": "CVE-2016-3427",
+      "arms": {
+        "llm_only": {
+          "raw_answer": "CVE-2020-14750",
+          "parsed_answer": "CVE-2020-14750",
+          "valid": true,
+          "correct": false,
+          "error": "",
+          "latency_ms": 1165.148,
+          "input_tokens": 118,
+          "output_tokens": 58,
+          "jev_calls": 0,
+          "candidate_cve_ids": [],
+          "selected_cve": ""
+        },
+        "vector_rag": {
+          "raw_answer": "CVE-2016-3427",
+          "parsed_answer": "CVE-2016-3427",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 2396.012,
+          "input_tokens": 666,
+          "output_tokens": 39,
+          "jev_calls": 0,
+          "candidate_cve_ids": [
+            "CVE-2016-3427",
+            "CVE-2010-1340",
+            "CVE-2017-1000028",
+            "CVE-2023-4450"
+          ],
+          "selected_cve": ""
+        },
+        "hybrid_rag": {
+          "raw_answer": "CVE-2016-3427",
+          "parsed_answer": "CVE-2016-3427",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 2554.977,
+          "input_tokens": 846,
+          "output_tokens": 40,
+          "jev_calls": 0,
+          "candidate_cve_ids": [
+            "CVE-2016-3427",
+            "CVE-2017-1000028",
+            "CVE-2022-21445",
+            "CVE-2025-61884"
+          ],
+          "selected_cve": ""
+        },
+        "hybrid_jev": {
+          "raw_answer": "CVE-2016-3427",
+          "parsed_answer": "CVE-2016-3427",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 799.093,
+          "input_tokens": "unknown",
+          "output_tokens": "unknown",
+          "jev_calls": 1,
+          "candidate_cve_ids": [
+            "CVE-2016-3427",
+            "CVE-2017-1000028",
+            "CVE-2022-21445",
+            "CVE-2025-61884"
+          ],
+          "selected_cve": "CVE-2016-3427"
+        },
+        "jev_retrieval": {
+          "raw_answer": "CVE-2016-3427",
+          "parsed_answer": "CVE-2016-3427",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 1151.088,
+          "input_tokens": "unknown",
+          "output_tokens": "unknown",
+          "jev_calls": 1,
+          "candidate_cve_ids": [
+            "CVE-2016-3427",
+            "CVE-2019-3010",
+            "CVE-2022-21445",
+            "CVE-2024-20953",
+            "CVE-2020-14871",
+            "CVE-2024-21287",
+            "CVE-2025-61884",
+            "CVE-2019-2725",
+            "CVE-2018-2894",
+            "CVE-2020-14644",
+            "CVE-2017-10271",
+            "CVE-2018-2628"
+          ],
+          "selected_cve": "CVE-2016-3427"
+        }
+      }
+    },
+    {
+      "question_id": "Q-0121",
+      "question": "For the affected imagemagick imagemagick, identify the CVE involving 1 EPHEMERAL 2 HTTPS 3.",
+      "gold_cve": "CVE-2016-3714",
+      "arms": {
+        "llm_only": {
+          "raw_answer": "CVE-2023-25153",
+          "parsed_answer": "CVE-2023-25153",
+          "valid": true,
+          "correct": false,
+          "error": "",
+          "latency_ms": 1254.789,
+          "input_tokens": 126,
+          "output_tokens": 136,
+          "jev_calls": 0,
+          "candidate_cve_ids": [],
+          "selected_cve": ""
+        },
+        "vector_rag": {
+          "raw_answer": "CVE-2016-3714",
+          "parsed_answer": "CVE-2016-3714",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 2137.261,
+          "input_tokens": 700,
+          "output_tokens": 43,
+          "jev_calls": 0,
+          "candidate_cve_ids": [
+            "CVE-2016-3715",
+            "CVE-2016-3714",
+            "CVE-2022-44268",
+            "CVE-2020-29599",
+            "CVE-2021-38647"
+          ],
+          "selected_cve": ""
+        },
+        "hybrid_rag": {
+          "raw_answer": "CVE-2016-3714",
+          "parsed_answer": "CVE-2016-3714",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 2586.357,
+          "input_tokens": 917,
+          "output_tokens": 45,
+          "jev_calls": 0,
+          "candidate_cve_ids": [
+            "CVE-2016-3714",
+            "CVE-2016-3715",
+            "CVE-2022-44268",
+            "CVE-2020-29599",
+            "CVE-2024-47177"
+          ],
+          "selected_cve": ""
+        },
+        "hybrid_jev": {
+          "raw_answer": "CVE-2016-3714",
+          "parsed_answer": "CVE-2016-3714",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 1690.013,
+          "input_tokens": "unknown",
+          "output_tokens": "unknown",
+          "jev_calls": 1,
+          "candidate_cve_ids": [
+            "CVE-2016-3714",
+            "CVE-2016-3715",
+            "CVE-2022-44268",
+            "CVE-2020-29599",
+            "CVE-2024-47177"
+          ],
+          "selected_cve": "CVE-2016-3714"
+        },
+        "jev_retrieval": {
+          "raw_answer": "CVE-2016-3714",
+          "parsed_answer": "CVE-2016-3714",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 946.445,
+          "input_tokens": "unknown",
+          "output_tokens": "unknown",
+          "jev_calls": 1,
+          "candidate_cve_ids": [
+            "CVE-2016-3714",
+            "CVE-2016-3715",
+            "CVE-2022-44268",
+            "CVE-2020-29599",
+            "CVE-2023-27987",
+            "CVE-2026-105134",
+            "CVE-2018-15685",
+            "CVE-2024-23692",
+            "CVE-2024-47177",
+            "CVE-2020-1631",
+            "CVE-2017-6736",
+            "CVE-2017-6738",
+            "CVE-2017-6740",
+            "CVE-2017-6743",
+            "CVE-2017-6744",
+            "CVE-2023-29215",
+            "CVE-2017-11882"
+          ],
+          "selected_cve": "CVE-2016-3714"
+        }
+      }
+    },
+    {
+      "question_id": "Q-0122",
+      "question": "Which CVE entry describes imagemagick imagemagick with behavior EPHEMERAL coder ImageMagick before 6?",
+      "gold_cve": "CVE-2016-3715",
+      "arms": {
+        "llm_only": {
+          "raw_answer": "CVE-2016-3714",
+          "parsed_answer": "CVE-2016-3714",
+          "valid": true,
+          "correct": false,
+          "error": "",
+          "latency_ms": 719.438,
+          "input_tokens": 124,
+          "output_tokens": 65,
+          "jev_calls": 0,
+          "candidate_cve_ids": [],
+          "selected_cve": ""
+        },
+        "vector_rag": {
+          "raw_answer": "CVE-2016-3715",
+          "parsed_answer": "CVE-2016-3715",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 2761.987,
+          "input_tokens": 794,
+          "output_tokens": 30,
+          "jev_calls": 0,
+          "candidate_cve_ids": [
+            "CVE-2016-3715",
+            "CVE-2016-3714",
+            "CVE-2020-29599",
+            "CVE-2022-44268",
+            "CVE-2024-56145"
+          ],
+          "selected_cve": ""
+        },
+        "hybrid_rag": {
+          "raw_answer": "CVE-2016-3715",
+          "parsed_answer": "CVE-2016-3715",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 2280.012,
+          "input_tokens": 725,
+          "output_tokens": 62,
+          "jev_calls": 0,
+          "candidate_cve_ids": [
+            "CVE-2016-3715",
+            "CVE-2016-3714",
+            "CVE-2020-29599",
+            "CVE-2022-44268",
+            "CVE-2019-6116"
+          ],
+          "selected_cve": ""
+        },
+        "hybrid_jev": {
+          "raw_answer": "CVE-2016-3715",
+          "parsed_answer": "CVE-2016-3715",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 783.563,
+          "input_tokens": "unknown",
+          "output_tokens": "unknown",
+          "jev_calls": 1,
+          "candidate_cve_ids": [
+            "CVE-2016-3715",
+            "CVE-2016-3714",
+            "CVE-2020-29599",
+            "CVE-2022-44268",
+            "CVE-2019-6116"
+          ],
+          "selected_cve": "CVE-2016-3715"
+        },
+        "jev_retrieval": {
+          "raw_answer": "CVE-2016-3715",
+          "parsed_answer": "CVE-2016-3715",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 1109.508,
+          "input_tokens": "unknown",
+          "output_tokens": "unknown",
+          "jev_calls": 1,
+          "candidate_cve_ids": [
+            "CVE-2016-3715",
+            "CVE-2016-3714",
+            "CVE-2020-29599",
+            "CVE-2022-44268",
+            "CVE-2023-43770",
+            "CVE-2023-5631",
+            "CVE-2019-6116",
+            "CVE-2021-40870",
+            "CVE-2026-60137",
+            "CVE-2026-63030",
+            "CVE-2024-47177",
+            "CVE-2022-46169",
+            "CVE-2021-21972",
+            "CVE-2019-3398"
+          ],
+          "selected_cve": "CVE-2016-3715"
+        }
+      }
+    },
+    {
+      "question_id": "Q-0124",
+      "question": "For adobe flash player, what CVE matches the security behavior involving Unspecified vulnerability Adobe Flash Player?",
+      "gold_cve": "CVE-2016-4171",
+      "arms": {
+        "llm_only": {
+          "raw_answer": "CVE-2020-8197",
+          "parsed_answer": "CVE-2020-8197",
+          "valid": true,
+          "correct": false,
+          "error": "",
+          "latency_ms": 1464.441,
+          "input_tokens": 119,
+          "output_tokens": 119,
+          "jev_calls": 0,
+          "candidate_cve_ids": [],
+          "selected_cve": ""
+        },
+        "vector_rag": {
+          "raw_answer": "CVE-2016-4171",
+          "parsed_answer": "CVE-2016-4171",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 2020.983,
+          "input_tokens": 716,
+          "output_tokens": 44,
+          "jev_calls": 0,
+          "candidate_cve_ids": [
+            "CVE-2016-4171",
+            "CVE-2016-1019",
+            "CVE-2016-0984",
+            "CVE-2018-5002",
+            "CVE-2016-7892"
+          ],
+          "selected_cve": ""
+        },
+        "hybrid_rag": {
+          "raw_answer": "CVE-2016-4171",
+          "parsed_answer": "CVE-2016-4171",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 2542.808,
+          "input_tokens": 716,
+          "output_tokens": 35,
+          "jev_calls": 0,
+          "candidate_cve_ids": [
+            "CVE-2016-4171",
+            "CVE-2016-1019",
+            "CVE-2018-5002",
+            "CVE-2016-0984",
+            "CVE-2016-7892"
+          ],
+          "selected_cve": ""
+        },
+        "hybrid_jev": {
+          "raw_answer": "CVE-2016-4171",
+          "parsed_answer": "CVE-2016-4171",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 789.837,
+          "input_tokens": "unknown",
+          "output_tokens": "unknown",
+          "jev_calls": 1,
+          "candidate_cve_ids": [
+            "CVE-2016-4171",
+            "CVE-2016-1019",
+            "CVE-2018-5002",
+            "CVE-2016-0984",
+            "CVE-2016-7892"
+          ],
+          "selected_cve": "CVE-2016-4171"
+        },
+        "jev_retrieval": {
+          "raw_answer": "CVE-2016-4171",
+          "parsed_answer": "CVE-2016-4171",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 913.493,
+          "input_tokens": "unknown",
+          "output_tokens": "unknown",
+          "jev_calls": 1,
+          "candidate_cve_ids": [
+            "CVE-2016-4171",
+            "CVE-2016-1019",
+            "CVE-2018-5002",
+            "CVE-2016-7892",
+            "CVE-2016-0984",
+            "CVE-2020-0938",
+            "CVE-2020-1020",
+            "CVE-2026-96652",
+            "CVE-2024-20359",
+            "CVE-2023-38205",
+            "CVE-2023-29298",
+            "CVE-2017-3066",
+            "CVE-2023-26360",
+            "CVE-2025-54253"
+          ],
+          "selected_cve": "CVE-2016-4171"
+        }
+      }
+    },
+    {
+      "question_id": "Q-0125",
+      "question": "Identify the apache shiro CVE associated with this behavior: Apache Shiro before 1 2.",
+      "gold_cve": "CVE-2016-4437",
+      "arms": {
+        "llm_only": {
+          "raw_answer": "CVE-2016-4437",
+          "parsed_answer": "CVE-2016-4437",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 1168.294,
+          "input_tokens": 120,
+          "output_tokens": 147,
+          "jev_calls": 0,
+          "candidate_cve_ids": [],
+          "selected_cve": ""
+        },
+        "vector_rag": {
+          "raw_answer": "CVE-2016-4437",
+          "parsed_answer": "CVE-2016-4437",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 2325.487,
+          "input_tokens": 1149,
+          "output_tokens": 48,
+          "jev_calls": 0,
+          "candidate_cve_ids": [
+            "CVE-2016-4437",
+            "CVE-2020-1957",
+            "CVE-2020-1631"
+          ],
+          "selected_cve": ""
+        },
+        "hybrid_rag": {
+          "raw_answer": "CVE-2016-4437",
+          "parsed_answer": "CVE-2016-4437",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 2404.515,
+          "input_tokens": 756,
+          "output_tokens": 47,
+          "jev_calls": 0,
+          "candidate_cve_ids": [
+            "CVE-2016-4437",
+            "CVE-2020-1957",
+            "CVE-2016-5387",
+            "CVE-2021-42013"
+          ],
+          "selected_cve": ""
+        },
+        "hybrid_jev": {
+          "raw_answer": "CVE-2016-4437",
+          "parsed_answer": "CVE-2016-4437",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 794.736,
+          "input_tokens": "unknown",
+          "output_tokens": "unknown",
+          "jev_calls": 1,
+          "candidate_cve_ids": [
+            "CVE-2016-4437",
+            "CVE-2020-1957",
+            "CVE-2016-5387",
+            "CVE-2021-42013"
+          ],
+          "selected_cve": "CVE-2016-4437"
+        },
+        "jev_retrieval": {
+          "raw_answer": "CVE-2016-4437",
+          "parsed_answer": "CVE-2016-4437",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 1654.988,
+          "input_tokens": "unknown",
+          "output_tokens": "unknown",
+          "jev_calls": 1,
+          "candidate_cve_ids": [
+            "CVE-2020-1957",
+            "CVE-2016-4437",
+            "CVE-2026-34197",
+            "CVE-2024-27348",
+            "CVE-2024-43441",
+            "CVE-2017-9805",
+            "CVE-2024-42323",
+            "CVE-2024-45195",
+            "CVE-2025-2945",
+            "CVE-2021-44228",
+            "CVE-2017-12636"
+          ],
+          "selected_cve": "CVE-2016-4437"
+        }
+      }
+    },
+    {
+      "question_id": "Q-0126",
+      "question": "What vulnerability identifier belongs to trihedral vtscada when WAP interface Trihedral VTScada formerly?",
+      "gold_cve": "CVE-2016-4523",
+      "arms": {
+        "llm_only": {
+          "raw_answer": "CVE-2020-13993",
+          "parsed_answer": "CVE-2020-13993",
+          "valid": true,
+          "correct": false,
+          "error": "",
+          "latency_ms": 900.332,
+          "input_tokens": 120,
+          "output_tokens": 58,
+          "jev_calls": 0,
+          "candidate_cve_ids": [],
+          "selected_cve": ""
+        },
+        "vector_rag": {
+          "raw_answer": "CVE-2016-4523",
+          "parsed_answer": "CVE-2016-4523",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 2567.23,
+          "input_tokens": 1270,
+          "output_tokens": 52,
+          "jev_calls": 0,
+          "candidate_cve_ids": [
+            "CVE-2016-4523",
+            "CVE-2026-33634",
+            "CVE-2017-10271",
+            "CVE-2018-2628",
+            "CVE-2018-2894"
+          ],
+          "selected_cve": ""
+        },
+        "hybrid_rag": {
+          "raw_answer": "CVE-2016-4523",
+          "parsed_answer": "CVE-2016-4523",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 2588.354,
+          "input_tokens": 1096,
+          "output_tokens": 43,
+          "jev_calls": 0,
+          "candidate_cve_ids": [
+            "CVE-2016-4523",
+            "CVE-2019-2616",
+            "CVE-2020-3580",
+            "CVE-2023-20118"
+          ],
+          "selected_cve": ""
+        },
+        "hybrid_jev": {
+          "raw_answer": "CVE-2016-4523",
+          "parsed_answer": "CVE-2016-4523",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 770.148,
+          "input_tokens": "unknown",
+          "output_tokens": "unknown",
+          "jev_calls": 1,
+          "candidate_cve_ids": [
+            "CVE-2016-4523",
+            "CVE-2019-2616",
+            "CVE-2020-3580",
+            "CVE-2023-20118"
+          ],
+          "selected_cve": "CVE-2016-4523"
+        },
+        "jev_retrieval": {
+          "raw_answer": "CVE-2016-4523",
+          "parsed_answer": "CVE-2016-4523",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 860.314,
+          "input_tokens": "unknown",
+          "output_tokens": "unknown",
+          "jev_calls": 1,
+          "candidate_cve_ids": [
+            "CVE-2016-4523",
+            "CVE-2019-2616",
+            "CVE-2022-23748",
+            "CVE-2009-0347",
+            "CVE-2026-20245",
+            "CVE-2024-3273",
+            "CVE-2023-4450",
+            "CVE-2020-3580",
+            "CVE-2022-4223",
+            "CVE-2020-8243"
+          ],
+          "selected_cve": "CVE-2016-4523"
+        }
+      }
+    },
+    {
+      "question_id": "Q-0129",
+      "question": "What CVE should be assigned to pivotal spring security oauth for the described case of When processing authorization requests using?",
+      "gold_cve": "CVE-2016-4977",
+      "arms": {
+        "llm_only": {
+          "raw_answer": "CVE-2021-22096",
+          "parsed_answer": "CVE-2021-22096",
+          "valid": true,
+          "correct": false,
+          "error": "",
+          "latency_ms": 1244.73,
+          "input_tokens": 121,
+          "output_tokens": 196,
+          "jev_calls": 0,
+          "candidate_cve_ids": [],
+          "selected_cve": ""
+        },
+        "vector_rag": {
+          "raw_answer": "CVE-2016-4977",
+          "parsed_answer": "CVE-2016-4977",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 4665.084,
+          "input_tokens": 878,
+          "output_tokens": 40,
+          "jev_calls": 0,
+          "candidate_cve_ids": [
+            "CVE-2017-4971",
+            "CVE-2016-4977",
+            "CVE-2018-1271"
+          ],
+          "selected_cve": ""
+        },
+        "hybrid_rag": {
+          "raw_answer": "CVE-2016-4977",
+          "parsed_answer": "CVE-2016-4977",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 2352.196,
+          "input_tokens": 850,
+          "output_tokens": 32,
+          "jev_calls": 0,
+          "candidate_cve_ids": [
+            "CVE-2016-4977",
+            "CVE-2017-4971",
+            "CVE-2022-22978"
+          ],
+          "selected_cve": ""
+        },
+        "hybrid_jev": {
+          "raw_answer": "CVE-2016-4977",
+          "parsed_answer": "CVE-2016-4977",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 679.675,
+          "input_tokens": "unknown",
+          "output_tokens": "unknown",
+          "jev_calls": 1,
+          "candidate_cve_ids": [
+            "CVE-2016-4977",
+            "CVE-2017-4971",
+            "CVE-2022-22978"
+          ],
+          "selected_cve": "CVE-2016-4977"
+        },
+        "jev_retrieval": {
+          "raw_answer": "CVE-2016-4977",
+          "parsed_answer": "CVE-2016-4977",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 912.474,
+          "input_tokens": "unknown",
+          "output_tokens": "unknown",
+          "jev_calls": 1,
+          "candidate_cve_ids": [
+            "CVE-2016-4977",
+            "CVE-2022-22978",
+            "CVE-2022-23748",
+            "CVE-2017-4971",
+            "CVE-2022-46169",
+            "CVE-2024-3273",
+            "CVE-2017-8046",
+            "CVE-2026-20230",
+            "CVE-2022-22965",
+            "CVE-2026-20349",
+            "CVE-2024-47177",
+            "CVE-2017-12635",
+            "CVE-2018-1271"
+          ],
+          "selected_cve": "CVE-2016-4977"
+        }
+      }
+    },
+    {
+      "question_id": "Q-0131",
+      "question": "Name the CVE for php php matching the reported behavior PHP through 7 0 8.",
+      "gold_cve": "CVE-2016-5385",
+      "arms": {
+        "llm_only": {
+          "raw_answer": "CVE-2019-11043",
+          "parsed_answer": "CVE-2019-11043",
+          "valid": true,
+          "correct": false,
+          "error": "",
+          "latency_ms": 957.396,
+          "input_tokens": 119,
+          "output_tokens": 71,
+          "jev_calls": 0,
+          "candidate_cve_ids": [],
+          "selected_cve": ""
+        },
+        "vector_rag": {
+          "raw_answer": "CVE-2019-11043",
+          "parsed_answer": "CVE-2019-11043",
+          "valid": true,
+          "correct": false,
+          "error": "",
+          "latency_ms": 3045.686,
+          "input_tokens": 1013,
+          "output_tokens": 111,
+          "jev_calls": 0,
+          "candidate_cve_ids": [
+            "CVE-2019-11043",
+            "CVE-2017-9841"
+          ],
+          "selected_cve": ""
+        },
+        "hybrid_rag": {
+          "raw_answer": "CVE-2026-109619",
+          "parsed_answer": "CVE-2026-109619",
+          "valid": true,
+          "correct": false,
+          "error": "",
+          "latency_ms": 3207.861,
+          "input_tokens": 1005,
+          "output_tokens": 58,
+          "jev_calls": 0,
+          "candidate_cve_ids": [
+            "CVE-2022-35914",
+            "CVE-2017-9841",
+            "CVE-2022-44877"
+          ],
+          "selected_cve": ""
+        },
+        "hybrid_jev": {
+          "raw_answer": "",
+          "parsed_answer": "",
+          "valid": false,
+          "correct": false,
+          "error": "",
+          "latency_ms": 948.418,
+          "input_tokens": "unknown",
+          "output_tokens": "unknown",
+          "jev_calls": 1,
+          "candidate_cve_ids": [
+            "CVE-2022-35914",
+            "CVE-2017-9841",
+            "CVE-2022-44877"
+          ],
+          "selected_cve": "CVE-2017-9841"
+        },
+        "jev_retrieval": {
+          "raw_answer": "CVE-2017-9841",
+          "parsed_answer": "CVE-2017-9841",
+          "valid": true,
+          "correct": false,
+          "error": "",
+          "latency_ms": 3859.479,
+          "input_tokens": "unknown",
+          "output_tokens": "unknown",
+          "jev_calls": 1,
+          "candidate_cve_ids": [
+            "CVE-2022-35914",
+            "CVE-2020-13671",
+            "CVE-2008-1061",
+            "CVE-2008-1059",
+            "CVE-2010-1302",
+            "CVE-2009-3053",
+            "CVE-2022-44877",
+            "CVE-2017-9841",
+            "CVE-2010-0696",
+            "CVE-2010-1602",
+            "CVE-2020-25213"
+          ],
+          "selected_cve": "CVE-2017-9841"
+        }
+      }
+    },
+    {
+      "question_id": "Q-0132",
+      "question": "Given golang go, select the CVE whose report indicates net http package Go through.",
+      "gold_cve": "CVE-2016-5386",
+      "arms": {
+        "llm_only": {
+          "raw_answer": "CVE-2021-33196",
+          "parsed_answer": "CVE-2021-33196",
+          "valid": true,
+          "correct": false,
+          "error": "",
+          "latency_ms": 1091.815,
+          "input_tokens": 117,
+          "output_tokens": 59,
+          "jev_calls": 0,
+          "candidate_cve_ids": [],
+          "selected_cve": ""
+        },
+        "vector_rag": {
+          "raw_answer": "CVE-2016-5386",
+          "parsed_answer": "CVE-2016-5386",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 2576.273,
+          "input_tokens": 849,
+          "output_tokens": 37,
+          "jev_calls": 0,
+          "candidate_cve_ids": [
+            "CVE-2016-5386",
+            "CVE-2018-18925",
+            "CVE-2021-31166",
+            "CVE-2025-32395"
+          ],
+          "selected_cve": ""
+        },
+        "hybrid_rag": {
+          "raw_answer": "CVE-2016-5386",
+          "parsed_answer": "CVE-2016-5386",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 3077.344,
+          "input_tokens": 864,
+          "output_tokens": 46,
+          "jev_calls": 0,
+          "candidate_cve_ids": [
+            "CVE-2016-5386",
+            "CVE-2018-18925",
+            "CVE-2016-5387",
+            "CVE-2016-5388"
+          ],
+          "selected_cve": ""
+        },
+        "hybrid_jev": {
+          "raw_answer": "CVE-2016-5386",
+          "parsed_answer": "CVE-2016-5386",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 950.138,
+          "input_tokens": "unknown",
+          "output_tokens": "unknown",
+          "jev_calls": 1,
+          "candidate_cve_ids": [
+            "CVE-2016-5386",
+            "CVE-2018-18925",
+            "CVE-2016-5387",
+            "CVE-2016-5388"
+          ],
+          "selected_cve": "CVE-2016-5386"
+        },
+        "jev_retrieval": {
+          "raw_answer": "CVE-2016-5386",
+          "parsed_answer": "CVE-2016-5386",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 2372.756,
+          "input_tokens": "unknown",
+          "output_tokens": "unknown",
+          "jev_calls": 1,
+          "candidate_cve_ids": [
+            "CVE-2016-5386",
+            "CVE-2019-20933",
+            "CVE-2018-18925",
+            "CVE-2019-0604",
+            "CVE-2016-5387",
+            "CVE-2016-5388",
+            "CVE-2019-18935",
+            "CVE-2020-0646",
+            "CVE-2020-1147",
+            "CVE-2026-20230",
+            "CVE-2019-9874",
+            "CVE-2024-23692",
+            "CVE-2024-50302"
+          ],
+          "selected_cve": "CVE-2016-5386"
+        }
+      }
+    },
+    {
+      "question_id": "Q-0133",
+      "question": "From the apache http server report, which vulnerability involves Apache HTTP Server through 2?",
+      "gold_cve": "CVE-2016-5387",
+      "arms": {
+        "llm_only": {
+          "raw_answer": "CVE-2021-41773",
+          "parsed_answer": "CVE-2021-41773",
+          "valid": true,
+          "correct": false,
+          "error": "",
+          "latency_ms": 1436.687,
+          "input_tokens": 116,
+          "output_tokens": 65,
+          "jev_calls": 0,
+          "candidate_cve_ids": [],
+          "selected_cve": ""
+        },
+        "vector_rag": {
+          "raw_answer": "CVE-2016-5387",
+          "parsed_answer": "CVE-2016-5387",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 2241.138,
+          "input_tokens": 1029,
+          "output_tokens": 94,
+          "jev_calls": 0,
+          "candidate_cve_ids": [
+            "CVE-2021-42013",
+            "CVE-2021-41773",
+            "CVE-2016-5387"
+          ],
+          "selected_cve": ""
+        },
+        "hybrid_rag": {
+          "raw_answer": "CVE-2016-5387",
+          "parsed_answer": "CVE-2016-5387",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 2237.377,
+          "input_tokens": 949,
+          "output_tokens": 54,
+          "jev_calls": 0,
+          "candidate_cve_ids": [
+            "CVE-2016-5387",
+            "CVE-2021-41773",
+            "CVE-2021-42013",
+            "CVE-2016-5388",
+            "CVE-2023-44487"
+          ],
+          "selected_cve": ""
+        },
+        "hybrid_jev": {
+          "raw_answer": "CVE-2016-5387",
+          "parsed_answer": "CVE-2016-5387",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 957.95,
+          "input_tokens": "unknown",
+          "output_tokens": "unknown",
+          "jev_calls": 1,
+          "candidate_cve_ids": [
+            "CVE-2016-5387",
+            "CVE-2021-41773",
+            "CVE-2021-42013",
+            "CVE-2016-5388",
+            "CVE-2023-44487"
+          ],
+          "selected_cve": "CVE-2016-5387"
+        },
+        "jev_retrieval": {
+          "raw_answer": "CVE-2016-5387",
+          "parsed_answer": "CVE-2016-5387",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 961.07,
+          "input_tokens": "unknown",
+          "output_tokens": "unknown",
+          "jev_calls": 1,
+          "candidate_cve_ids": [
+            "CVE-2016-5387",
+            "CVE-2021-40438",
+            "CVE-2016-5388",
+            "CVE-2021-41773",
+            "CVE-2016-5386",
+            "CVE-2017-12636",
+            "CVE-2016-5385",
+            "CVE-2019-17564",
+            "CVE-2019-0211",
+            "CVE-2016-1000108",
+            "CVE-2021-42013",
+            "CVE-2023-44487",
+            "CVE-2016-1000107",
+            "CVE-2026-29146",
+            "CVE-2017-12615",
+            "CVE-2017-5645"
+          ],
+          "selected_cve": "CVE-2016-5387"
+        }
+      }
+    },
+    {
+      "question_id": "Q-0134",
+      "question": "Could you identify the apache tomcat vulnerability described by Apache Tomcat 7 x through?",
+      "gold_cve": "CVE-2016-5388",
+      "arms": {
+        "llm_only": {
+          "raw_answer": "CVE-2020-1938",
+          "parsed_answer": "CVE-2020-1938",
+          "valid": true,
+          "correct": false,
+          "error": "",
+          "latency_ms": 957.311,
+          "input_tokens": 117,
+          "output_tokens": 55,
+          "jev_calls": 0,
+          "candidate_cve_ids": [],
+          "selected_cve": ""
+        },
+        "vector_rag": {
+          "raw_answer": "CVE-2016-5388",
+          "parsed_answer": "CVE-2016-5388",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 2566.252,
+          "input_tokens": 1002,
+          "output_tokens": 76,
+          "jev_calls": 0,
+          "candidate_cve_ids": [
+            "CVE-2016-5388",
+            "CVE-2026-34486"
+          ],
+          "selected_cve": ""
+        },
+        "hybrid_rag": {
+          "raw_answer": "CVE-2016-5388",
+          "parsed_answer": "CVE-2016-5388",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 2562.338,
+          "input_tokens": 969,
+          "output_tokens": 55,
+          "jev_calls": 0,
+          "candidate_cve_ids": [
+            "CVE-2016-5388",
+            "CVE-2026-34486",
+            "CVE-2026-29146"
+          ],
+          "selected_cve": ""
+        },
+        "hybrid_jev": {
+          "raw_answer": "CVE-2016-5388",
+          "parsed_answer": "CVE-2016-5388",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 962.988,
+          "input_tokens": "unknown",
+          "output_tokens": "unknown",
+          "jev_calls": 1,
+          "candidate_cve_ids": [
+            "CVE-2016-5388",
+            "CVE-2026-34486",
+            "CVE-2026-29146"
+          ],
+          "selected_cve": "CVE-2016-5388"
+        },
+        "jev_retrieval": {
+          "raw_answer": "CVE-2026-29146",
+          "parsed_answer": "CVE-2026-29146",
+          "valid": true,
+          "correct": false,
+          "error": "",
+          "latency_ms": 1275.107,
+          "input_tokens": "unknown",
+          "output_tokens": "unknown",
+          "jev_calls": 1,
+          "candidate_cve_ids": [
+            "CVE-2026-29146",
+            "CVE-2016-5388",
+            "CVE-2026-34486",
+            "CVE-2016-8735",
+            "CVE-2017-12615",
+            "CVE-2020-1938",
+            "CVE-2000-0760",
+            "CVE-2020-13935",
+            "CVE-2007-2449",
+            "CVE-2025-24813",
+            "CVE-2020-17518",
+            "CVE-2023-27987",
+            "CVE-2020-11978"
+          ],
+          "selected_cve": "CVE-2026-29146"
+        }
+      }
+    },
+    {
+      "question_id": "Q-0135",
+      "question": "The phpmyadmin phpmyadmin report describes phpMyAdmin 4 0 x before; which CVE is it?",
+      "gold_cve": "CVE-2016-5734",
+      "arms": {
+        "llm_only": {
+          "raw_answer": "CVE-2015-3193",
+          "parsed_answer": "CVE-2015-3193",
+          "valid": true,
+          "correct": false,
+          "error": "",
+          "latency_ms": 1114.896,
+          "input_tokens": 124,
+          "output_tokens": 148,
+          "jev_calls": 0,
+          "candidate_cve_ids": [],
+          "selected_cve": ""
+        },
+        "vector_rag": {
+          "raw_answer": "CVE-2016-5734",
+          "parsed_answer": "CVE-2016-5734",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 2568.059,
+          "input_tokens": 964,
+          "output_tokens": 42,
+          "jev_calls": 0,
+          "candidate_cve_ids": [
+            "CVE-2016-5734",
+            "CVE-2018-12613",
+            "CVE-2007-5728"
+          ],
+          "selected_cve": ""
+        },
+        "hybrid_rag": {
+          "raw_answer": "CVE-2016-5734",
+          "parsed_answer": "CVE-2016-5734",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 2148.067,
+          "input_tokens": 1018,
+          "output_tokens": 43,
+          "jev_calls": 0,
+          "candidate_cve_ids": [
+            "CVE-2018-12613",
+            "CVE-2016-5734",
+            "CVE-2021-22991",
+            "CVE-2021-44026"
+          ],
+          "selected_cve": ""
+        },
+        "hybrid_jev": {
+          "raw_answer": "CVE-2016-5734",
+          "parsed_answer": "CVE-2016-5734",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 640.258,
+          "input_tokens": "unknown",
+          "output_tokens": "unknown",
+          "jev_calls": 1,
+          "candidate_cve_ids": [
+            "CVE-2018-12613",
+            "CVE-2016-5734",
+            "CVE-2021-22991",
+            "CVE-2021-44026"
+          ],
+          "selected_cve": "CVE-2016-5734"
+        },
+        "jev_retrieval": {
+          "raw_answer": "CVE-2016-5734",
+          "parsed_answer": "CVE-2016-5734",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 1206.583,
+          "input_tokens": "unknown",
+          "output_tokens": "unknown",
+          "jev_calls": 1,
+          "candidate_cve_ids": [
+            "CVE-2018-12613",
+            "CVE-2016-5734",
+            "CVE-2021-22991",
+            "CVE-2021-22986",
+            "CVE-2024-50302",
+            "CVE-2017-7504",
+            "CVE-2020-29599",
+            "CVE-2026-60137",
+            "CVE-2016-5388",
+            "CVE-2017-11610",
+            "CVE-2019-3398",
+            "CVE-2016-8735",
+            "CVE-2026-63030",
+            "CVE-2021-21972",
+            "CVE-2017-15944"
+          ],
+          "selected_cve": "CVE-2016-5734"
+        }
+      }
+    },
+    {
+      "question_id": "Q-0138",
+      "question": "For a call-cc http-client assessment involving Under several web servers would, give the CVE.",
+      "gold_cve": "CVE-2016-6287",
+      "arms": {
+        "llm_only": {
+          "raw_answer": "CVE-2023-44444",
+          "parsed_answer": "CVE-2023-44444",
+          "valid": true,
+          "correct": false,
+          "error": "",
+          "latency_ms": 963.048,
+          "input_tokens": 119,
+          "output_tokens": 39,
+          "jev_calls": 0,
+          "candidate_cve_ids": [],
+          "selected_cve": ""
+        },
+        "vector_rag": {
+          "raw_answer": "CVE-2021-31166",
+          "parsed_answer": "CVE-2021-31166",
+          "valid": true,
+          "correct": false,
+          "error": "",
+          "latency_ms": 2559.245,
+          "input_tokens": 913,
+          "output_tokens": 54,
+          "jev_calls": 0,
+          "candidate_cve_ids": [
+            "CVE-2021-31166",
+            "CVE-2016-5387",
+            "CVE-2021-42013",
+            "CVE-2016-5388",
+            "CVE-2021-41773"
+          ],
+          "selected_cve": ""
+        },
+        "hybrid_rag": {
+          "raw_answer": "CVE-2016-6287",
+          "parsed_answer": "CVE-2016-6287",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 2700.51,
+          "input_tokens": 861,
+          "output_tokens": 43,
+          "jev_calls": 0,
+          "candidate_cve_ids": [
+            "CVE-2016-6287",
+            "CVE-2016-5387",
+            "CVE-2016-5388",
+            "CVE-2019-0752"
+          ],
+          "selected_cve": ""
+        },
+        "hybrid_jev": {
+          "raw_answer": "CVE-2016-6287",
+          "parsed_answer": "CVE-2016-6287",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 661.115,
+          "input_tokens": "unknown",
+          "output_tokens": "unknown",
+          "jev_calls": 1,
+          "candidate_cve_ids": [
+            "CVE-2016-6287",
+            "CVE-2016-5387",
+            "CVE-2016-5388",
+            "CVE-2019-0752"
+          ],
+          "selected_cve": "CVE-2016-6287"
+        },
+        "jev_retrieval": {
+          "raw_answer": "CVE-2016-6287",
+          "parsed_answer": "CVE-2016-6287",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 909.71,
+          "input_tokens": "unknown",
+          "output_tokens": "unknown",
+          "jev_calls": 1,
+          "candidate_cve_ids": [
+            "CVE-2016-6287",
+            "CVE-2021-32682",
+            "CVE-2023-33246",
+            "CVE-2024-47177",
+            "CVE-2017-12635",
+            "CVE-2019-1253",
+            "CVE-2023-1389",
+            "CVE-2021-28169",
+            "CVE-2020-3433",
+            "CVE-2016-6286",
+            "CVE-2018-8406",
+            "CVE-2025-26399",
+            "CVE-2000-0760",
+            "CVE-2017-0037",
+            "CVE-2018-0173"
+          ],
+          "selected_cve": "CVE-2016-6287"
+        }
+      }
+    },
+    {
+      "question_id": "Q-0141",
+      "question": "Which vulnerability record for microsoft edge reports Chakra JavaScript scripting engine Microsoft?",
+      "gold_cve": "CVE-2016-7200",
+      "arms": {
+        "llm_only": {
+          "raw_answer": "CVE\u20112015\u20110016",
+          "parsed_answer": "",
+          "valid": false,
+          "correct": false,
+          "error": "",
+          "latency_ms": 1003.69,
+          "input_tokens": 113,
+          "output_tokens": 89,
+          "jev_calls": 0,
+          "candidate_cve_ids": [],
+          "selected_cve": ""
+        },
+        "vector_rag": {
+          "raw_answer": "CVE-2016-7200",
+          "parsed_answer": "CVE-2016-7200",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 4800.259,
+          "input_tokens": 763,
+          "output_tokens": 35,
+          "jev_calls": 0,
+          "candidate_cve_ids": [
+            "CVE-2016-7200",
+            "CVE-2018-8298",
+            "CVE-2016-0189",
+            "CVE-2016-3351",
+            "CVE-2017-0037"
+          ],
+          "selected_cve": ""
+        },
+        "hybrid_rag": {
+          "raw_answer": "CVE-2016-7200",
+          "parsed_answer": "CVE-2016-7200",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 2912.529,
+          "input_tokens": 763,
+          "output_tokens": 42,
+          "jev_calls": 0,
+          "candidate_cve_ids": [
+            "CVE-2016-7200",
+            "CVE-2017-0037",
+            "CVE-2016-3351",
+            "CVE-2016-0189",
+            "CVE-2018-8298"
+          ],
+          "selected_cve": ""
+        },
+        "hybrid_jev": {
+          "raw_answer": "CVE-2016-7200",
+          "parsed_answer": "CVE-2016-7200",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 927.147,
+          "input_tokens": "unknown",
+          "output_tokens": "unknown",
+          "jev_calls": 1,
+          "candidate_cve_ids": [
+            "CVE-2016-7200",
+            "CVE-2017-0037",
+            "CVE-2016-3351",
+            "CVE-2016-0189",
+            "CVE-2018-8298"
+          ],
+          "selected_cve": "CVE-2016-7200"
+        },
+        "jev_retrieval": {
+          "raw_answer": "CVE-2016-7200",
+          "parsed_answer": "CVE-2016-7200",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 1285.618,
+          "input_tokens": "unknown",
+          "output_tokens": "unknown",
+          "jev_calls": 1,
+          "candidate_cve_ids": [
+            "CVE-2016-7200",
+            "CVE-2017-0037",
+            "CVE-2016-3351",
+            "CVE-2025-30397",
+            "CVE-2017-8540",
+            "CVE-2016-0189",
+            "CVE-2019-1367",
+            "CVE-2019-0752",
+            "CVE-2018-8298",
+            "CVE-2026-42897",
+            "CVE-2018-0802",
+            "CVE-2018-8373",
+            "CVE-2018-8581",
+            "CVE-2016-3235",
+            "CVE-2017-11882",
+            "CVE-2017-11774",
+            "CVE-2024-29882",
+            "CVE-2025-53770",
+            "CVE-2019-1068"
+          ],
+          "selected_cve": "CVE-2016-7200"
+        }
+      }
+    },
+    {
+      "question_id": "Q-0144",
+      "question": "Using the skygroup skysea client view description, which CVE covers SKYSEA Client View Ver 11?",
+      "gold_cve": "CVE-2016-7836",
+      "arms": {
+        "llm_only": {
+          "raw_answer": "CVE-2021-31973",
+          "parsed_answer": "CVE-2021-31973",
+          "valid": true,
+          "correct": false,
+          "error": "",
+          "latency_ms": 867.287,
+          "input_tokens": 121,
+          "output_tokens": 61,
+          "jev_calls": 0,
+          "candidate_cve_ids": [],
+          "selected_cve": ""
+        },
+        "vector_rag": {
+          "raw_answer": "CVE-2016-7836",
+          "parsed_answer": "CVE-2016-7836",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 2335.09,
+          "input_tokens": 782,
+          "output_tokens": 41,
+          "jev_calls": 0,
+          "candidate_cve_ids": [
+            "CVE-2016-7836",
+            "CVE-2026-22719",
+            "CVE-2025-26399"
+          ],
+          "selected_cve": ""
+        },
+        "hybrid_rag": {
+          "raw_answer": "CVE-2016-7836",
+          "parsed_answer": "CVE-2016-7836",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 3169.892,
+          "input_tokens": 772,
+          "output_tokens": 44,
+          "jev_calls": 0,
+          "candidate_cve_ids": [
+            "CVE-2016-7836",
+            "CVE-2026-22719",
+            "CVE-2021-27876"
+          ],
+          "selected_cve": ""
+        },
+        "hybrid_jev": {
+          "raw_answer": "CVE-2016-7836",
+          "parsed_answer": "CVE-2016-7836",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 2162.527,
+          "input_tokens": "unknown",
+          "output_tokens": "unknown",
+          "jev_calls": 1,
+          "candidate_cve_ids": [
+            "CVE-2016-7836",
+            "CVE-2026-22719",
+            "CVE-2021-27876"
+          ],
+          "selected_cve": "CVE-2016-7836"
+        },
+        "jev_retrieval": {
+          "raw_answer": "CVE-2016-7836",
+          "parsed_answer": "CVE-2016-7836",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 4114.722,
+          "input_tokens": "unknown",
+          "output_tokens": "unknown",
+          "jev_calls": 1,
+          "candidate_cve_ids": [
+            "CVE-2016-7836",
+            "CVE-2021-27876",
+            "CVE-2021-27878",
+            "CVE-2008-1061",
+            "CVE-2025-35939",
+            "CVE-2022-46169",
+            "CVE-2023-46604",
+            "CVE-2016-5387",
+            "CVE-2019-5418",
+            "CVE-2010-1461",
+            "CVE-2023-25194",
+            "CVE-2010-1353",
+            "CVE-2010-1601",
+            "CVE-2010-1531"
+          ],
+          "selected_cve": "CVE-2016-7836"
+        }
+      }
+    },
+    {
+      "question_id": "Q-0145",
+      "question": "Determine the CVE for adobe flash player where the behavior is Adobe Flash Player versions 23.",
+      "gold_cve": "CVE-2016-7892",
+      "arms": {
+        "llm_only": {
+          "raw_answer": "CVE-2016-4115",
+          "parsed_answer": "CVE-2016-4115",
+          "valid": true,
+          "correct": false,
+          "error": "",
+          "latency_ms": 1966.799,
+          "input_tokens": 118,
+          "output_tokens": 67,
+          "jev_calls": 0,
+          "candidate_cve_ids": [],
+          "selected_cve": ""
+        },
+        "vector_rag": {
+          "raw_answer": "CVE-2016-7892",
+          "parsed_answer": "CVE-2016-7892",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 1539.514,
+          "input_tokens": 715,
+          "output_tokens": 39,
+          "jev_calls": 0,
+          "candidate_cve_ids": [
+            "CVE-2016-7892",
+            "CVE-2018-5002",
+            "CVE-2016-1019",
+            "CVE-2016-0984",
+            "CVE-2016-4171"
+          ],
+          "selected_cve": ""
+        },
+        "hybrid_rag": {
+          "raw_answer": "CVE-2016-7892",
+          "parsed_answer": "CVE-2016-7892",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 2397.953,
+          "input_tokens": 715,
+          "output_tokens": 42,
+          "jev_calls": 0,
+          "candidate_cve_ids": [
+            "CVE-2016-7892",
+            "CVE-2018-5002",
+            "CVE-2016-1019",
+            "CVE-2016-4171",
+            "CVE-2016-0984"
+          ],
+          "selected_cve": ""
+        },
+        "hybrid_jev": {
+          "raw_answer": "CVE-2016-7892",
+          "parsed_answer": "CVE-2016-7892",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 896.15,
+          "input_tokens": "unknown",
+          "output_tokens": "unknown",
+          "jev_calls": 1,
+          "candidate_cve_ids": [
+            "CVE-2016-7892",
+            "CVE-2018-5002",
+            "CVE-2016-1019",
+            "CVE-2016-4171",
+            "CVE-2016-0984"
+          ],
+          "selected_cve": "CVE-2016-7892"
+        },
+        "jev_retrieval": {
+          "raw_answer": "CVE-2016-7892",
+          "parsed_answer": "CVE-2016-7892",
+          "valid": true,
+          "correct": true,
+          "error": "",
+          "latency_ms": 936.983,
+          "input_tokens": "unknown",
+          "output_tokens": "unknown",
+          "jev_calls": 1,
+          "candidate_cve_ids": [
+            "CVE-2016-7892",
+            "CVE-2018-5002",
+            "CVE-2016-4171",
+            "CVE-2016-1019",
+            "CVE-2016-0984",
+            "CVE-2020-0938",
+            "CVE-2020-1020",
+            "CVE-2026-96652",
+            "CVE-2025-54253",
+            "CVE-2024-20359",
+            "CVE-2023-26360",
+            "CVE-2018-1058",
+            "CVE-2017-3066",
+            "CVE-2023-38205",
+            "CVE-2018-4939",
+            "CVE-2026-48356"
+          ],
+          "selected_cve": "CVE-2016-7892"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "stage": "stage1",
+  "status": "pass",
+  "total": 735,
+  "eligible": 336,
+  "rejected": 399,
+  "pool_sha256": "bb6f8daefc7bb965e70a45d348eb96436b79d3a65c3a1b67eaea8e4692097919",
+  "rejection_counts": {
+    "AMBIGUOUS_PRODUCT": 335,
+    "NO_BEHAVIOUR_SENTENCE": 132,
+    "NO_CONFUSERS": 61,
+    "SIX_WORD_OVERLAP": 3
+  }
+}

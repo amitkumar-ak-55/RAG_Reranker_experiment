@@ -1,0 +1,6 @@
+arm,calls,answer_calls,jev_calls,tokens,median_latency_ms,p95_latency_ms,cost,cost_per_question
+llm_only,300,300,0,unknown,2555.516,95619.251,unknown,unknown
+vector_rag,300,300,0,unknown,2768.451,133161.693,unknown,unknown
+hybrid_rag,300,300,0,unknown,2809.548,154877.555,unknown,unknown
+hybrid_jev,300,0,252,0,854.256,2906.852,unknown,unknown
+jev_retrieval,300,300,5239,unknown,20603.339,214720.184,unknown,unknown

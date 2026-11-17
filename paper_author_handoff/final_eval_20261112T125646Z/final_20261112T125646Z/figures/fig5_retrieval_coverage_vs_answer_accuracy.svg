@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="900" viewBox="0 0 1800 900">
+<rect width="1800" height="900" fill="white"/>
+<style>
+ text{font-family:Arial,Helvetica,sans-serif;fill:#222} .title{font-size:34px;font-weight:bold}.panel{font-size:25px;font-weight:bold}.axis{font-size:18px}.small{font-size:16px}.value{font-size:16px;font-weight:bold}.grid{stroke:#d9dee7;stroke-width:1}.axisline{stroke:#555;stroke-width:2}.dense{stroke:#2878b5;fill:#2878b5}.hybrid{stroke:#e07a24;fill:#e07a24}.rerank{stroke:#6f59a5;fill:#6f59a5}.bar1{fill:#58a078}.bar2{fill:#dd9a42}.bar3{fill:#a277b5}.bar4{fill:#c96666}.ci{stroke:#333;stroke-width:3}
+</style>
+<text x="900" y="55" text-anchor="middle" class="title">Retrieval coverage and end-to-end CVE accuracy</text>
+<text x="455" y="112" text-anchor="middle" class="panel">A. Gold CVE present in top-k retrieval results</text>
+<text x="1345" y="112" text-anchor="middle" class="panel">B. Exact-match answer accuracy</text>
+<!-- shared percent axes -->
+<g class="axis">
+ <line x1="110" y1="170" x2="810" y2="170" class="grid"/><text x="90" y="176" text-anchor="end">100%</text>
+ <line x1="110" y1="260" x2="810" y2="260" class="grid"/><text x="90" y="266" text-anchor="end">80%</text>
+ <line x1="110" y1="350" x2="810" y2="350" class="grid"/><text x="90" y="356" text-anchor="end">60%</text>
+ <line x1="110" y1="440" x2="810" y2="440" class="grid"/><text x="90" y="446" text-anchor="end">40%</text>
+ <line x1="110" y1="530" x2="810" y2="530" class="grid"/><text x="90" y="536" text-anchor="end">20%</text>
+ <line x1="110" y1="620" x2="810" y2="620" class="axisline"/><text x="90" y="626" text-anchor="end">0%</text>
+ <line x1="110" y1="170" x2="110" y2="620" class="axisline"/>
+ <text x="250" y="655" text-anchor="middle">Top 1</text><text x="460" y="655" text-anchor="middle">Top 3</text><text x="670" y="655" text-anchor="middle">Top 5</text>
+</g>
+<!-- retrieval lines; y=620 - 4.5*percent -->
+<polyline points="250,362.2 460,242 670,211.9" fill="none" class="dense" stroke-width="5"/>
+<polyline points="250,288.4 460,207.9 670,192.5" fill="none" class="hybrid" stroke-width="5"/>
+<polyline points="250,317.2 460,224 670,188.4" fill="none" class="rerank" stroke-width="5"/>
+<g class="dense"><circle cx="250" cy="362.2" r="7"/><circle cx="460" cy="242" r="7"/><circle cx="670" cy="211.9" r="7"/></g>
+<g class="hybrid"><circle cx="250" cy="288.4" r="7"/><circle cx="460" cy="207.9" r="7"/><circle cx="670" cy="192.5" r="7"/></g>
+<g class="rerank"><circle cx="250" cy="317.2" r="7"/><circle cx="460" cy="224" r="7"/><circle cx="670" cy="188.4" r="7"/></g>
+<g class="small" font-weight="bold">
+ <text x="250" y="384" text-anchor="middle" fill="#2878b5">57.3%</text><text x="250" y="278" text-anchor="middle" fill="#e07a24">73.7%</text><text x="250" y="309" text-anchor="middle" fill="#6f59a5">67.3%</text>
+ <text x="460" y="263" text-anchor="middle" fill="#2878b5">84.0%</text><text x="460" y="195" text-anchor="middle" fill="#e07a24">91.7%</text><text x="460" y="224" text-anchor="middle" fill="#6f59a5">88.0%</text>
+ <text x="650" y="231" text-anchor="end" fill="#2878b5">90.7%</text><text x="670" y="174" text-anchor="middle" fill="#e07a24">95.0%</text><text x="690" y="210" text-anchor="start" fill="#6f59a5">95.7%</text>
+</g>
+<!-- left legend -->
+<line x1="185" y1="720" x2="225" y2="720" class="dense" stroke-width="5"/><text x="235" y="726" class="small">Dense (n=300)</text>
+<line x1="375" y1="720" x2="415" y2="720" class="hybrid" stroke-width="5"/><text x="425" y="726" class="small">Hybrid fused (n=300)</text>
+<line x1="615" y1="720" x2="655" y2="720" class="rerank" stroke-width="5"/><text x="665" y="726" class="small">Reranker (n=300)</text>
+<!-- right panel axes -->
+<g class="axis">
+ <line x1="930" y1="170" x2="1740" y2="170" class="grid"/><text x="910" y="176" text-anchor="end">100%</text>
+ <line x1="930" y1="260" x2="1740" y2="260" class="grid"/><text x="910" y="266" text-anchor="end">80%</text>
+ <line x1="930" y1="350" x2="1740" y2="350" class="grid"/><text x="910" y="356" text-anchor="end">60%</text>
+ <line x1="930" y1="440" x2="1740" y2="440" class="grid"/><text x="910" y="446" text-anchor="end">40%</text>
+ <line x1="930" y1="530" x2="1740" y2="530" class="grid"/><text x="910" y="536" text-anchor="end">20%</text>
+ <line x1="930" y1="620" x2="1740" y2="620" class="axisline"/><text x="910" y="626" text-anchor="end">0%</text>
+ <line x1="930" y1="170" x2="930" y2="620" class="axisline"/>
+</g>
+<!-- accuracy bars -->
+<rect x="1030" y="249.5" width="115" height="370.5" class="bar1"/><rect x="1215" y="246.5" width="115" height="373.5" class="bar2"/><rect x="1400" y="254" width="115" height="366" class="bar3"/><rect x="1585" y="227" width="115" height="393" class="bar4"/>
+<!-- Wilson CIs: 82.33 [77.62,86.23]; 83 [78.34,86.83]; 81.33 [76.54,85.34]; 87.33 [83.09,90.63] -->
+<g class="ci"><line x1="1087.5" y1="230.9" x2="1087.5" y2="270.7"/><line x1="1078" y1="230.9" x2="1097" y2="230.9"/><line x1="1078" y1="270.7" x2="1097" y2="270.7"/>
+<line x1="1272.5" y1="229.3" x2="1272.5" y2="267.5"/><line x1="1263" y1="229.3" x2="1282" y2="229.3"/><line x1="1263" y1="267.5" x2="1282" y2="267.5"/>
+<line x1="1457.5" y1="236.0" x2="1457.5" y2="275.6"/><line x1="1448" y1="236.0" x2="1467" y2="236.0"/><line x1="1448" y1="275.6" x2="1467" y2="275.6"/>
+<line x1="1642.5" y1="212.2" x2="1642.5" y2="246.1"/><line x1="1633" y1="212.2" x2="1652" y2="212.2"/><line x1="1633" y1="246.1" x2="1652" y2="246.1"/></g>
+<g class="value" text-anchor="middle"><text x="1087.5" y="218">82.3%</text><text x="1272.5" y="216">83.0%</text><text x="1457.5" y="222">81.3%</text><text x="1642.5" y="198">87.3%</text></g>
+<g class="small" text-anchor="middle"><text x="1087.5" y="655">Vector RAG</text><text x="1272.5" y="655">Hybrid RAG</text><text x="1457.5" y="655">Hybrid + JEV</text><text x="1642.5" y="655">JEV selection</text></g>
+<text x="900" y="790" text-anchor="middle" class="small">Retrieval coverage means the gold CVE appears within the top-k ranked results. Answer accuracy is exact parsed-CVE match.</text>
+<text x="900" y="820" text-anchor="middle" class="small">Retrieval coverage and answer accuracy measure different stages; the displayed gap is descriptive, not a causal attribution.</text>
+</svg>

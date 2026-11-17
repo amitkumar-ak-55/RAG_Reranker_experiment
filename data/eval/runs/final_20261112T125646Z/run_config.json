@@ -1,0 +1,103 @@
+{
+  "run_id": "final_20261112T125646Z",
+  "timestamp_utc": "2026-11-12T12:56:48.562024+00:00",
+  "models": {
+    "answer": "openai/gpt-oss-120b",
+    "answer_provider_base_url": "https://api.groq.com/openai/v1",
+    "embedding": "BAAI/bge-base-en-v1.5",
+    "reranker": "BAAI/bge-reranker-v2-m3",
+    "jev": "jev-latest"
+  },
+  "arms": [
+    "llm_only",
+    "vector_rag",
+    "hybrid_rag",
+    "hybrid_jev",
+    "jev_retrieval"
+  ],
+  "thresholds": {
+    "top_k": 5,
+    "jev_bm25_candidate_limit": 20,
+    "answer_max_tokens_from_env": 32,
+    "answer_effective_completion_tokens": 256,
+    "gpt_oss_reasoning_effort": "low",
+    "answer_retries_on_429": 3,
+    "jev_retries_per_check": 1,
+    "answer_requests_per_minute_cap": 24,
+    "shared_limit_pacing_seconds": 2.5,
+    "answer_api_key_count": 3,
+    "answer_key_fallback_policy": "rotate across configured accounts after 401/403/429; keep a per-key Retry-After cooldown"
+  },
+  "timings": {
+    "latency_ms": "per question-arm from start through provider response",
+    "retry_after": "provider Retry-After header, then provider response retry-delay text, then exponential fallback"
+  },
+  "usage": {
+    "llm_only": {
+      "calls": 300,
+      "answer_calls": 300,
+      "jev_calls": 0,
+      "tokens": 63223,
+      "cost": "unknown",
+      "cost_per_question": "unknown"
+    },
+    "vector_rag": {
+      "calls": 300,
+      "answer_calls": 300,
+      "jev_calls": 0,
+      "tokens": "unknown",
+      "cost": "unknown",
+      "cost_per_question": "unknown"
+    },
+    "hybrid_rag": {
+      "calls": 300,
+      "answer_calls": 300,
+      "jev_calls": 0,
+      "tokens": "unknown",
+      "cost": "unknown",
+      "cost_per_question": "unknown"
+    },
+    "hybrid_jev": {
+      "calls": 300,
+      "answer_calls": 0,
+      "jev_calls": 299,
+      "tokens": 0,
+      "cost": "unknown",
+      "cost_per_question": "unknown"
+    },
+    "jev_retrieval": {
+      "calls": 300,
+      "answer_calls": 300,
+      "jev_calls": 300,
+      "tokens": "unknown",
+      "cost": "unknown",
+      "cost_per_question": "unknown"
+    }
+  },
+  "cost": {
+    "answer": "unknown",
+    "jev": "unknown"
+  },
+  "input_validation": {
+    "gates": {
+      "row_count": true,
+      "unique_question_ids": true,
+      "unique_gold_cve": true,
+      "questions_do_not_contain_gold": true,
+      "handcheck_30_pass": true,
+      "handcheck_no_fail": true,
+      "corpus_hash_matches_manifest": true,
+      "item_corpus_hash_matches": true,
+      "item_index_matches": true
+    },
+    "corpus_sha256": "8c4daa39da534a7f4871f4e4f4d72af03bf8fd3ce5b34e5dac586e11e585f6fc",
+    "index_version": "68e2ecad34e25474fcf5d50c0b14fdcc7b8bf92ea8d4ec5d2347a08e7361a3ea"
+  },
+  "questions_completed_per_arm": {
+    "llm_only": 300,
+    "vector_rag": 300,
+    "hybrid_rag": 300,
+    "hybrid_jev": 300,
+    "jev_retrieval": 300
+  }
+}

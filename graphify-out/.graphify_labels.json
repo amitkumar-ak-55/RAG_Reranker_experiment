@@ -1,0 +1,17 @@
+{
+  "0": "Web API & Routes",
+  "1": "JEV & LLM Verification",
+  "2": "Dense Embeddings & Models",
+  "3": "Knowledge Base Ingestion",
+  "4": "CLI & Database Core",
+  "5": "Retrieval Evaluation Metrics",
+  "6": "Scanner Engine & Targets",
+  "7": "Adversarial Question Benchmark",
+  "8": "Test Suite & Fixtures",
+  "9": "Question Generation Tooling",
+  "10": "Project Specs & Overview",
+  "11": "Setup & Environment Config",
+  "12": "JEV Protocol & Governance",
+  "13": "Experiment Arm Exports",
+  "14": "Code Style Guidelines"
+}

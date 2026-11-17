@@ -1,0 +1,291 @@
+{
+  "started_at_utc": "2026-11-11T18:32:38.172683+00:00",
+  "finished_at_utc": "2026-11-11T18:34:12.847751+00:00",
+  "dataset": "data/eval/final/eval_hard_300.jsonl",
+  "rows_selected": [
+    "Q-0091",
+    "Q-0092",
+    "Q-0102"
+  ],
+  "index_version": "68e2ecad34e25474fcf5d50c0b14fdcc7b8bf92ea8d4ec5d2347a08e7361a3ea",
+  "summary": {
+    "llm_only": {
+      "correct": 1,
+      "total": 3,
+      "errors": 0,
+      "answered": 3
+    },
+    "vector_rag": {
+      "correct": 0,
+      "total": 3,
+      "errors": 0,
+      "answered": 3
+    },
+    "hybrid_rag": {
+      "correct": 0,
+      "total": 3,
+      "errors": 0,
+      "answered": 3
+    },
+    "hybrid_jev": {
+      "correct": 0,
+      "total": 3,
+      "errors": 0,
+      "answered": 3
+    },
+    "jev_retrieval": {
+      "correct": 0,
+      "total": 3,
+      "errors": 0,
+      "answered": 3
+    }
+  },
+  "results": [
+    {
+      "question_id": "Q-0091",
+      "question": "Which CVE affects Apache ActiveMQ 5.x before version 5.13.0, where the broker does not restrict classes serialized in a crafted JMS ObjectMessage, potentially allowing arbitrary code execution?",
+      "gold_cve": "CVE-2015-5254",
+      "difficulty": "hard",
+      "arms": {
+        "llm_only": {
+          "answer": "CVE-2015-5254",
+          "raw": "CVE-2015-5254",
+          "correct": true,
+          "latency_ms": 2074.49,
+          "input_tokens": 150,
+          "output_tokens": 84,
+          "jev_calls": 0,
+          "evidence_docs": []
+        },
+        "vector_rag": {
+          "answer": "CVE-2023-46604",
+          "raw": "CVE-2023-46604",
+          "correct": false,
+          "latency_ms": 2277.54,
+          "input_tokens": 994,
+          "output_tokens": 54,
+          "jev_calls": 0,
+          "evidence_docs": [
+            "[withheld CVE]: Apache ActiveMQ 5.x before 5.13.0 does not restrict the classes that can be serialized in the broker,...",
+            "nuclei:CVE-2023-46604: Apache ActiveMQ is vulnerable to Remote Code Execution.The vulnerability may allow a remote at...",
+            "CVE-2026-34197: Improper Input Validation, Improper Control of Generation of Code ('Code Injection') vulnerability in...",
+            "nuclei:CVE-2016-3088: Apache ActiveMQ 5.x before 5.14.0 allows remote attackers to upload and execute arbitrary files...",
+            "nuclei:CVE-2026-34197: Improper Input Validation, Improper Control of Generation of Code ('Code Injection') vulnerabi..."
+          ]
+        },
+        "hybrid_rag": {
+          "answer": "CVE-2020-11996",
+          "raw": "CVE-2020-11996",
+          "correct": false,
+          "latency_ms": 2928.09,
+          "input_tokens": 1014,
+          "output_tokens": 245,
+          "jev_calls": 0,
+          "evidence_docs": [
+            "[withheld CVE]: Apache ActiveMQ 5.x before 5.13.0 does not restrict the classes that can be serialized in the broker,...",
+            "nuclei:CVE-2023-46604: Apache ActiveMQ is vulnerable to Remote Code Execution.The vulnerability may allow a remote at...",
+            "CVE-2026-34197: Improper Input Validation, Improper Control of Generation of Code ('Code Injection') vulnerability in...",
+            "nuclei:CVE-2026-34197: Improper Input Validation, Improper Control of Generation of Code ('Code Injection') vulnerabi...",
+            "CVE-2017-7504: HTTPServerILServlet.java in JMS over HTTP Invocation Layer of the JbossMQ implementation, which is ena..."
+          ]
+        },
+        "hybrid_jev": {
+          "answer": "CVE-2020-11996",
+          "proposed_answer": "CVE-2020-11996",
+          "correct": false,
+          "label": "SUPPORTED",
+          "citation_correct": true,
+          "latency_ms": 1186.09,
+          "jev_calls": 1,
+          "evidence_docs": [
+            "[withheld CVE]: Apache ActiveMQ 5.x before 5.13.0 does not restrict the classes that can be serialized in the broker,...",
+            "nuclei:CVE-2023-46604: Apache ActiveMQ is vulnerable to Remote Code Execution.The vulnerability may allow a remote at...",
+            "CVE-2026-34197: Improper Input Validation, Improper Control of Generation of Code ('Code Injection') vulnerability in...",
+            "nuclei:CVE-2026-34197: Improper Input Validation, Improper Control of Generation of Code ('Code Injection') vulnerabi...",
+            "CVE-2017-7504: HTTPServerILServlet.java in JMS over HTTP Invocation Layer of the JbossMQ implementation, which is ena..."
+          ]
+        },
+        "jev_retrieval": {
+          "answer": "CVE-2022-42594",
+          "raw": "CVE-2022-42594",
+          "correct": false,
+          "latency_ms": 23200.88,
+          "input_tokens": 1101,
+          "output_tokens": 148,
+          "jev_calls": 20,
+          "evidence_docs": [
+            "nuclei:CVE-2023-46604: Apache ActiveMQ is vulnerable to Remote Code Execution.The vulnerability may allow a remote at...",
+            "[withheld CVE]: Apache ActiveMQ 5.x before 5.13.0 does not restrict the classes that can be serialized in the broker,...",
+            "CVE-2023-46604: The Java OpenWire protocol marshaller is vulnerable to Remote Code Execution.",
+            "nuclei:CVE-2022-41678: Once an user is authenticated on Jolokia, he can potentially trigger arbitrary code execution.",
+            "CVE-2022-41678: Once an user is authenticated on Jolokia, he can potentially trigger arbitrary code execution."
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "Q-0092",
+      "question": "Which CVE affects Microsoft Silverlight 5 before version 5.1.41212.0, where mishandling negative offsets during decoding can cause arbitrary code execution or denial of service via a crafted website?",
+      "gold_cve": "CVE-2016-0034",
+      "difficulty": "easy",
+      "arms": {
+        "llm_only": {
+          "answer": "CVE-2015-2426",
+          "raw": "CVE-2015-2426",
+          "correct": false,
+          "latency_ms": 2216.43,
+          "input_tokens": 153,
+          "output_tokens": 125,
+          "jev_calls": 0,
+          "evidence_docs": []
+        },
+        "vector_rag": {
+          "answer": "CVE-2024-38093",
+          "raw": "CVE-2024-38093",
+          "correct": false,
+          "latency_ms": 3227.92,
+          "input_tokens": 453,
+          "output_tokens": 181,
+          "jev_calls": 0,
+          "evidence_docs": [
+            "[withheld CVE]: Microsoft Silverlight 5 before 5.1.41212.0 mishandles negative offsets during decoding, which allows r...",
+            "CVE-2024-38094: Microsoft SharePoint Remote Code Execution Vulnerability",
+            "CVE-2023-24955: Microsoft SharePoint Server Remote Code Execution Vulnerability",
+            "CVE-2025-53770: Deserialization of untrusted data in on-premises Microsoft SharePoint Server allows an unauthorized a...",
+            "CVE-2024-38189: Microsoft Project Remote Code Execution Vulnerability"
+          ]
+        },
+        "hybrid_rag": {
+          "answer": "CVE-2015-0074",
+          "raw": "CVE-2015-0074",
+          "correct": false,
+          "latency_ms": 2219.25,
+          "input_tokens": 644,
+          "output_tokens": 169,
+          "jev_calls": 0,
+          "evidence_docs": [
+            "[withheld CVE]: Microsoft Silverlight 5 before 5.1.41212.0 mishandles negative offsets during decoding, which allows r...",
+            "CVE-2016-0189: The Microsoft (1) JScript 5.8 and (2) VBScript 5.7 and 5.8 engines, as used in Internet Explorer 9 thr...",
+            "CVE-2017-0149: Microsoft Internet Explorer 9 through 11 allow remote attackers to execute arbitrary code or cause a d...",
+            "CVE-2016-1019: Adobe Flash Player 21.0.0.197 and earlier allows remote attackers to cause a denial of service (applic...",
+            "CVE-2016-4657: WebKit in Apple iOS before 9.3.5 allows remote attackers to execute arbitrary code or cause a denial o..."
+          ]
+        },
+        "hybrid_jev": {
+          "answer": "CVE-2015-0074",
+          "proposed_answer": "CVE-2015-0074",
+          "correct": false,
+          "label": "SUPPORTED",
+          "citation_correct": true,
+          "latency_ms": 647.7,
+          "jev_calls": 1,
+          "evidence_docs": [
+            "[withheld CVE]: Microsoft Silverlight 5 before 5.1.41212.0 mishandles negative offsets during decoding, which allows r...",
+            "CVE-2016-0189: The Microsoft (1) JScript 5.8 and (2) VBScript 5.7 and 5.8 engines, as used in Internet Explorer 9 thr...",
+            "CVE-2017-0149: Microsoft Internet Explorer 9 through 11 allow remote attackers to execute arbitrary code or cause a d...",
+            "CVE-2016-1019: Adobe Flash Player 21.0.0.197 and earlier allows remote attackers to cause a denial of service (applic...",
+            "CVE-2016-4657: WebKit in Apple iOS before 9.3.5 allows remote attackers to execute arbitrary code or cause a denial o..."
+          ]
+        },
+        "jev_retrieval": {
+          "answer": "CVE-2015-0095",
+          "raw": "CVE-2015-0095",
+          "correct": false,
+          "latency_ms": 14226.01,
+          "input_tokens": 750,
+          "output_tokens": 96,
+          "jev_calls": 20,
+          "evidence_docs": [
+            "[withheld CVE]: Microsoft Silverlight 5 before 5.1.41212.0 mishandles negative offsets during decoding, which allows r...",
+            "CVE-2017-0149: Microsoft Internet Explorer 9 through 11 allow remote attackers to execute arbitrary code or cause a d...",
+            "CVE-2016-0189: The Microsoft (1) JScript 5.8 and (2) VBScript 5.7 and 5.8 engines, as used in Internet Explorer 9 thr...",
+            "CVE-2016-7200: The Chakra JavaScript scripting engine in Microsoft Edge allows remote attackers to execute arbitrary...",
+            "CVE-2019-5418: There is a File Content Disclosure vulnerability in Action View <5.2.2.1, <5.1.6.2, <5.0.7.2, <4.2.11...."
+          ]
+        }
+      }
+    },
+    {
+      "question_id": "Q-0102",
+      "question": "Could you identify the yaws yaws vulnerability described by yaws before 2 0 4?",
+      "gold_cve": "CVE-2016-1000108",
+      "difficulty": "easy",
+      "arms": {
+        "llm_only": {
+          "answer": "CVE-2015-3627",
+          "raw": "CVE-2015-3627",
+          "correct": false,
+          "latency_ms": 2825.76,
+          "input_tokens": 131,
+          "output_tokens": 130,
+          "jev_calls": 0,
+          "evidence_docs": []
+        },
+        "vector_rag": {
+          "answer": "CVE-2021-38185",
+          "raw": "CVE-2021-38185",
+          "correct": false,
+          "latency_ms": 2192.21,
+          "input_tokens": 664,
+          "output_tokens": 104,
+          "jev_calls": 0,
+          "evidence_docs": [
+            "[withheld CVE]: yaws before 2.0.4 does not attempt to address RFC 3875 section 4.1.18 namespace conflicts and there...",
+            "CVE-2025-7901: A vulnerability was found in yangzongzhuan RuoYi up to 4.8.1.",
+            "CVE-2010-1474: Directory traversal vulnerability in the Sweety Keeper (com_sweetykeeper) component 1.5.x for Joomla!...",
+            "nuclei:CVE-2010-1474: A directory traversal vulnerability in the Sweety Keeper (com_sweetykeeper) component 1.5.x for...",
+            "CVE-2023-27992: The pre-authentication command injection vulnerability in the Zyxel NAS326 firmware versions prior to..."
+          ]
+        },
+        "hybrid_rag": {
+          "answer": "CVE-2016-5387",
+          "raw": "CVE-2016-5387",
+          "correct": false,
+          "latency_ms": 2451.41,
+          "input_tokens": 954,
+          "output_tokens": 78,
+          "jev_calls": 0,
+          "evidence_docs": [
+            "[withheld CVE]: yaws before 2.0.4 does not attempt to address RFC 3875 section 4.1.18 namespace conflicts and there...",
+            "nuclei:CVE-2010-1429: Red Hat JBoss Enterprise Application Platform 4.2 before 4.2.0.CP09 and 4.3 before 4.3.0.CP08 i...",
+            "CVE-2019-3398: Confluence Server and Data Center had a path traversal vulnerability in the downloadallattachments res...",
+            "CVE-2026-48172: LiteSpeed User-End cPanel Plugin before 2.4.5 allows privilege escalation (possibly to root), as expl...",
+            "CVE-2025-7901: A vulnerability was found in yangzongzhuan RuoYi up to 4.8.1."
+          ]
+        },
+        "hybrid_jev": {
+          "answer": "CVE-2016-5387",
+          "proposed_answer": "CVE-2016-5387",
+          "correct": false,
+          "label": "SUPPORTED",
+          "citation_correct": true,
+          "latency_ms": 637.82,
+          "jev_calls": 1,
+          "evidence_docs": [
+            "[withheld CVE]: yaws before 2.0.4 does not attempt to address RFC 3875 section 4.1.18 namespace conflicts and there...",
+            "nuclei:CVE-2010-1429: Red Hat JBoss Enterprise Application Platform 4.2 before 4.2.0.CP09 and 4.3 before 4.3.0.CP08 i...",
+            "CVE-2019-3398: Confluence Server and Data Center had a path traversal vulnerability in the downloadallattachments res...",
+            "CVE-2026-48172: LiteSpeed User-End cPanel Plugin before 2.4.5 allows privilege escalation (possibly to root), as expl...",
+            "CVE-2025-7901: A vulnerability was found in yangzongzhuan RuoYi up to 4.8.1."
+          ]
+        },
+        "jev_retrieval": {
+          "answer": "CVE-2016-5387",
+          "raw": "CVE-2016-5387",
+          "correct": false,
+          "latency_ms": 15381.96,
+          "input_tokens": 799,
+          "output_tokens": 68,
+          "jev_calls": 20,
+          "evidence_docs": [
+            "[withheld CVE]: yaws before 2.0.4 does not attempt to address RFC 3875 section 4.1.18 namespace conflicts and there...",
+            "nuclei:CVE-2010-1429: Red Hat JBoss Enterprise Application Platform 4.2 before 4.2.0.CP09 and 4.3 before 4.3.0.CP08 i...",
+            "CVE-2010-1429: Red Hat JBoss Enterprise Application Platform (aka JBoss EAP or JBEAP) 4.2 before 4.2.0.CP09 and 4.3 b...",
+            "nuclei:CVE-2017-12615: Apache Tomcat servers 7.0.{0 to 79} are susceptible to remote code execution.",
+            "CVE-2020-4430: IBM Data Risk Manager 2.0.1, 2.0.2, 2.0.3, and 2.0.4 could allow a remote authenticated attacker to tr..."
+          ]
+        }
+      }
+    }
+  ]
+}

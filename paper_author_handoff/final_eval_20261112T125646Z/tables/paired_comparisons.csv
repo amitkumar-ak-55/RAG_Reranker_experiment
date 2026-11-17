@@ -1,0 +1,4 @@
+comparison,b,c,p-value,accuracy difference (second-first),effect direction
+Hybrid RAG vs Hybrid + JEV,0,5,0.0625,-0.016666666666666607,first better
+Hybrid RAG vs JEV retrieval,18,5,0.010622024536132812,0.043333333333333335,second better
+Vector RAG vs Hybrid RAG,15,13,0.8505540192127228,0.006666666666666599,second better

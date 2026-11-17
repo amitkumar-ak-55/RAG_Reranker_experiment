@@ -1,0 +1,14 @@
+{
+  "difficulty_counts": {
+    "easy": 139,
+    "hard": 59,
+    "medium": 102
+  },
+  "duplicate_groups": {},
+  "filename": "C:\\Users\\bhagy\\Desktop\\CysekRAG\\data\\eval\\final\\eval_hard_300.jsonl",
+  "record_count": 300,
+  "sha256": "0dad81945e4c0e27783923a4d5bd50f8f5a764587a05391b9c80ee9e378afa69",
+  "unique_question_ids": 300,
+  "unique_question_texts": 300,
+  "valid_300_record_dataset": true
+}

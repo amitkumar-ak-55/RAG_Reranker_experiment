@@ -1,0 +1,74 @@
+{
+  "run_id": "final_20261110T000000Z",
+  "timestamp_utc": "2026-11-09T22:01:05.259837+00:00",
+  "models": {
+    "answer": "gemini-3.8-flash",
+    "embedding": "BAAI/bge-base-en-v1.5",
+    "reranker": "BAAI/bge-reranker-v2-m3",
+    "jev": "jev-latest"
+  },
+  "arms": [
+    "llm_only",
+    "vector_rag",
+    "hybrid_rag",
+    "hybrid_jev",
+    "jev_retrieval"
+  ],
+  "thresholds": {
+    "top_k": 5,
+    "jev_bm25_candidate_limit": 20,
+    "answer_retries_on_429": 3,
+    "jev_retries_per_check": 1
+  },
+  "timings": "recorded per prediction",
+  "usage": {
+    "llm_only": {
+      "calls": 3,
+      "tokens": "unknown",
+      "cost": "unknown"
+    },
+    "vector_rag": {
+      "calls": 2,
+      "tokens": "unknown",
+      "cost": "unknown"
+    },
+    "hybrid_rag": {
+      "calls": 2,
+      "tokens": "unknown",
+      "cost": "unknown"
+    },
+    "hybrid_jev": {
+      "calls": 2,
+      "tokens": "unknown",
+      "cost": "unknown"
+    },
+    "jev_retrieval": {
+      "calls": 2,
+      "tokens": "unknown",
+      "cost": "unknown"
+    }
+  },
+  "input_validation": {
+    "gates": {
+      "row_count": true,
+      "unique_question_ids": true,
+      "unique_gold_cve": true,
+      "handcheck_30_pass": true,
+      "handcheck_no_fail": true,
+      "corpus_hash_matches_manifest": true,
+      "item_corpus_hash_matches": true,
+      "item_index_matches": true
+    },
+    "corpus_sha256": "8c4daa39da534a7f4871f4e4f4d72af03bf8fd3ce5b34e5dac586e11e585f6fc",
+    "index_version": "68e2ecad34e25474fcf5d50c0b14fdcc7b8bf92ea8d4ec5d2347a08e7361a3ea"
+  },
+  "stopped_cleanly": "quota_or_rate_limit: Error code: 429 - [{'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.8-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.\\nPlease retry in 9h57m3.047226986s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://aistudio.google.com/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'description': 'Generate content requests per day limit exceeded on Free Tier. See https://aistudio.google.com/docs/rate-limits.', 'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3.8-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '35823s'}]}}]",
+  "questions_completed_per_arm": {
+    "llm_only": 3,
+    "vector_rag": 2,
+    "hybrid_rag": 2,
+    "hybrid_jev": 2,
+    "jev_retrieval": 2
+  },
+  "duplicate_checkpoints_removed": 4
+}
