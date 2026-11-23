@@ -4,7 +4,7 @@ import re
 from dataclasses import dataclass
 from typing import Any
 
-CVE_RE = re.compile(r"\bCVE[-\s_]?(\d{4})[-\s_]?(\d{4,})\b", re.IGNORECASE)
+CVE_RE = re.compile(r"\bCVE[-\s_\u2010-\u2015]?(\d{4})[-\s_\u2010-\u2015]?(\d{4,})\b", re.IGNORECASE)
 
 
 def normalize_cve(value: object) -> str | None:

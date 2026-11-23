@@ -2074,7 +2074,7 @@
     "CWE-94"
   ],
   "text_transformations": [],
-  "corpus_sha256": "8c4daa39da534a7f4871f4e4f4d72af03bf8fd3ce5b34e5dac586e11e585f6fc",
+  "corpus_sha256": "82a62db40789c8b8c272cd50c12ad753fbb9e36b1fb71ee16798da484a45ab99",
   "nvd_file_hashes": {
     "CVE-2021-44228": "6c6ef50642fa751be20574a5ba3d4a96dc68e28e3d54c90b39c76bf14e180c95",
     "CVE-2024-39907": "6339da556a16674fbda1e39e4576a32f841d8477365ca9b9d71d607a40afa128",
@@ -3338,5 +3338,7 @@
     "CVE-2010-1602": "527175c0a357de2920dd84e56799b1a11e2739f561ff89f29789e99833c6b85e",
     "CVE-2010-1603": "b02bae7390cab871ffb1fd6d5b84620286837dfc55b90110bbfa9cef58617361",
     "CVE-2010-1607": "676b05969d6c01d97c1ffb03db16a30dddda1f731387b5154d42308d2de23a2c"
-  }
+  },
+  "document_count": 17863,
+  "updated_at": "2026-11-18T20:20:13Z"
 }

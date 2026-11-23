@@ -7,9 +7,11 @@ from pathlib import Path
 
 import numpy as np
 import pytest
+import httpx
 
 from rag_verify_lab.rag.retrieve import RetrievalResult
 
+from reranker_experiment.config import ExperimentSettings
 from reranker_experiment.generation import GenerationResult, GenerationSettings
 from reranker_experiment import pipeline
 
@@ -113,8 +115,8 @@ class MalformedAnswerProvider:
 def _expected_keys() -> set[str]:
     return {
         "Q-0091:A_hybrid_baseline",
-        "Q-0091:B_hybrid_jina_mock",
-        "Q-0091:C_hybrid_jev_mock",
+        "Q-0091:B_hybrid_jina",
+        "Q-0091:C_hybrid_jev",
     }
 
 
@@ -182,7 +184,7 @@ def test_pipeline_retrieves_once_shares_candidates_and_persists_top_five(monkeyp
         rows = list(csv.DictReader(handle))
     assert len(rows) == 3
     assert all(len(json.loads(row["selected_evidence_ids"])) == 5 for row in rows)
-    assert json.loads(next(row for row in rows if row["arm"] == "B_hybrid_jina_mock")["ranking_ids"])[0] == "chunk-0"
+    assert json.loads(next(row for row in rows if row["arm"] == "B_hybrid_jina")["ranking_ids"])[0] == "chunk-0"
     metadata = json.loads((output / "experiment_metadata.json").read_text(encoding="utf-8"))
     assert metadata["answer_generation"] == {"model": "test-model", "max_tokens": 32, "temperature": None}
     with (output / "generated_answers.jsonl").open(encoding="utf-8") as handle:
@@ -197,6 +199,110 @@ def test_pipeline_retrieves_once_shares_candidates_and_persists_top_five(monkeyp
     ]
     assert (output / "generated_answers.jsonl").exists()
     assert (output / "checkpoint.json").exists()
+
+
+def test_actual_adapters_complete_three_arm_offline_integration(monkeypatch, tmp_path: Path):
+    calls: list[str] = []
+    jina_settings = ExperimentSettings(
+        jina_api_key_1="test-jina-key",
+        jina_base_url="https://example.test",
+        jina_reranker_model="test-jina-model",
+    )
+    jev_settings = ExperimentSettings(
+        jev_api_key="test-jev-key",
+        jev_base_url="https://example.test",
+        jev_model="test-jev-model",
+    )
+
+    jina_requests: list[object] = []
+
+    def jina_handler(request):
+        jina_requests.append(request)
+        payload = __import__("json").loads(request.read())
+        assert payload["top_n"] == 10
+        results = [
+            {"index": index, "relevance_score": 1.0 - (index / 10)}
+            for index in range(10)
+        ]
+        results[0], results[9] = {"index": 9, "relevance_score": 0.95}, {"index": 0, "relevance_score": 0.05}
+        return httpx.Response(
+            200,
+            json={
+                "model": "test-jina-model",
+                "usage": {"total_tokens": 20},
+                "results": results,
+            },
+            request=request,
+        )
+
+    jev_requests: list[object] = []
+
+    def jev_handler(request):
+        jev_requests.append(request)
+        payload = __import__("json").loads(request.read())
+        assert len(payload["questions"]) == 10
+        answers = {
+            f"candidate_{candidate_id}": {"type": "noul", "noul": 1.0 - (index / 10)}
+            for index, candidate_id in enumerate([f"chunk-{index}" for index in range(10)])
+        }
+        return httpx.Response(
+            200,
+            json={
+                "model": "test-jev-model",
+                "answers": answers,
+                "usage": {"input_tokens": 20, "output_tokens": 10},
+            },
+            request=request,
+        )
+
+    jina_provider = pipeline.JinaRerankerProvider(
+        jina_settings,
+        http_client=httpx.Client(transport=httpx.MockTransport(jina_handler)),
+    )
+    jev_provider = pipeline.JEVRerankerProvider(
+        jev_settings,
+        http_client=httpx.Client(transport=httpx.MockTransport(jev_handler)),
+    )
+    answer_provider = RecordingAnswerProvider()
+
+    monkeypatch.setattr(pipeline, "_load_frozen_index", lambda: FakeIndex())
+    monkeypatch.setattr(pipeline, "retrieve", _fake_retrieval(calls))
+
+    output = pipeline.run_mock_pipeline(
+        tmp_path,
+        provider="mock",
+        question_limit=1,
+        jina_provider=jina_provider,
+        jev_provider=jev_provider,
+        answer_provider=answer_provider,
+    )
+
+    assert len(calls) == 1
+    assert len(jina_requests) == 1
+    assert len(jev_requests) == 1
+
+    with (output / "per_question_results.csv").open(newline="", encoding="utf-8") as handle:
+        rows = list(csv.DictReader(handle))
+    assert {row["provider_mode"] for row in rows} == {"mock"}
+    assert {row["arm"] for row in rows} == {"A_hybrid_baseline", "B_hybrid_jina", "C_hybrid_jev"}
+    baseline = next(row for row in rows if row["arm"] == "A_hybrid_baseline")
+    jina = next(row for row in rows if row["arm"] == "B_hybrid_jina")
+    jev = next(row for row in rows if row["arm"] == "C_hybrid_jev")
+    assert json.loads(baseline["ranking_ids"]) == [f"chunk-{index}" for index in range(10)]
+    assert json.loads(jina["ranking_ids"])[0] == "chunk-9"
+    assert json.loads(jev["ranking_ids"])[0] == "chunk-0"
+    assert len(answer_provider.calls) == 3
+    assert [evidence for _, evidence in answer_provider.calls] == [
+        [f"chunk-{index}" for index in range(5)],
+        ["chunk-9", "chunk-1", "chunk-2", "chunk-3", "chunk-4"],
+        [f"chunk-{index}" for index in range(5)],
+    ]
+
+    metadata = json.loads((output / "experiment_metadata.json").read_text(encoding="utf-8"))
+    assert metadata["provider_mode"] == "mock"
+    assert metadata["arms"] == ["A_hybrid_baseline", "B_hybrid_jina", "C_hybrid_jev"]
+    assert metadata["rerankers"]["jina"]["name"] == jina_provider.name
+    assert metadata["rerankers"]["jev"]["name"] == jev_provider.name
 
 
 def test_answer_failures_persist_sanitized_telemetry(monkeypatch, tmp_path: Path):
@@ -224,7 +330,7 @@ def test_answer_failures_persist_sanitized_telemetry(monkeypatch, tmp_path: Path
     assert completed["status"] == "completed_with_failures"
     assert completed["generation_success_count"] == 2
     assert completed["generation_failure_count"] == 1
-    assert completed["generation_failures"] == [{"question_id": "Q-0091", "arm": "B_hybrid_jina_mock"}]
+    assert completed["generation_failures"] == [{"question_id": "Q-0091", "arm": "B_hybrid_jina"}]
 
 
 def test_all_arm_failures_persist_failed_aggregate(monkeypatch, tmp_path: Path):
@@ -244,8 +350,8 @@ def test_all_arm_failures_persist_failed_aggregate(monkeypatch, tmp_path: Path):
     assert completed["generation_failure_count"] == 3
     assert {(item["question_id"], item["arm"]) for item in completed["generation_failures"]} == {
         ("Q-0091", "A_hybrid_baseline"),
-        ("Q-0091", "B_hybrid_jina_mock"),
-        ("Q-0091", "C_hybrid_jev_mock"),
+        ("Q-0091", "B_hybrid_jina"),
+        ("Q-0091", "C_hybrid_jev"),
     }
 
 
@@ -328,8 +434,8 @@ def test_gold_labels_do_not_change_provider_ranking(monkeypatch, tmp_path: Path)
         with (path / "per_question_results.csv").open(newline="", encoding="utf-8") as handle:
             return next(row["ranking_ids"] for row in csv.DictReader(handle) if row["arm"] == arm)
 
-    assert ranking(first, "B_hybrid_jina_mock") == ranking(second, "B_hybrid_jina_mock")
-    assert ranking(first, "C_hybrid_jev_mock") == ranking(second, "C_hybrid_jev_mock")
+    assert ranking(first, "B_hybrid_jina") == ranking(second, "B_hybrid_jina")
+    assert ranking(first, "C_hybrid_jev") == ranking(second, "C_hybrid_jev")
 
 
 def test_metadata_uses_frozen_manifest_provenance(monkeypatch, tmp_path: Path):
@@ -492,3 +598,128 @@ def test_provenance_payload_excludes_secrets():
     for secret in ("provider-secret", "answer-secret", "config-secret", "url-secret", "user:pass"):
         assert secret not in payload
     assert "provenance_sha256" in fingerprints
+
+
+def _ten_candidates():
+    return [
+        pipeline.Candidate(
+            candidate_id=f"candidate-{index}",
+            doc_id=f"doc-{index}",
+            text=f"candidate text {index}",
+            metadata={"chunk_id": f"candidate-{index}"},
+            original_rank=index + 1,
+            dense_score=float(index),
+            sparse_score=float(index),
+            fusion_score=float(10 - index),
+        )
+        for index in range(10)
+    ]
+
+
+def test_real_jina_provider_maps_scores_by_original_document_index():
+    candidates = _ten_candidates()
+    settings = ExperimentSettings(
+        jina_api_key_1="test-key",
+        jina_base_url="https://example.test",
+        jina_reranker_model="test-jina-model",
+    )
+
+    def handler(request):
+        payload = __import__("json").loads(request.read())
+        assert payload["documents"] == [candidate.text for candidate in candidates]
+        assert payload["top_n"] == 10
+        return httpx.Response(
+            200,
+            json={
+                "model": "test-jina-model",
+                "usage": {"total_tokens": 20},
+                "results": [
+                    {"index": 7, "relevance_score": 0.91},
+                    {"index": 2, "relevance_score": 0.83},
+                ] + [
+                    {"index": index, "relevance_score": float(index) / 100}
+                    for index in range(10)
+                    if index not in {7, 2}
+                ],
+            },
+            request=request,
+        )
+
+    transport = httpx.MockTransport(handler)
+    provider = pipeline.JinaRerankerProvider(
+        settings,
+        http_client=httpx.Client(transport=transport),
+    )
+    result = provider.rank("query", candidates)
+    assert set(result.scores) == {candidate.candidate_id for candidate in candidates}
+    assert result.scores["candidate-7"] == 0.91
+    assert result.scores["candidate-2"] == 0.83
+
+
+def test_real_jev_provider_maps_named_answers_to_candidate_ids():
+    candidates = _ten_candidates()
+    settings = ExperimentSettings(
+        jev_api_key="test-key",
+        jev_base_url="https://example.test",
+        jev_model="test-jev-model",
+    )
+    seen: dict[str, object] = {}
+
+    def handler(request):
+        payload = __import__("json").loads(request.read())
+        seen.update(payload)
+        answers = {
+            f"candidate_{candidate.candidate_id}": {
+                "type": "noul",
+                "noul": (index + 1) / 10,
+            }
+            for index, candidate in enumerate(candidates)
+        }
+        return httpx.Response(
+            200,
+            json={"model": "test-jev-model", "answers": answers, "usage": {"input_tokens": 20, "output_tokens": 10}},
+            request=request,
+        )
+
+    provider = pipeline.JEVRerankerProvider(
+        settings,
+        http_client=httpx.Client(transport=httpx.MockTransport(handler)),
+    )
+    result = provider.rank("query", candidates)
+    assert len(seen["questions"]) == 10
+    assert result.scores["candidate-0"] == 0.1
+    assert result.scores["candidate-9"] == 1.0
+
+
+@pytest.mark.parametrize(
+    ("scores", "message"),
+    [
+        (None, "invalid score mapping"),
+        ({}, "no score"),
+        ({f"candidate-{index}": 0.5 for index in range(9)}, "no score"),
+        ({f"candidate-{index}": 0.5 for index in range(10)} | {"unknown": 0.5}, "unknown candidates"),
+        ({f"candidate-{index}": (float("nan") if index == 0 else 0.5) for index in range(10)}, "non-finite"),
+        ({f"candidate-{index}": ("high" if index == 0 else 0.5) for index in range(10)}, "non-numeric"),
+    ],
+)
+def test_provider_score_results_fail_safely(scores, message):
+    candidates = _ten_candidates()
+    with pytest.raises(RuntimeError, match=message):
+        pipeline._rank(candidates, scores)
+
+
+def test_duplicate_candidate_ids_fail_safely():
+    candidates = _ten_candidates()
+    candidates = list(candidates)
+    candidates[1] = pipeline.Candidate(
+        candidate_id=candidates[0].candidate_id,
+        doc_id="duplicate",
+        text="duplicate",
+        metadata={},
+        original_rank=2,
+        dense_score=0,
+        sparse_score=0,
+        fusion_score=0,
+    )
+    with pytest.raises(RuntimeError, match="duplicate candidate"):
+        pipeline._rank(candidates, {f"candidate-{index}": 0.5 for index in range(10)})

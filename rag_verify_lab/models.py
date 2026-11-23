@@ -3,6 +3,7 @@ from __future__ import annotations
 import hashlib
 from functools import lru_cache
 import argparse
+import time
 from pathlib import Path
 from typing import Any
 
@@ -77,6 +78,20 @@ def encode(texts: list[str], *, query: bool = False) -> np.ndarray:
     except Exception as exc:
         raise ModelLoadError(f"embedding failed: {exc}") from exc
     return np.asarray(vectors, dtype=np.float32)
+
+
+def warm_up_embedding_model() -> float:
+    """Load and execute the configured embedding model on CPU before measured work."""
+    started = time.perf_counter()
+    model = embedding_model(settings.embedding_model, settings.embedding_revision, "cpu")
+    model.encode(
+        [QUERY_PREFIX + "embedding warm-up"],
+        batch_size=1,
+        normalize_embeddings=True,
+        convert_to_numpy=True,
+        show_progress_bar=False,
+    )
+    return (time.perf_counter() - started) * 1000
 
 
 def rerank(query: str, texts: list[str]) -> np.ndarray:

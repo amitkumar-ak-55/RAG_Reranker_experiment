@@ -1,6 +1,8 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
+import os
+import time
 
 from openai import OpenAI
 from ..config import settings
@@ -24,6 +26,19 @@ def _is_rate_limit(exc: Exception) -> bool:
     return status == 429 or "429" in message or "rate limit" in message or "quota" in message
 
 
+_last_answer_start = 0.0
+
+
+def _wait_for_answer_slot() -> None:
+    global _last_answer_start
+    rpm = max(1, int(os.getenv("GROQ_REQUESTS_PER_MINUTE", "24")))
+    interval = 60.0 / rpm
+    elapsed = time.monotonic() - _last_answer_start
+    if elapsed < interval:
+        time.sleep(interval - elapsed)
+    _last_answer_start = time.monotonic()
+
+
 def answer_question(question: str, evidence: list[dict[str, object]]) -> Answer:
     if not settings.answer_model:
         raise RuntimeError("Answer model not configured")
@@ -39,11 +54,20 @@ def answer_question(question: str, evidence: list[dict[str, object]]) -> Answer:
     last_error: Exception | None = None
     for api_key in settings.answer_api_keys:
         try:
-            response = OpenAI(api_key=api_key, base_url=settings.answer_base_url).chat.completions.create(
-                model=settings.answer_model,
-                messages=[{"role": "user", "content": question + "\n\n" + prompt}],
-                max_tokens=settings.answer_max_tokens,
-            )
+            _wait_for_answer_slot()
+            params: dict[str, object] = {
+                "model": settings.answer_model,
+                "messages": [{"role": "user", "content": question + "\n\n" + prompt}],
+            }
+            if "gpt-oss" in settings.answer_model.lower():
+                params["max_completion_tokens"] = max(settings.answer_max_tokens, 256)
+                params["extra_body"] = {
+                    "reasoning_effort": "low",
+                    "include_reasoning": False,
+                }
+            else:
+                params["max_tokens"] = settings.answer_max_tokens
+            response = OpenAI(api_key=api_key, base_url=settings.answer_base_url).chat.completions.create(**params)
             break
         except Exception as exc:
             last_error = exc

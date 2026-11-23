@@ -24,7 +24,7 @@ from .gold import document_cves, map_gold, normalize_cve
 from .provenance import runtime_manifest, sha256_file, sha256_text, utc_now, write_json
 
 ARMS = ("baseline", "jina", "jev")
-EXPERIMENT_VERSION = "abcrerank-v1"
+EXPERIMENT_VERSION = "abcrerank-v2"
 
 
 def load_jsonl(path: Path) -> list[dict[str, Any]]:
@@ -138,11 +138,22 @@ def run_production_pilot(
     output_dir: Path | None = None,
     *,
     question_limit: int = 1,
+    resume: bool = False,
 ) -> Path:
     from .pipeline import run_production_pipeline
 
     destination = output_dir or (ROOT / "data" / "experiments" / f"production_pilot_{uuid.uuid4().hex[:12]}")
-    return run_production_pipeline(destination, question_limit=question_limit)
+    return run_production_pipeline(destination, question_limit=question_limit, resume=resume)
+
+
+def run_production_full(
+    output_dir: Path | None = None,
+    *,
+    resume: bool = False,
+) -> Path:
+    from .pipeline import run_production_full
+    destination = output_dir or (ROOT / "data" / "experiments" / f"production_full_{uuid.uuid4().hex[:12]}")
+    return run_production_full(destination, resume=resume)
 
 
 def _write_csv(path: Path, rows: list[dict[str, Any]]) -> None:

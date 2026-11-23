@@ -48,10 +48,18 @@ def test_jev_batch_uses_one_post_with_ten_keyed_questions():
         parsed = json.loads(payload)
         seen.append(parsed)
         answers = {
-            key: {"noul": index / 10}
+            key: {"type": "noul", "noul": index / 10}
             for index, key in enumerate(parsed["questions"])
         }
-        return httpx.Response(200, json={"answers": answers}, request=request)
+        return httpx.Response(
+            200,
+            json={
+                "model": "jev-latest",
+                "answers": answers,
+                "usage": {"input_tokens": 120, "output_tokens": 12},
+            },
+            request=request,
+        )
 
     transport = httpx.MockTransport(handler)
     with JEVBatchClient(

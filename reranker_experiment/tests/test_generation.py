@@ -9,6 +9,7 @@ from rag_verify_lab.rag.answer import Answer
 from reranker_experiment import generation
 from reranker_experiment.generation import GenerationResult, ProductionAnswerProvider
 from reranker_experiment.pipeline import Candidate, MockAnswerProvider
+import rag_verify_lab.rag.answer as answer_module
 
 
 def _candidate(index: int) -> Candidate:
@@ -69,6 +70,18 @@ def test_all_arms_can_share_identical_generation_settings():
     assert [settings.copy() for _ in ("baseline", "jina", "jev")] == [settings, settings, settings]
 
 
+def test_gpt_oss_generation_settings_report_effective_completion_limit(monkeypatch):
+    monkeypatch.setattr(
+        generation,
+        "production_settings",
+        SimpleNamespace(answer_model="openai/gpt-oss-120b", answer_max_tokens=32),
+    )
+
+    provider = ProductionAnswerProvider(lambda query, evidence: Answer("ok", 0, 0, None))
+
+    assert provider.generation_settings.max_tokens == 256
+
+
 def test_mock_answer_provider_remains_available():
     answer = MockAnswerProvider().answer("question", [_candidate(0)])
 
@@ -86,3 +99,44 @@ def test_production_answer_source_is_not_modified():
     before = hashlib.sha256(source.read_bytes()).digest()
     ProductionAnswerProvider(lambda query, evidence: Answer("ok", 0, 0, None))
     assert hashlib.sha256(source.read_bytes()).digest() == before
+
+
+def test_gpt_oss_answer_uses_low_reasoning_completion_budget(monkeypatch):
+    seen: list[dict[str, object]] = []
+
+    class FakeCompletions:
+        def create(self, **kwargs):
+            seen.append(kwargs)
+            return SimpleNamespace(
+                choices=[SimpleNamespace(message=SimpleNamespace(content="CVE-2021-41773 [E1]"))],
+                usage=SimpleNamespace(prompt_tokens=100, completion_tokens=20),
+            )
+
+    class FakeClient:
+        def __init__(self, **kwargs):
+            self.chat = SimpleNamespace(completions=FakeCompletions())
+
+    monkeypatch.setattr(answer_module, "OpenAI", FakeClient)
+    monkeypatch.setattr(
+        answer_module,
+        "settings",
+        SimpleNamespace(
+            answer_model="openai/gpt-oss-120b",
+            answer_max_tokens=32,
+            answer_api_key="test-key",
+            answer_api_keys=("test-key",),
+            answer_base_url="https://example.test",
+            price_answer_in_per_m="",
+            price_answer_out_per_m="",
+        ),
+    )
+    monkeypatch.setattr(answer_module, "_wait_for_answer_slot", lambda: None)
+
+    answer = answer_module.answer_question(
+        "What CVE is described?",
+        [{"title": "CVE-2021-41773", "text": "CVE-2021-41773 allows remote code execution", "description": "CVE-2021-41773 allows remote code execution"}],
+    )
+
+    assert "CVE-2021-41773" in answer.text
+    assert seen[0]["max_completion_tokens"] == 256
+    assert seen[0]["extra_body"] == {"reasoning_effort": "low", "include_reasoning": False}

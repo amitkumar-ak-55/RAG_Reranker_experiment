@@ -23,6 +23,13 @@ from .config import settings as experiment_settings
 from .gold import normalize_cve
 from .provenance import canonical_hash, runtime_manifest, sha256_file, utc_now, write_json
 
+ARM_IDS = ("A_hybrid_baseline", "B_hybrid_jina", "C_hybrid_jev")
+LEGACY_ARM_IDS = (
+    "A_hybrid_baseline",
+    "B_hybrid_jina_mock",
+    "C_hybrid_jev_mock",
+)
+
 if TYPE_CHECKING:
     from .generation import GenerationResult
 
@@ -75,6 +82,111 @@ class HashReranker:
             for candidate in candidates
         }
         return ProviderResult(scores, (time.perf_counter() - started) * 1000)
+
+
+class JinaRerankerProvider:
+    """Adapter for the tested Jina reranker HTTP implementation."""
+
+    name = "jina-reranker"
+
+    def __init__(self, experiment_settings: object | None = None, *, http_client: object | None = None) -> None:
+        from .config import settings
+
+        self.settings = experiment_settings or settings
+        self._http_client = http_client
+        self.name = f"jina-reranker:{getattr(self.settings, 'jina_reranker_model', 'unavailable')}"
+
+    def rank(self, query: str, candidates: list[Candidate]) -> ProviderResult:
+        if len(candidates) != 10:
+            raise RuntimeError(f"Jina reranking requires exactly 10 candidates, got {len(candidates)}")
+        if len({candidate.candidate_id for candidate in candidates}) != len(candidates):
+            raise RuntimeError("Jina reranking received duplicate candidate IDs")
+
+        from .client import JinaReranker
+
+        started = time.perf_counter()
+        with JinaReranker(self.settings, client=self._http_client) as reranker:
+            response = reranker.rerank(
+                query,
+                [candidate.text for candidate in candidates],
+                top_n=len(candidates),
+            )
+        latency_ms = (time.perf_counter() - started) * 1000
+        if not isinstance(response.scores, list) or len(response.scores) != len(candidates):
+            raise RuntimeError(
+                f"Jina returned {len(response.scores) if isinstance(response.scores, list) else 'invalid'} "
+                f"scores; expected {len(candidates)}"
+            )
+        scores: dict[str, float] = {}
+        for index, candidate in enumerate(candidates):
+            score = response.scores[index]
+            if isinstance(score, bool) or not isinstance(score, (int, float)):
+                raise RuntimeError("Jina returned a non-numeric relevance score")
+            numeric = float(score)
+            if not math.isfinite(numeric):
+                raise RuntimeError("Jina returned a missing or non-finite relevance score")
+            scores[candidate.candidate_id] = numeric
+        return ProviderResult(scores, latency_ms)
+
+
+class JEVRerankerProvider:
+    """Adapter for the tested TypeSafe JEV System One batch implementation."""
+
+    name = "jev-system-one"
+
+    def __init__(self, experiment_settings: object | None = None, *, http_client: object | None = None) -> None:
+        from .config import settings
+
+        self.settings = experiment_settings or settings
+        self._http_client = http_client
+        self.name = f"jev-system-one:{getattr(self.settings, 'jev_model', 'unavailable')}"
+
+    def rank(self, query: str, candidates: list[Candidate]) -> ProviderResult:
+        if len(candidates) != 10:
+            raise RuntimeError(f"JEV reranking requires exactly 10 candidates, got {len(candidates)}")
+        candidate_ids = [candidate.candidate_id for candidate in candidates]
+        if len(candidate_ids) != len(set(candidate_ids)):
+            raise RuntimeError("JEV reranking received duplicate candidate IDs")
+        if not getattr(self.settings, "jev_api_key", ""):
+            raise RuntimeError("JEV API key is not configured")
+        if not getattr(self.settings, "jev_base_url", ""):
+            raise RuntimeError("JEV base URL is not configured")
+        if not getattr(self.settings, "jev_model", ""):
+            raise RuntimeError("JEV model is not configured")
+
+        from .jev_batch import JEVBatchClient
+
+        started = time.perf_counter()
+        with JEVBatchClient(
+            api_key=self.settings.jev_api_key,
+            base_url=self.settings.jev_base_url,
+            model=self.settings.jev_model,
+            timeout_seconds=getattr(self.settings, "timeout_seconds", 30),
+            http_client=self._http_client,
+        ) as jev:
+            result = jev.score(
+                "experiment",
+                query,
+                [
+                    {"doc_id": candidate.candidate_id, "text": candidate.text}
+                    for candidate in candidates
+                ],
+            )
+        latency_ms = (time.perf_counter() - started) * 1000
+        if set(result.scores) != set(candidate_ids):
+            missing = sorted(set(candidate_ids) - set(result.scores))
+            extra = sorted(set(result.scores) - set(candidate_ids))
+            raise RuntimeError(f"JEV returned incomplete candidate scores; missing={missing}, extra={extra}")
+        scores: dict[str, float] = {}
+        for candidate_id in candidate_ids:
+            score = result.scores[candidate_id]
+            if isinstance(score, bool) or not isinstance(score, (int, float)):
+                raise RuntimeError("JEV returned a non-numeric Noul score")
+            numeric = float(score)
+            if not math.isfinite(numeric) or not 0 <= numeric <= 1:
+                raise RuntimeError("JEV returned an invalid Noul score")
+            scores[candidate_id] = numeric
+        return ProviderResult(scores, latency_ms)
 
 
 class MockAnswerProvider:
@@ -241,12 +353,14 @@ def _fingerprints(
         "evidence_limit": 5,
         "embedding_model": experiment_settings.embedding_model,
         "embedding_revision": experiment_settings.embedding_revision,
+        "embedding_device": "cpu",
+        "embedding_warmup_required": True,
     }
     provenance = {
         "experiment_version": EXPERIMENT_VERSION,
         "provider_mode": provider_mode,
         "question_limit": question_limit,
-        "arms": ["A_hybrid_baseline", "B_hybrid_jina_mock", "C_hybrid_jev_mock"],
+        "arms": list(ARM_IDS),
         "candidate_pool_size": 10,
         "evidence_size": 5,
         "retrieval": retrieval_config,
@@ -285,6 +399,17 @@ def _validate_checkpoint(output_dir: Path, expected: dict[str, str], expected_ke
     def invalid(message: str) -> None:
         raise RuntimeError(f"Cannot resume: {message}")
 
+    legacy_arm_aliases = {
+        "B_hybrid_jina_mock": "B_hybrid_jina",
+        "C_hybrid_jev_mock": "C_hybrid_jev",
+    }
+
+    def normalize_arm_key(key: str) -> str:
+        question_id, separator, arm = key.partition(":")
+        if not separator:
+            return key
+        return f"{question_id}:{legacy_arm_aliases.get(arm, arm)}"
+
     try:
         checkpoint_path = output_dir / "checkpoint.json"
         if not checkpoint_path.is_file():
@@ -303,6 +428,7 @@ def _validate_checkpoint(output_dir: Path, expected: dict[str, str], expected_ke
     if not isinstance(completed_values, list) or len(completed_values) != len(set(completed_values)):
         invalid("completed question-arm keys contain duplicates or have an invalid shape")
     completed = set(completed_values)
+    completed = {normalize_arm_key(key) for key in completed}
     if completed != expected_keys:
         invalid("completed question-arm results are incomplete or inconsistent")
     expected_question_ids = {key.split(":", 1)[0] for key in expected_keys}
@@ -356,7 +482,8 @@ def _validate_checkpoint(output_dir: Path, expected: dict[str, str], expected_ke
     answers = read_jsonl(answers_path)
     retrieval_rows = read_jsonl(retrieval_path)
     required_result = {
-        "question_id", "arm", "candidate_ids", "ranking_ids", "selected_evidence_ids",
+        "question_id", "arm",
+        "candidate_ids", "ranking_ids", "selected_evidence_ids",
         "answer", "answer_provider", "answer_model", "generation_config",
         "answer_generation_latency_ms", "answer_tokens_in", "answer_tokens_out",
         "answer_cost", "answer_status", "answer_error_category", "answer_error_message",
@@ -369,7 +496,7 @@ def _validate_checkpoint(output_dir: Path, expected: dict[str, str], expected_ke
     candidate_by_key: dict[str, list[dict[str, str]]] = {}
     answer_by_key: dict[str, dict[str, object]] = {}
     for row in results:
-        key = f"{row.get('question_id')}:{row.get('arm')}"
+        key = normalize_arm_key(f"{row.get('question_id')}:{row.get('arm')}")
         if key in result_by_key or key not in expected_keys:
             invalid("per-question results contain duplicate or unexpected question-arm rows")
         result_by_key[key] = row
@@ -410,7 +537,7 @@ def _validate_checkpoint(output_dir: Path, expected: dict[str, str], expected_ke
     if len(candidates) != len(expected_keys) * 10:
         invalid("per-candidate results have an invalid row count")
     for row in candidates:
-        key = f"{row.get('question_id')}:{row.get('arm')}"
+        key = normalize_arm_key(f"{row.get('question_id')}:{row.get('arm')}")
         if key not in expected_keys:
             invalid("per-candidate results contain unexpected question-arm rows")
         candidate_by_key.setdefault(key, []).append(row)
@@ -462,7 +589,7 @@ def _validate_checkpoint(output_dir: Path, expected: dict[str, str], expected_ke
         invalid("generated answers have an invalid schema or row count")
     for answer in answers:
         try:
-            key = f"{answer['question_id']}:{answer['arm']}"
+            key = normalize_arm_key(f"{answer['question_id']}:{answer['arm']}")
         except (KeyError, TypeError):
             invalid("generated answers have an invalid schema")
         if key in answer_by_key or key not in expected_keys:
@@ -532,6 +659,24 @@ def _validate_checkpoint(output_dir: Path, expected: dict[str, str], expected_ke
         invalid("aggregate generation status is missing or inconsistent")
 
 
+def _validate_partial_checkpoint(output_dir: Path, expected: dict[str, str]) -> set[str]:
+    checkpoint_path = output_dir / "checkpoint.json"
+    if not checkpoint_path.is_file():
+        raise RuntimeError("Cannot resume: checkpoint is missing")
+    try:
+        checkpoint = json.loads(checkpoint_path.read_text(encoding="utf-8"))
+    except (OSError, TypeError, ValueError, json.JSONDecodeError):
+        raise RuntimeError("Cannot resume: checkpoint is malformed")
+    if not isinstance(checkpoint, dict):
+        raise RuntimeError("Cannot resume: checkpoint is malformed")
+    if checkpoint.get("fingerprints") != expected:
+        raise RuntimeError("Cannot resume: input/configuration hashes changed")
+    completed = checkpoint.get("completed_question_ids")
+    if not isinstance(completed, list) or len(completed) != len(set(completed)):
+        raise RuntimeError("Cannot resume: completed question IDs are malformed")
+    return {str(question_id) for question_id in completed}
+
+
 def _candidate(item: IndexedFinding, rank: int) -> Candidate:
     return Candidate(
         candidate_id=str(item.metadata.get("chunk_id", item.id)),
@@ -546,9 +691,22 @@ def _candidate(item: IndexedFinding, rank: int) -> Candidate:
 
 
 def _rank(candidates: list[Candidate], scores: dict[str, float]) -> list[Candidate]:
+    if not isinstance(scores, dict):
+        raise RuntimeError("Provider returned an invalid score mapping")
+    candidate_ids = [candidate.candidate_id for candidate in candidates]
+    if len(candidate_ids) != len(set(candidate_ids)):
+        raise RuntimeError("Candidate pool contains duplicate candidate IDs")
     missing = [candidate.candidate_id for candidate in candidates if candidate.candidate_id not in scores]
     if missing:
         raise RuntimeError(f"Provider returned no score for candidates: {missing}")
+    extra = sorted(set(scores) - set(candidate_ids))
+    if extra:
+        raise RuntimeError(f"Provider returned scores for unknown candidates: {extra}")
+    for candidate_id, score in scores.items():
+        if isinstance(score, bool) or not isinstance(score, (int, float)):
+            raise RuntimeError(f"Provider returned a non-numeric score for {candidate_id}")
+        if not math.isfinite(float(score)):
+            raise RuntimeError(f"Provider returned a non-finite score for {candidate_id}")
     return sorted(candidates, key=lambda candidate: (-scores[candidate.candidate_id], candidate.original_rank))
 
 
@@ -591,14 +749,32 @@ def run_pipeline(
     answer_provider: AnswerProvider | None = None,
     resume: bool = False,
 ) -> Path:
-    if provider == "production" and not 1 <= question_limit <= 3:
-        raise ValueError("Production pilot is restricted to one to three questions")
+    if provider == "production" and not 1 <= question_limit <= 300:
+        raise ValueError("Production question limit must be between one and 300")
+    if provider not in {"mock", "production"}:
+        from .generation import select_answer_provider
+
+        select_answer_provider(provider, mock_provider=answer_provider)
+    if provider == "production" and (jina_provider is not None or jev_provider is not None):
+        raise ValueError("Production reranker providers cannot be injected; use the real configured adapters")
     dataset_path = Path(__file__).resolve().parent.parent / "data" / "eval" / "final" / "eval_hard_300.jsonl"
     questions = load_jsonl(dataset_path)[:question_limit]
-    if question_limit > 3:
+    if provider == "mock" and question_limit > 3:
         raise ValueError("Development mock pipeline is capped at three questions")
-    jina_provider = jina_provider or HashReranker("jina-mock")
-    jev_provider = jev_provider or HashReranker("jev-mock")
+    if provider == "mock":
+        jina_provider = jina_provider or HashReranker("jina-mock")
+        jev_provider = jev_provider or HashReranker("jev-mock")
+    else:
+        if not experiment_settings.api_keys:
+            raise RuntimeError("Production Jina reranker is not configured: JINA API key is missing")
+        if not experiment_settings.jina_base_url or not experiment_settings.jina_reranker_model:
+            raise RuntimeError("Production Jina reranker is not configured: base URL or model is missing")
+        if not experiment_settings.jev_api_key:
+            raise RuntimeError("Production JEV reranker is not configured: JEV API key is missing")
+        if not experiment_settings.jev_base_url or not experiment_settings.jev_model:
+            raise RuntimeError("Production JEV reranker is not configured: base URL or model is missing")
+        jina_provider = JinaRerankerProvider(experiment_settings)
+        jev_provider = JEVRerankerProvider(experiment_settings)
     from .generation import select_answer_provider
     from .generation import sanitize_persisted_value
 
@@ -614,22 +790,53 @@ def run_pipeline(
     expected_keys = {
         f"{question['question_id']}:{arm}"
         for question in questions
-        for arm in ("A_hybrid_baseline", "B_hybrid_jina_mock", "C_hybrid_jev_mock")
+        for arm in ARM_IDS
     }
+    completed_ids: set[str] = set()
     if resume:
-        _validate_checkpoint(output_dir, fingerprints, expected_keys)
-        return output_dir
+        try:
+            _validate_checkpoint(output_dir, fingerprints, expected_keys)
+            return output_dir
+        except RuntimeError as complete_error:
+            checkpoint_path = output_dir / "checkpoint.json"
+            try:
+                partial_checkpoint = json.loads(checkpoint_path.read_text(encoding="utf-8"))
+                partial_keys = set(partial_checkpoint.get("completed_question_arm_keys", []))
+            except (OSError, TypeError, ValueError, json.JSONDecodeError):
+                raise complete_error
+            if partial_keys and partial_keys != expected_keys:
+                completed_ids = _validate_partial_checkpoint(output_dir, fingerprints)
+                questions = [
+                    question
+                    for question in questions
+                    if str(question["question_id"]) not in completed_ids
+                ]
+            else:
+                raise complete_error
 
     index = _load_frozen_index()
     index_manifest = _load_index_manifest()
+    embedding_warmup_latency_ms = 0.0
+    if provider == "production":
+        from rag_verify_lab.models import warm_up_embedding_model
+
+        embedding_warmup_latency_ms = warm_up_embedding_model()
 
     metadata = {
-        "mode": "mock_provider_development" if provider == "mock" else "production_pilot",
+        "mode": (
+            "mock_provider_development"
+            if provider == "mock"
+            else "production_full"
+            if question_limit == 300
+            else "production_pilot"
+        ),
         "created_at_utc": utc_now(),
         "dataset": validate_dataset(dataset_path),
         "index_version": str(index_manifest["index_version"]),
         "embedding_model": app_settings.embedding_model,
         "embedding_revision": app_settings.embedding_revision,
+        "embedding_device": "cpu",
+        "embedding_warmup_latency_ms": embedding_warmup_latency_ms,
         "snapshot_fingerprints": fingerprints,
         "snapshot": {
             "index_version": str(index_manifest["index_version"]),
@@ -638,7 +845,13 @@ def run_pipeline(
         },
         "retrieval": {"implementation": "rag_verify_lab.rag.retrieve.retrieve", "sparse": True, "reranker": False, "candidate_limit": 10},
         "evidence_limit": 5,
-        "arms": ["A_hybrid_baseline", "B_hybrid_jina_mock", "C_hybrid_jev_mock"],
+        "arms": list(ARM_IDS),
+        "provider_mode": provider,
+        "rerankers": sanitize_persisted_value({
+            "baseline": {"name": "hybrid-original-order", "model": None},
+            "jina": {"name": jina_provider.name, "model": experiment_settings.jina_reranker_model},
+            "jev": {"name": jev_provider.name, "model": experiment_settings.jev_model},
+        }),
         "providers": sanitize_persisted_value({
             "jina": jina_provider.name,
             "jev": jev_provider.name,
@@ -658,7 +871,20 @@ def run_pipeline(
     answer_rows: list[dict[str, object]] = []
     events: list[dict[str, object]] = []
     candidate_log: list[dict[str, object]] = []
-    retrieval_calls = 0
+    if resume and completed_ids:
+        with (output_dir / "per_question_results.csv").open(newline="", encoding="utf-8") as handle:
+            question_rows = [dict(row) for row in csv.DictReader(handle)]
+        with (output_dir / "per_candidate_results.csv").open(newline="", encoding="utf-8") as handle:
+            candidate_rows = [dict(row) for row in csv.DictReader(handle)]
+        with (output_dir / "generated_answers.jsonl").open(encoding="utf-8") as handle:
+            answer_rows = [json.loads(line) for line in handle if line.strip()]
+        with (output_dir / "retrieval_candidates.jsonl").open(encoding="utf-8") as handle:
+            candidate_log = [json.loads(line) for line in handle if line.strip()]
+        try:
+            events = json.loads((output_dir / "structured_events.json").read_text(encoding="utf-8"))[1:]
+        except (OSError, TypeError, ValueError, json.JSONDecodeError):
+            events = []
+    retrieval_calls = len(completed_ids)
     generation_successes = 0
     generation_failures = 0
     generation_failure_keys: list[dict[str, str]] = []
@@ -676,8 +902,8 @@ def run_pipeline(
             "A_hybrid_baseline": ProviderResult(
                 {candidate.candidate_id: -float(candidate.original_rank) for candidate in candidates}, 0.0
             ),
-            "B_hybrid_jina_mock": jina_provider.rank(query, candidates),
-            "C_hybrid_jev_mock": jev_provider.rank(query, candidates),
+            "B_hybrid_jina": jina_provider.rank(query, candidates),
+            "C_hybrid_jev": jev_provider.rank(query, candidates),
         }
         rankings = {arm: _rank(candidates, result.scores) for arm, result in provider_results.items()}
         for arm, ranking in rankings.items():
@@ -707,9 +933,21 @@ def run_pipeline(
             else:
                 generation_failures += 1
                 generation_failure_keys.append({"question_id": question["question_id"], "arm": arm})
+            if arm == "A_hybrid_baseline":
+                reranker_name = "hybrid-original-order"
+                reranker_model = None
+            elif arm == "B_hybrid_jina":
+                reranker_name = jina_provider.name
+                reranker_model = experiment_settings.jina_reranker_model
+            else:
+                reranker_name = jev_provider.name
+                reranker_model = experiment_settings.jev_model
             question_rows.append({
                 "question_id": question["question_id"],
                 "arm": arm,
+                "provider_mode": provider,
+                "reranker_provider": reranker_name,
+                "reranker_model": reranker_model or "unavailable",
                 "gold_cve": normalize_cve(question.get("gold_cve")),
                 "candidate_ids": json.dumps(candidate_ids),
                 "ranking_ids": json.dumps([candidate.candidate_id for candidate in ranking]),
@@ -734,6 +972,9 @@ def run_pipeline(
             answer_rows.append({
                 "question_id": question["question_id"],
                 "arm": arm,
+                "provider_mode": provider,
+                "reranker_provider": reranker_name,
+                "reranker_model": reranker_model or "unavailable",
                 "answer": answer_result.text if answer_result.text is not None else UNAVAILABLE,
                 "evidence_ids": json.dumps([candidate.candidate_id for candidate in evidence]),
                 "answer_provider": answer_result.provider,
@@ -751,6 +992,9 @@ def run_pipeline(
                 candidate_rows.append({
                     "question_id": question["question_id"],
                     "arm": arm,
+                    "provider_mode": provider,
+                    "reranker_provider": reranker_name,
+                    "reranker_model": reranker_model or "unavailable",
                     "candidate_id": candidate.candidate_id,
                     "doc_id": candidate.doc_id,
                     "document_hash": hashlib.sha256(candidate.text.encode()).hexdigest(),
@@ -762,7 +1006,18 @@ def run_pipeline(
                     "final_rank": final_rank,
                     "selected_for_generation": final_rank <= 5,
                 })
+        completed_ids.add(str(question["question_id"]))
         events.append({"event": "question_completed", "question_id": question["question_id"], "retrieval_calls": retrieval_calls})
+        write_json(output_dir / "checkpoint.json", {
+            "completed_question_ids": sorted(completed_ids),
+            "completed_question_arm_keys": sorted(
+                f"{question_id}:{arm}"
+                for question_id in completed_ids
+                for arm in ARM_IDS
+            ),
+            "retrieval_calls": retrieval_calls,
+            "fingerprints": fingerprints,
+        })
 
     generation_status = (
         "failed"
@@ -784,11 +1039,21 @@ def run_pipeline(
     _write_csv(output_dir / "per_question_results.csv", question_rows)
     _write_csv(output_dir / "per_candidate_results.csv", candidate_rows)
     write_json(output_dir / "checkpoint.json", {
-        "completed_question_ids": [question["question_id"] for question in questions],
-        "completed_question_arm_keys": sorted(expected_keys),
+        "completed_question_ids": sorted(completed_ids),
+        "completed_question_arm_keys": sorted(
+            f"{question_id}:{arm}"
+            for question_id in completed_ids
+            for arm in ARM_IDS
+        ),
         "retrieval_calls": retrieval_calls,
         "fingerprints": fingerprints,
     })
+    try:
+        from .paper_report import generate_paper_artifacts
+
+        generate_paper_artifacts(output_dir)
+    except Exception:
+        pass
     return output_dir
 
 
@@ -816,12 +1081,21 @@ def run_mock_pipeline(
 
 
 def run_production_pipeline(output_dir: Path, *, question_limit: int = 1, resume: bool = False) -> Path:
-    if not 1 <= question_limit <= 3:
-        raise ValueError("Production pilot is restricted to one to three questions")
+    if not 1 <= question_limit <= 300:
+        raise ValueError("Production question limit must be between one and 300")
     return run_pipeline(
         output_dir,
         provider="production",
         question_limit=question_limit,
+        resume=resume,
+    )
+
+
+def run_production_full(output_dir: Path, *, resume: bool = False) -> Path:
+    return run_pipeline(
+        output_dir,
+        provider="production",
+        question_limit=300,
         resume=resume,
     )
 

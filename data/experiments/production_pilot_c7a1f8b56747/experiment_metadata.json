@@ -1,0 +1,74 @@
+{
+  "answer_generation": {
+    "max_tokens": 256,
+    "model": "openai/gpt-oss-120b",
+    "temperature": null
+  },
+  "arms": [
+    "A_hybrid_baseline",
+    "B_hybrid_jina",
+    "C_hybrid_jev"
+  ],
+  "created_at_utc": "2026-11-18T19:11:42.935371+00:00",
+  "dataset": {
+    "difficulty_counts": {
+      "easy": 139,
+      "hard": 59,
+      "medium": 102
+    },
+    "duplicate_groups": {},
+    "filename": "C:\\Users\\bhagy\\Desktop\\CysekRAG\\data\\eval\\final\\eval_hard_300.jsonl",
+    "record_count": 300,
+    "sha256": "0dad81945e4c0e27783923a4d5bd50f8f5a764587a05391b9c80ee9e378afa69",
+    "unique_question_ids": 300,
+    "unique_question_texts": 300,
+    "valid_300_record_dataset": true
+  },
+  "embedding_model": "BAAI/bge-base-en-v1.5",
+  "embedding_revision": "a5beb1e3e68b9ab74eb54cfd186867f64f240e1a",
+  "evidence_limit": 5,
+  "external_calls": true,
+  "index_version": "68e2ecad34e25474fcf5d50c0b14fdcc7b8bf92ea8d4ec5d2347a08e7361a3ea",
+  "mode": "production_pilot",
+  "provider_mode": "production",
+  "providers": {
+    "answer": "production-answer-provider",
+    "jev": "jev-system-one:jev-latest",
+    "jina": "jina-reranker:jina-reranker-v3.5"
+  },
+  "rerankers": {
+    "baseline": {
+      "model": null,
+      "name": "hybrid-original-order"
+    },
+    "jev": {
+      "model": "jev-latest",
+      "name": "jev-system-one:jev-latest"
+    },
+    "jina": {
+      "model": "jina-reranker-v3.5",
+      "name": "jina-reranker:jina-reranker-v3.5"
+    }
+  },
+  "retrieval": {
+    "candidate_limit": 10,
+    "implementation": "rag_verify_lab.rag.retrieve.retrieve",
+    "reranker": false,
+    "sparse": true
+  },
+  "snapshot": {
+    "corpus_sha256": "8c4daa39da534a7f4871f4e4f4d72af03bf8fd3ce5b34e5dac586e11e585f6fc",
+    "embedding_dimension": 768,
+    "index_version": "68e2ecad34e25474fcf5d50c0b14fdcc7b8bf92ea8d4ec5d2347a08e7361a3ea"
+  },
+  "snapshot_fingerprints": {
+    "dataset_sha256": "0dad81945e4c0e27783923a4d5bd50f8f5a764587a05391b9c80ee9e378afa69",
+    "experiment_config_sha256": "819e627193eeba1d2579702c64f7523930b70625b9d1e1d27c0dee819f832114",
+    "index_manifest_sha256": "da987d419211a0d70a1b3734f90136a5d14d39b37a63acfeb329b2d365de9d16",
+    "kb_database_sha256": "8bc8cf6a029dd2eafc747e367749a78e459f79e15c958c7a2e1bb69635649d5a",
+    "kb_manifest_sha256": "fb571e438e5afc8e4febed656325972fd5b1c39b8552ccd1fbd0e1575f583f6f",
+    "provenance_json": "{\"answer_generation\":{\"prompt_hash\":\"unavailable\",\"provider\":{\"implementation\":\"reranker_experiment.generation.ProductionAnswerProvider\",\"model\":\"openai/gpt-oss-120b\",\"name\":\"production-answer-provider\",\"prompt_hash\":\"unavailable\",\"settings\":{\"max_tokens\":256,\"model\":\"openai/gpt-oss-120b\",\"temperature\":null}},\"settings\":{\"max_tokens\":256,\"model\":\"openai/gpt-oss-120b\",\"temperature\":null}},\"arms\":[\"A_hybrid_baseline\",\"B_hybrid_jina\",\"C_hybrid_jev\"],\"candidate_pool_size\":10,\"evidence_size\":5,\"experiment_version\":\"abcrerank-v2\",\"provider_mode\":\"production\",\"question_limit\":3,\"ranking\":{\"baseline\":\"original_rank_descending\",\"jev\":{\"implementation\":\"reranker_experiment.pipeline.JEVRerankerProvider\",\"model\":\"jev-latest\",\"name\":\"jev-system-one:jev-latest\",\"prompt_hash\":\"unavailable\",\"settings\":\"unavailable\"},\"jina\":{\"implementation\":\"reranker_experiment.pipeline.JinaRerankerProvider\",\"model\":\"jina-reranker-v3.5\",\"name\":\"jina-reranker:jina-reranker-v3.5\",\"prompt_hash\":\"unavailable\",\"settings\":\"unavailable\"}},\"retrieval\":{\"candidate_limit\":10,\"embedding_model\":\"BAAI/bge-base-en-v1.5\",\"embedding_revision\":\"a5beb1e3e68b9ab74eb54cfd186867f64f240e1a\",\"evidence_limit\":5,\"implementation\":\"rag_verify_lab.rag.retrieve.retrieve\",\"use_reranker\":false,\"use_sparse\":true},\"runtime\":{\"packages\":{\"SQLAlchemy\":\"2.0.51\",\"httpx\":\"0.28.1\",\"numpy\":\"2.4.4\",\"python-dotenv\":\"1.2.2\"},\"platform\":\"Windows-11-10.0.26200-SP0\",\"python\":\"3.14.5 (tags/v3.14.5:5607950, May 10 2026, 10:43:50) [MSC v.1944 64 bit (AMD64)]\"},\"settings\":{\"answer_max_tokens\":32,\"answer_model\":\"openai/gpt-oss-120b\",\"configured_candidate_limit\":20,\"configured_result_limit\":5,\"embedding_model\":\"BAAI/bge-base-en-v1.5\",\"embedding_revision\":\"a5beb1e3e68b9ab74eb54cfd186867f64f240e1a\",\"jev_base_url\":\"https://api.typesafe.ai\",\"jev_model\":\"jev-latest\",\"jina_base_url\":\"https://api.jina.ai/v1/rerank\",\"jina_key_slots\":2,\"jina_reranker_model\":\"jina-reranker-v3.5\",\"timeout_seconds\":30.0},\"source_hashes\":{\"experiment_client\":\"b173daf5f177d948d8e30fe5047ec70c4e4e1bae0b2925ba46da15c45baeb087\",\"experiment_config\":\"d02e71b9c4cfb238053cabb7196a0ec159066c3b8fb0cd357c63d607a96d859b\",\"experiment_definition\":\"396215b9387df6b3a28ab11b38ac159e29a6fbffe604c09a367069e347034f9e\",\"experiment_generation\":\"0ef370e65df843d35b08eba15d4b5fac62dd77f1be13845812d0d5351b7ebd4c\",\"experiment_pipeline\":\"117978570a84c5f0bd9f4c6f4453b2ce2e8236cd636fee4ee195c5f18152500b\",\"experiment_provenance\":\"d6defca861f4f7e0e3e71a2fbca3f1b13e6302f31f96a0875a8ae2f75e383dcd\",\"production_answer\":\"141721940af2586cc14ed167d638442f17609f4a36c8ee56691ae7a6decff2b4\",\"production_index\":\"821eefea7e0becc22378e32746662fac3de1024b5c17c2239f0b8799e39cb6a9\",\"production_retrieve\":\"b26c53be474511d909c5ae9f302959ec16a7ddad48f9fee0a0e177bb514390f9\"}}",
+    "provenance_sha256": "819e627193eeba1d2579702c64f7523930b70625b9d1e1d27c0dee819f832114",
+    "retrieval_config_sha256": "6ef8c175f2143136b9c267ddab642d3d19f0c0925998c9097455cf392ea7e0e8"
+  }
+}

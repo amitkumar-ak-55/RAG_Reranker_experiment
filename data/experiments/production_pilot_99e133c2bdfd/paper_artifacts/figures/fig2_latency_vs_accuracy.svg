@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 420" width="750" height="420" style="background:#FFFFFF; font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;">
+  <text x="375.0" y="32" text-anchor="middle" font-size="16" font-weight="bold" fill="#1A202C">Latency vs. Ranking Accuracy (MRR@10) Trade-Off Frontier</text>
+  <line x1="90" y1="340.0" x2="710" y2="340.0" stroke="#E2E8F0" stroke-width="1" />
+  <text x="78" y="344.0" text-anchor="end" font-size="11" fill="#718096">0.00</text>
+  <line x1="90" y1="270.0" x2="710" y2="270.0" stroke="#E2E8F0" stroke-width="1" />
+  <text x="78" y="274.0" text-anchor="end" font-size="11" fill="#718096">0.25</text>
+  <line x1="90" y1="200.0" x2="710" y2="200.0" stroke="#E2E8F0" stroke-width="1" />
+  <text x="78" y="204.0" text-anchor="end" font-size="11" fill="#718096">0.50</text>
+  <line x1="90" y1="130.0" x2="710" y2="130.0" stroke="#E2E8F0" stroke-width="1" />
+  <text x="78" y="134.0" text-anchor="end" font-size="11" fill="#718096">0.75</text>
+  <line x1="90" y1="60.0" x2="710" y2="60.0" stroke="#E2E8F0" stroke-width="1" />
+  <text x="78" y="64.0" text-anchor="end" font-size="11" fill="#718096">1.00</text>
+  <line x1="90.0" y1="60" x2="90.0" y2="340" stroke="#E2E8F0" stroke-width="1" />
+  <text x="90.0" y="360" text-anchor="middle" font-size="11" fill="#718096">0 ms</text>
+  <line x1="244.8" y1="60" x2="244.8" y2="340" stroke="#E2E8F0" stroke-width="1" />
+  <text x="244.8" y="360" text-anchor="middle" font-size="11" fill="#718096">397 ms</text>
+  <line x1="399.9" y1="60" x2="399.9" y2="340" stroke="#E2E8F0" stroke-width="1" />
+  <text x="399.9" y="360" text-anchor="middle" font-size="11" fill="#718096">795 ms</text>
+  <line x1="554.7" y1="60" x2="554.7" y2="340" stroke="#E2E8F0" stroke-width="1" />
+  <text x="554.7" y="360" text-anchor="middle" font-size="11" fill="#718096">1192 ms</text>
+  <line x1="709.9" y1="60" x2="709.9" y2="340" stroke="#E2E8F0" stroke-width="1" />
+  <text x="709.9" y="360" text-anchor="middle" font-size="11" fill="#718096">1590 ms</text>
+  <text x="400.0" y="386" text-anchor="middle" font-size="12" font-weight="600" fill="#4A5568">Reranking Latency (ms)</text>
+  <text x="24" y="200.0" text-anchor="middle" font-size="12" font-weight="600" fill="#4A5568" transform="rotate(-90 24 200.0)">MRR@10</text>
+  <circle cx="90.0" cy="60.0" r="8" fill="#4A5568" />
+  <circle cx="90.0" cy="60.0" r="14" fill="#4A5568" opacity="0.2" />
+  <text x="90.0" y="82.0" text-anchor="middle" font-size="11" font-weight="bold" fill="#4A5568">Baseline (Hybrid)</text>
+  <text x="90.0" y="95.0" text-anchor="middle" font-size="10" fill="#718096">(0ms, MRR 1.000)</text>
+  <circle cx="566.9" cy="60.0" r="8" fill="#3182CE" />
+  <circle cx="566.9" cy="60.0" r="14" fill="#3182CE" opacity="0.2" />
+  <text x="566.9" y="82.0" text-anchor="middle" font-size="11" font-weight="bold" fill="#3182CE">Jina Reranker</text>
+  <text x="566.9" y="95.0" text-anchor="middle" font-size="10" fill="#718096">(1223ms, MRR 1.000)</text>
+  <circle cx="378.4" cy="60.0" r="8" fill="#38A169" />
+  <circle cx="378.4" cy="60.0" r="14" fill="#38A169" opacity="0.2" />
+  <text x="378.4" y="82.0" text-anchor="middle" font-size="11" font-weight="bold" fill="#38A169">TypeSafe JEV</text>
+  <text x="378.4" y="95.0" text-anchor="middle" font-size="10" fill="#718096">(740ms, MRR 1.000)</text>
+</svg>

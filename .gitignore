@@ -3,3 +3,7 @@ __pycache__/
 *.py[cod]
 .pytest_cache/
 data/app.db
+*.bak
+data/backup_kb_2035/
+scratch/
+data/scans/tmp*.xml

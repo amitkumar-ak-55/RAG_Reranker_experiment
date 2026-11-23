@@ -114,9 +114,12 @@ class ProductionAnswerProvider:
         answer_fn: Callable[[str, list[dict[str, object]]], Answer] = answer_question,
     ) -> None:
         self._answer_fn = answer_fn
+        effective_max_tokens = production_settings.answer_max_tokens
+        if "gpt-oss" in production_settings.answer_model.lower():
+            effective_max_tokens = max(effective_max_tokens, 256)
         self.generation_settings = GenerationSettings(
             model=production_settings.answer_model,
-            max_tokens=production_settings.answer_max_tokens,
+            max_tokens=effective_max_tokens,
         )
 
     def answer(self, query: str, evidence: list[Candidate]) -> GenerationResult:

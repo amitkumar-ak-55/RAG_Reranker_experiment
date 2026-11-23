@@ -63,11 +63,11 @@ def test_production_selection_rejects_injected_mock_before_index_loading(monkeyp
         )
 
 
-@pytest.mark.parametrize("question_limit", [0, -1, 4])
+@pytest.mark.parametrize("question_limit", [0, -1, 301])
 def test_invalid_production_limits_fail_before_index_loading(monkeypatch, tmp_path, question_limit):
     monkeypatch.setattr(pipeline, "_load_frozen_index", lambda: pytest.fail("index loading started"))
 
-    with pytest.raises(ValueError, match="one to three"):
+    with pytest.raises(ValueError, match="between one and 300"):
         pipeline.run_pipeline(tmp_path, provider="production", question_limit=question_limit)
 
 
@@ -82,3 +82,15 @@ def test_valid_production_limits_pass_range_check(monkeypatch, tmp_path, questio
 
     with pytest.raises(pytest.fail.Exception, match="index loading started"):
         pipeline.run_pipeline(tmp_path, provider="production", question_limit=question_limit)
+
+
+def test_production_rejects_injected_rerankers_before_index_loading(monkeypatch, tmp_path):
+    monkeypatch.setattr(pipeline, "_load_frozen_index", lambda: pytest.fail("index loading started"))
+    with pytest.raises(ValueError, match="cannot be injected"):
+        pipeline.run_pipeline(
+            tmp_path,
+            provider="production",
+            question_limit=1,
+            jina_provider=pipeline.HashReranker("jina-mock"),
+            jev_provider=pipeline.HashReranker("jev-mock"),
+        )

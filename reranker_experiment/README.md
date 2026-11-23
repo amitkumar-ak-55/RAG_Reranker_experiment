@@ -51,6 +51,19 @@ through the bounded `pilot` command, which accepts one to three questions:
 python -m reranker_experiment.cli pilot --provider production --questions 1
 ```
 
+The explicitly authorized full run processes all 300 frozen questions:
+
+```powershell
+python -m reranker_experiment.cli full --provider production
+python -m reranker_experiment.cli full --provider production --resume
+python -m reranker_experiment.cli full --provider production --resume --output-dir data/experiments/production_full_<run_id>
+```
+
+The full command writes a per-question checkpoint and can resume from the next
+incomplete question. Resume validates provider, dataset, KB, source, retrieval,
+and answer-generation fingerprints before continuing. Pass `--output-dir` when
+resuming an existing run.
+
 Missing production configuration fails before index loading or retrieval.
 There is no implicit fallback between providers. Before an authorized pilot,
 validate the actual provider contracts and inspect the mock artifact. Use the existing TypeSafe System One contract
@@ -66,6 +79,24 @@ generation configuration, latency, optional token/cost telemetry, success or
 failure status, and sanitized error fields. Unavailable token and cost values
 remain null. The development command is capped at three questions; it does not
 run the 300-question experiment.
+
+## Live connectivity smoke test
+
+The isolated smoke test uses one Jina query/two documents and one JEV query/two
+named Noul candidate questions. It is disabled by default and requires
+`--live-approved`; use `--provider jina`, `--provider jev`, or `--provider both`
+to test providers independently.
+
+```powershell
+python -m reranker_experiment.live_connectivity_smoke
+python -m reranker_experiment.live_connectivity_smoke --live-approved --provider jina
+python -m reranker_experiment.live_connectivity_smoke --live-approved --provider jev
+```
+
+Only run the approved forms when intentionally consuming live API credits.
+The smoke test has a 10-second timeout and makes no automatic retries. It does
+not load the 300-question dataset or run retrieval, answer generation, or the
+experiment runner.
 
 ## Tests
 
